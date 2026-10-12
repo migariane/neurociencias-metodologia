@@ -519,13 +519,12 @@ Para mejorar la fiabilidad se pueden hacer mediciones repetidas de la misma mues
 :::
 
 
-## Sensibilidad y especificidad
+## Sensibilidad y especificidad — validez interna
 
 
 
 
 ::: {.callout-note}
-## Sensibilidad y especificidad — validez interna
 Son parámetros de **validez interna** frente a *gold standard*.
 :::
 

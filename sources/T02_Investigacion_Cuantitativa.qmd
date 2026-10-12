@@ -803,10 +803,14 @@ $$P(A \cap B) = P(A \mid B)\, P(B) \qquad \text{si } A,B \text{ independientes: 
 $A$ y $B$ son independientes $\iff$ $P(A \mid B)=P(A)$ — la ocurrencia de uno no modifica la del otro.
 :::
 
-Tablas de contingencia
+
+## Tablas de contingencia
+
 Es una forma muy intuitiva de calcular probabilidades de intersecciones, uniones y condicionadas sin tener
 que recordar fórmulas ni teorema de Bayes, mediante la construcción de tablas 2x2. Se entiende mejor con
 el siguiente ejemplo.
+
+
 ## Ejemplo con tablas de contingencia. Enunciado:
 
 

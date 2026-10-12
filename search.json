@@ -175,11 +175,11 @@
     "text": "Aumentar validez y fiabilidad\n\nPara mejorar la fiabilidad se pueden hacer mediciones repetidas de la misma muestra y quedarnos con el promedio. Esto se hace cuando se calcula la tensión arterial media de un paciente, por ejemplo.\n\nPara mejorar la validez es necesario calibrar los instrumentos de medida.\nPara mejorar ambas se puede:\n\nTratar de que todos los investigadores tengan los mismos criterios.\nEntrenar a los observadores sobre cómo recoger datos.\nSeleccionar los aparatos más fiables.\nCalibrar aparatos de medida.\nSi es posible, es preferible utilizar aparatos automáticos.\nEmplear técnicas de enmascaramiento o ciego."
   },
   {
-    "objectID": "T01_Investigacion_Cualitativa.html#sensibilidad-y-especificidad",
-    "href": "T01_Investigacion_Cualitativa.html#sensibilidad-y-especificidad",
+    "objectID": "T01_Investigacion_Cualitativa.html#sensibilidad-y-especificidad-validez-interna",
+    "href": "T01_Investigacion_Cualitativa.html#sensibilidad-y-especificidad-validez-interna",
     "title": "Investigación Cualitativa",
-    "section": "Sensibilidad y especificidad",
-    "text": "Sensibilidad y especificidad\n\n\n\n\n\n\nSensibilidad y especificidad — validez interna\n\n\nSon parámetros de validez interna frente a gold standard.\n\n\n\n\n\n\nSensibilidad — detectar enfermos\n\\[S = \\frac{VP}{VP + FN}\\]\nProbabilidad de positivo si está enfermo.\n\n\n\nEspecificidad — descartar sanos\n\\[E = \\frac{VN}{FP + VN}\\]\nProbabilidad de negativo si está sano.\n\n\n\n\n\\(S\\) alta → útil para descartar (si sale negativo, casi seguro sano).\n\\(E\\) alta → útil para confirmar (si sale positivo, casi seguro enfermo)."
+    "section": "Sensibilidad y especificidad — validez interna",
+    "text": "Sensibilidad y especificidad — validez interna\n\n\n\n\n\n\nNota\n\n\nSon parámetros de validez interna frente a gold standard.\n\n\n\n\n\n\nSensibilidad — detectar enfermos\n\\[S = \\frac{VP}{VP + FN}\\]\nProbabilidad de positivo si está enfermo.\n\n\n\nEspecificidad — descartar sanos\n\\[E = \\frac{VN}{FP + VN}\\]\nProbabilidad de negativo si está sano.\n\n\n\n\n\\(S\\) alta → útil para descartar (si sale negativo, casi seguro sano).\n\\(E\\) alta → útil para confirmar (si sale positivo, casi seguro enfermo)."
   },
   {
     "objectID": "T01_Investigacion_Cualitativa.html#relación-entre-sensibilidad-y-especificidad",
@@ -739,7 +739,21 @@
     "href": "T02_Investigacion_Cuantitativa.html#probabilidad-de-la-intersección-y-sucesos-independientes",
     "title": "Investigación Cuantitativa",
     "section": "Probabilidad de la intersección y sucesos independientes",
-    "text": "Probabilidad de la intersección y sucesos independientes\n\n\\[P(A \\cap B) = P(A \\mid B)\\, P(B) \\qquad \\text{si } A,B \\text{ independientes: } P(A \\cap B)=P(A)P(B)\\]\n\n\n\n\n\n\n\nIndependencia\n\n\n\\(A\\) y \\(B\\) son independientes \\(\\iff\\) \\(P(A \\mid B)=P(A)\\) — la ocurrencia de uno no modifica la del otro.\n\n\n\nTablas de contingencia Es una forma muy intuitiva de calcular probabilidades de intersecciones, uniones y condicionadas sin tener que recordar fórmulas ni teorema de Bayes, mediante la construcción de tablas 2x2. Se entiende mejor con el siguiente ejemplo. ## Ejemplo con tablas de contingencia. Enunciado:\n\nEl 20% de la población de Nueva Guinea tiene la enfermedad de Kuru. Para su diagnóstico se utiliza un test de aglutinación que da falsos positivos en el 10% de los casos.\n\n¿Qué probabilidad hay de que un paciente de Nueva Guinea esté enfermo y tenga un resultado positivo en el test? (Intersección)\n¿Qué probabilidad hay de que la prueba resulte positiva si se padece la enfermedad? (Condicionada)\n¿Qué probabilidad hay de que la prueba resulte negativa si no se tiene la enfermedad? (Condicionada)\n¿Qué probabilidad hay de estar enfermo si la prueba ha salido positiva? (Bayes)\n¿Qué probabilidad hay de estar sano si la prueba ha sido negativa? (Bayes)"
+    "text": "Probabilidad de la intersección y sucesos independientes\n\n\\[P(A \\cap B) = P(A \\mid B)\\, P(B) \\qquad \\text{si } A,B \\text{ independientes: } P(A \\cap B)=P(A)P(B)\\]\n\n\n\n\n\n\n\nIndependencia\n\n\n\\(A\\) y \\(B\\) son independientes \\(\\iff\\) \\(P(A \\mid B)=P(A)\\) — la ocurrencia de uno no modifica la del otro."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#tablas-de-contingencia",
+    "href": "T02_Investigacion_Cuantitativa.html#tablas-de-contingencia",
+    "title": "Investigación Cuantitativa",
+    "section": "Tablas de contingencia",
+    "text": "Tablas de contingencia\nEs una forma muy intuitiva de calcular probabilidades de intersecciones, uniones y condicionadas sin tener que recordar fórmulas ni teorema de Bayes, mediante la construcción de tablas 2x2. Se entiende mejor con el siguiente ejemplo."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#ejemplo-con-tablas-de-contingencia.-enunciado",
+    "href": "T02_Investigacion_Cuantitativa.html#ejemplo-con-tablas-de-contingencia.-enunciado",
+    "title": "Investigación Cuantitativa",
+    "section": "Ejemplo con tablas de contingencia. Enunciado:",
+    "text": "Ejemplo con tablas de contingencia. Enunciado:\n\nEl 20% de la población de Nueva Guinea tiene la enfermedad de Kuru. Para su diagnóstico se utiliza un test de aglutinación que da falsos positivos en el 10% de los casos.\n\n¿Qué probabilidad hay de que un paciente de Nueva Guinea esté enfermo y tenga un resultado positivo en el test? (Intersección)\n¿Qué probabilidad hay de que la prueba resulte positiva si se padece la enfermedad? (Condicionada)\n¿Qué probabilidad hay de que la prueba resulte negativa si no se tiene la enfermedad? (Condicionada)\n¿Qué probabilidad hay de estar enfermo si la prueba ha salido positiva? (Bayes)\n¿Qué probabilidad hay de estar sano si la prueba ha sido negativa? (Bayes)"
   },
   {
     "objectID": "T02_Investigacion_Cuantitativa.html#solución-construimos-la-tabla-de-contingencia",
