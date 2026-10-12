@@ -1340,8 +1340,6 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 
 ## Sólo una de las opciones es correcta
 
-*— Supuesto práctico —*
-
 
 ::: {.smaller}
 1. Señale la correcta:
@@ -1399,8 +1397,6 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 - d. Series de casos.
 :::
 
-
-*— Supuesto práctico —*
 
 ## Supuesto práctico (2) {#supuesto-2}
 
@@ -1495,8 +1491,6 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 
 
 ## ¡Gracias por su paciencia!
-
-*— Supuesto práctico —*
 
 
 

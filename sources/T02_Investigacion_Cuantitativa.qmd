@@ -1282,8 +1282,6 @@ sobre el efecto.
 
 ## Sólo una de las opciones es correcta
 
-*— Supuesto práctico —*
-
 
 ::: {.smaller}
 1. Los estudios ‘Transversales’:
@@ -1317,7 +1315,7 @@ sobre el efecto.
 :::
 
 
-## Supuesto práctico
+## Supuesto práctico (1) {#supuesto-1}
 
 ::: {.smaller}
 5. ¿En qué tipo de estudios científicos un grupo de pacientes está expuesto a una intervención y otro
@@ -1353,9 +1351,7 @@ grupo forma un grupo control?:
 :::
 
 
-## Con respecto a los estudios de Cohortes es FALSO:
-
-*— Supuesto práctico —*
+## Supuesto práctico (2) {#supuesto-2}
 
 
 ::: {.smaller}
@@ -1393,9 +1389,7 @@ grupo forma un grupo control?:
 :::
 
 
-## Una característica de estudios de cohorte es que:
-
-*— Supuesto práctico —*
+## Supuesto práctico (3) {#supuesto-3}
 
 
 ::: {.smaller}
@@ -1430,7 +1424,7 @@ grupo forma un grupo control?:
 :::
 
 
-## Supuesto práctico (2) {#supuesto-2}
+## Supuesto práctico (4) {#supuesto-4}
 
 ::: {.smaller}
 17. Con respecto a la razón:
@@ -1465,7 +1459,7 @@ estudiar’:
 :::
 
 
-## Supuesto práctico (3) {#supuesto-3}
+## Supuesto práctico (5) {#supuesto-5}
 
 ::: {.smaller}
 21. Al realizar un estudio de cohortes para analizar la incidencia de accidentes coronarios sobre pacientes
@@ -1498,7 +1492,7 @@ sigue la curva normal?:
 :::
 
 
-## Supuesto práctico (4) {#supuesto-4}
+## Supuesto práctico (6) {#supuesto-6}
 
 ::: {.smaller}
 24. Al realizar un estudio, para comprobar la eficacia de la visita preoperatoria de enfermería en la disminución de la ansiedad de los pacientes quirúrgicos, usted obtiene un valor de Chi-cuadrado estadísticamente
@@ -1531,7 +1525,7 @@ dato indica:
 :::
 
 
-## Supuesto práctico (5) {#supuesto-5}
+## Supuesto práctico (7) {#supuesto-7}
 
 ::: {.smaller}
 27. Una enfermera quiere realizar un estudio que relacione la frecuencia de un determinado problema de
@@ -1568,7 +1562,7 @@ sobre:
 :::
 
 
-## Supuesto práctico (6) {#supuesto-6}
+## Supuesto práctico (8) {#supuesto-8}
 
 ::: {.smaller}
 
@@ -1608,7 +1602,7 @@ personas sean hipertensas o sean reumáticas, es:
 :::
 
 
-## Supuesto práctico (7) {#supuesto-7}
+## Supuesto práctico (9) {#supuesto-9}
 
 ::: {.smaller}
 35. ¿Cómo se calcula la tasa de natalidad?:
@@ -1633,7 +1627,7 @@ denomina:
 :::
 
 
-## Supuesto práctico (8) {#supuesto-8}
+## Supuesto práctico (10) {#supuesto-10}
 
 ::: {.smaller}
 37. Un estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:
@@ -1671,7 +1665,7 @@ de que el animal contraiga la enfermedad:
 :::
 
 
-## Supuesto práctico (9) {#supuesto-9}
+## Supuesto práctico (11) {#supuesto-11}
 
 ::: {.smaller}
 41. Los estudios epidemiológicos que tratan de investigar las causas de las enfermedades tienen un uso:
@@ -1708,7 +1702,7 @@ indica que:
 :::
 
 
-## Supuesto práctico (10) {#supuesto-10}
+## Supuesto práctico (12) {#supuesto-12}
 
 ::: {.smaller}
 
@@ -1736,8 +1730,6 @@ Soluciones del supuesto práctico
 
 
 ## ¡Gracias por su paciencia!
-
-*— Supuesto práctico —*
 
 
 
