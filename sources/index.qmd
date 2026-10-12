@@ -29,7 +29,7 @@ Material docente de **Miguel Angel Luque-Fernández**, Dpto. de Estadística e I
 - [**Investigación Cualitativa**](T01_Investigacion_Cualitativa.qmd) — Fundamentos, validez diagnóstica, práctica basada en la evidencia, bases de datos y revisión bibliográfica (87 diapositivas originales).
 - [**Investigación Cuantitativa**](T02_Investigacion_Cuantitativa.qmd) — Demografía sanitaria, fundamentos cuantitativos, epidemiología y supuesto práctico (82 diapositivas originales).
 
-> Cada deck es auto-contenido, navegable y exportable a PDF. Los dos comparten paleta *Madrid Professional* y bibliografía común (`references.bib`).
+> Cada deck es auto-contenido, navegable y exportable a PDF. Los dos comparten paleta *UGR Scientific* y bibliografía común (`references.bib`).
 
 ### Cómo citar
 

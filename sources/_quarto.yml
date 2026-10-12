@@ -25,7 +25,9 @@ website:
 
 format:
   revealjs:
-    theme: [default, ../madrid-theme.scss]
+    theme: [default, ugr-scientific-theme.scss]
+    width: 1280
+    height: 720
     slide-number: c/t
     code-fold: true
     code-summary: "Mostrar código R"

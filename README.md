@@ -39,7 +39,8 @@ Demografía sanitaria y medidas de frecuencia, fundamentos cuantitativos (tipos 
 ├── assets/                           # Figuras e imágenes
 ├── sources/                          # Código fuente (Quarto + LaTeX)
 │   ├── *.qmd, _quarto.yml            # Fuentes Quarto
-│   ├── madrid-theme.scss             # Tema de color y tipografía
+│   ├── ugr-scientific-theme.scss     # Tema UGR Scientific (vigente)
+│   ├── madrid-theme.scss             # Tema anterior (referencia)
 │   ├── references.bib                # Bibliografía
 │   └── beamer/*.tex                  # Fuentes Beamer
 ├── LICENSE

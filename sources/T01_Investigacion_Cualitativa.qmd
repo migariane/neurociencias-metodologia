@@ -1,17 +1,10 @@
 ---
-title: "Investigación Cualitativa"
-subtitle: "Introducción a la Metodología Científica — Máster Universitario en Neurociencias Básicas, Aplicadas y Dolor"
-author:
-  - name: "Miguel Angel Luque-Fernández"
-    affiliation: "Dpto. Estadística e Investigación Operativa, Universidad de Granada"
-    email: "mluquefe@ugr.es"
-    url: "https://migariane.github.io"
-date: "2026-10-10"
+pagetitle: "Investigación Cualitativa — Introducción a la Metodología Científica (UGR)"
 bibliography: references.bib
 nocite: '@*'
 format:
   revealjs:
-    theme: [default, ../madrid-theme.scss]
+    theme: [default, ugr-scientific-theme.scss]
     slide-number: c/t
     code-fold: true
     code-copy: true
@@ -25,7 +18,7 @@ format:
 ---
 
 
-# Investigación Cualitativa {.center}
+# Investigación Cualitativa {.center .nostretch}
 
 ![](logo.png){width="90px"}
 
@@ -1344,24 +1337,24 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 ::: {.smaller}
 1. Señale la correcta:
 
-- a. Las investigaciones cualitativas están orientadas al resultado y las investigaciones cuantitativas están orientadas al proceso.
-- b. La investigación cualitativa se caracteriza por ser exploratoria, inductiva y descriptiva.
-- c. Los estudios de casos clínicos son estudios descriptivos.
-- d. El método etnográfico es un estudio cuantitativo, analítico y experimental.
+a. Las investigaciones cualitativas están orientadas al resultado y las investigaciones cuantitativas están orientadas al proceso.
+b. La investigación cualitativa se caracteriza por ser exploratoria, inductiva y descriptiva.
+c. Los estudios de casos clínicos son estudios descriptivos.
+d. El método etnográfico es un estudio cuantitativo, analítico y experimental.
 
 2. Los operadores Booleanos son nexos lógicos que especifican cuál debe ser la relación entre los términos ingresados en una búsqueda y recuperación de información científica:
 
-- a. OR: mostrará páginas o documentos en los que los términos se encuentren próximos entre sí.
-- b. AND: limita el resultado de la búsqueda al aparecer todos los términos.
-- c. NOT: excluye el primer término de la búsqueda.
-- d. NEAR: sirve para encontrar sólo términos idénticos a de la consulta propuesta.
+a. OR: mostrará páginas o documentos en los que los términos se encuentren próximos entre sí.
+b. AND: limita el resultado de la búsqueda al aparecer todos los términos.
+c. NOT: excluye el primer término de la búsqueda.
+d. NEAR: sirve para encontrar sólo términos idénticos a de la consulta propuesta.
 
 3. La especificidad de una prueba diagnóstica se define como:
 
-- a. Probabilidad de obtener un determinado resultado en un individuo que presenta una enfermedad con respecto a un sujeto sano.
-- b. Probabilidad de clasificar correctamente a un par de individuos, uno sano y uno enfermo, al aplicarles la prueba.
-- c. Probabilidad de que una persona que presenta una característica sea clasificada correctamente por la medida empleada.
-- d. Probabilidad de que una persona que no presenta una característica sea clasificada correctamente por la medida empleada.
+a. Probabilidad de obtener un determinado resultado en un individuo que presenta una enfermedad con respecto a un sujeto sano.
+b. Probabilidad de clasificar correctamente a un par de individuos, uno sano y uno enfermo, al aplicarles la prueba.
+c. Probabilidad de que una persona que presenta una característica sea clasificada correctamente por la medida empleada.
+d. Probabilidad de que una persona que no presenta una característica sea clasificada correctamente por la medida empleada.
 :::
 
 
@@ -1370,31 +1363,31 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 ::: {.smaller}
 4. Dentro del concepto de práctica clínica basada en la evidencia ¿cuál de estas fuentes de información recibe un mayor nivel de evidencia según la clasificación de Sackett?:
 
-- a. Estudios casos-controles.
-- b. Opiniones de expertos.
-- c. Estudios de cohortes.
-- d. Meta-análisis.
+a. Estudios casos-controles.
+b. Opiniones de expertos.
+c. Estudios de cohortes.
+d. Meta-análisis.
 
 5. Base documental gratuita con más de 31.000 estudios clínicos aleatorizados, revisiones sistemáticas y guías de práctica clínica de fisioterapia:
 
-- a. PEDro.
-- b. PubMed.
-- c. MEDLINE.
-- d. EMBASE.
+a. PEDro.
+b. PubMed.
+c. MEDLINE.
+d. EMBASE.
 
 6. Son principios de la Bioética:
 
-- a. Beneficencia y autonomía.
-- b. Justicia, autonomía, no maleficiencia.
-- c. La justicia es un principio del Derecho.
-- d. Justicia, beneficiencia, no maleficiencia, autonomía.
+a. Beneficencia y autonomía.
+b. Justicia, autonomía, no maleficiencia.
+c. La justicia es un principio del Derecho.
+d. Justicia, beneficiencia, no maleficiencia, autonomía.
 
 7. ¿En qué tipo de estudios científicos un grupo de pacientes está expuesto a una intervención y otro grupo forma un grupo control?:
 
-- a. Cohortes.
-- b. Estudios paralelos.
-- c. Estudios ecológicos.
-- d. Series de casos.
+a. Cohortes.
+b. Estudios paralelos.
+c. Estudios ecológicos.
+d. Series de casos.
 :::
 
 
@@ -1404,85 +1397,91 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 ::: {.smaller}
 8. En cuanto a la investigación cualitativa y cuantitativa es FALSO:
 
-- a. Un objetivo típico de la investigación cuantitativa es generalizar los resultados a poblaciones más grandes y lograr un alto grado de confiabilidad.
-- b. En la investigación cuantitativa para minimizar el error de muestreo debe tener la misma probabilidad de ser seleccionado.
-- c. Al contrario de la investigación cuantitativa el propósito de la mayoría de los estudios cualitativos es producir datos ricos en información a partir de una muestra escogida por su capacidad de referirse al problema estudiado.
-- d. Las tres son correctas.
+a. Un objetivo típico de la investigación cuantitativa es generalizar los resultados a poblaciones más grandes y lograr un alto grado de confiabilidad.
+b. En la investigación cuantitativa para minimizar el error de muestreo debe tener la misma probabilidad de ser seleccionado.
+c. Al contrario de la investigación cuantitativa el propósito de la mayoría de los estudios cualitativos es producir datos ricos en información a partir de una muestra escogida por su capacidad de referirse al problema estudiado.
+d. Las tres son correctas.
 
 9. La Cochrane Library:
 
-- a. Es una iniciativa científica internacional destinada a producir, mantener y divulgar revisiones sistemáticas de las evidencias sobre la prevención, el tratamiento o el control de los problemas sanitarios.
-- b. Está accesible en español y de manera gratuita a través de la página del ministerio de Sanidad. Consta de cuatro bases de datos que ofrecen informaciones específicas.
-- c. Ambas son correctas.
-- d. Ninguna lo es.
+a. Es una iniciativa científica internacional destinada a producir, mantener y divulgar revisiones sistemáticas de las evidencias sobre la prevención, el tratamiento o el control de los problemas sanitarios.
+b. Está accesible en español y de manera gratuita a través de la página del ministerio de Sanidad. Consta de cuatro bases de datos que ofrecen informaciones específicas.
+c. Ambas son correctas.
+d. Ninguna lo es.
 
 10. Cuál de los siguientes tipos de estudios NO se corresponde con un estudio descriptivo:
 
-- a. Estudio de información individual.
-- b. Estudio de corte o transversal.
-- c. Estudio ecológico.
-- d. Estudio experimental o de intervención.
+a. Estudio de información individual.
+b. Estudio de corte o transversal.
+c. Estudio ecológico.
+d. Estudio experimental o de intervención.
+11. Señala la INCORRECTA: La entrevista clínica semiestructurada:
+
+a. Es un proceso semidirigido de intercambio de información.
+b. El paciente puede introducir temas y no sólo actuar de modo reactivo.
+c. Se compone de tres fases: anamnesis, exploración y resolución.
+d. Todas son correctas.
+
 :::
 
 
 ## Supuesto práctico (3) {#supuesto-3}
 
 ::: {.smaller}
-11. Señala la INCORRECTA: La entrevista clínica semiestructurada:
-
-- a. Es un proceso semidirigido de intercambio de información.
-- b. El paciente puede introducir temas y no sólo actuar de modo reactivo.
-- c. Se compone de tres fases: anamnesis, exploración y resolución.
-- d. Todas son correctas.
-
 12. Ante la lectura de un artículo científico que analiza la efectividad de una determinada intervención terapéutica, ¿qué tipo de diseño del estudio (definido en el apartado material y métodos) nos ofrece una mayor o mejor calidad del nivel de evidencia científica de la investigación realizada?:
 
-- a. Ensayos controlados no aleatorizados.
-- b. Estudios observacionales: casos-controles y cohortes.
-- c. Estudios descriptivos.
-- d. Ensayos controlados aleatorizados.
+a. Ensayos controlados no aleatorizados.
+b. Estudios observacionales: casos-controles y cohortes.
+c. Estudios descriptivos.
+d. Ensayos controlados aleatorizados.
 
 13. Respecto a las curvas ROC:
 
-- a. En el análisis se maneja un espacio que viene dado por la Especificidad y 1-Sensibilidad.
-- b. Presentan la sensibilidad de una prueba diagnóstica en función de los falsos positivos (complemento de la especificidad) para distintos puntos de corte.
-- c. ROC es el acrónimo de Recognition Optical Character.
-- d. Las tres son ciertas.
+a. En el análisis se maneja un espacio que viene dado por la Especificidad y 1-Sensibilidad.
+b. Presentan la sensibilidad de una prueba diagnóstica en función de los falsos positivos (complemento de la especificidad) para distintos puntos de corte.
+c. ROC es el acrónimo de Recognition Optical Character.
+d. Las tres son ciertas.
 
 14. ¿Cuál de los siguientes aspectos NO pertenece al método cualitativo en investigación?:
 
-- a. Observación naturalista.
-- b. Holista.
-- c. Orientado al resultado.
-- d. Realidad dinámica.
+a. Observación naturalista.
+b. Holista.
+c. Orientado al resultado.
+d. Realidad dinámica.
 
 15. ¿De cuál de los siguientes tipos de estudio obtendremos información clínica con mayor nivel de evidencia?:
 
-- a. Revisiones sistemáticas y Meta-análisis.
-- b. ECAs (ensayos controlados aleatorizados).
-- c. Estudios de casos y controles.
-- d. Guías de práctica clínica.
+a. Revisiones sistemáticas y Meta-análisis.
+b. ECAs (ensayos controlados aleatorizados).
+c. Estudios de casos y controles.
+d. Guías de práctica clínica.
 
+
+:::
+
+## Supuesto práctico (4) {#supuesto-4}
+
+::: {.smaller}
 16. Los conflictos éticos en la asistencia sociosanitaria a las personas mayores están en relación con el principio de:
 
-- a. justicia.
-- b. no maleficiencia.
-- c. autonomía.
-- d. los tres.
+a. justicia.
+b. no maleficiencia.
+c. autonomía.
+d. los tres.
 
 17. En los estudios de investigación, los datos que hacen referencia a la exactitud de la medición se refieren al concepto de:
 
-- a. Validez
-- b. Sensibilidad
-- c. Tabulación
-- d. Fiabilidad
+a. Validez
+b. Sensibilidad
+c. Tabulación
+d. Fiabilidad
 
 18. Un estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:
 
-- a. Analítico
-- b. Transversal
-- c. Ecológico
-- d. Descriptivo
+a. Analítico
+b. Transversal
+c. Ecológico
+d. Descriptivo
 
 ### Soluciones del supuesto práctico
 

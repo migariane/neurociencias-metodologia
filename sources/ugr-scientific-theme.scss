@@ -1,0 +1,566 @@
+/*-- scss:defaults --*/
+
+// =============================================================================
+// UGR Scientific — Neurociencias / Metodología Científica
+// =============================================================================
+// Un tema para docencia de metodología: sobrio, tipográfico, de revista
+// científica. Sin gradientes, sin sombras, sin tarjetas.
+//
+// El color codifica significado; no decora. La paleta es la del contrato del
+// repositorio (Preambles/header.tex ↔ Quarto/theme-template.scss), verificada
+// por scripts/check-palette-sync.py — así el HTML y el PDF Beamer coinciden.
+//
+// Identidad tipográfica: serif (Source Serif 4) para la prosa, monoespaciado
+// (IBM Plex Mono) para las cifras. La estadística se lee en números tabulares.
+// =============================================================================
+
+// --- Paleta del contrato (NO cambiar sin actualizar header.tex) -------------
+$primary-blue:     #012169;   // estructura, titulares, cabeceras, separadores
+$primary-gold:     #B9975B;   // énfasis, claves, numeración, filetes
+$highlight-yellow: #F2A900;   // marcadores, alertas
+$light-bg:         #E8EDF5;   // fondos de bloque y separador
+$jet:              #1A1A1A;   // tinta principal
+
+// --- Semánticos (del contrato) ---------------------------------------------
+$positive: #15803D;   // acierto, sensibilidad, evidencia favorable
+$negative: #B91C1C;   // error, sesgo, falsos positivos
+$neutral:  #525252;   // contexto, pies
+
+// --- Neutros de trabajo (papel y reglas) -----------------------------------
+$paper: #FCFCFD;      // fondo de diapositiva
+$rule:  #D5DAE0;      // reglas finas
+$ink:   $jet;
+
+// --- Alias semánticos que el contrato espera -------------------------------
+$accent:  $primary-blue;
+$accent2: $primary-gold;
+
+// --- Bootstrap / Quarto ----------------------------------------------------
+$body-bg:    $paper;
+$body-color: $ink;
+$link-color: $primary-blue;
+$link-color-hover: darken($primary-blue, 8%);
+
+// --- Tipografía ------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+$font-family-sans-serif: "Source Serif 4", "Source Serif Pro", Charter, Georgia, serif;
+$presentation-heading-font: "Source Serif 4", "Source Serif Pro", Charter, Georgia, serif;
+$font-family-monospace: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+
+$presentation-font-size-root: 27px;
+$presentation-heading-color: $primary-blue;
+$presentation-heading-font-weight: 600;
+$presentation-heading-line-height: 1.18;
+$presentation-h1-font-size: 2.0em;
+$presentation-h2-font-size: 1.34em;
+$presentation-h3-font-size: 1.0em;
+$presentation-block-margin: 12px;
+$code-color: $primary-blue;
+$code-bg: #F2F4F7;
+
+
+/*-- scss:rules --*/
+
+// =============================================================================
+// Lienzo
+// =============================================================================
+.reveal {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-numeric: tabular-nums lining-nums;   // cifras alineadas
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: rgba($primary-gold, 0.32); }
+
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: 0.4em 0.9em 0.2em 0.9em;
+  top: 0 !important;
+  background: $paper;
+}
+
+// =============================================================================
+// Portada y separadores — azul tinta, el acento se gasta aquí
+// =============================================================================
+// La portada (la única diapositiva con .level1/.center) es el único momento
+// oscuro del deck: logotipo UGR sobre chapa blanca, título con filete dorado,
+// atribución en tarjeta clara. Todo lo demás es papel.
+.reveal .slides section.level1,
+.reveal .slides section.center {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: left;
+  background: $primary-blue;
+  padding-left: 1.8em;
+  h1 {
+    color: #fff;
+    font-size: 1.9em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0.4em;
+    position: relative;
+    // filete dorado corto bajo el título
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 2.6em;
+      height: 3px;
+      background: $primary-gold;
+    }
+  }
+  h2 {
+    color: rgba(#fff, 0.86);
+    font-size: 1.05em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0.7em 0 0 0;
+    border-bottom: none;
+  }
+  p, ul, ol {
+    color: rgba(#fff, 0.9);
+    font-size: 0.88em;   // jerarquía bajo el titular; la portada respira
+    max-width: 34em;
+  }
+  strong { color: $primary-gold; }   // en papel esto es navy; aquí navy = invisible
+  li::marker { color: $primary-gold; }
+  a { color: $primary-gold; }
+  // El logotipo UGR lleva tipografía negra: chapa blanca detrás, a su
+  // tamaño natural (la regla global `width: auto` ignoraría width="90").
+  img {
+    width: 90px;
+    height: auto;
+    max-height: none;
+    background: #fff;
+    padding: 0.5em 0.55em 0.4em;
+    margin: 0.5em 0 0.4em 0;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  // La nota de atribución va en tarjeta clara: texto tinta, no blanco.
+  .callout {
+    max-width: 40em;
+    font-size: 0.8em;
+    p { color: $ink; }
+    strong { color: $primary-blue; }
+    a { color: $primary-blue; }
+  }
+}
+
+// =============================================================================
+// Titulares — regla fina, no barra gruesa
+// =============================================================================
+.reveal h2 {
+  color: $primary-blue;
+  font-weight: 600;
+  font-size: 1.34em;
+  letter-spacing: -0.008em;
+  line-height: 1.2;
+  padding-bottom: 0.22em;
+  margin-bottom: 0.6em;
+  border-bottom: 1px solid $rule;
+}
+.reveal h3 {
+  color: $primary-gold;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+  margin: 0.7em 0 0.35em 0;
+  line-height: 1.3;
+}
+.reveal h4 {
+  color: $neutral;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin: 0.6em 0 0.25em 0;
+}
+
+// =============================================================================
+// Prosa
+// =============================================================================
+.reveal p {
+  line-height: 1.52;
+  margin: 0.45em 0;
+  font-weight: 400;
+  max-width: 46em;
+}
+.reveal p + ul, .reveal p + ol { margin-top: 0.3em; }
+
+// =============================================================================
+// Listas — marcadores de color, sin flechas decorativas
+// =============================================================================
+.reveal ul, .reveal ol {
+  // Reveal's base CSS shrinks lists to inline-block, which makes sibling
+  // lists (question stem -> options -> next stem) flow inline. Block them.
+  display: block;
+  line-height: 1.5;
+  margin: 0.45em 0 0.55em 0;
+  padding-left: 1.3em;
+  li { margin-bottom: 0.3em; padding-left: 0.1em; }
+  li::marker { color: $primary-blue; font-weight: 600; }
+}
+.reveal ul ul {
+  margin-top: 0.25em;
+  margin-bottom: 0.2em;
+  padding-left: 1.1em;
+  li::marker { color: $primary-gold; }
+}
+.reveal ol { li::marker { color: $primary-gold; font-weight: 600; } }
+// Opciones de test: a) b) c) d) en monoespaciado, alineadas
+.reveal ol[type="a"] { li::marker { font-family: $font-family-monospace; font-size: 0.92em; } }
+
+.reveal .fragment { opacity: 0; transition: opacity 0.3s ease; }
+.reveal .fragment.visible, .reveal .fragment.current-visible { opacity: 1; }
+
+// =============================================================================
+// Cifras y fórmulas — monoespaciado, el sello del tema
+// =============================================================================
+.reveal .katex, .reveal .math { font-size: 1.04em; }
+.reveal .katex-display, .reveal .math.display { margin: 0.65em 0; }
+.reveal code:not(pre code) {
+  font-family: $font-family-monospace;
+  background: $code-bg;
+  color: $code-color;
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+  font-size: 0.88em;
+  border: none;
+}
+
+// =============================================================================
+// Tablas — cabecera plana, reglas de 1px, cifras a la derecha
+// =============================================================================
+.reveal table {
+  font-size: 0.84em;
+  border-collapse: collapse;
+  margin: 0.6em 0;
+  width: auto;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+  th {
+    background: $primary-blue;
+    color: #fff;
+    padding: 0.4em 0.75em;
+    border: none;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.005em;
+  }
+  td {
+    padding: 0.34em 0.75em;
+    border: none;
+    border-bottom: 1px solid $rule;
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: 1.5px solid $primary-blue; }
+  // columnas numéricas alineadas a la derecha en monoespaciado
+  td:has(> code), th:has(> code) { font-family: $font-family-monospace; }
+  caption {
+    font-size: 0.82em;
+    color: $neutral;
+    font-style: italic;
+    margin-top: 0.45em;
+    caption-side: bottom;
+    text-align: left;
+  }
+}
+
+// =============================================================================
+// Cajas — borde izquierdo semántico, fondo blanco, sin sombra
+// =============================================================================
+.reveal .callout,
+.reveal .callout-note, .reveal .callout-tip, .reveal .callout-warning,
+.reveal .callout-important, .reveal .callout-caution {
+  border: none;
+  border-left: 3px solid $primary-blue;
+  border-radius: 0;
+  background: #fff;
+  padding: 0.5em 0.95em;
+  margin: 0.6em 0;
+  font-size: 0.87em;
+  line-height: 1.48;
+  box-shadow: none;
+}
+.reveal .callout-note { border-left-color: $primary-blue; background: #fff;
+  .callout-title { color: $primary-blue; } }
+.reveal .callout-tip { border-left-color: $positive;
+  .callout-title { color: $positive; } }
+.reveal .callout-warning { border-left-color: $highlight-yellow;
+  .callout-title { color: darken($highlight-yellow, 12%); } }
+.reveal .callout-important { border-left-color: $negative;
+  .callout-title { color: $negative; } }
+.reveal .callout-caution { border-left-color: $primary-gold;
+  .callout-title { color: darken($primary-gold, 12%); } }
+.reveal .callout-title { font-weight: 600; }
+
+// Columnas
+.reveal .columns { font-size: 0.93em; gap: 1.6em; align-items: flex-start; margin: 0.4em 0; }
+.reveal .column { flex: 1; > *:first-child { margin-top: 0; } }
+
+// =============================================================================
+// Imágenes
+// =============================================================================
+.reveal section img {
+  border: none !important;
+  box-shadow: none !important;
+  max-width: 100%;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+.reveal figure { margin: 0.6em 0; }
+.reveal figcaption, .reveal section em:has(+ br) {
+  font-size: 0.78em;
+  color: $neutral;
+  font-style: italic;
+  margin-top: 0.4em;
+  text-align: left;
+  line-height: 1.4;
+}
+.reveal p:has(> img) { text-align: center; }
+
+// =============================================================================
+// Navegación — discreta
+// =============================================================================
+.reveal .slide-number {
+  font-family: $font-family-monospace;
+  font-size: 12px !important;
+  font-weight: 500;
+  color: $neutral !important;
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  bottom: 8px !important;
+  right: 12px !important;
+}
+.reveal .progress { height: 2px; background: rgba($primary-blue, 0.08);
+  span { background: $primary-gold; } }
+.reveal .controls-arrow { color: $primary-blue; opacity: 0.45; }
+.reveal .controls-arrow:hover { opacity: 0.85; }
+
+// =============================================================================
+// Cita
+// =============================================================================
+.reveal blockquote {
+  border-left: 3px solid $primary-gold;
+  background: transparent;
+  padding: 0.2em 0 0.2em 1em;
+  font-style: italic;
+  color: $ink;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 0.94em;
+  line-height: 1.5;
+  margin: 0.6em 0;
+  p { margin: 0.25em 0; }
+}
+
+// =============================================================================
+// Énfasis
+// =============================================================================
+.reveal strong { color: $primary-blue; font-weight: 700; }
+.reveal em { color: $ink; }
+.reveal a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid rgba($primary-blue, 0.35);
+  transition: border-color 0.18s ease;
+}
+.reveal a:hover { color: $link-color-hover; border-bottom-color: $primary-blue; }
+.reveal a:focus-visible { outline: 2px solid $primary-blue; outline-offset: 2px; }
+
+// =============================================================================
+// Pie y logo
+// =============================================================================
+.reveal .footer {
+  font-size: 0.6em !important;
+  color: $neutral !important;
+  bottom: 6px !important;
+}
+.reveal .slide-logo {
+  max-height: 34px !important;
+  max-width: 110px !important;
+  bottom: 6px !important;
+  left: 12px !important;
+  opacity: 0.85;
+}
+
+// =============================================================================
+// Utilidades de tamaño y semántica
+// =============================================================================
+.reveal .small   { font-size: 0.8em;  line-height: 1.4; }
+.reveal .smaller { font-size: 0.88em; line-height: 1.46;
+  p { margin: 0.36em 0; }
+  ul, ol { margin: 0.32em 0; li { margin-bottom: 0.26em; line-height: 1.46; } } }
+.reveal .smallest { font-size: 0.82em; line-height: 1.4; }
+.reveal .large  { font-size: 1.06em; line-height: 1.5; }
+.reveal .huge   { font-size: 1.2em; line-height: 1.3; font-weight: 600; color: $primary-blue; }
+.reveal .muted  { color: $neutral; }
+.reveal .highlight { background: linear-gradient(180deg, transparent 60%, rgba($highlight-yellow, 0.42) 60%); padding: 0 0.1em; }
+.reveal .text-center { text-align: center; }
+.reveal .text-right  { text-align: right; }
+.reveal .mono { font-family: $font-family-monospace; font-size: 0.92em; }
+.reveal .data { font-family: $font-family-monospace; font-variant-numeric: tabular-nums; }
+
+// Semántica de color (coincide con header.tex)
+.reveal .positive { color: $positive !important; font-weight: 600; }
+.reveal .negative { color: $negative !important; font-weight: 600; }
+.reveal .neutral  { color: $neutral !important; }
+
+// =============================================================================
+// Cajas propias — misma gramática que el Beamer
+// =============================================================================
+.reveal .framed {
+  border: 1px solid $rule;
+  border-top: 2px solid $primary-blue;
+  border-radius: 0;
+  padding: 0.6em 0.95em;
+  background: #fff;
+  margin: 0.55em 0;
+  box-shadow: none;
+  font-size: 0.93em;
+}
+.reveal .def {
+  border-left: 3px solid $primary-blue;
+  background: $light-bg;
+  padding: 0.45em 0.95em;
+  margin: 0.5em 0;
+  border-radius: 0;
+  font-size: 0.89em;
+  line-height: 1.48;
+  box-shadow: none;
+}
+.reveal .formula-box {
+  border: 1px solid $rule;
+  border-left: 3px solid $primary-gold;
+  border-radius: 0;
+  padding: 0.6em 1em;
+  background: #fff;
+  margin: 0.6em 0;
+  box-shadow: none;
+  text-align: center;
+  font-size: 0.98em;
+  line-height: 1.5;
+  .katex { font-size: 1.06em; }
+}
+.reveal .formula-box--teal  { border-left-color: $positive; }
+.reveal .formula-box--amber { border-left-color: $highlight-yellow; }
+
+.reveal .example-box {
+  border: 1px solid $rule;
+  border-left: 3px solid $positive;
+  border-radius: 0;
+  padding: 0.5em 0.95em;
+  background: #fff;
+  margin: 0.6em 0;
+  font-size: 0.87em;
+  line-height: 1.48;
+  box-shadow: none;
+  h3, h4 { color: $positive; margin-top: 0; }
+}
+.reveal .reference-box {
+  border-left: 3px solid $neutral;
+  background: transparent;
+  border-radius: 0;
+  padding: 0.25em 0 0.25em 0.9em;
+  margin: 0.5em 0;
+  font-size: 0.78em;
+  line-height: 1.45;
+  color: $neutral;
+}
+.reveal .theorem {
+  border: 1px solid $rule;
+  border-top: 2px solid $primary-blue;
+  border-radius: 0;
+  padding: 0.5em 0.95em;
+  background: #fff;
+  margin: 0.6em 0;
+  font-size: 0.89em;
+  line-height: 1.48;
+  box-shadow: none;
+  h3, h4 { color: $primary-blue; margin-top: 0; font-weight: 600; }
+}
+.reveal .exercise {
+  border: 1px solid rgba($highlight-yellow, 0.6);
+  border-left: 3px solid $highlight-yellow;
+  background: #FFFDF5;
+  border-radius: 0;
+  padding: 0.5em 0.95em;
+  margin: 0.6em 0;
+  font-size: 0.87em;
+  line-height: 1.48;
+  h3, h4 { color: darken($highlight-yellow, 14%); margin-top: 0; }
+}
+.reveal .connection {
+  border-left: 3px solid $primary-blue;
+  background: $light-bg;
+  border-radius: 0;
+  padding: 0.4em 0.95em;
+  margin: 0.5em 0;
+  font-size: 0.87em;
+  line-height: 1.48;
+}
+.reveal .compact {
+  p { margin: 0.32em 0; }
+  ul, ol { margin: 0.28em 0; li { margin-bottom: 0.2em; line-height: 1.4; } }
+  .formula-box { margin: 0.38em 0; padding: 0.42em 0.85em; }
+}
+
+// =============================================================================
+// Diapositivas de test denso — las de "Supuesto práctico"
+// Agrupan 4 preguntas con 4 opciones en un lienzo de 1280x720. Se detectan por
+// contener listas de opciones (ol[type=a]) como hijo directo del cuerpo y se
+// comprimen en tamaño y ritmo para que quepan completas sin desbordar.
+// =============================================================================
+.reveal .slides section:has(> div > ol[type="a"]) {
+  font-size: 0.70em;
+  h2 { font-size: 1.2em; margin-bottom: 0.25em; padding-bottom: 0.1em; }
+  p { margin: 0.2em 0; line-height: 1.4; }
+  ol, ul {
+    margin: 0.2em 0;
+    li { margin-bottom: 0.08em; line-height: 1.36; }
+  }
+  // separa visualmente pregunta y opciones sin gastar altura
+  div > ol[type="a"] { margin-top: 0.1em; padding-left: 1.5em; }
+}
+
+// =============================================================================
+// Referencias
+// =============================================================================
+#refs, .references {
+  font-size: 0.62em;
+  line-height: 1.42;
+  column-count: 1;
+  div { margin-bottom: 0.45em; break-inside: avoid; }
+  p { margin: 0.15em 0; }
+}
+
+// =============================================================================
+// Impresión y accesibilidad
+// =============================================================================
+@media print {
+  .reveal .slides section { background: #fff !important; }
+  .reveal .slides section.level1, .reveal .slides section.center {
+    background: $primary-blue !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .reveal .slide-number, .reveal .progress { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal .fragment, .reveal .controls-arrow, .reveal a { transition: none; }
+}
+@media (max-width: 1100px) {
+  .reveal .columns { font-size: 0.9em; gap: 1.1em; }
+  .reveal table { font-size: 0.8em; }
+}
+@media (max-width: 768px) {
+  .reveal .slides section { padding: 0.3em 0.6em; }
+  .reveal h2 { font-size: 1.2em; }
+}

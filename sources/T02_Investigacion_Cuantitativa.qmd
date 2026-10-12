@@ -1,17 +1,10 @@
 ---
-title: "Investigación Cuantitativa"
-subtitle: "Introducción a la Metodología Científica — Máster Universitario en Neurociencias Básicas, Aplicadas y Dolor"
-author:
-  - name: "Miguel Angel Luque-Fernández"
-    affiliation: "Dpto. Estadística e Investigación Operativa, Universidad de Granada"
-    email: "mluquefe@ugr.es"
-    url: "https://migariane.github.io"
-date: "2026-10-10"
+pagetitle: "Investigación Cuantitativa — Introducción a la Metodología Científica (UGR)"
 bibliography: references.bib
 nocite: '@*'
 format:
   revealjs:
-    theme: [default, ../madrid-theme.scss]
+    theme: [default, ugr-scientific-theme.scss]
     slide-number: c/t
     code-fold: true
     code-copy: true
@@ -25,7 +18,7 @@ format:
 ---
 
 
-# Investigación Cuantitativa {.center}
+# Investigación Cuantitativa {.center .nostretch}
 
 ![](logo.png){width="90px"}
 
@@ -857,10 +850,11 @@ No se dice el tamaño de la muestra, elegimos una de n=100 habitantes.
 ::: {.smaller}
 Con la tabla las respuestas son triviales.
 
-- A (Enfermos) Ā (Sanos) Totales
-- B (Test +) 18 8 26
-- B̄ (Test -) 2 72 74
-- Totales 20 80 n = 100
+|            | A (Enfermos) | Ā (Sanos) | Totales  |
+|:-----------|-------------:|----------:|---------:|
+| B (Test +) |           18 |         8 |       26 |
+| B̄ (Test −) |            2 |        72 |       74 |
+| Totales    |           20 |        80 | n = 100 |
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -1198,9 +1192,9 @@ Observación y descripción del fenómeno a estudiar
   - Ejm.: Estudio para conocer la prevalencia del cáncer de mama.
 - Analíticos. Buscan relaciones causa-efecto entre las variables. Se plantean por tanto hipótesis que
   contrastar.
-  - a. Casos-controles. Hay dos grupos, el 1º tiene la enfermedad (casos) y el 2º está libre de la enfermedad (controles). Están indicados para investigar enfermedades raras, crónicas o transmisibles.
+  a. Casos-controles. Hay dos grupos, el 1º tiene la enfermedad (casos) y el 2º está libre de la enfermedad (controles). Están indicados para investigar enfermedades raras, crónicas o transmisibles.
     Van del efecto (enfermedad) a la causa (factor de riesgo).
-  - b. Estudios de cohortes. Hay dos grupos, el 1º expuesto al factor de riesgo y el 2º no expuesto.
+  b. Estudios de cohortes. Hay dos grupos, el 1º expuesto al factor de riesgo y el 2º no expuesto.
     Pueden ser dinámicos o fijos (incorporar o no más individuos). Según la valoración del efecto (con
     o sin medidas repetidas) pueden ser longitudinales o según en el momento que ocurre pueden
     ser prospectivos o retrospectivos. Van del factor de riesgo (causa) a la enfermedad (efecto).
@@ -1218,10 +1212,10 @@ Observación y descripción del fenómeno a estudiar
 
 - Ensayos clínicos no controlados. Son estudios cuasi-experimentales no aleatorios.
 - Ensayos clínicos aleatorios y controlados. Son estudios experimentales puros (existe grupo de control).
-  - a. Ensayo clínico aleatorio (ético). Un grupo se expone a la intervención y el otro no de forma
+  a. Ensayo clínico aleatorio (ético). Un grupo se expone a la intervención y el otro no de forma
     aleatoria.
-  - b. Ensayo clínico cruzado. Cada sujeto recibe las dos intervenciones.
-  - c. Ensayo de campo. Evalúa la eficacia de una medida preventiva sobre individuos sanos conociendo
+  b. Ensayo clínico cruzado. Cada sujeto recibe las dos intervenciones.
+  c. Ensayo de campo. Evalúa la eficacia de una medida preventiva sobre individuos sanos conociendo
     las dosis.
     - Ejm.: Efecto de un nuevo fármaco en un grupo de fumadores para la deshabituación al tabaco.
 
@@ -1286,32 +1280,32 @@ sobre el efecto.
 ::: {.smaller}
 1. Los estudios ‘Transversales’:
 
-- a. Nos permiten conocer la incidencia de la enfermedad.
-- b. Son un tipo de estudio analítico.
-- c. Son útiles para caracterizar el estado de salud de la población en un punto en el tiempo.
-- d. No son susceptibles de sesgos de selección.
+a. Nos permiten conocer la incidencia de la enfermedad.
+b. Son un tipo de estudio analítico.
+c. Son útiles para caracterizar el estado de salud de la población en un punto en el tiempo.
+d. No son susceptibles de sesgos de selección.
 
 2. Sobre la hipótesis nula:
 
-- a. Si usted rechaza la hipótesis nula, entonces tiene pruebas de que la hipótesis alternativa no es
+a. Si usted rechaza la hipótesis nula, entonces tiene pruebas de que la hipótesis alternativa no es
   correcta.
-- b. La hipótesis nula siempre se refiere a la población.
-- c. La hipótesis nula siempre se refiere a la muestra.
-- d. La hipótesis nula siempre expresa una desigualdad.
+b. La hipótesis nula siempre se refiere a la población.
+c. La hipótesis nula siempre se refiere a la muestra.
+d. La hipótesis nula siempre expresa una desigualdad.
 
 3. Entre estas pirámides de población cuál es progresiva:
 
-- a. Pagoda.
-- b. Bulbo o en ‘hucha’.
-- c. Campana.
-- d. Barril.
+a. Pagoda.
+b. Bulbo o en ‘hucha’.
+c. Campana.
+d. Barril.
 
 4. Proporción de personas que fallecen respecto del total de la población, en un periodo de tiempo:
 
-- a. Morbilidad.
-- b. Mortalidad.
-- c. Letalidad.
-- d. Esperanza de vida.
+a. Morbilidad.
+b. Mortalidad.
+c. Letalidad.
+d. Esperanza de vida.
 :::
 
 
@@ -1321,33 +1315,33 @@ sobre el efecto.
 5. ¿En qué tipo de estudios científicos un grupo de pacientes está expuesto a una intervención y otro
 grupo forma un grupo control?:
 
-- a. Cohortes.
-- b. Estudios paralelos.
-- c. Estudios ecológicos.
-- d. Series de casos.
+a. Cohortes.
+b. Estudios paralelos.
+c. Estudios ecológicos.
+d. Series de casos.
 
 6. Respecto a las variables cuantitativas o numéricas es FALSO:
 
-- a. Miden numéricamente el carácter respecto a una unidad de referencia.
-- b. Son ejemplos de variables cuantitativas: la edad medida en años, la concentración de colesterol
+a. Miden numéricamente el carácter respecto a una unidad de referencia.
+b. Son ejemplos de variables cuantitativas: la edad medida en años, la concentración de colesterol
   medida en mg/mm, o la temperatura medida en grados Celsius, la estatura medida en cm, etc.
-- c. Son ejemplos también de esta variable el sexo si distinguimos hombre-mujer y el grupo sanguíneo.
-- d. Son correctas A y B.
+c. Son ejemplos también de esta variable el sexo si distinguimos hombre-mujer y el grupo sanguíneo.
+d. Son correctas A y B.
 
 7. Los indicadores de salud: señale la FALSA:
 
-- a. La OMS los define como variables que sirven para medir los cambios.
-- b. Son variables que intentan medir u objetivar de forma cuantitativa y no cualitativa, sucesos
+a. La OMS los define como variables que sirven para medir los cambios.
+b. Son variables que intentan medir u objetivar de forma cuantitativa y no cualitativa, sucesos
   individuales que permiten evaluar dimensiones del estado de salud de la población.
-- c. Un indicador requiere siempre del uso de fuentes fiables de información.
-- d. Un indicador requiere rigurosidad técnica en su construcción e interpretación.
+c. Un indicador requiere siempre del uso de fuentes fiables de información.
+d. Un indicador requiere rigurosidad técnica en su construcción e interpretación.
 
 8. Según Almaráz Gómez y colaboradores, el principal indicador sanitario es:
 
-- a. La tasa bruta de mortalidad.
-- b. La tasa de mortalidad específica por edad.
-- c. La tasa de mortalidad infantil.
-- d. Ninguna de las tres.
+a. La tasa bruta de mortalidad.
+b. La tasa de mortalidad específica por edad.
+c. La tasa de mortalidad infantil.
+d. Ninguna de las tres.
 :::
 
 
@@ -1357,35 +1351,35 @@ grupo forma un grupo control?:
 ::: {.smaller}
 9. Con respecto a los estudios de Cohortes es FALSO:
 
-- a. Los estudios de cohortes son sólo prospectivos.
-- b. La población de estudio puede ser fija o dinámica.
-- c. Son diseños de observación que se caracterizan por su sentido hacia adelante.
-- d. Se utilizan para indagar en la etiología de un efecto.
+a. Los estudios de cohortes son sólo prospectivos.
+b. La población de estudio puede ser fija o dinámica.
+c. Son diseños de observación que se caracterizan por su sentido hacia adelante.
+d. Se utilizan para indagar en la etiología de un efecto.
 
 10. La incidencia acumulada es:
 
-- a. El número de nuevos casos de una enfermedad que se desarrolla en una población durante un
+a. El número de nuevos casos de una enfermedad que se desarrolla en una población durante un
   periodo de tiempo concreto.
-- b. La proporción de individuos de una población que tienen una enfermedad en un momento dado.
-- c. La proporción de personas en riesgo de enfermar que desarrollan la enfermedad en un periodo
+b. La proporción de individuos de una población que tienen una enfermedad en un momento dado.
+c. La proporción de personas en riesgo de enfermar que desarrollan la enfermedad en un periodo
   de tiempo concreto.
-- d. Ninguna es correcta.
+d. Ninguna es correcta.
 
 11. En relación a la prevalencia es FALSO:
 
-- a. Mide la proporción de individuos de una población que tienen la enfermedad en un momento
+a. Mide la proporción de individuos de una población que tienen la enfermedad en un momento
   dado.
-- b. Indica la probabilidad de estar afectado o expuesto en un momento determinado.
-- c. A mayor tasa de incidencia, mayor debería ser la prevalencia.
-- d. Mide el número de casos nuevos de enfermedad que se desarrolla en una población en riesgo de
+b. Indica la probabilidad de estar afectado o expuesto en un momento determinado.
+c. A mayor tasa de incidencia, mayor debería ser la prevalencia.
+d. Mide el número de casos nuevos de enfermedad que se desarrolla en una población en riesgo de
   enfermar, durante un periodo de tiempo concreto.
 
 12. Cuál de los siguientes tipos de estudios NO se corresponde con un estudio descriptivo:
 
-- a. Estudio de información individual.
-- b. Estudio de corte o transversal.
-- c. Estudio ecológico.
-- d. Estudio experimental o de intervención.
+a. Estudio de información individual.
+b. Estudio de corte o transversal.
+c. Estudio ecológico.
+d. Estudio experimental o de intervención.
 :::
 
 
@@ -1395,31 +1389,31 @@ grupo forma un grupo control?:
 ::: {.smaller}
 13. Una característica de estudios de cohorte es que:
 
-- a. Miden la prevalencia de la enfermedad.
-- b. Miden la incidencia de la enfermedad.
-- c. Son menos costosos que los estudios analíticos.
-- d. Son útiles para medir los efectos de exposiciones frecuentes en la población.
+a. Miden la prevalencia de la enfermedad.
+b. Miden la incidencia de la enfermedad.
+c. Son menos costosos que los estudios analíticos.
+d. Son útiles para medir los efectos de exposiciones frecuentes en la población.
 
 14. Dentro de las medidas de localización el dato que más se repite es:
 
-- a. la media.
-- b. la mediana.
-- c. la moda.
-- d. la percentil.
+a. la media.
+b. la mediana.
+c. la moda.
+d. la percentil.
 
 15. Estudios más adecuados para evaluar la eficacia de las intervenciones terapéuticas o preventivas:
 
-- a. experimentales.
-- b. observacionales.
-- c. transversales.
-- d. prospectivos.
+a. experimentales.
+b. observacionales.
+c. transversales.
+d. prospectivos.
 
 16. La varianza es una medida de:
 
-- a. Tendencia central.
-- b. Dispersión.
-- c. Distribución central.
-- d. Ninguna es correcta.
+a. Tendencia central.
+b. Dispersión.
+c. Distribución central.
+d. Ninguna es correcta.
 
 :::
 
@@ -1429,33 +1423,33 @@ grupo forma un grupo control?:
 ::: {.smaller}
 17. Con respecto a la razón:
 
-- a. Es una medida de frecuencia demográfica.
-- b. El numerador no está contenido en el denominador.
-- c. El numerador está contenido en el denominador.
-- d. Son correctas A y B.
+a. Es una medida de frecuencia demográfica.
+b. El numerador no está contenido en el denominador.
+c. El numerador está contenido en el denominador.
+d. Son correctas A y B.
 
 18. Proporción de personas en una población inicialmente libre de la enfermedad, que desarrolla la misma
 dentro de un intervalo de tiempo específico:
 
-- a. Tasa de incidencia.
-- b. Incidencia acumulada.
-- c. Densidad de incidencia.
-- d. Odds de la enfermedad.
+a. Tasa de incidencia.
+b. Incidencia acumulada.
+c. Densidad de incidencia.
+d. Odds de la enfermedad.
 
 19. El test de la U de Mann-Whitney se utiliza para:
 
-- a. muestras apareadas.
-- b. muestras dependientes.
-- c. muestras independientes (que pueden ser o no del mismo tamaño).
-- d. muestras relacionadas antes y después de una intervención.
+a. muestras apareadas.
+b. muestras dependientes.
+c. muestras independientes (que pueden ser o no del mismo tamaño).
+d. muestras relacionadas antes y después de una intervención.
 
 20. En los estudios de investigación, ‘conjunto de individuos que presenta las características que se pretende
 estudiar’:
 
-- a. Población diana.
-- b. Muestra.
-- c. Variable de estudio.
-- d. Intervalo.
+a. Población diana.
+b. Muestra.
+c. Variable de estudio.
+d. Intervalo.
 :::
 
 
@@ -1467,27 +1461,27 @@ que presentan o no hipertensión arterial (HTA), se obtuvo que el Riesgo Relativ
 con un intervalo de confianza (IC) 95% de 0.88-1.73. ¿Qué podemos afirmar acerca de la HTA con
 relación a los accidentes coronarios?:
 
-- a. La HTA es un factor de riesgo.
-- b. La HTA es un factor protector.
-- c. NO podemos determinar si la HTA es un factor protector o de riesgo.
-- d. Ninguna es correcta.
+a. La HTA es un factor de riesgo.
+b. La HTA es un factor protector.
+c. NO podemos determinar si la HTA es un factor protector o de riesgo.
+d. Ninguna es correcta.
 
 22. Estudio experimental en el que participan personas sanas o aparentemente sanas, expuestas a un factor
 de riesgo que provoca enfermedad se denomina:
 
-- a. Ensayo clínico
-- b. Ensayo preventivo
-- c. Estudio de casos
-- d. Estudio de cohortes
+a. Ensayo clínico
+b. Ensayo preventivo
+c. Estudio de casos
+d. Estudio de cohortes
 
 23. En un grupo de 50 recién nacidos se ha obtenido un valor medio de pH fetal de 7.30, con una desviación
 típica de 0.10. ¿Cuántos de ellos tienen un pH inferior a 7.20, teniendo en cuenta que la distribución
 sigue la curva normal?:
 
-- a. 8
-- b. 12
-- c. 18
-- d. 25
+a. 8
+b. 12
+c. 18
+d. 25
 
 :::
 
@@ -1497,30 +1491,30 @@ sigue la curva normal?:
 ::: {.smaller}
 24. Al realizar un estudio, para comprobar la eficacia de la visita preoperatoria de enfermería en la disminución de la ansiedad de los pacientes quirúrgicos, usted obtiene un valor de Chi-cuadrado estadísticamente
 no significativo, esto le indicará que en su estudio:
-- a. La ansiedad no está relacionada con la visita preoperatoria de enfermería
-- b. Los resultados obtenidos no se pueden atribuir al azar
-- c. La visita preoperatoria de enfermería reduce la ansiedad del paciente quirúrgico
-- d. La prueba Chi-cuadrado no está indicada para estudiar la relación entre este tipo de variables
+a. La ansiedad no está relacionada con la visita preoperatoria de enfermería
+b. Los resultados obtenidos no se pueden atribuir al azar
+c. La visita preoperatoria de enfermería reduce la ansiedad del paciente quirúrgico
+d. La prueba Chi-cuadrado no está indicada para estudiar la relación entre este tipo de variables
 
 25. Para calcular el intervalo de confianza de la media poblacional, a partir de la media muestral obtenida
 en un grupo de 20 personas, usted tendrá en cuenta que su muestra se comporta como una distribución:
 
-- a. Chi-cuadrado
-- b. T de Student
-- c. Normal o Gauss
-- d. F de Snedecor
+a. Chi-cuadrado
+b. T de Student
+c. Normal o Gauss
+d. F de Snedecor
 
 26. Un riesgo relativo (RR) de 10 es el resultado de un estudio realizado en una población de 30 y más
 años para determinar la asociación entre la muerte por una enfermedad X y un factor de riesgo. Este
 dato indica:
 
-- a. Por encima de los 30 años hay 10 veces más posibilidad de morir por la enfermedad X en personas
+a. Por encima de los 30 años hay 10 veces más posibilidad de morir por la enfermedad X en personas
   expuestas al factor de riesgo
-- b. El factor de riesgo no tiene implicación alguna en la mortalidad por la enfermedad X en personas
+b. El factor de riesgo no tiene implicación alguna en la mortalidad por la enfermedad X en personas
   de 30 y más años
-- c. El 10% de las muertes por la enfermedad X en personas de 30 y más años pueden evitarse si se
+c. El 10% de las muertes por la enfermedad X en personas de 30 y más años pueden evitarse si se
   elimina el factor de riesgo
-- d. La frecuencia de la mortalidad por la enfermedad X es más reducida hasta los 30 años de edad
+d. La frecuencia de la mortalidad por la enfermedad X es más reducida hasta los 30 años de edad
   en ambos sexos
 :::
 
@@ -1532,33 +1526,33 @@ dato indica:
 salud de una población entera con su exposición global a un factor de riesgo. Para ello utilizará un
 estudio de tipo:
 
-- a. Transversal
-- b. Descriptivo
-- c. Ecológico
-- d. Longitudinal
+a. Transversal
+b. Descriptivo
+c. Ecológico
+d. Longitudinal
 
 28. En una investigación la variable ‘nivel socioeconómico’, especificada en los posibles valores como bajo,
 medio-bajo, medio-medio, medio-alto y alto, es un tipo de variable:
 
-- a. Cuantitativa
-- b. Continua
-- c. Diferencial
-- d. Cualitativa
+a. Cuantitativa
+b. Continua
+c. Diferencial
+d. Cualitativa
 
 29. Son datos que orientan sobre los factores que condicionan la salud de una comunidad, la información
 sobre:
 
-- a. Mortalidad
-- b. Morbilidad
-- c. Demografía
-- d. Incapacidad y dependencia
+a. Mortalidad
+b. Morbilidad
+c. Demografía
+d. Incapacidad y dependencia
 
 30. En qué distribución de probabilidades, la media coincide con la varianza:
 
-- a. En la de Poisson
-- b. En la Binomial
-- c. En la Hipergeométrica
-- d. En la Muestral de Medias
+a. En la de Poisson
+b. En la Binomial
+c. En la Hipergeométrica
+d. En la Muestral de Medias
 :::
 
 
@@ -1569,35 +1563,35 @@ sobre:
 31. Dado el valor V del error típico de un estadístico, empleando una muestra de 36 enfermos. El valor
 de la desviación típica poblacional, será:
 
-- a. 5.5V
-- b. 6V
-- c. 6V 2
-- d. 5V 2
+a. 5.5V
+b. 6V
+c. 6V 2
+d. 5V 2
 
 32. La probabilidad de ser hipertenso, es 1/2 y la de ser reumático, es 1/5. La probabilidad de que dos
 personas sean hipertensas o sean reumáticas, es:
 
-- a. 1/7
-- b. 36%
-- c. 30%
-- d. 10%
+a. 1/7
+b. 36%
+c. 30%
+d. 10%
 
 33. El cuartil de tercer orden, deja a su derecha, en el histograma de frecuencias:
 
-- a. La mitad de la distribución
-- b. Las tres cuartas partes de la distribución
-- c. La cuarta parte de la distribución
-- d. Dos cuartas partes de la distribución
+a. La mitad de la distribución
+b. Las tres cuartas partes de la distribución
+c. La cuarta parte de la distribución
+d. Dos cuartas partes de la distribución
 
 34. La prevalencia es una proporción que se define como:
 
-- a. Número de personas que tienen la enfermedad durante un periodo de tiempo determinado en
+a. Número de personas que tienen la enfermedad durante un periodo de tiempo determinado en
   relación con el número de personas de la población en ese momento
-- b. Número de personas que tienen la enfermedad en un momento dado partido por el número de
+b. Número de personas que tienen la enfermedad en un momento dado partido por el número de
   personas de la población antes de aparecer la enfermedad
-- c. Número de casos de enfermedad que aparecen en la población durante un periodo de tiempo
+c. Número de casos de enfermedad que aparecen en la población durante un periodo de tiempo
   determinado partido por el número de personas de la población antes de aparecer la enfermedad
-- d. Número de personas que tienen la enfermedad en un momento dado partido por el número de
+d. Número de personas que tienen la enfermedad en un momento dado partido por el número de
   personas de la población en ese momento
 :::
 
@@ -1607,22 +1601,22 @@ personas sean hipertensas o sean reumáticas, es:
 ::: {.smaller}
 35. ¿Cómo se calcula la tasa de natalidad?:
 
-- a. Número de nacidos vivos en el periodo del un año, dividido por el número de mujeres entre 15
+a. Número de nacidos vivos en el periodo del un año, dividido por el número de mujeres entre 15
   y 49 años y multiplicado el resultado por 1000
-- b. Número de niñas nacidas en el periodo de un año, dividido por el número de mujeres entre 15 y
+b. Número de niñas nacidas en el periodo de un año, dividido por el número de mujeres entre 15 y
   49 años y multiplicado el resultado por 1000
-- c. Número de nacidos vivos en el periodo de un año menos el número de defunciones, dividido por
+c. Número de nacidos vivos en el periodo de un año menos el número de defunciones, dividido por
   el número de mujeres entre 15 y 49 años y multiplicado el resultado por 1000
-- d. Número de nacidos vivos en el periodo de un año, dividido por la población a mitad del periodo
+d. Número de nacidos vivos en el periodo de un año, dividido por la población a mitad del periodo
   considerado y multiplicado el resultado por 1000
 
 36. El número de casos existentes de una enfermedad en una colectividad en un momento dado, se
 denomina:
 
-- a. Incidencia
-- b. Prevalencia
-- c. Incidencia acumulada
-- d. Densidad de incidencia
+a. Incidencia
+b. Prevalencia
+c. Incidencia acumulada
+d. Densidad de incidencia
 
 :::
 
@@ -1632,35 +1626,35 @@ denomina:
 ::: {.smaller}
 37. Un estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:
 
-- a. Analítico
-- b. Transversal
-- c. Ecológico
-- d. Descriptivo
+a. Analítico
+b. Transversal
+c. Ecológico
+d. Descriptivo
 
 38. Una pirámide de población que presenta una forma triangular con la base amplia y el vértice superior
 marcado recibe el nombre de:
 
-- a. Bulbo
-- b. Campana
-- c. Piramidal
-- d. Pagoda
+a. Bulbo
+b. Campana
+c. Piramidal
+d. Pagoda
 
 39. La variable ‘Grupos Sanguíneos’ se clasifica dentro de las escalas de medición como:
 
-- a. Escala cuantitativa de intervalo
-- b. Escala cualitativa ordinal
-- c. Escala cuantitativa de relación
-- d. Escala cualitativa nominal
+a. Escala cuantitativa de intervalo
+b. Escala cualitativa ordinal
+c. Escala cuantitativa de relación
+d. Escala cualitativa nominal
 
 40. Tres virus A, B, C pueden producir cierta enfermedad. En el laboratorio existen 2 tubos con el A, 5
 con el B y 3 con el C. La probabilidad de producir la enfermedad de cada virus es: 30% el A, 40% el
 B y 50% el C. Se elige un tubo al azar y se inocula el virus a una cobaya. Determínese la probabilidad
 de que el animal contraiga la enfermedad:
 
-- a. 0.60
-- b. 0.41
-- c. 0.40
-- d. 0.51
+a. 0.60
+b. 0.41
+c. 0.40
+d. 0.51
 
 :::
 
@@ -1669,36 +1663,36 @@ de que el animal contraiga la enfermedad:
 
 ::: {.smaller}
 41. Los estudios epidemiológicos que tratan de investigar las causas de las enfermedades tienen un uso:
-- a. Administrativo
-- b. De vigilancia epidemiológica
-- c. Etiológico
-- d. De situación de salud
+a. Administrativo
+b. De vigilancia epidemiológica
+c. Etiológico
+d. De situación de salud
 
 42. Cuando se analizan datos de la talla y el peso desde la perspectiva de la varianza, se trata de medidas
 de:
 
-- a. Dispersión
-- b. Tendencia
-- c. Intervalo
-- d. La afirmación b y la e son correctas
+a. Dispersión
+b. Tendencia
+c. Intervalo
+d. La afirmación b y la e son correctas
 
 43. Al realizar un estudio descriptivo de una variable se ha obtenido una varianza con valor 0. Esto indica:
 
-- a. Que la variable está muy dispersa respecto de su media
-- b. Que la variable toma un único valor que por tanto es su media
-- c. Que la media vale lo mismo que la varianza
-- d. Es una distribución asimétrica
+a. Que la variable está muy dispersa respecto de su media
+b. Que la variable toma un único valor que por tanto es su media
+c. Que la media vale lo mismo que la varianza
+d. Es una distribución asimétrica
 
 44. Al tratar de estimar los valores de una variable en función de otra se ha decidido hacer una regresión
 lineal, de la que se ha obtenido un coeficiente de correlación lineal de Pearson con valor 0.95. Esto
 indica que:
 
-- a. La relación lineal entre las variables es muy buena y conforme disminuyen los valores de una
+a. La relación lineal entre las variables es muy buena y conforme disminuyen los valores de una
   variable, aumentan los de la otra
-- b. El coeficiente de correlación de Pearson no puede ser negativo
-- c. La relación lineal es muy buena y conforme aumentan los valores de una variable, disminuyen los
+b. El coeficiente de correlación de Pearson no puede ser negativo
+c. La relación lineal es muy buena y conforme aumentan los valores de una variable, disminuyen los
   de la otra
-- d. Las afirmaciones b y c son verdaderas
+d. Las afirmaciones b y c son verdaderas
 :::
 
 
@@ -1708,19 +1702,19 @@ indica que:
 
 45. ¿Cuál de las siguientes afirmaciones no es una propiedad de la distribución normal de probabilidad?
 
-- a. El área total bajo la curva es 10
-- b. Es simétrica respecto a su media
-- c. La moda, mediana y media coinciden
-- d. En el intervalo [µ − 3σ, µ + 3σ] se encuentra, aproximadamente, el 99, 74% de la distribución
+a. El área total bajo la curva es 10
+b. Es simétrica respecto a su media
+c. La moda, mediana y media coinciden
+d. En el intervalo [µ − 3σ, µ + 3σ] se encuentra, aproximadamente, el 99, 74% de la distribución
 
 46. Se toma una muestra de personas libres de cáncer y la seguimos durante los próximos 30 años observando después de este tiempo las tasas de incidencia de cáncer entre fumadores y no fumadores
 (Los individuos han elegido si van a fumar o no durante este periodo de forma voluntaria). Estamos
 realizando un estudio:
 
-- a. Prospectivo
-- b. De cohorte
-- c. Ensayo clínico
-- d. Los apartados a y b son ciertos
+a. Prospectivo
+b. De cohorte
+c. Ensayo clínico
+d. Los apartados a y b son ciertos
 
 Soluciones del supuesto práctico
 1.c, 2.b, 3.a, 4.b, 5.b, 6.c, 7.b, 8.d, 9.a, 10.c, 11.d, 12.d, 13.b, 14.c, 15.a, 16.b, 17.d, 18.b, 19.c, 20.a, 21.c,
