@@ -1368,7 +1368,7 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 :::
 
 
-## Supuesto práctico
+## Supuesto práctico (1) {#supuesto-1}
 
 ::: {.smaller}
 4. Dentro del concepto de práctica clínica basada en la evidencia ¿cuál de estas fuentes de información recibe un mayor nivel de evidencia según la clasificación de Sackett?:
@@ -1401,9 +1401,9 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 :::
 
 
-## En cuanto a la investigación cualitativa y cuantitativa es FALSO:
-
 *— Supuesto práctico —*
+
+## Supuesto práctico (2) {#supuesto-2}
 
 
 ::: {.smaller}
@@ -1430,7 +1430,7 @@ Prueba **sensible** ($S=0.80$) pero **poco específica** ($E=0.40$): detecta bie
 :::
 
 
-## Supuesto práctico (2) {#supuesto-2}
+## Supuesto práctico (3) {#supuesto-3}
 
 ::: {.smaller}
 11. Señala la INCORRECTA: La entrevista clínica semiestructurada:
