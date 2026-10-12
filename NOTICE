@@ -1,0 +1,34 @@
+NOTICE
+======
+
+Neurociencias — Introducción a la Metodología Científica
+Copyright (c) 2026 Miguel Angel Luque-Fernández
+
+About this material
+-------------------
+
+Teaching material prepared and authored by Miguel Angel Luque-Fernández
+(Departamento de Estadística e Investigación Operativa, Universidad de Granada).
+
+The structure and didactic approach of the syllabus draw on the "Metodología
+Científica" course of the Máster Universitario en Neurociencias Básicas,
+Aplicadas y Dolor (Universidad de Granada), originally taught by
+J. L. Romero-Béjar (2022). The slides, figures, examples, R code and
+bibliography in this repository have been reworked, extended and re-authored
+for the Quarto RevealJS and Beamer formats.
+
+Scope of the MIT License
+------------------------
+
+The MIT License in the LICENSE file applies to the code, configuration,
+build tooling, presentation sources and original content authored by
+Miguel Angel Luque-Fernández in this repository.
+
+Third-party material
+--------------------
+
+Third-party references, datasets and quotations remain the property of their
+respective authors and are used here for non-commercial teaching purposes,
+with citation. The Universidad de Granada logo is a registered institutional
+mark and is used solely to indicate affiliation; it is not covered by the
+MIT License.

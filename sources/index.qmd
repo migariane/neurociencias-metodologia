@@ -1,0 +1,36 @@
+---
+title: "Neurociencias — Introducción a la Metodología Científica"
+subtitle: "Máster Universitario en Neurociencias Básicas, Aplicadas y Dolor"
+author:
+  - name: "Miguel Angel Luque-Fernández"
+    affiliation: "Dpto. Estadística e Investigación Operativa, Universidad de Granada"
+    email: "mluquefe@ugr.es"
+    url: "https://migariane.github.io"
+date: "2026-10-10"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+---
+
+![](logo.png){width="110px"}
+
+**Miguel Angel Luque-Fernández** — Dpto. Estadística e Investigación Operativa · Universidad de Granada
+[https://migariane.github.io](https://migariane.github.io) · [https://maluque.netlify.app](https://maluque.netlify.app) · <mluquefe@ugr.es>
+
+::: {.callout-note}
+## Sobre este material
+Material docente de **Miguel Angel Luque-Fernández**, Dpto. de Estadística e Investigación Operativa (UGR). Las diapositivas, figuras, ejemplos y código han sido reelaborados y ampliados en formato Quarto RevealJS, con bibliografía propia. La estructura del temario toma como referencia la asignatura de Metodología Científica del Máster en Neurociencias Básicas, Aplicadas y Dolor (UGR).
+:::
+
+## Contenidos
+
+- [**Investigación Cualitativa**](T01_Investigacion_Cualitativa.qmd) — Fundamentos, validez diagnóstica, práctica basada en la evidencia, bases de datos y revisión bibliográfica (87 diapositivas originales).
+- [**Investigación Cuantitativa**](T02_Investigacion_Cuantitativa.qmd) — Demografía sanitaria, fundamentos cuantitativos, epidemiología y supuesto práctico (82 diapositivas originales).
+
+> Cada deck es auto-contenido, navegable y exportable a PDF. Los dos comparten paleta *Madrid Professional* y bibliografía común (`references.bib`).
+
+### Cómo citar
+
+> Luque-Fernández, M. A. (2026). *Neurociencias — Introducción a la Metodología Científica*. Universidad de Granada.

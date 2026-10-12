@@ -1,0 +1,727 @@
+% =============================================================================
+% T02 — Investigación Cuantitativa
+% Beamer 16:9 — Madrid Professional palette (Preambles/header.tex)
+% Compile: TEXINPUTS=../../../Preambles:$TEXINPUTS xelatex T02_Investigacion_Cuantitativa
+% =============================================================================
+\documentclass[aspectratio=169,8pt]{beamer}
+\input{header}
+
+% hyperref: `Bibliografía` frame title leaks a \translate token into the PDF
+% bookmark string; neutralize it instead of shipping the warning.
+\pdfstringdefDisableCommands{\def\translate#1{#1}}
+
+\definecolor{m-dark}{HTML}{0A3D62}
+\definecolor{m-medium}{HTML}{1E6FA0}
+\definecolor{m-cyan}{HTML}{1597A5}
+\definecolor{m-amber}{HTML}{B7791F}
+\definecolor{m-amber-border}{HTML}{E8A838}
+\definecolor{m-amber-bg}{HTML}{FEF3D6}
+\definecolor{m-teal}{HTML}{13795B}
+\definecolor{m-teal-bg}{HTML}{D1F0E0}
+\definecolor{m-purple}{HTML}{6C3483}
+\definecolor{m-purple-bg}{HTML}{F0E6F6}
+\definecolor{m-rose}{HTML}{922B21}
+\definecolor{m-rose-bg}{HTML}{FDEDEC}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\tcbset{
+  formulabox/.style={
+    colback=white, colframe=m-medium, coltitle=white,
+    fonttitle=\bfseries\small, sharp corners=south, rounded corners=north,
+    boxrule=1.1pt, titlerule=0pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+    enhanced, drop shadow
+  },
+  tealbox/.style={
+    colback=m-teal-bg, colframe=m-cyan, boxrule=1pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt, enhanced
+  },
+  amberbox/.style={
+    colback=m-amber-bg, colframe=m-amber-border, boxrule=1pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt, enhanced
+  },
+  purplebox/.style={
+    colback=m-purple-bg, colframe=m-purple, boxrule=1pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt, enhanced
+  },
+  infobox/.style={
+    colback=light-bg, colframe=m-dark, boxrule=0.9pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt
+  }
+}
+\newcommand{\badge}[2][m-medium]{%
+  \tikz[baseline=(X.base)]\node[fill=#1,text=white,rounded corners=2pt,
+    inner xsep=4pt,inner ysep=1.2pt,font=\tiny\bfseries] (X) {#2};}
+\newcommand{\tighttoc}{\tableofcontents[hideallsubsections]}
+
+\title[Neuro --- Cuantitativa]{Investigaci\'on Cuantitativa}
+\subtitle{Introducci\'on a la Metodolog\'ia Cient\'ifica\\M\'aster Univ.\ en Neurociencias B\'asicas, Aplicadas y Dolor}
+\author[M.A. Luque-Fdez.]{Miguel Angel Luque-Fern\'andez}
+\institute[Dpto.\ Estad\'istica e I.O. --- UGR]{Dpto.\ Estad\'istica e Investigaci\'on Operativa --- Universidad de Granada\\\small\href{mailto:mluquefe@ugr.es}{mluquefe@ugr.es} \;\; \href{https://migariane.github.io}{migariane.github.io}}
+\date{Granada, 10 de octubre de 2026}
+\titlegraphic{\includegraphics[height=1.05cm]{../assets/logo-ugr.png}}
+\setbeamerfont{title}{size=\Large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+  \vspace{-1.2em}
+  \begin{center}
+    {\footnotesize\color{neutral}Material docente de M.\,A.\ Luque-Fern\'andez --- Dpto.\ Estad\'istica e I.O., UGR}\\[2pt]
+    {\scriptsize\color{neutral}Paleta \emph{Madrid Professional} --- \texttt{Preambles/header.tex} $\leftrightarrow$ \texttt{madrid-theme.scss}}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Hoja de ruta}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \tighttoc
+    \column{0.46\textwidth}
+      \begin{tcolorbox}[infobox]
+        \textbf{Qu\'e te llevar\'as}\\[2pt]
+        \begin{itemize}
+          \item Leer pir\'amides e indicadores demogr\'aficos y de salud.
+          \item Fundamentos cuantitativos: variables, descriptiva, muestreo, probabilidad e inferencia.
+          \item Epidemiolog\'ia: dise\~nos y su elecci\'on.
+          \item Aplicar todo en supuestos pr\'acticos.
+        \end{itemize}
+      \end{tcolorbox}
+      \vspace{0.3em}
+      {\scriptsize\color{neutral}Dos bloques te\'oricos + supuesto pr\'actico evaluable. Comparten paleta y bibliograf\'ia con T01.}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Demograf\'ia sanitaria}
+% ============================================================
+
+\begin{frame}{Demograf\'ia}
+  \small
+  Ciencia que estudia poblaciones humanas: \textbf{tama\~no}, \textbf{estructura} (edad/sexo/estado civil\ldots), \textbf{din\'amica} (natalidad, mortalidad, migraci\'on) en tiempo y territorio.
+  \vspace{0.4em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{tcolorbox}[infobox,title=Demograf\'ia sanitaria]
+        \footnotesize Aplica la demograf\'ia a la salud: planificaci\'on y gesti\'on de recursos (p.\,ej.\ cribados, camas UCI, vacunaci\'on). Censo = fotograf\'ia en $t_0$; registro continuo = pel\'icula.
+      \end{tcolorbox}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize\textbf{Tipos}: est\'atica (estructura en un momento) vs.\ din\'amica (movimiento). Cuantitativa (volumen) vs.\ cualitativa (caracter\'isticas).
+      \end{tcolorbox}
+    \column{0.43\textwidth}
+      \centering
+      \includegraphics[width=0.86\linewidth]{../assets/piramide.png}\\
+      {\scriptsize\color{neutral}Pir\'amide poblacional --- base ancha = poblaci\'on joven}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Pir\'amide poblacional}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      Doble histograma (hombres $\leftarrow$ $|$ $\rightarrow$ mujeres) por edad.
+      \begin{itemize}
+        \item \textbf{Expansiva}: base ancha, v\'ertice estrecho (alta natalidad/mortalidad, joven).
+        \item \textbf{Constrictiva}: base estrecha, centro ancho (baja natalidad, envejecida).
+        \item \textbf{Estacionaria}: rect\'angular (natalidad/mortalidad bajas y estables).
+      \end{itemize}
+      Fases de la transici\'on demogr\'afica: pre-transici\'on $\to$ transici\'on $\to$ post-transici\'on.
+    \column{0.43\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \footnotesize\textbf{Lectura r\'apida}: compara Espa\~na (constrictiva) vs.\ N\'iger (expansiva). La forma predice demanda sanitaria (pediatr\'ia vs.\ cronicidad).
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Indicadores demogr\'aficos y de salud}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Demogr\'aficos]
+        \footnotesize
+        \begin{align*}
+          \text{Natalidad} &= \tfrac{\text{nacidos vivos}}{P_{\text{media}}}\times1000\\
+          \text{Mortalidad} &= \tfrac{\text{defunciones}}{P_{\text{media}}}\times1000\\
+          \text{Fecundidad} &= \tfrac{\text{nacidos vivos}}{\text{mujeres 15--49}}\times1000
+        \end{align*}
+        Crecimiento vegetativo, saldo migratorio, \'indice de envejecimiento, dependencia\ldots
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Salud}: esperanza de vida, AVPP, APVP, carga de enfermedad (AVAD = AVP + AVD). Permiten comparar territorios y priorizar pol\'iticas.
+      \end{tcolorbox}
+      \begin{tcolorbox}[infobox]
+        \scriptsize\textbf{Mortalidad}: tasa bruta, espec\'ifica por causa/edad, infantil, perinatal, materna --- cada una responde a una pregunta distinta.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Morbilidad: prevalencia e incidencia}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Prevalencia --- foto fija]
+        \centering {\Large $P=\dfrac{\text{casos existentes}}{P_{\text{total en }}t}\times k$}\\[3pt]
+        \footnotesize Proporci\'on en un momento/periodo.\quad $k=100$ (\%), $1000$, $10\,000$\ldots
+      \end{tcolorbox}
+      \vspace{0.3em}
+      {\scriptsize Depende de incidencia $\times$ duraci\'on. \'Util para planificar recursos, no para etiolog\'ia.}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox,title=Incidencia --- pel\'icula]
+        \footnotesize
+        \textbf{Acumulada (riesgo)}: $IA=\dfrac{\text{casos nuevos}}{P_{\text{en riesgo al inicio}}}\times k$\\[3pt]
+        \textbf{Tasa (densidad)}: $TI=\dfrac{\text{casos nuevos}}{\sum\text{personas-tiempo}}\times k$\\[3pt]
+        {\scriptsize $IA$: riesgo en un periodo; $TI$: velocidad de aparici\'on.}
+      \end{tcolorbox}
+    \end{columns}
+    \vspace{0.3em}
+    {\scriptsize\color{neutral}Relaci\'on: en estado estacionario y enfermedad rara, $P \approx I\times \bar D$.}
+\end{frame}
+
+\begin{frame}{CVRS --- Calidad de vida relacionada con la salud}
+  \small Percepci\'on del individuo sobre su posici\'on en la vida (OMS): f\'isica, psicol\'ogica, social y funcional.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[infobox]
+        \footnotesize
+        \textbf{Instrumentos}: gen\'ericos (SF-36, EQ-5D, WHOQOL) vs.\ espec\'ificos (EORTC QLQ-C30, WOMAC). Puntuaci\'on 0--100; diferencias m\'inimas cl\'inicamente relevantes (DMCR).
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \footnotesize\textbf{Usos}: comparar intervenciones, monitorizar cr\'onicos, an\'alisis coste-utilidad (AVAC/QALY).
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Fundamentos de la investigaci\'on cuantitativa}
+% ============================================================
+
+\begin{frame}{Paradigma cuantitativo}
+  \small El paradigma cuantitativo (emp\'irico-anal\'itico) busca \textbf{medir}, \textbf{explicar causalidad} y \textbf{generalizar} con objetividad y control del error.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{Fuentes del conocimiento}:
+      \begin{itemize}
+        \item Tradici\'on / autoridad / ensayo-error
+        \item Razonamiento l\'ogico (inducci\'on/deducci\'on)
+        \item M\'etodo cient\'ifico (sistem\'atico, contrastable, replicable)
+      \end{itemize}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Investigaci\'on cuantitativa]
+        \footnotesize
+        Describe, verifica relaciones $X\to Y$ y examina cambios en $Y$ seg\'un $X$. \textbf{Objetividad}. La \emph{epidemiolog\'ia} es su aplicaci\'on paradigm\'atica.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Estad\'istica descriptiva vs.\ inferencial}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Descriptiva]
+        \footnotesize Resume y organiza datos de la \textbf{muestra}: tablas, gr\'aficos, medidas de centro/dispersi\'on/posici\'on/forma. No generaliza.
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Inferencial} --- generaliza de muestra a \textbf{poblaci\'on} con probabilidad: estimaci\'on puntual/por intervalo y contraste de hip\'otesis.
+      \end{tcolorbox}
+  \end{columns}
+  \vspace{0.4em}
+  {\scriptsize\color{neutral}Poblaci\'on ($N,\mu,\sigma$) vs.\ muestra ($n,\bar x,s$). Par\'ametro fijo desconocido; estad\'istico aleatorio conocido.}
+\end{frame}
+
+\begin{frame}{Variables y escalas}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{Variable}: caracter\'istica que var\'ia entre individuos. Tipos: cualitativa (nominal/ordinal) vs.\ cuantitativa (discreta/continua).\\[4pt]
+      \begin{tcolorbox}[infobox,title=Escalas]
+        \scriptsize
+        Nominal (sexo, grupo sangu\'ineo) $\to$ Ordinal (dolor leve/moderado/severo) $\to$ Intervalo (T$^\circ$C) $\to$ Raz\'on (peso, TAS: cero absoluto, cocientes v\'alidos).
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \scriptsize\textbf{Ojo}: la escala condiciona qu\'e operaciones y gr\'aficos tienen sentido (p.\,ej.\ media no v\'alida en nominal; s\'i en raz\'on).
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Medidas de tendencia central}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \begin{tcolorbox}[formulabox,title={Media, mediana y moda}]
+        \small
+        \begin{align*}
+          \bar x &= \tfrac1n\sum x_i &
+          Me &= P_{50} &
+          Mo &= \text{valor m\'as frecuente}
+        \end{align*}
+        \vspace{-0.6em}
+        {\scriptsize $\bar x$ sensible a at\'ipicos; $Me$ robusta; $Mo$ para nominal. En simetr\'ia $\bar x\approx Me\approx Mo$.}
+      \end{tcolorbox}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize\textbf{Media geom\'etrica}: $G=\sqrt[n]{\prod x_i}$ ($x_i>0$); para tasas/crecimientos. Log-normal: $G$ centra mejor que $\bar x$.
+      \end{tcolorbox}
+    \column{0.46\textwidth}
+      \centering
+      \includegraphics[width=0.96\linewidth]{../assets/simetria.png}\\
+      {\scriptsize\color{neutral}\raggedright Asimetr\'ia y posici\'on relativa de $\bar x$, $Me$, $Mo$\par}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Dispersi\'on, posici\'on y forma}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{tcolorbox}[formulabox,title=Diversidad alrededor del centro]
+        \footnotesize
+        Rango $= \max-\min$;\quad Rango intercuart\'ilico $=Q_3-Q_1$ (robusto)\\[2pt]
+        Varianza $s^2=\tfrac1{n-1}\sum(x_i-\bar x)^2$;\quad $s=\sqrt{s^2}$\\[2pt]
+        Coef.\ variaci\'on $CV=\tfrac{s}{\bar x}\times100$ (adimensional; compara dispersiones).
+      \end{tcolorbox}
+      \textbf{Posici\'on}: cuartiles, deciles, percentiles. \textbf{Forma}: asimetr\'ia ($g_1$) y curtosis ($g_2$).
+    \column{0.43\textwidth}
+      \begin{tcolorbox}[infobox]
+        \scriptsize
+        \textbf{Regla}: $CV<15\%$ baja, $15$--$30$ moderada, $>30\%$ alta. Boxplot resume $Q_1,Me,Q_3$ + at\'ipicos ($>1.5\,IQR$).
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Tablas y muestreo}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{Tablas de frecuencias}: absoluta $n_i$, relativa $f_i$, acumulada, porcentaje. Base de histogramas/pol\'igonos.\\[4pt]
+      \textbf{Muestreo}: c\'omo elegir $n$ de $N$ para que sea \emph{representativa} y \emph{eficiente}.
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Probabil\'istico vs.\ no probabil\'istico]
+        \scriptsize
+        \textbf{Probabil\'istico}: aleatorio simple, sistem\'atico, estratificado, conglomerados (inferencia v\'alida).\\
+        \textbf{No probabil\'istico}: conveniencia, cuotas, bola de nieve (r\'apido, no generalizable).
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+% ── Probabilidad ──
+\begin{frame}{Probabilidad --- lenguaje}
+  \small Experimento aleatorio $\to$ espacio muestral $\Omega$ $\to$ suceso $A\subseteq\Omega$ $\to$ probabilidad $P(A)$.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Operaciones con sucesos]
+        \footnotesize
+        Uni\'on $A\cup B$, intersecci\'on $A\cap B$, complementario $\bar A$, diferencia. Diagramas de Venn.
+      \end{tcolorbox}
+      \begin{tcolorbox}[infobox,title=Kolmogorov]
+        \scriptsize $0\le P(A)\le1$; $P(\Omega)=1$; si $A\cap B=\emptyset$, $P(A\cup B)=P(A)+P(B)$.
+      \end{tcolorbox}
+    \column{0.48\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize
+        $P(A\mid B)=\dfrac{P(A\cap B)}{P(B)}$. \textbf{Independencia}: $P(A\cap B)=P(A)P(B)$ $\iff$ $P(A\mid B)=P(A)$. Ejemplo $2\times2$ en la siguiente diapositiva.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Ejemplo $2\times2$ --- independencia}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.46\textwidth}
+      \centering
+      \begin{tabular}{lccc}
+        \toprule
+        & \textbf{Enfermo} & \textbf{Sano} & \textbf{Total}\\
+        \midrule
+        Expuestos & $a$ & $b$ & $a+b$\\
+        No expuestos & $c$ & $d$ & $c+d$\\
+        \midrule
+        Total & $a+c$ & $b+d$ & $N$\\
+        \bottomrule
+      \end{tabular}
+      \vspace{0.4em}
+      {\scriptsize $OR=\dfrac{ad}{bc}$;\quad Si $OR\approx1$ no asociaci\'on (independencia aproximada).}
+    \column{0.52\textwidth}
+      \begin{tcolorbox}[formulabox,title=Test r\'apido]
+        \footnotesize Construye la tabla y contrasta: $P(\text{enfermo}\mid\text{expuesto})=\dfrac{a}{a+b}$ vs.\ $P(\text{enfermo})=\dfrac{a+c}{N}$. Si difieren, no independencia.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+% ── Distribuciones ──
+\begin{frame}{Distribuciones de probabilidad}
+  \small Variable aleatoria $X$ con funci\'on de distribuci\'on $F(x)=P(X\le x)$.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title={Normal $\mathcal N(\mu,\sigma)$}]
+        \centering\includegraphics[width=0.95\linewidth]{../assets/normal-cuanti.png}\\
+        {\scriptsize $68$--$95$--$99.7\%$ en $\mu\pm1,2,3\sigma$. Base de IC y tests.}
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize\textbf{Tipificaci\'on}: $Z=\dfrac{X-\mu}{\sigma}\sim\mathcal N(0,1)$. Tabla $Z$ $\to$ probabilidades y percentiles. $X = \mu + Z\sigma$.
+      \end{tcolorbox}
+      \begin{tcolorbox}[amberbox]
+        \scriptsize\textbf{Binomial} $Bin(n,p)$: $k$ \'exitos en $n$ ensayos. $P(X=k)=\binom{n}{k}p^k(1-p)^{n-k}$, $E[X]=np$. \textbf{Poisson} $Pois(\lambda)$: conteos raros; $P(X=k)=e^{-\lambda}\lambda^k/k!$.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+% ── Inferencia ──
+\begin{frame}{Inferencia: estimaci\'on}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Puntual y por intervalo]
+        \footnotesize
+        Estimador $\hat\theta$ insesgado, eficiente, consistente.\\[2pt]
+        IC$_{95\%}$ para $\mu$ ($\sigma$ conocida): $\bar x \pm z_{.975}\tfrac{\sigma}{\sqrt n}$\\[2pt]
+        ($\sigma$ desconocida, $n$ grande: $z$; $n$ peque\~na: $t_{n-1}$).\\[2pt]
+        Proporci\'on (Wald): $\hat p\pm z_{.975}\sqrt{\hat p(1-\hat p)/n}$
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[infobox]
+        \scriptsize\textbf{Interpretaci\'on}: 95\% de los IC construidos contendr\'an al verdadero $\theta$. Ancho $\propto 1/\sqrt n$; estrechar exige $\uparrow n$ o $\downarrow$ confianza.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Contraste de hip\'otesis}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      $H_0$ (status quo) vs.\ $H_1$ (lo que queremos probar). Estad\'istico $\to$ $p$-valor $=P(\text{datos tan extremos}\mid H_0)$.\\[4pt]
+      \begin{tabular}{@{}lcc@{}}
+        \toprule
+        & $H_0$ cierta & $H_1$ cierta\\
+        \midrule
+        No rechazo & OK & Error II ($\beta$)\\
+        Rechazo & Error I ($\alpha$) & OK (potencia $1-\beta$)\\
+        \bottomrule
+      \end{tabular}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Decisi\'on]
+        \footnotesize Si $p<\alpha$ (t\'ip.\ $0.05$) $\to$ rechazo $H_0$. Potencia $\uparrow$ con $n$, efecto y $\alpha$. No confundir $p$ con $P(H_0\mid\text{datos})$.
+      \end{tcolorbox}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize\raggedright\textbf{Tests usuales}: $t$ (medias), $\chi^2$ (proporciones/tablas), ANOVA, correlaci\'on/regresi\'on. Elegir seg\'un variable y dise\~no.\par
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Regresi\'on lineal}
+  \small $Y = \beta_0 + \beta_1 X + \varepsilon$, $\varepsilon\sim\mathcal N(0,\sigma^2)$. MCO: $\hat\beta=(X'X)^{-1}X'Y$.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item $\hat\beta_1$: cambio medio en $Y$ por unidad de $X$.
+        \item $R^2$: proporci\'on de variabilidad explicada.
+        \item Inferencia: $t=\hat\beta_1/SE(\hat\beta_1)$; IC$_{95\%}$: $\hat\beta_1\pm t_{n-2}SE$.
+      \end{itemize}
+    \column{0.43\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \scriptsize\textbf{Supuestos}: linealidad, independencia, homocedasticidad, normalidad de residuos. Ver gr\'aficos de residuos; si fallan, transforma o usa robustos.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Epidemiolog\'ia}
+% ============================================================
+
+\begin{frame}{Epidemiolog\'ia}
+  \small Estudio de la distribuci\'on y determinantes de enfermedad en poblaciones y aplicaci\'on al control (Last). Triada: \textbf{persona--lugar--tiempo}.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{Fases del m\'etodo}: describir $\to$ formular hip\'otesis $\to$ contrastar (anal\'itico) $\to$ intervenir $\to$ evaluar.
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Medidas b\'asicas]
+        \scriptsize
+        Prevalencia (foto), incidencia (pel\'icula), $OR$, $RR$, $RD$, NNT. Ajuste por confusi\'on (estratificaci\'on, regresi\'on).
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Tipos de estudios}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.33\textwidth}
+      \begin{tcolorbox}[formulabox,title=Observacionales]
+        \footnotesize
+        \textbf{Descriptivos}: serie de casos, transversales, ecol\'ogicos.\\
+        \textbf{Anal\'iticos}: casos-controles, cohortes.
+      \end{tcolorbox}
+    \column{0.33\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Intervenci\'on}: ECA (aleatorizado, controlado, ciego), cuasi-experimental. M\'aximo nivel de evidencia para causalidad.
+      \end{tcolorbox}
+    \column{0.33\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \footnotesize\textbf{Seguimiento}: transversales (un corte) vs.\ longitudinales (cohortes, ECA). \textbf{Sentido}: cohortes $E\to D$; casos-controles $D\to E$.
+      \end{tcolorbox}
+    \end{columns}
+    \vspace{0.4em}
+    {\scriptsize\color{neutral}Jerarqu\'ia: ECA $>$ cohortes $>$ casos-controles $>$ transversales $>$ series. Elegir seg\'un pregunta, rareza y \'etica.}
+\end{frame}
+
+% ============================================================
+\section{Supuesto pr\'actico}
+% ============================================================
+
+\begin{frame}{Supuesto pr\'actico --- instrucciones}
+  \small
+  \begin{tcolorbox}[amberbox]
+    \textbf{Solo una opci\'on es correcta}. Cuestionario completo (46 preguntas) id\'entico a la edici\'on Quarto, reproducido \'integramente. \textbf{Siglas desglosadas} la primera vez (ver glosario).
+  \end{tcolorbox}
+  \vspace{0.2em}
+  {\scriptsize\color{neutral}46 \'items sobre demograf\'ia, descriptiva, muestreo, probabilidad, distribuciones, inferencia y epidemiolog\'ia. Soluciones al final.}
+\end{frame}
+
+\begin{frame}{Glosario de siglas (T02)}
+  \scriptsize
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[infobox,title=Siglas cl\'inicas y epidemiol\'ogicas]
+        \scriptsize
+        \textbf{HTA} Hipertensi\'on Arterial\\
+        \textbf{RR} Riesgo Relativo (\emph{Relative Risk}) $=I_{\text{exp}}/I_{\text{no exp}}$\\
+        \textbf{OR} \emph{Odds Ratio} (raz\'on de ventajas) $=ad/bc$\\
+        \textbf{IC 95\%} Intervalo de Confianza al 95\%\\
+        \textbf{IA} Incidencia Acumulada (riesgo); \textbf{TI} Tasa/Densidad de Incidencia\\
+        \textbf{$H_0$} Hip\'otesis Nula; \textbf{$H_1$} Hip\'otesis Alternativa\\
+        \textbf{ECA} Ensayo Controlado Aleatorizado (\emph{RCT})
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize
+        \textbf{CV} Coeficiente de Variaci\'on $=s/\bar x\times100$\\
+        \textbf{OMS} Organizaci\'on Mundial de la Salud (\emph{WHO})\\
+        \textbf{AVPP} A\~nos de Vida Potencialmente Perdidos; \textbf{AVAD} A\~nos de Vida Ajustados por Discapacidad\\
+        \textbf{ROC} \emph{Receiver Operating Characteristic}\\
+        \textbf{VPP/VPN} Valor Predictivo Positivo/Negativo\\
+        \textbf{$p$} $p$-valor; \textbf{$\alpha$} error tipo I; \textbf{$\beta$} error tipo II; \textbf{$1-\beta$} potencia
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (1/10) --- Q1--Q5}
+  \scriptsize
+  \textbf{1. Los estudios transversales} (\emph{cross-sectional}, un corte en el tiempo)\textbf{:}\\
+  a) Permiten conocer la incidencia.\; b) Son anal\'iticos.\; c) Caracterizan el estado de salud en un punto en el tiempo.\; d) No susceptibles de sesgo de selecci\'on.\\[3pt]
+  \textbf{2. Sobre la hip\'otesis nula ($H_0$):}\\
+  a) Rechazar $H_0$ prueba que $H_1$ no es correcta.\; b) $H_0$ siempre se refiere a la \textbf{poblaci\'on}.\; c) $H_0$ se refiere a la muestra.\; d) $H_0$ siempre expresa desigualdad.\\[3pt]
+  \textbf{3. Entre estas pir\'amides de poblaci\'on, \textquestiondown{}cu\'al es progresiva (expansiva, base ancha)?}\\
+  a) Pagoda (triangular expansiva).\;
+  b) Bulbo / hucha (constrictiva).\;
+  c) Campana (estacionaria).\;
+  d) Barril.\\[3pt]
+  \textbf{4. Proporci\'on de personas que fallecen respecto del total de la poblaci\'on en un periodo:}\\
+  a) Morbilidad.\; b) Mortalidad.\; c) Letalidad (muertes entre enfermos).\; d) Esperanza de vida.\\[3pt]
+  \textbf{5. \textquestiondown{}En qu\'e estudios un grupo est\'a expuesto a una intervenci\'on y otro forma un grupo control?}\\
+  a) Cohortes.\; b) Estudios paralelos (ECA con brazo control).\; c) Ecol\'ogicos.\; d) Series de casos.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (2/10) --- Q6--Q10}
+  \scriptsize
+  \textbf{6. Respecto a las variables cuantitativas o num\'ericas es FALSO:}\\
+  a) Miden num\'ericamente respecto a unidad de referencia.\;
+  b) Ejemplos: edad (a\~nos), colesterol (mg/dL), temperatura ($^\circ$C), estatura (cm).\\
+  c) Son ejemplos tambi\'en el sexo (hombre/mujer) y el grupo sangu\'ineo. \;
+  d) Son correctas A y B.\\[3pt]
+  \textbf{7. Los indicadores de salud: se\~nale la FALSA:}\\
+  a) La OMS los define como variables que miden cambios.\;
+  b) Miden solo sucesos individuales de forma cuantitativa y no cualitativa.\\
+  c) Requieren fuentes fiables.\; d) Requieren rigurosidad t\'ecnica en construcci\'on e interpretaci\'on.\\[3pt]
+  \textbf{8. Seg\'un Almar\'az G\'omez y cols., el principal indicador sanitario es:}\\
+  a) Tasa bruta de mortalidad.\; b) Tasa espec\'ifica por edad.\; c) Tasa de mortalidad infantil.\; d) Ninguna.\\[3pt]
+  \textbf{9. Con respecto a los estudios de cohortes es FALSO:}\\
+  a) Son solo prospectivos.\; b) La poblaci\'on puede ser fija o din\'amica.\; c) Son observacionales hacia adelante ($E\to D$).\; d) Se usan para etiolog\'ia.\\[3pt]
+  \textbf{10. La incidencia acumulada (IA, riesgo) es:}\\
+  a) N\'umero de casos nuevos en un periodo.\;
+  b) Proporci\'on con enfermedad en un momento (prevalencia).\\
+  c) Proporci\'on en riesgo que desarrolla la enfermedad en un periodo.\; d) Ninguna.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (3/10) --- Q11--Q15}
+  \scriptsize
+  \textbf{11. En relaci\'on a la prevalencia es FALSO:}\\
+  a) Proporci\'on con enfermedad en un momento.\;
+  b) Probabilidad de estar afectado en un momento.\\
+  c) A mayor incidencia, mayor prevalencia (si duraci\'on constante).\\
+  d) Mide casos \emph{nuevos} en poblaci\'on en riesgo durante un periodo (eso es incidencia).\\[3pt]
+  \textbf{12. \textquestiondown{}Cu\'al NO se corresponde con un estudio descriptivo?}\\
+  a) Informaci\'on individual.\; b) Transversal.\; c) Ecol\'ogico.\; d) Experimental o de intervenci\'on.\\[3pt]
+  \textbf{13. Una caracter\'istica de estudios de cohorte es que:}\\
+  a) Miden prevalencia.\; b) Miden incidencia.\; c) Son menos costosos que los anal\'iticos.\; d) \'Utiles para exposiciones frecuentes.\\[3pt]
+  \textbf{14. Dentro de las medidas de localizaci\'on el dato que m\'as se repite es:}\\
+  a) Media ($\bar x$).\; b) Mediana ($Me=P_{50}$).\; c) Moda ($Mo$).\; d) Percentil.\\[3pt]
+  \textbf{15. Estudios m\'as adecuados para evaluar eficacia de intervenciones terap\'euticas/preventivas:}\\
+  a) Experimentales (ECA).\; b) Observacionales.\; c) Transversales.\; d) Prospectivos.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (4/10) --- Q16--Q20}
+  \scriptsize
+  \textbf{16. La varianza ($s^2$) es una medida de:}\\
+  a) Tendencia central.\; b) Dispersi\'on.\; c) Distribuci\'on central.\; d) Ninguna.\\[3pt]
+  \textbf{17. Con respecto a la raz\'on:}\\
+  a) Es medida de frecuencia demogr\'afica.\;
+  b) El numerador \textbf{no} est\'a contenido en el denominador.\\
+  c) El numerador est\'a contenido en el denominador (eso es proporci\'on).\; d) Son correctas A y B.\\[3pt]
+  \textbf{18. Proporci\'on en poblaci\'on inicialmente libre que desarrolla la enfermedad en un intervalo:}\\
+  a) Tasa de incidencia.\; b) Incidencia acumulada (IA).\;
+  c) Densidad de incidencia (TI).\; d) \emph{Odds} de la enfermedad.\\[3pt]
+  \textbf{19. El test U de Mann-Whitney se utiliza para:}\\
+  a) Muestras apareadas.\; b) Dependientes.\; c) Muestras independientes (mismo o distinto $n$).\; d) Relacionadas antes-despu\'es.\\[3pt]
+  \textbf{20. En investigaci\'on, \guillemotleft conjunto de individuos con las caracter\'isticas a estudiar\guillemotright:}\\
+  a) Poblaci\'on diana.\; b) Muestra.\; c) Variable de estudio.\; d) Intervalo.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (5/10) --- Q21--Q25}
+  \scriptsize
+  \textbf{21. Cohortes HTA} (Hipertensi\'on Arterial) \textbf{$\to$ accidentes coronarios: RR} (Riesgo Relativo) \textbf{$=1.44$, IC 95\% $0.88$--$1.73$. \textquestiondown{}Qu\'e afirmamos?}\\
+  a) HTA es factor de riesgo.\; b) Factor protector.\;
+  c) \textbf{No podemos determinar} (IC incluye el 1, no significativo).\; d) Ninguna.\\[3pt]
+  \textbf{22. Estudio experimental en personas sanas expuestas a un factor de riesgo que provoca enfermedad:}\\
+  a) Ensayo cl\'inico.\; b) Ensayo preventivo (de campo/comunitario).\; c) Casos.\; d) Cohortes.\\[3pt]
+  \textbf{23. 50 reci\'en nacidos: $\bar x$ pH fetal $=7.30$, $s=0.10$, distribuci\'on normal. \textquestiondown{}Cu\'antos con pH $<7.20$?}\\
+  C\'alculo: $Z=(7.20-7.30)/0.10=-1.00$; $P(Z<-1)=0.1587\approx16\%$ de $50\approx8$.\\
+  a) 8.\; b) 12.\; c) 18.\; d) 25.\\[3pt]
+  \textbf{24. Eficacia de visita preoperatoria de enfermer\'ia sobre ansiedad: $\chi^2$ no significativo indica:}\\
+  a) Ansiedad no relacionada con la visita (no se rechaza $H_0$).\; b) Resultados no atribuibles al azar.\\
+  c) La visita reduce la ansiedad.\; d) $\chi^2$ no indicado.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (6/10) --- Q25--Q30}
+  \scriptsize
+  \textbf{25. Para IC de la media con $n=20$, la muestra se comporta como distribuci\'on:}\\
+  a) $\chi^2$ (chi-cuadrado).\; b) $t$ de Student ($t_{n-1}$, $n$ peque\~na, $\sigma$ desconocida).\; c) Normal/Gauss.\; d) $F$ de Snedecor.\\[3pt]
+  \textbf{26. RR} (Riesgo Relativo) \textbf{$=10$ para muerte por enfermedad X y factor de riesgo en $\ge30$ a\~nos indica:}\\
+  a) $\ge30$ a\~nos: 10 veces m\'as posibilidad de morir si expuesto.\;
+  b) Sin implicaci\'on.\; c) 10\% de muertes evitables.\; d) Frecuencia m\'as reducida hasta 30 a\~nos.\\[3pt]
+  \textbf{27. Enfermera relaciona frecuencia de un problema en poblaci\'on entera con exposici\'on global $\to$ estudio:}\\
+  a) Transversal.\; b) Descriptivo.\; c) Ecol\'ogico (unidad = poblaci\'on/grupo, no individuo).\; d) Longitudinal.\\[3pt]
+  \textbf{28. Variable \guillemotleft nivel socioecon\'omico\guillemotright\ (bajo, medio-bajo, medio-medio, medio-alto, alto) es:}\\
+  a) Cuantitativa.\; b) Continua.\; c) Diferencial.\; d) Cualitativa ordinal.\\[3pt]
+  \textbf{29. Datos que orientan sobre factores que condicionan la salud de una comunidad:}\\
+  a) Mortalidad.\; b) Morbilidad.\; c) Demograf\'ia (estructura, natalidad, migraci\'on).\; d) Incapacidad/dependencia.\\[3pt]
+  \textbf{30. \textquestiondown{}En qu\'e distribuci\'on media coincide con varianza?}\\
+  a) Poisson ($Pois(\lambda)$: $E[X]=Var[X]=\lambda$).\; b) Binomial.\; c) Hipergeom\'etrica.\; d) Muestral de medias.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (7/10) --- Q31--Q35}
+  \scriptsize
+  \textbf{31. Dado error t\'ipico $V$ con $n=36$, la desviaci\'on t\'ipica poblacional $\sigma$ ser\'a:}\\
+  $SE=\sigma/\sqrt n \Rightarrow \sigma = SE\sqrt n = V\cdot6$.\\
+  a) $5.5V$.\; b) $6V$.\; c) $6V^2$.\; d) $5V^2$.\\[3pt]
+  \textbf{32. $P(\text{hipertenso})=1/2$, $P(\text{reum\'atico})=1/5$. $P(\text{2 personas sean hipertensas o reum\'aticas})$ es:}\\
+  Sucesos independientes: $P=(1/2)^2+(1/5)^2-(1/10)^2$ seg\'un interpretaci\'on del enunciado original; clave oficial \textbf{b) 36\%}.\\[3pt]
+  \textbf{33. El cuartil de tercer orden ($Q_3=P_{75}$) deja a su derecha:}\\
+  a) La mitad.\; b) Tres cuartas partes.\; c) La cuarta parte (25\%).\; d) Dos cuartas partes.\\[3pt]
+  \textbf{34. La prevalencia es una proporci\'on que se define como:}\\
+  a) Con enfermedad durante un periodo / poblaci\'on en ese momento.\\
+  b) Con enfermedad en un momento / poblaci\'on \emph{antes} de aparecer.\\
+  c) Casos nuevos en un periodo / poblaci\'on antes de aparecer (incidencia).\\
+  d) Con enfermedad en un momento / poblaci\'on en ese momento.\\[3pt]
+  \textbf{35. \textquestiondown{}C\'omo se calcula la tasa de natalidad?}\\
+  a) Nacidos vivos / mujeres 15--49 $\times1000$ (fecundidad).\;
+  b) Ni\~nas / mujeres 15--49 $\times1000$.\\
+  c) (Nacidos $-$ defunciones) / mujeres 15--49 $\times1000$.\;
+  d) Nacidos vivos / poblaci\'on a mitad del periodo $\times1000$.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (8/10) --- Q36--Q40}
+  \scriptsize
+  \textbf{36. N\'umero de casos existentes en un momento dado se denomina:}\\
+  a) Incidencia.\; b) Prevalencia.\; c) Incidencia acumulada.\; d) Densidad de incidencia.\\[3pt]
+  \textbf{37. Estudio que busca comprender magnitud, naturaleza y entre qui\'enes/d\'onde se produce un problema:}\\
+  a) Anal\'itico.\; b) Transversal.\; c) Ecol\'ogico.\; d) Descriptivo.\\[3pt]
+  \textbf{38. Pir\'amide triangular con base amplia y v\'ertice marcado:}\\
+  a) Bulbo.\; b) Campana.\; c) Piramidal.\; d) Pagoda (expansiva).\\[3pt]
+  \textbf{39. La variable \guillemotleft Grupos Sangu\'ineos\guillemotright\ es escala:}\\
+  a) Cuantitativa de intervalo.\; b) Cualitativa ordinal.\; c) Cuantitativa de raz\'on.\; d) Cualitativa nominal (categor\'ias sin orden).\\[3pt]
+  \textbf{40. 2 tubos A, 5 B, 3 C; $P(\text{enfermedad}\mid A)=0.30$, $B=0.40$, $C=0.50$. Tubos al azar \textquestiondown{}$P(\text{enfermedad})$?}\\
+  $P = \tfrac{2}{10}0.30+\tfrac{5}{10}0.40+\tfrac{3}{10}0.50=0.06+0.20+0.15=0.41$.\\
+  a) 0.60.\; b) 0.41.\; c) 0.40.\; d) 0.51.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (9/10) --- Q41--Q44}
+  \scriptsize
+  \textbf{41. Los estudios epidemiol\'ogicos que investigan causas tienen un uso:}\\
+  a) Administrativo.\; b) Vigilancia.\; c) Etiol\'ogico.\; d) Situaci\'on de salud.\\[3pt]
+  \textbf{42. Al analizar talla y peso desde la varianza, se trata de medidas de:}\\
+  a) Dispersi\'on.\; b) Tendencia.\; c) Intervalo.\; d) b y e son correctas.\\[3pt]
+  \textbf{43. Descriptiva con varianza $=0$ indica:}\\
+  a) Muy dispersa.\; b) La variable toma un \'unico valor (= media).\;
+  c) Media = varianza.\; d) Asim\'etrica.\\[3pt]
+  \textbf{44. Regresi\'on lineal con $r$ de Pearson $=0.95$ indica:}\\
+  a) Relaci\'on muy buena y al disminuir una aumenta la otra (eso ser\'ia $r<0$).\\
+  b) $r$ no puede ser negativo (falso: $-1\le r\le1$).\\
+  c) Relaci\'on muy buena y al aumentar una disminuye la otra.\\
+  d) Las afirmaciones b y c son verdaderas (clave oficial; notar que b es falsa en general --- errata conservada del original).
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (10/10) --- Q45--Q46}
+  \scriptsize
+  \textbf{45. \textquestiondown{}Cu\'al NO es propiedad de la distribuci\'on normal $\mathcal N(\mu,\sigma)$?}\\
+  a) El \'area total bajo la curva es 10 (falso: es 1).\;
+  b) Sim\'etrica respecto a $\mu$.\;
+  c) Moda, mediana y media coinciden.\;
+  d) En $[\mu-3\sigma,\mu+3\sigma]$ est\'a $\approx99.74\%$.\\[3pt]
+  \textbf{46. Muestra libre de c\'ancer seguida 30 a\~nos; tasas fumadores vs no fumadores (elecci\'on voluntaria). Es estudio:}\\
+  a) Prospectivo (hacia adelante).\;
+  b) De cohorte (expuestos/no expuestos seguidos en el tiempo).\\
+  c) Ensayo cl\'inico (habr\'ia aleatorizaci\'on).\;
+  d) Los apartados a y b son ciertos.\\[6pt]
+  \begin{tcolorbox}[tealbox]
+    \scriptsize\textbf{Nota}: Cohorte prospectiva observacional: el investigador no asigna exposici\'on (fumar), solo observa. No es ECA porque no hay aleatorizaci\'on.
+  \end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Soluciones --- T02 (46 \'items)}
+  \scriptsize
+  \begin{tcolorbox}[formulabox,title=Clave de respuestas]
+    \footnotesize
+    \textbf{1.c}\; 2.b\; 3.a\; 4.b\; 5.b\; 6.c\; 7.b\; 8.d\; 9.a\; 10.c\; 11.d\; 12.d\; 13.b\; 14.c\; 15.a\; 16.b\; 17.d\; 18.b\; 19.c\; 20.a\; 21.c\; 22.b\; 23.a\; 24.a\; 25.b\; 26.a\; 27.c\; 28.d\; 29.c\; 30.a\; 31.b\; 32.b\; 33.c\; 34.d\; 35.d\; 36.b\; 37.d\; 38.d\; 39.d\; 40.b\; 41.c\; 42.a\; 43.b\; 44.d\; 45.a\; 46.d
+  \end{tcolorbox}
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize
+        \textbf{Pistas}: Q1 c (transversal = foto fija); Q2 b ($H_0$ sobre poblaci\'on); Q9 a (cohortes tambi\'en retrospectivas); Q21 c (IC incluye 1 $\to$ no significativo); Q23 a ($Z=-1$ $\to$ 16\%).
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[infobox]
+        \scriptsize
+        Q30 a ($Pois$: $E=Var$); Q31 b ($\sigma=6V$); Q34 d (prevalencia puntual); Q40 b ($0.41$ por probabilidad total); Q45 a (\'area = 1, no 10).
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[plain]
+  \centering
+  \vfill
+  {\Large\color{m-dark}\textbf{Gracias}}\\[6pt]
+  {\color{neutral}Preguntas y discusi\'on}\\[12pt]
+  \includegraphics[height=1.1cm]{../assets/logo-ugr.png}\\[8pt]
+  {\scriptsize\color{neutral}M.\,A.\ Luque-Fern\'andez \enspace|\enspace Dpto.\ Estad\'istica e I.O. \enspace|\enspace \href{mailto:mluquefe@ugr.es}{mluquefe@ugr.es} \enspace|\enspace \href{https://migariane.github.io}{migariane.github.io}}\\
+  \vfill
+\end{frame}
+
+\appendix
+\begin{frame}[allowframebreaks]{Bibliograf\'ia}
+  \tiny
+  \bibliographystyle{apalike}
+  \nocite{*}
+  \bibliography{../slides/references}
+\end{frame}
+
+\end{document}

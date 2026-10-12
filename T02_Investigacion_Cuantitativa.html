@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Miguel Angel Luque-Fernández">
+  <meta name="dcterms.date" content="2026-10-10">
+  <title>Neurociencias — Metodología Científica – Investigación Cuantitativa</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-8a1cfd24ab1cd1e8e8cf80f1bbaff36b.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Investigación Cuantitativa</h1>
+  <p class="subtitle">Introducción a la Metodología Científica — Máster Universitario en Neurociencias Básicas, Aplicadas y Dolor</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+<a href="https://migariane.github.io">Miguel Angel Luque-Fernández</a> 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:mluquefe@ugr.es">mluquefe@ugr.es</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Dpto. Estadística e Investigación Operativa, Universidad de Granada
+          </p>
+    </div>
+</div>
+
+  <p class="date">2026-10-10</p>
+</section>
+<section>
+<section id="investigación-cuantitativa" class="title-slide slide level1 center">
+<h1>Investigación Cuantitativa</h1>
+
+<img data-src="logo.png" width="90" class="r-stretch"><p><strong>Máster Universitario en Neurociencias Básicas, Aplicadas y Dolor</strong></p>
+<p>Introducción a la Metodología Científica</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Nota</strong></p>
+</div>
+<div class="callout-content">
+<p>Material docente de <strong>Miguel Angel Luque-Fernández</strong> (Dpto. Estadística e I.O., UGR · mluquefe@ugr.es · <a href="https://migariane.github.io">migariane.github.io</a> · <a href="https://maluque.netlify.app">maluque.netlify.app</a>). La estructura y el enfoque didáctico del curso toman como referencia la asignatura de Metodología Científica del Máster en Neurociencias Básicas, Aplicadas y Dolor (UGR), impartida originalmente por J. L. Romero-Béjar (2022).</p>
+</div>
+</div>
+</div>
+<p>Granada, 2026-10-10</p>
+</section>
+<section id="índice" class="slide level2">
+<h2>Índice</h2>
+<div class="smaller">
+<ul>
+<li><strong>1 Demografía sanitaria</strong>
+<ul>
+<li>Aspectos conceptuales</li>
+<li>Indicadores demográficos y de salud</li>
+<li>Calidad de vida relacionada con la salud (CVRS)</li>
+</ul></li>
+<li><strong>2 Fundamentos de la investigación cuantitativa</strong>
+<ul>
+<li>Preliminares</li>
+<li>Estadística descriptiva</li>
+<li>Muestreo</li>
+<li>Probabilidad</li>
+<li>Estadística inferencial</li>
+</ul></li>
+<li><strong>3 Epidemiología</strong>
+<ul>
+<li>Preliminares</li>
+<li>Tipos de estudios epidemiológicos</li>
+</ul></li>
+<li><strong>4 Supuesto práctico</strong></li>
+</ul>
+</div>
+</section>
+<section id="índice-demografía-sanitaria" class="slide level2">
+<h2>Índice — Demografía sanitaria</h2>
+<div class="smaller">
+<ul>
+<li><strong>1 Demografía sanitaria</strong>
+<ul>
+<li>Aspectos conceptuales</li>
+<li>Indicadores demográficos y de salud</li>
+<li>Calidad de vida relacionada con la salud (CVRS)</li>
+</ul></li>
+<li><strong>2 Fundamentos de la investigación cuantitativa</strong>
+<ul>
+<li>Preliminares</li>
+<li>Estadística descriptiva</li>
+<li>Muestreo</li>
+<li>Probabilidad</li>
+<li>Estadística inferencial</li>
+</ul></li>
+<li><strong>3 Epidemiología</strong>
+<ul>
+<li>Preliminares</li>
+<li>Tipos de estudios epidemiológicos</li>
+</ul></li>
+<li><strong>4 Supuesto práctico</strong></li>
+</ul>
+</div>
+</section>
+<section id="demografía" class="slide level2">
+<h2>Demografía</h2>
+<div class="smaller">
+<p>Estudio estadístico de las poblaciones humanas según su estado y distribución en un momento determinado o según su evolución histórica.</p>
+<h3 id="fuentes-demográficas">Fuentes demográficas</h3>
+<p>Las fuentes demográficas son aquellos documentos que nos proporcionan información sobre la población. Acudimos a unas u otras dependiendo del tipo de demografía que vamos a estudiar.</p>
+<h3 id="tipos-de-demografía">Tipos de demografía</h3>
+<ul>
+<li>Estática: estudia la población en un momento determinado. Fuentes demográficas estáticas son el Censo (nacional cada 10 años) y el Padrón (municipal cada 5 años). Es la base para la elaboración de pirámides poblacionales.</li>
+<li>Dinámica: estudia los cambios que ocurren en una población a lo largo del tiempo y las causas que los provocan (movimientos migratorios, natalidad-mortalidad, etc.). Fuentes demográficas dinámicas son el Registro Civil o encuestas que se realizan a la población para obtener información sobre datos específicos como por ejemplo las encuestas de población activa.</li>
+</ul>
+</div>
+</section>
+<section id="índices-demográficos" class="slide level2">
+<h2>Índices demográficos</h2>
+<p>Resumen las características de la población con respecto a determinadas variables.</p>
+<ul>
+<li>Índice de composición por edad: se divide a la población en subgrupos de edad y se compara el volumen incluido en cada uno.</li>
+<li>Índice de composición por sexo: se analiza la razón de varones frente a mujeres (varones/mujeres).</li>
+<li>Índice de actividad económica: analiza la tasa de paro en la población &gt;16 años.</li>
+</ul>
+</section>
+<section id="pirámide-poblacional" class="slide level2">
+<h2>Pirámide poblacional</h2>
+<p>Es usual representar los distintos índices demográficos en una gráfica en forma de pirámide.</p>
+
+<img data-src="assets/piramide.png" style="width:78.0%" class="r-stretch"><p><em>Pirámide poblacional</em></p>
+</section>
+<section id="indicadores-demográficos-y-de-salud" class="slide level2">
+<h2>Indicadores demográficos y de salud</h2>
+<p>Según el <strong>INE</strong>, los indicadores demográficos básicos son natalidad, fecundidad, mortalidad, crecimiento y estructura, nupcialidad y migraciones.</p>
+<p><strong>Indicadores de natalidad</strong></p>
+<ul>
+<li><strong>Tasa de natalidad (TN):</strong> <span class="math display">\[TN = \frac{\text{Nacidos vivos en 1 año}}{\text{Población total media}} \times 1000\]</span></li>
+<li><strong>Tasa de fecundidad general (TGF):</strong> <span class="math display">\[TGF = \frac{\text{Nacidos vivos en 1 año}}{\text{Población femenina fértil (15--49)}} \times 1000\]</span></li>
+<li><strong>Índice sintético de fecundidad:</strong> promedio de hijos por mujer al cumplir 50 años. <strong>Recambio generacional</strong> <span class="math inline">\(\approx 2.1\)</span>.</li>
+</ul>
+</section>
+<section id="indicadores-de-mortalidad" class="slide level2">
+<h2>Indicadores de mortalidad</h2>
+<div class="smaller">
+<p><strong>Tasa bruta de mortalidad (TBM)</strong> — no comparable entre poblaciones: <span class="math display">\[TBM = \frac{\text{Total de muertes en 1 año}}{\text{Población total media}} \times 1000\]</span></p>
+<p><strong>Índice de Swaroop-Uemura (IS)</strong> — sí comparable; <span class="math inline">\(100\%\)</span> = máxima calidad de vida: <span class="math display">\[IS = \frac{\text{Muertes en }&gt;50\text{ años}}{\text{Muertes totales}} \times 100\]</span></p>
+<p><strong>Esperanza de vida:</strong> promedio de años por vivir (difícil de medir).</p>
+<p><strong>Mortalidad infantil (OMS — mejor indicador sanitario):</strong> <span class="math display">\[TM_{inf} = \frac{\text{Muertes en }&lt;1\text{ año}}{\text{Nacidos vivos}} \times 1000\]</span></p>
+<p><strong>Crecimiento natural (vegetativo):</strong> nacimientos <span class="math inline">\(-\)</span> defunciones.</p>
+</div>
+</section>
+<section id="indicadores-de-salud" class="slide level2">
+<h2>Indicadores de salud</h2>
+<div class="smaller">
+<p>Son variables que reflejan el estado de salud de una comunidad y que pueden ser medidos directamente. Son sensibles a más de una situación o fenómeno. Por ejemplo la tasa de mortalidad infantil describe el estado de salud de la población infantil así como el bienestar global de una población.</p>
+<p>Algunos indicadores de salud son: 1. Esperanza de vida 2. Mortalidad 3. Morbilidad 4. Limitación de actividad y salud subjetiva 5. Salud materno infantil 6. Hábitos y estilo de vida relacionados con la salud</p>
+</div>
+</section>
+<section id="indicadores-de-morbilidad" class="slide level2">
+<h2>Indicadores de morbilidad</h2>
+<p><strong>Indicadores de morbilidad</strong> — individuos enfermos en un periodo y espacio concretos.</p>
+<ol type="1">
+<li><strong>Índice epidémico</strong> (declaración obligatoria): casos semanales / casos esperados. <span class="math inline">\(&gt;1.25\)</span> <span class="math inline">\(\rightarrow\)</span> altamente infecciosa.</li>
+<li>Registros de cáncer</li>
+<li>Encuestas de morbilidad hospitalaria</li>
+<li>Encuestas de salud</li>
+<li><strong>Tasa de letalidad</strong> (virulencia): <span class="math display">\[TL = \frac{\text{Fallecidos por la enfermedad en 1 año}}{\text{Nº casos en el mismo año}} \times 1000\]</span></li>
+</ol>
+</section>
+<section id="prevalencia-e-incidencia" class="slide level2">
+<h2>Prevalencia e incidencia</h2>
+<p><strong>Prevalencia</strong> — casos existentes en un momento concreto: <span class="math display">\[\text{Prevalencia} = \frac{\text{nº casos existentes}}{\text{población total}} \in [0,1]\]</span></p>
+<p>Probabilidad de estar enfermo en ese momento.</p>
+<p><strong>Incidencia acumulada</strong> — casos <em>nuevos</em> en un periodo y lugar: <span class="math display">\[\text{Incidencia acumulada} = \frac{\text{nº casos nuevos}}{\text{población total}} \in [0,1]\]</span></p>
+<p><strong>Relación:</strong> <span class="math display">\[\text{Prevalencia} \approx \text{Tasa de incidencia} \times \text{duración}\]</span></p>
+<p><strong>Tasa de incidencia:</strong> tiene en cuenta el tiempo de permanencia en el estudio.</p>
+</section>
+<section id="definición" class="slide level2">
+<h2>Definición</h2>
+<p>La OMS define la calidad de vida como la percepción del individuo de su posición en la vida en el contexto de la cultura y sistema de valores en los que vive y en relación a sus objetivos, expectativas, estándares y preocupaciones (1994).</p>
+<ul>
+<li>La importancia de Calidad de Vida Relacionada con la Salud (CVRS) es que supone situar al paciente en el centro del sistema al tener en cuenta su percepción en relación al proceso de enfermedad, etc.</li>
+<li>No hay una medida objetiva de la CVRS pues depende de la visión subjetiva del individuo considerada de forma aislada.</li>
+</ul>
+</section>
+<section id="análisis-de-datos" class="slide level2">
+<h2>Análisis de datos</h2>
+<div class="smaller">
+<p>La demografía utiliza el método científico para elaborar hipótesis, establece unos comportamientos poblacionales y en base a ellos elabora políticas de actuación.</p>
+<p>Partiendo del análisis estadístico de los datos obtenidos por medio de las distintas fuentes demográficas se pueden:</p>
+<ul>
+<li>Elaborar tablas y otros indicadores sanitarios</li>
+<li>Realizar estudios epidemiológicos</li>
+<li>Planificar y programar en salud pública</li>
+</ul>
+<p>Las relaciones estadísticas más utilizadas son:</p>
+<ul>
+<li>Proporciones y porcentajes</li>
+<li>Tasas (son proporciones que además incluyen el factor tiempo)</li>
+<li>Razón (cociente de dos frecuencias absolutas)</li>
+<li>Índice (cociente entre individuos portadores de una variable entre los individuos restantes)</li>
+</ul>
+</div>
+</section>
+<section id="fuentes-del-conocimiento" class="slide level2">
+<h2>Fuentes del conocimiento</h2>
+<div class="smaller">
+<p><strong>Método científico.</strong> Es el método más avanzado para la adquisición de conocimientos. Se apoya en la evidencia empírica, la inducción y la deducción.</p>
+<p>Etapas del método científico:</p>
+<ol type="1">
+<li>Observación</li>
+<li>Formulación de preguntas y elaboración de hipótesis</li>
+<li>Contraste de las hipótesis (diseño del estudio y obtención de datos)</li>
+<li>Análisis de los datos</li>
+<li>Conclusiones</li>
+</ol>
+<p><strong>Otras fuentes del conocimiento.</strong> Son la tradición, el razonamiento lógico, la experiencia personal, el saber de expertos en un tema, el proceso ensayo-error, etc. Son fuentes no metódicas ni sistemáticas, al contrario de lo que le ocurre al método científico.</p>
+</div>
+</section>
+<section id="el-paradigma-cuantitativo-en-investigación-en-ciencias-de-la-salud" class="slide level2">
+<h2>El paradigma cuantitativo en investigación en Ciencias de la Salud</h2>
+<p>La investigación cuantitativa describe, verifica relaciones entre variables y examina los cambios observados en la variable respuesta en función de la/s variable/s independiente/s.</p>
+<ul>
+<li>Su principal característica es la objetividad.</li>
+<li>La epidemiología, por ejemplo, aplica las premisas de la investigación cuantitativa.</li>
+</ul>
+</section>
+<section id="estadística-descriptiva-e-inferencial" class="slide level2">
+<h2>Estadística descriptiva e inferencial</h2>
+<div class="smaller">
+<p>La estadística es la parte de las Matemáticas que se encarga del estudio de una determinada característica en una población, recogiendo los datos, organizándolos en tablas, representándolos gráficamente y analizándolos para sacar conclusiones de dicha población.</p>
+<ul>
+<li>Estadística descriptiva (o deductiva). Se encarga de la síntesis de la información obtenida por el investigador, mediante medidas obtenidas a partir de los datos observados (media, mediana, cuartiles, varianza, etc.), y de la representación gráfica de los mismos (histogramas, pictogramas, diagramas circulares, etc.).</li>
+<li>Estadística inferencial (o inferencia estadística). Trata de extrapolar los resultados obtenidos en un grupo al total de la población. Por ejemplo, si en Granada la proporción de rubios con ojos azules es del 20 %, ¿podré decir lo mismo de toda la población de España?, ¿qué podré decir de esta proporción a nivel global?</li>
+</ul>
+</div>
+</section>
+<section id="conceptos-básicos" class="slide level2">
+<h2>Conceptos básicos</h2>
+<div class="smaller">
+<p><strong>Población.</strong> Es el conjunto total de individuos, generalmente inaccesibles en su totalidad, sobre los que nos interesa dar las conclusiones de nuestro estudio.</p>
+<p><strong>Muestra.</strong> Es una extracción reducida de individuos de la población, totalmente accesibles, sobre el que haremos el estudio y a partir de cuyas conclusiones trataremos de concluir sobre el total de la población.</p>
+<p><strong>Variables.</strong> Es cada uno de los caracteres o aspectos que estudiaremos en los individuos de una muestra.</p>
+<p><strong>Parámetro.</strong> Son valores que resumen una determinada información de la población, nunca se podrán calcular de forma exacta, se estimarán a partir de muestras. (Ejm.: µ = media de la población).</p>
+<p><strong>Estadístico.</strong> Son los valores que resumen una determinada información de la muestra, siempre se podrán calcular de forma exacta y nos ayudarán a estimar el mismo valor en la población. (Ejm.: X̄ = media de la muestra).</p>
+</div>
+</section>
+<section id="variables-estadísticas" class="slide level2">
+<h2>Variables estadísticas</h2>
+<div class="smaller">
+<p>Son los diferentes valores que puede tomar la característica que queremos medir en una muestra. Pueden ser aleatorias y pueden tomar valores dentro de un rango de medida y escala mediante una función. (Ejm.: El resultado del lanzamiento de un dado es una variable aleatoria que toma valores del 1 al 6).</p>
+<ul>
+<li>Variables cuantitativas. Miden cantidades. Se dividen en continuas, cuando entre dos valores consecutivos podemos encontrar infinitos nuevos valores (talla, peso, etc.) o discretas, cuando solo toma valores enteros (nº de hijos, nº de mascotas, edad en años, etc.).</li>
+<li>Variables cualitativas. Miden una cualidad o atributo no cuantificable. Si solo toman dos valores se denominan dicotómicas (Ejemplo: el sexo categorizado en hombre o mujer). Este tipo de variables son las variables de respuesta habituales en estudios clínicos o epidemiológicos (Diagnóstico enfermo o sano).</li>
+</ul>
+</div>
+</section>
+<section id="tipos-de-escala" class="slide level2">
+<h2>Tipos de escala</h2>
+<div class="smaller">
+<p>Según la escala de medida utilizada para agrupar las categorías o valores de una variable distinguimos entre escalas cualitativas (ordinal y nominal) y escalas cuantitativas (razón e intervalo).</p>
+<ul>
+<li>Escala nominal. Las categorías o grupos de la variable son excluyentes entre sí. (Sexo: la escala es hombre o mujer).</li>
+<li>Escala ordinal. Las categorías o grupos de la variable siguen un orden creciente o decreciente. (Gravedad de una lesión: la escala podría ser leve-moderada-severa).</li>
+<li>Escala de intervalo. Existe un orden numérico y la diferencia entre dos valores es siempre la misma. Esta escala no se inicia en el 0 absoluto. (Temperatura: toma valores numéricos ordenados).</li>
+<li>Escala de razón o proporción. Tiene las mismas características que la escala de intervalo, pero se inicia en cero, significando en tal caso ausencia de la característica que se mide. (Peso o Talla). Establece cuántas veces es mayor una modalidad con respecto a otra.</li>
+</ul>
+</div>
+</section>
+<section id="estadística-descriptiva-en-variables-cuantitativas" class="slide level2">
+<h2>Estadística descriptiva en variables cuantitativas</h2>
+<div class="smaller">
+<p>La descripción de resultados de una variable cuantitativa se realiza con medidas de tendencia central, de dispersión, de posición y/o de forma.</p>
+<ul>
+<li>Tendencia central
+<ul>
+<li>Media aritmética</li>
+<li>Media geométrica</li>
+<li>Mediana</li>
+<li>Moda</li>
+</ul></li>
+<li>Dispersión
+<ul>
+<li>Amplitud o rango</li>
+<li>Varianza y desviación típica o estándar</li>
+<li>Cociente de variación</li>
+</ul></li>
+<li>Posición
+<ul>
+<li>Percentiles, deciles, cuartiles, quintiles, …</li>
+</ul></li>
+<li>Forma
+<ul>
+<li>Simetría-Asimetría</li>
+<li>Apuntamiento</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="medidas-de-tendencia-central" class="slide level2">
+<h2>Medidas de tendencia central</h2>
+<div class="smaller">
+<p>Definen los valores de la variable en torno a los cuales tienden a concentrarse las observaciones.</p>
+<h3 id="media">Media</h3>
+<ul>
+<li>Es la medida de centralización más conocida y utilizada. Se calcula sumando todos los valores observados y dividiendo por el número de observaciones de la muestra. Se denota como X̄ .</li>
+<li>Su principal ventaja es su fácil manejo matemático y estadístico.</li>
+<li>Tiene la desventaja de ser muy sensible a valores extremos en una muestra que no tenga una distribución normal.</li>
+<li>Ejemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días de estancia.</li>
+<li>Solución: La estancia media de los pacientes es de 7 días. Pero si en lugar de 12 días el último paciente permanece ingresado 89, la nueva media sería 18 días, muy alejada de la anterior. Esto se debe a que un valor extremo, 89, muy distante del resto, influye negativamente en la media.</li>
+</ul>
+</div>
+</section>
+<section id="media-geométrica" class="slide level2">
+<h2>Media geométrica</h2>
+<div class="smaller">
+<p>Se utiliza para datos exponenciales o del tipo de crecimiento de poblaciones. Se calcula multiplicando los datos entre sí y aplicando después la raíz de orden n.&nbsp;Se utiliza con mucha menor frecuencia que la media aritmética, aunque es muy utilizada en microbiología y serología.</p>
+<ul>
+<li>Ejemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, y tenemos: 3, 3, 4, 7, 9, 11, 12 días de estancia.</li>
+</ul>
+<div class="formula-box">
+<p><span class="math display">\[\bar{G} = \sqrt[7]{3\times3\times4\times7\times9\times11\times12} \approx 6.06\]</span></p>
+</div>
+</div>
+</section>
+<section id="mediana" class="slide level2">
+<h2>Mediana</h2>
+<div class="smaller">
+<ul>
+<li>La mediana es el valor que, una vez ordenados los datos, divide la distribución en dos partes iguales. Es útil en variables cualitativas ordinales, en las que es imposible calcular la media aritmética.</li>
+<li>¿Cómo se calcula? Si n es par, la mediana es la media de los dos valores centrales. Si n es impar, la mediana es el valor central.</li>
+<li>Ejemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días de estancia.</li>
+<li>Solución: Hay un número impar de datos por lo que la mediana es el valor central, en este caso 7. Si cambiamos el último dato por 89, la mediana sigue siendo el valor 7, de modo que, la mediana es mucho menos sensible a los valores extremos que la media.</li>
+</ul>
+</div>
+</section>
+<section id="moda" class="slide level2">
+<h2>Moda</h2>
+<div class="smaller">
+<p>La moda es el valor que se observa con más frecuencia, el más repetido. Si no se repite ningún valor, la muestra no tiene moda, es amodal. Si se repiten varios valores diferentes, puede ser bimodal, trimodal o multimodal.</p>
+<ul>
+<li>Ejemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días. El valor más repetido es el 3 que aparece dos veces, así que la moda es 3. Esto indica, en este caso, que lo más habitual es que los pacientes pasen 3 días de estancia hospitalaria tras el trasplante.</li>
+</ul>
+<h3 id="comparación-de-las-medidas-de-centralización">Comparación de las medidas de centralización</h3>
+<ul>
+<li>La media utiliza todos los datos y por tanto es preferible si la muestra es homogénea o simétrica, pero es muy sensible a valores extremos.</li>
+<li>La mediana utiliza menos información que la media ya que tan sólo tiene en cuenta el orden de los datos, pero como ventaja no es sensible a valores extremos, por lo que es muy útil en distribuciones asimétricas.</li>
+</ul>
+</div>
+</section>
+<section id="medidas-de-dispersión" class="slide level2">
+<h2>Medidas de dispersión</h2>
+<div class="smaller">
+<p>Nos informan sobre la variabilidad de la muestra, normalmente respecto a su media.</p>
+<h3 id="recorrido-o-rango">Recorrido o rango</h3>
+<ul>
+<li>Es la diferencia entre el valor máximo y mínimo de la variable.</li>
+<li>Su principal ventaja es que se calcula con gran facilidad.</li>
+<li>Pero su principal desventaja es que dado que no tiene en cuenta los valores intermedios, su utilidad es muy limitada.</li>
+<li>Es útil como media de dispersión en las variables cualitativas ordinales, o para indicar si nuestros datos tienen algunos valores extraordinarios.</li>
+<li>Ejemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días de estancia. El rango es 12 − 3 = 9.</li>
+</ul>
+</div>
+</section>
+<section id="varianza-y-desviación-típica" class="slide level2">
+<h2>Varianza y desviación típica</h2>
+<div class="smaller">
+<div class="formula-box">
+<p><span class="math display">\[S^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar X)^2 \qquad S = \sqrt{S^2}\]</span> <em>Varianza grande → dispersión alta; pequeña → concentración. <span class="math inline">\(S\)</span> devuelve las unidades originales.</em></p>
+</div>
+<ul>
+<li>Ejemplo: estancias 3, 3, 4, 7, 9, 11, 12 días, <span class="math inline">\(\bar X=7\)</span>.</li>
+</ul>
+<div class="formula-box">
+<p><span class="math display">\[\sum (x_i-\bar X)^2 = 16+16+9+0+4+16+25=86 \;\Rightarrow\; S^2=\frac{86}{6}=14.33,\; S=3.79\]</span></p>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variación" class="slide level2">
+<h2>Coeficiente de variación</h2>
+<div class="smaller">
+<p>Compara la variabilidad relativa de diferentes muestras.</p>
+<ul>
+<li><p>Se usa con frecuencia para comparar métodos de medida. Es un valor adimensional. Se calcula dividiendo la desviación estándar entre la media, multiplicando después por 100. Se denota por Cv. Si comparamos dos variables, estará más agrupada, menos dispersa, aquella que tenga coeficiente de variación menor.</p></li>
+<li><p>Ejemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales: 3, 3, 4, 7, 9, 11, 12 días. Media <span class="math inline">\(\bar X=7\)</span>, <span class="math inline">\(S=3.79\)</span>.</p></li>
+</ul>
+<div class="formula-box">
+<p><span class="math display">\[C_v = \frac{S}{\bar X}\times 100 = \frac{3.79}{7}\times 100 = 54.1\%\]</span> <em>La variabilidad relativa respecto a la media es del 54%.</em></p>
+</div>
+</div>
+</section>
+<section id="medidas-de-posición" class="slide level2">
+<h2>Medidas de posición</h2>
+<div class="smaller">
+<p><strong>Percentiles.</strong> Son 99 valores que dividen la variable en 100 partes iguales, cada una conteniendo el 1% de los datos.</p>
+<ul>
+<li>El percentil 10, deja debajo de sí el 10% de los datos y por encima el 90%</li>
+<li>El percentil 33, deja debajo de sí el 33% de los datos y por encima el 67%</li>
+<li>El percentil 50 es la mediana</li>
+</ul>
+<p><strong>Deciles.</strong> Son 9 valores que dividen la variable en 10 partes iguales, cada una conteniendo el 10% de los datos.</p>
+<p><strong>Cuartiles.</strong> Son 3 valores que dividen la variable en 4 partes iguales, cada una conteniendo el 25% de los datos.</p>
+<p><strong>Quintiles.</strong> Son 4 valores que dividen la variable en 5 partes iguales, cada una conteniendo el 20% de los datos.</p>
+</div>
+</section>
+<section id="medidas-de-forma" class="slide level2">
+<h2>Medidas de forma</h2>
+<div class="smaller">
+<p>Son medidas que nos dan una idea de la forma en la que se agrupan los valores de la variable.</p>
+<ul>
+<li>Simetría y asimetría.
+<ul>
+<li>Una distribución es simétrica cuando coinciden la moda, la mediana y la media en el mismo punto, el sesgo es 0. Si esto no pasa se habla de asimetría o sesgo no cero. Si los valores se agrupan más a la izquierda hablamos de asimetría positiva, si lo hacen a la derecha hablamos de asimetría negativa.</li>
+<li>La medida utilizada habitualmente es el coeficiente de asimetría, As, que se calcula como el triple de la diferencia entre la media y la mediana, dividido por la desviación estándar.
+<ul>
+<li>As = 0, variable simétrica.</li>
+<li>As &gt; 0, variable asimétrica positiva.</li>
+<li>As &lt; 0, variable asimétrica negativa.</li>
+</ul></li>
+</ul></li>
+<li>Apuntamiento. Hace referencia a si la distribución es ancha y plana (platicúrtica), puntiaguda y estrecha (leptocúrtica) o similar a la normal (mesiocúrtica), siempre comparando con la distribución normal que después estudiaremos.</li>
+</ul>
+</div>
+
+<img data-src="assets/simetria.png" style="width:78.0%" class="r-stretch"><p><em>Simetría y asimetría</em></p>
+</section>
+<section id="tablas-de-frecuencias" class="slide level2">
+<h2>Tablas de frecuencias</h2>
+<div class="smaller">
+<p><strong>Frecuencias absolutas.</strong> Contabilizan el número de individuos de cada modalidad.</p>
+<ul>
+<li><strong>Frecuencias relativas.</strong> Proporción de individuos de cada modalidad. Es la frecuencia absoluta dividida por el total de individuos.</li>
+<li><strong>Frecuencias acumuladas.</strong> Sólo tienen sentido para variables ordinales y numéricas.</li>
+</ul>
+<h3 id="medidas-de-frecuencia">Medidas de frecuencia</h3>
+<ul>
+<li><strong>Razón.</strong> Es todo índice obtenido al dividir dos cantidades.</li>
+<li><strong>Proporción.</strong> Toda razón cuyo numerador esté incluido en el denominador.</li>
+<li><strong>ODDS.</strong> Cociente entre la proporción o probabilidad de ocurrencia de un evento y la proporción o probabilidad de no ocurrencia.</li>
+<li><strong>Tasa.</strong> Razón de cambio de dos magnitudes.</li>
+</ul>
+</div>
+</section>
+<section id="tipos-de-muestreo" class="slide level2">
+<h2>Tipos de muestreo</h2>
+<div class="smaller">
+<h3 id="muestreo-no-aleatorio">Muestreo no aleatorio</h3>
+<ul>
+<li>Elección interesada, sin azar.</li>
+</ul>
+<h3 id="muestreo-aleatorio">Muestreo aleatorio</h3>
+<ul>
+<li>Incorpora el azar como recurso.</li>
+</ul>
+<h3 id="muestreo-probabilístico">Muestreo probabilístico</h3>
+<ul>
+<li>Es un muestreo aleatorio en el que todo elemento de la población tiene alguna oportunidad de ser escogido en la muestra.</li>
+</ul>
+<h3 id="cómo-se-puede-hacer-muestreo-probabilístico">¿Cómo se puede hacer muestreo probabilístico?</h3>
+<ul>
+<li>Sin reposición de los elementos</li>
+<li>Con reposición de los elementos</li>
+<li>Con reposición múltiple</li>
+</ul>
+<p>En poblaciones muy grandes, la probabilidad de repetir una extracción es tan pequeña que el muestreo puede considerarse con reposición.</p>
+</div>
+</section>
+<section id="tipos-de-muestreo-probabilístico" class="slide level2">
+<h2>Tipos de muestreo probabilístico</h2>
+<div class="smaller">
+<h3 id="muestreo-aleatorio-simple">Muestreo aleatorio simple</h3>
+<ul>
+<li>Todos los elementos tienen la misma probabilidad de ser elegidos.</li>
+</ul>
+<h3 id="muestreo-sistemático">Muestreo sistemático</h3>
+<ul>
+<li>Los elementos de la muestra se seleccionan siguiendo algún tipo de regla o proceso periódico.</li>
+</ul>
+<h3 id="muestreo-estratificado">Muestreo estratificado</h3>
+<ul>
+<li>Se divide la población según ciertas características o estratos (hombres - mujeres), y hacemos muestreo aleatorio simple en cada estrato.</li>
+</ul>
+<h3 id="muestreo-por-conglomerados">Muestreo por conglomerados</h3>
+<ul>
+<li>Se obtiene a partir de una muestra aleatoria simple a partir de agrupaciones naturales: colegios, hospitales, etc.; luego se extrae una muestra de los individuos de dichas agrupaciones. Es un muestreo útil en poblaciones muy dispersas y por tanto es necesario un mayor tamaño muestral.</li>
+</ul>
+<h3 id="tipos-de-muestreo-no-probabilístico">Tipos de muestreo no probabilístico</h3>
+<ul>
+<li>Muestreo consecutivo
+<ul>
+<li>Es el muestreo no probabilístico más usado y consiste, por ejemplo, en ir reclutando a todos los individuos que van llegando a una consulta durante un periodo.</li>
+</ul></li>
+<li>Muestreo de conveniencia
+<ul>
+<li>El investigador selecciona a aquellos individuos de más fácil acceso para él.</li>
+</ul></li>
+<li>Muestreo a criterio
+<ul>
+<li>El investigador selecciona a los individuos que cree más apropiados para el estudio.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="obtención-de-muestras-representativas" class="slide level2">
+<h2>Obtención de muestras representativas</h2>
+<p>Según parámetro (proporción <span class="math inline">\(p\)</span> o media <span class="math inline">\(\mu\)</span>) se calcula el <strong>tamaño muestral mínimo</strong> para un error/precisión prefijado.</p>
+<ul>
+<li><strong>Proporción <span class="math inline">\(p\)</span>:</strong> <span class="math display">\[n \ge \frac{z_{1-\alpha/2}^{2}\, \bar p (1-\bar p)}{e^{2}}\]</span></li>
+<li><strong>Media <span class="math inline">\(\mu\)</span>:</strong> <span class="math display">\[n \ge \left(\frac{z_{1-\alpha/2}\, \sigma}{e}\right)^{2}\]</span></li>
+</ul>
+<p><span class="math inline">\(z_{1-\alpha/2}\)</span> cuantil normal, <span class="math inline">\(\bar p\)</span> estimación de la proporción, <span class="math inline">\(\sigma\)</span> DT, <span class="math inline">\(e\)</span> precisión.</p>
+</section>
+<section id="definiciones-básicas" class="slide level2">
+<h2>Definiciones básicas</h2>
+<div class="smaller">
+<p><strong>Experimento aleatorio.</strong> Es un experimento que al repetirlo en análogas condiciones, no se puede predecir el resultado.</p>
+<p><strong>Espacio muestral</strong> de un experimento aleatorio. Es el conjunto de los resultados posibles del experimento. Lo denotaremos por la letra E.</p>
+<p><strong>Suceso aleatorio.</strong> Es cada uno de los subconjuntos del espacio muestral.</p>
+<p><strong>Experimentos compuestos.</strong> Son experimentos formados por varios experimentos simples.</p>
+<h3 id="tipos-de-sucesos">Tipos de sucesos</h3>
+<ul>
+<li>Elementales: están formados por un solo elemento del espacio muestral.</li>
+<li>Compuestos: están formados por 2 o más elementos del espacio muestral.</li>
+<li>Cierto o seguro: es el suceso que siempre se realiza.</li>
+<li>Imposible (∅): es el suceso que no se realiza nunca.</li>
+<li>Contrario: el suceso contrario de un suceso A, es un suceso que se realiza cuando no se realiza A.</li>
+</ul>
+</div>
+</section>
+<section id="operaciones-con-sucesos" class="slide level2">
+<h2>Operaciones con sucesos</h2>
+<div class="smaller">
+<p><strong>Unión.</strong> Dados dos sucesos A y B de un mismo experimento aleatorio, llamamos suceso unión de A y B al suceso que se realiza cuando se realiza A o B. Se denota A ∪ B.</p>
+<p><strong>Intersección.</strong> En las condiciones de la unión, llamaremos suceso intersección de A y B al suceso que se realiza cuando se realizan simultáneamente los sucesos A y B. Se denota A ∩ B.</p>
+<h3 id="sucesos-incompatibles-o-mutuamente-excluyentes">Sucesos incompatibles o mutuamente excluyentes</h3>
+<p>Dos sucesos A y B, son incompatibles cuando el suceso A ∩ B es el suceso imposible, es decir:</p>
+<ul>
+<li>Si A ∩ B = ∅ ⇒ A y B son incompatibles</li>
+<li>Si A ∩ B ≠ ∅ ⇒ A y B son compatibles</li>
+</ul>
+<h3 id="definición-clásica-de-probabilidad-pierre-simon-laplace-s.-xviii">Definición clásica de probabilidad (Pierre Simon Laplace, S. XVIII)</h3>
+<p>La probabilidad de un suceso A, es el cociente entre el número de casos favorables al suceso y el número de casos posibles del mismo.</p>
+<p>Es evidente que los sucesos elementales son equiprobables, todos tienen la misma probabilidad.</p>
+<p><strong>Ejemplo.</strong> Si consideramos el experimento aleatorio de lanzamiento de un dado, los sucesos elementales son sacar 1, 2, 3, 4, 5 ó 6, con probabilidad 1/6.</p>
+</div>
+</section>
+<section id="definición-axiomática-kolmogorov-s.-xx" class="slide level2">
+<h2>Definición axiomática (Kolmogorov S. XX)</h2>
+<div class="smaller">
+<p>Probabilidad es una ley que asocia a cada suceso A del espacio de sucesos un número real que representaremos por P (A) y cumple los siguientes axiomas: 1. La probabilidad de un suceso cualquiera es positiva o nula. 2. La probabilidad del suceso cierto es uno. 3. La probabilidad de la unión de dos sucesos incompatibles es: - P (A ∪ B ) = P (A) + P (B ) si A ∩ B = ∅</p>
+<p>Consecuencias de los axiomas 1. Suceso contrario. P (Ā) = 1 − P (A) 2. Suceso imposible. P (∅) = 0 3. Probabilidad de la unión de sucesos. - Incompatibles: P (A ∪ B ) = P (A) + P (B ) - Compatibles: P (A ∪ B ) = P (A) + P (B ) − P (A ∩ B )</p>
+<p><strong>Probabilidad condicionada</strong> — probabilidad de <span class="math inline">\(A\)</span> sabiendo que ocurrió <span class="math inline">\(B\)</span>:</p>
+<div class="formula-box">
+<p><span class="math display">\[P(A \mid B) = \frac{P(A \cap B)}{P(B)} \qquad P(B)&gt;0\]</span></p>
+</div>
+</div>
+</section>
+<section id="probabilidad-de-la-intersección-y-sucesos-independientes" class="slide level2">
+<h2>Probabilidad de la intersección y sucesos independientes</h2>
+<div class="formula-box">
+<p><span class="math display">\[P(A \cap B) = P(A \mid B)\, P(B) \qquad \text{si } A,B \text{ independientes: } P(A \cap B)=P(A)P(B)\]</span></p>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Independencia</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son independientes <span class="math inline">\(\iff\)</span> <span class="math inline">\(P(A \mid B)=P(A)\)</span> — la ocurrencia de uno no modifica la del otro.</p>
+</div>
+</div>
+</div>
+<p>Tablas de contingencia Es una forma muy intuitiva de calcular probabilidades de intersecciones, uniones y condicionadas sin tener que recordar fórmulas ni teorema de Bayes, mediante la construcción de tablas 2x2. Se entiende mejor con el siguiente ejemplo. ## Ejemplo con tablas de contingencia. Enunciado:</p>
+<div class="smaller">
+<p>El 20% de la población de Nueva Guinea tiene la enfermedad de Kuru. Para su diagnóstico se utiliza un test de aglutinación que da falsos positivos en el 10% de los casos.</p>
+<ol type="1">
+<li>¿Qué probabilidad hay de que un paciente de Nueva Guinea esté enfermo y tenga un resultado positivo en el test? (Intersección)</li>
+<li>¿Qué probabilidad hay de que la prueba resulte positiva si se padece la enfermedad? (Condicionada)</li>
+<li>¿Qué probabilidad hay de que la prueba resulte negativa si no se tiene la enfermedad? (Condicionada)</li>
+<li>¿Qué probabilidad hay de estar enfermo si la prueba ha salido positiva? (Bayes)</li>
+<li>¿Qué probabilidad hay de estar sano si la prueba ha sido negativa? (Bayes)</li>
+</ol>
+</div>
+</section>
+<section id="solución-construimos-la-tabla-de-contingencia" class="slide level2">
+<h2>Solución: construimos la tabla de contingencia</h2>
+<div class="smaller">
+<p>No se dice el tamaño de la muestra, elegimos una de n=100 habitantes.</p>
+<ul>
+<li>Sucesos: A = Estar enfermo y B = Test positivo (suceso contrario de A es estar sano y el suceso contrario de B es test negativo).</li>
+<li>Se sabe que 20 de cada 100 están enfermos y que el 10% de las pruebas del test dan falsos positivos, es decir se concluye enfermo o sano, siendo lo contrario.</li>
+<li>Tenemos 20 enfermos de los que el 10% dan negativo (Está enfermo y da sano) y el 90% positivo (Está enfermo y da enfermo).</li>
+<li>Tenemos 80 sanos de los que el 10% dan positivo (Está sano y da enfermo) y el 90% dan negativo (Está sano y da sano).</li>
+</ul>
+</div>
+</section>
+<section id="respuestas" class="slide level2">
+<h2>Respuestas:</h2>
+<div class="smaller">
+<p>Con la tabla las respuestas son triviales.</p>
+<ul>
+<li>A (Enfermos) Ā (Sanos) Totales</li>
+<li>B (Test +) 18 8 26</li>
+<li>B̄ (Test -) 2 72 74</li>
+<li>Totales 20 80 n = 100</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(P(\text{Enfermo} \cap \text{Test}+)=18/100=0.18\)</span></li>
+<li><span class="math inline">\(P(\text{Test}+ \mid \text{Enfermo})=18/20=0.90\)</span> → <strong>Sensibilidad</strong></li>
+<li><span class="math inline">\(P(\text{Test}- \mid \text{Sano})=72/80=0.90\)</span> → <strong>Especificidad</strong></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(P(\text{Enfermo} \mid \text{Test}+)=18/26\approx 0.69\)</span> → <strong>VPP</strong></li>
+<li><span class="math inline">\(P(\text{Sano} \mid \text{Test}-)=72/74\approx 0.97\)</span> → <strong>VPN</strong></li>
+</ul>
+</div></div>
+</div>
+</section>
+<section id="distribuciones-de-probabilidad" class="slide level2">
+<h2>Distribuciones de probabilidad</h2>
+<p>Una vez seleccionada la muestra y recogidos los datos, el siguiente paso es inferir las propiedades al total de la población.</p>
+<ul>
+<li>El instrumento utilizado es una representación simbólica de su comportamiento que denominamos distribución de probabilidad de la población.</li>
+<li>La mayoría de los fenómenos biológicos son regidos por uno de los tres modelos siguientes: distribución Normal o de Gauss, distribución de Poisson y distribución Binomial.</li>
+<li>La primera para variables continuas y las dos últimas para variables discretas.</li>
+</ul>
+
+<img data-src="assets/normal-cuanti.png" style="width:78.0%" class="r-stretch"><p><em>Distribución normal</em></p>
+</section>
+<section id="distribución-normal-de-media-µ-y-desviación-estándar-σ" class="slide level2">
+<h2>Distribución normal de media µ y desviación estándar σ</h2>
+<div class="smaller">
+<p>Es simétrica respecto de su media µ.</p>
+<ul>
+<li>La moda y la mediana son ambas iguales a la media.</li>
+</ul>
+<p>Distribución de probabilidad en un entorno de la media: 1. En el intervalo [ µ − σ, µ + σ ] se encuentra comprendida, aproximadamente, el 68.26% de la distribución. 2. En el intervalo [µ − 2σ, µ + 2σ] se encuentra, aproximadamente, el 95.44% de la distribución. 3. En el intervalo [µ − 3σ, µ + 3σ] se encuentra, aproximadamente, el 99.74% de la distribución.</p>
+<p>Distribución normal de media µ y desviación estándar σ</p>
+<ul>
+<li>El área total bajo la curva es 1.</li>
+<li>Tiene forma de campana.</li>
+<li>Toma valores en toda la recta real.</li>
+<li>La probabilidad de un valor concreto es 0.</li>
+</ul>
+</div>
+
+<img data-src="assets/normal-cuanti.png" style="width:65.0%" class="r-stretch"><p><em>Tipificación <span class="math inline">\(Z=(X-\mu)/\sigma\)</span> — <span class="math inline">\(N(0,1)\)</span> tabulada</em></p>
+</section>
+<section id="tipificación-en-la-distribución-normal" class="slide level2">
+<h2>Tipificación en la distribución normal</h2>
+
+<img data-src="assets/normal-cuanti.png" style="width:65.0%" class="r-stretch"><p><em>Tipificación <span class="math inline">\(Z=(X-\mu)/\sigma\)</span> — <span class="math inline">\(N(0,1)\)</span> tabulada</em></p>
+<div class="smaller">
+<p>En la práctica las distribuciones normales que nos encontramos no son de media 0 y desviación estándar 1, con el hándicap de que sólo está tabulada la <span class="math inline">\(N(0,1)\)</span>.</p>
+<ul>
+<li>¿Cómo hallamos probabilidades de variables con media y desviación estándar diferentes a la <span class="math inline">\(N(0,1)\)</span>? Tipificando la variable: restar su media y dividir por su desviación estándar.</li>
+</ul>
+<div class="formula-box">
+<p>Si <span class="math inline">\(X \sim N(\mu,\sigma)\)</span>, entonces <span class="math inline">\(Z=\dfrac{X-\mu}{\sigma} \sim N(0,1)\)</span> — única tabulada.</p>
+</div>
+</div>
+</section>
+<section id="distribución-binomial" class="slide level2">
+<h2>Distribución Binomial</h2>
+<div class="smaller">
+<p>Aparece siempre que se conozca de entrada la probabilidad de aparición de un fenómeno biológico. El resultado es dicotómico, éxito o fracaso, y mide el número de éxitos en n pruebas realizadas de forma independiente. Esta ley modela la hipertensión, daltonismo, etc.</p>
+<ul>
+<li>Se denota por <span class="math inline">\(B(n,p)\)</span> donde <span class="math inline">\(n\)</span> es el tamaño de muestra y <span class="math inline">\(p\)</span> la probabilidad de éxito.</li>
+</ul>
+</div>
+</section>
+<section id="distribución-de-poisson" class="slide level2">
+<h2>Distribución de Poisson</h2>
+<div class="smaller">
+<p>Es un caso particular de la ley Binomial cuando la probabilidad de aparición del suceso es muy pequeña, próxima a 0 (si <span class="math inline">\(p &lt; 0{,}01\)</span> hablamos de enfermedades raras).</p>
+<p><strong>Propiedades:</strong></p>
+<ul>
+<li>Está definida por un único parámetro.</li>
+<li>La media y varianza poblacional coinciden.</li>
+<li>Es asimétrica, pero conforme aumenta su media tiende a la normal.</li>
+</ul>
+</div>
+</section>
+<section id="inferencia-estadística" class="slide level2">
+<h2>Inferencia estadística</h2>
+<p>La estadística inferencial se encarga de establecer conclusiones en la población a partir de los datos de las muestras.</p>
+<ul>
+<li>Se ocupa de estimar parámetros.
+<ul>
+<li>¿Cuál es la proporción de mujeres que fuman?</li>
+</ul></li>
+<li>De realizar contraste de hipótesis.
+<ul>
+<li>¿Fuman más las mujeres que los hombres?</li>
+</ul></li>
+</ul>
+</section>
+<section id="estimación-de-parámetros" class="slide level2">
+<h2>Estimación de parámetros</h2>
+<div class="smaller">
+<p>Estimación puntual</p>
+<ul>
+<li>Estima el parámetro de la población por un valor puntual de la muestra, por ejemplo, afirmo que la media de la población coincide con la media de la muestra estudiada. Son estimaciones generalmente poco precisas pero en muchas ocasiones más que convenientes.</li>
+<li><strong>Estimación por intervalos de confianza.</strong> Localiza el parámetro en un intervalo con una cierta confianza (habitualmente 95% en ciencias de la salud). Los intervalos más usuales son para la media y para la proporción.</li>
+</ul>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>Media</strong> <span class="math inline">\(\mu\)</span> al 95%:</p>
+<p><span class="math display">\[\mu \in \left[ \bar X - 1.96\frac{S}{\sqrt{n}},\; \bar X + 1.96\frac{S}{\sqrt{n}} \right]\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>Proporción</strong> <span class="math inline">\(p\)</span> al 95%:</p>
+<p><span class="math display">\[p \in \left[ \bar p \pm 1.96\sqrt{\frac{\bar p(1-\bar p)}{n}} \right]\]</span></p>
+</div>
+</div></div>
+</section>
+<section id="contraste-de-hipótesis.-conceptos" class="slide level2">
+<h2>Contraste de hipótesis. Conceptos</h2>
+<div class="smaller">
+<p>Hipótesis</p>
+<ul>
+<li>En un contraste de hipótesis se formulan dos hipótesis, la hipótesis nula H0 usualmente de igualdad (en contrastes paramétricos) y la hipótesis alternativa H1 que es la que quiere concluir el investigador.</li>
+</ul>
+<p>Valor P</p>
+<ul>
+<li>Antes de contrastar una hipótesis se fija el valor máximo de probabilidad que estamos dispuestos a asumir para que nuestro test sea significativo, es decir se rechace la hipótesis nula. Ese valor máximo se denomina nivel de significación o valor P.</li>
+<li>En ciencias de la salud se considera significativo todo valor de P &lt; 0.05, es decir:
+<ul>
+<li>Si P &lt; 0.05, se rechaza la hipótesis nula y se acepta la alternativa. (Esto es lo deseable ya que hace al test significativo).</li>
+<li>Si P &gt; 0.05, se rechaza la hipótesis alternativa y se acepta la hipótesis nula.</li>
+</ul></li>
+</ul>
+<p>Contraste de hipótesis: errores</p>
+<p>Errores</p>
+<ul>
+<li>Error Tipo I o error α
+<ul>
+<li>Se comete si rechazamos la hipótesis nula siendo cierta.</li>
+</ul></li>
+<li>Error Tipo II o error β
+<ul>
+<li>Se comete si aceptamos la hipótesis nula siendo falsa.</li>
+</ul></li>
+<li>Potencia de un test
+<ul>
+<li>POTENCIA = 1 − β</li>
+<li>A mayor potencia de un test más fiable es en sus conclusiones.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="resumen-de-errores" class="slide level2">
+<h2>Resumen de errores</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong><span class="math inline">\(H_0\)</span> cierta</strong></th>
+<th><strong><span class="math inline">\(H_1\)</span> cierta</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>No rechazo <span class="math inline">\(H_0\)</span></strong></td>
+<td>✅ Acierto</td>
+<td>❌ Error Tipo II (<span class="math inline">\(\beta\)</span>)</td>
+</tr>
+<tr class="even">
+<td><strong>Rechazo <span class="math inline">\(H_0\)</span></strong></td>
+<td>❌ Error Tipo I (<span class="math inline">\(\alpha\)</span>)</td>
+<td>✅ Acierto (Potencia <span class="math inline">\(1-\beta\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<p>Contraste de hipótesis: tipos</p>
+<p>Se clasifican en función del problema que planteen.</p>
+<ul>
+<li>Pruebas de conformidad
+<ul>
+<li>Se determina si los resultados están, o no, de acuerdo con una teoría enunciada previamente.</li>
+</ul></li>
+<li>Pruebas de homogeneidad
+<ul>
+<li>Se estudian dos o más muestras y se deduce si proceden de la misma población.</li>
+</ul></li>
+<li>Pruebas de relación o independencia
+<ul>
+<li>Se estudian dos o más variables en un mismo individuo y se desea saber si estas variables están relacionadas entre sí.</li>
+</ul></li>
+</ul>
+</section>
+<section id="contrastes-más-usuales-en-ciencias-de-la-salud" class="slide level2">
+<h2>Contrastes más usuales en ciencias de la salud</h2>
+<div class="smaller">
+<p>Comparación de dos proporciones. Prueba Chi-cuadrado</p>
+<ul>
+<li>En este test se estudia la relación de dos variables cualitativas o categóricas. Es válido si las frecuencias esperadas son ⩾ 5.</li>
+<li>Ejemplo: ¿Los hombres beben más (beber si/no) que las mujeres?</li>
+<li>Sexo es variable cualitativa con dos categorías.</li>
+<li>Beber es variable cualitativa con dos categorías.</li>
+</ul>
+<p>Comparación de dos medias. Prueba t-Student</p>
+<ul>
+<li>Suelen estudiar la relación entre una variable categórica y una continua. Son válidos cuando la muestra es grande, n &gt; 30.</li>
+<li>Ejemplo: ¿Los hombres son más altos que las mujeres?</li>
+<li>Sexo es variable cualitativa con dos categorías.</li>
+<li>Altura es variable cuantitativa continua.</li>
+</ul>
+</div>
+</section>
+<section id="regresión-lineal" class="slide level2">
+<h2>Regresión lineal</h2>
+<div class="smaller">
+<p>Con la regresión lineal se estudia la asociación lineal entre dos variables cuantitativas. En cuyo caso ajustaremos la ecuación de una recta que estimará/predecirá valores de una variable Y (variable dependiente) a partir del conocimiento de los de la otra X (variable independiente).</p>
+<p>¿Cómo se realiza este ajuste? De la forma y = a + bx, con a, b coeficientes obtenidos por el método de mínimos cuadrados.</p>
+<p>¿Cómo de bien ajusta el modelo lineal? Esto se deduce del cálculo de la covarianza, que mide la variabilidad que existe entre dos conjuntos de puntuaciones, toma valores positivos y negativos y conforme más me acerco a 0, peor se ajusta el modelo de regresión lineal.</p>
+<p>Correlación lineal Con la correlación lineal pretendemos ver si entre dos variables cuantitativas existe algún tipo de relación lineal. Ambas variables juegan un papel simétrico por lo que no se puede diferenciar entre variable independiente y dependiente.</p>
+<p>¿Cómo de bueno es este ajuste? Esto nos lo dice el coeficiente de correlación de Pearson r , que es un número comprendido entre −1 y 1, que conforme más se acerca a 1 o −1, más correladas linealmente están y cuanto más próximo a 0, peor correladas linealmente.</p>
+</div>
+</section>
+<section id="prevalencia-e-incidencia-epidemiología" class="slide level2">
+<h2>Prevalencia e incidencia (epidemiología)</h2>
+<p>La prevalencia es el número de casos totales de una enfermedad. En estudios de epidemiología se suele referir a ella como la probabilidad de padecer la enfermedad.</p>
+<ul>
+<li>Es utilizada en estudios transversales para la planificación de los recursos sanitarios.</li>
+<li>La incidencia es el número de casos nuevos de una enfermedad. Es utilizada en estudios de causalidad (casos-controles), y experimentales (evaluación de medidas preventivas).</li>
+</ul>
+<p>Relación Prevalencia - Incidencia</p>
+<ul>
+<li>Prevalencia = tasa de incidencia x duración media de la enfermedad</li>
+</ul>
+</section>
+<section id="epidemiología" class="slide level2">
+<h2>Epidemiología</h2>
+<p>Se puede definir como la ciencia que estudia la frecuencia y distribución en el tiempo y en el espacio de los problemas de salud de las poblaciones, así como el papel de los factores que los determinan.</p>
+<p>Enfoques ante un problema de salud</p>
+<ul>
+<li>Clínico. Estudian enfermos</li>
+<li>Epidemiológico. Estudian enfermos y sanos</li>
+</ul>
+<p>Aplicaciones de la epidemiología</p>
+<ul>
+<li>Vigilar el diagnóstico de la salud comunitaria</li>
+<li>Estudiar causas de enfermedades</li>
+<li>Predecir el curso de las enfermedades</li>
+<li>Evaluar las actividades sanitarias</li>
+</ul>
+</section>
+<section id="fases-del-método-epidemiológico." class="slide level2">
+<h2>Fases del método epidemiológico.</h2>
+<p>Observación y descripción del fenómeno a estudiar</p>
+<ul>
+<li>Tabulación y comparación de los datos observados</li>
+<li>Elaboración de hipótesis</li>
+<li>Verificación de la hipótesis. Epidemiología experimental</li>
+<li>Validez de la información</li>
+<li>Reproducción del estudio</li>
+<li>Exactitud o precisión del estudio</li>
+<li>Emisión de informe o ley</li>
+</ul>
+</section>
+<section id="según-la-manipulación-estudios-de-observación" class="slide level2">
+<h2>Según la manipulación: estudios de observación</h2>
+<div class="smaller">
+<ol type="1">
+<li>Estudios de observación</li>
+</ol>
+<ul>
+<li>Descriptivos (Casos clínicos, estudios transversales). No existe hipótesis de trabajo y su objetivo es puramente descriptivo.
+<ul>
+<li>Ejm.: Estudio para conocer la prevalencia del cáncer de mama.</li>
+</ul></li>
+<li>Analíticos. Buscan relaciones causa-efecto entre las variables. Se plantean por tanto hipótesis que contrastar.
+<ul>
+<li><ol type="a">
+<li>Casos-controles. Hay dos grupos, el 1º tiene la enfermedad (casos) y el 2º está libre de la enfermedad (controles). Están indicados para investigar enfermedades raras, crónicas o transmisibles. Van del efecto (enfermedad) a la causa (factor de riesgo).</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Estudios de cohortes. Hay dos grupos, el 1º expuesto al factor de riesgo y el 2º no expuesto. Pueden ser dinámicos o fijos (incorporar o no más individuos). Según la valoración del efecto (con o sin medidas repetidas) pueden ser longitudinales o según en el momento que ocurre pueden ser prospectivos o retrospectivos. Van del factor de riesgo (causa) a la enfermedad (efecto).</li>
+</ol>
+<ul>
+<li>Ejm.: Estudio para conocer la relación entre el hábito de fumar y la aparición del cáncer de pulmón.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="según-la-manipulación-estudios-de-intervención" class="slide level2">
+<h2>Según la manipulación: estudios de intervención</h2>
+<div class="smaller">
+<ol start="2" type="1">
+<li>Estudios de intervención o experimentales. El investigador introduce el elemento de estudio.</li>
+</ol>
+<ul>
+<li>Ensayos clínicos no controlados. Son estudios cuasi-experimentales no aleatorios.</li>
+<li>Ensayos clínicos aleatorios y controlados. Son estudios experimentales puros (existe grupo de control).
+<ul>
+<li><ol type="a">
+<li>Ensayo clínico aleatorio (ético). Un grupo se expone a la intervención y el otro no de forma aleatoria.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Ensayo clínico cruzado. Cada sujeto recibe las dos intervenciones.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Ensayo de campo. Evalúa la eficacia de una medida preventiva sobre individuos sanos conociendo las dosis.</li>
+</ol>
+<ul>
+<li>Ejm.: Efecto de un nuevo fármaco en un grupo de fumadores para la deshabituación al tabaco.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Fases de un ensayo clínico</p>
+<p>1.ª Estudio de fármacos 2.ª Conocer la eficacia del producto 3.ª Valorar la eficacia y la seguridad del producto 4.ª Estudio para valorar la aplicación a otra causa o enfermedad</p>
+</div>
+</section>
+<section id="según-la-existencia-de-seguimiento" class="slide level2">
+<h2>Según la existencia de seguimiento</h2>
+<div class="smaller">
+<p>Transversales (sin seguimiento)</p>
+<ul>
+<li>Una muestra aleatoria de individuos se clasifica simultáneamente según el factor de riesgo al que pertenece y su respuesta actual a la enfermedad. Ejm.: en el estudio del efecto de fumar sobre el desarrollo de cáncer de pulmón se trataría de tomar una muestra aleatoria de individuos para los que se observa su condición de fumador y si padecen actualmente la enfermedad.</li>
+</ul>
+<p>Longitudinales o prospectivos (con seguimiento)</p>
+<ul>
+<li>Un estudio longitudinal es un tipo de estudio observacional que investiga al mismo grupo de gente de manera repetida a lo largo de un período de años, en ocasiones décadas o incluso siglos, en investigaciones científicas que requieren el manejo de datos estadísticos sobre varias generaciones consecutivas de progenitores y descendientes.</li>
+</ul>
+<p>Según la ocurrencia de la información en relación al inicio del estudio</p>
+<ul>
+<li>Prospectivos o concurrentes (El efecto aún no ha sucedido y exponemos al individuo o no). Se selecciona una muestra aleatoria de individuos que, después de ser observada durante cierto tiempo, se clasifica según los niveles de la variable respuesta (Enfermedad) observados a partir de la variable explicativa (Factor de riesgo).</li>
+<li>Retrospectivos (El efecto ya ha sucedido y por tanto la exposición). Se toma una muestra de individuos entre los que están y no están enfermos para los que se investiga retrospectivamente la influencia del factor de riesgo.</li>
+<li>Ambispectivos. Es una mezcla de los dos anteriores, aunque no es un concepto muy utilizado.</li>
+</ul>
+</div>
+</section>
+<section id="según-el-sentido-de-la-relación-causa-efecto" class="slide level2">
+<h2>Según el sentido de la relación causa-efecto</h2>
+<p>Hacia adelante o ‘De la causa al efecto’. Primero me expongo a la causa y después recojo información sobre el efecto.</p>
+<ul>
+<li>Sentido hacia atrás o ‘Del efecto a la causa’. Primero se recoge el efecto y a continuación se estudia la posible causa.</li>
+<li>Ausencia de sentido. No se puede diferenciar qué es la causa y qué es el efecto.</li>
+</ul>
+</section>
+<section id="sólo-una-de-las-opciones-es-correcta" class="slide level2">
+<h2>Sólo una de las opciones es correcta</h2>
+<p><em>— Supuesto práctico —</em></p>
+<div class="smaller">
+<ol type="1">
+<li>Los estudios ‘Transversales’:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Nos permiten conocer la incidencia de la enfermedad.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Son un tipo de estudio analítico.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Son útiles para caracterizar el estado de salud de la población en un punto en el tiempo.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>No son susceptibles de sesgos de selección.</li>
+</ol></li>
+</ul>
+<ol start="2" type="1">
+<li>Sobre la hipótesis nula:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Si usted rechaza la hipótesis nula, entonces tiene pruebas de que la hipótesis alternativa no es correcta.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>La hipótesis nula siempre se refiere a la población.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La hipótesis nula siempre se refiere a la muestra.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>La hipótesis nula siempre expresa una desigualdad.</li>
+</ol></li>
+</ul>
+<ol start="3" type="1">
+<li>Entre estas pirámides de población cuál es progresiva:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Pagoda.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Bulbo o en ‘hucha’.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Campana.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Barril.</li>
+</ol></li>
+</ul>
+<ol start="4" type="1">
+<li>Proporción de personas que fallecen respecto del total de la población, en un periodo de tiempo:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Morbilidad.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Mortalidad.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Letalidad.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Esperanza de vida.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-práctico" class="slide level2">
+<h2>Supuesto práctico</h2>
+<div class="smaller">
+<ol start="5" type="1">
+<li>¿En qué tipo de estudios científicos un grupo de pacientes está expuesto a una intervención y otro grupo forma un grupo control?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Cohortes.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Estudios paralelos.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudios ecológicos.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Series de casos.</li>
+</ol></li>
+</ul>
+<ol start="6" type="1">
+<li>Respecto a las variables cuantitativas o numéricas es FALSO:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Miden numéricamente el carácter respecto a una unidad de referencia.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Son ejemplos de variables cuantitativas: la edad medida en años, la concentración de colesterol medida en mg/mm, o la temperatura medida en grados Celsius, la estatura medida en cm, etc.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Son ejemplos también de esta variable el sexo si distinguimos hombre-mujer y el grupo sanguíneo.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Son correctas A y B.</li>
+</ol></li>
+</ul>
+<ol start="7" type="1">
+<li>Los indicadores de salud: señale la FALSA:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>La OMS los define como variables que sirven para medir los cambios.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Son variables que intentan medir u objetivar de forma cuantitativa y no cualitativa, sucesos individuales que permiten evaluar dimensiones del estado de salud de la población.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Un indicador requiere siempre del uso de fuentes fiables de información.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Un indicador requiere rigurosidad técnica en su construcción e interpretación.</li>
+</ol></li>
+</ul>
+<ol start="8" type="1">
+<li>Según Almaráz Gómez y colaboradores, el principal indicador sanitario es:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>La tasa bruta de mortalidad.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>La tasa de mortalidad específica por edad.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La tasa de mortalidad infantil.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Ninguna de las tres.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="con-respecto-a-los-estudios-de-cohortes-es-falso" class="slide level2">
+<h2>Con respecto a los estudios de Cohortes es FALSO:</h2>
+<p><em>— Supuesto práctico —</em></p>
+<div class="smaller">
+<ol start="9" type="1">
+<li>Con respecto a los estudios de Cohortes es FALSO:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Los estudios de cohortes son sólo prospectivos.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>La población de estudio puede ser fija o dinámica.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Son diseños de observación que se caracterizan por su sentido hacia adelante.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Se utilizan para indagar en la etiología de un efecto.</li>
+</ol></li>
+</ul>
+<ol start="10" type="1">
+<li>La incidencia acumulada es:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>El número de nuevos casos de una enfermedad que se desarrolla en una población durante un periodo de tiempo concreto.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>La proporción de individuos de una población que tienen una enfermedad en un momento dado.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La proporción de personas en riesgo de enfermar que desarrollan la enfermedad en un periodo de tiempo concreto.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Ninguna es correcta.</li>
+</ol></li>
+</ul>
+<ol start="11" type="1">
+<li>En relación a la prevalencia es FALSO:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Mide la proporción de individuos de una población que tienen la enfermedad en un momento dado.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Indica la probabilidad de estar afectado o expuesto en un momento determinado.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>A mayor tasa de incidencia, mayor debería ser la prevalencia.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Mide el número de casos nuevos de enfermedad que se desarrolla en una población en riesgo de enfermar, durante un periodo de tiempo concreto.</li>
+</ol></li>
+</ul>
+<ol start="12" type="1">
+<li>Cuál de los siguientes tipos de estudios NO se corresponde con un estudio descriptivo:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Estudio de información individual.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Estudio de corte o transversal.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudio ecológico.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Estudio experimental o de intervención.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="una-característica-de-estudios-de-cohorte-es-que" class="slide level2">
+<h2>Una característica de estudios de cohorte es que:</h2>
+<p><em>— Supuesto práctico —</em></p>
+<div class="smaller">
+<ol start="13" type="1">
+<li>Una característica de estudios de cohorte es que:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Miden la prevalencia de la enfermedad.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Miden la incidencia de la enfermedad.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Son menos costosos que los estudios analíticos.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Son útiles para medir los efectos de exposiciones frecuentes en la población.</li>
+</ol></li>
+</ul>
+<ol start="14" type="1">
+<li>Dentro de las medidas de localización el dato que más se repite es:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>la media.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>la mediana.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>la moda.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>la percentil.</li>
+</ol></li>
+</ul>
+<ol start="15" type="1">
+<li>Estudios más adecuados para evaluar la eficacia de las intervenciones terapéuticas o preventivas:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>experimentales.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>observacionales.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>transversales.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>prospectivos.</li>
+</ol></li>
+</ul>
+<ol start="16" type="1">
+<li>La varianza es una medida de:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Tendencia central.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Dispersión.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Distribución central.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Ninguna es correcta.</li>
+</ol></li>
+</ul>
+<ol start="17" type="1">
+<li>Con respecto a la razón:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Es una medida de frecuencia demográfica.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-2" class="slide level2">
+<h2>Supuesto práctico (2)</h2>
+<div class="smaller">
+<ul>
+<li><ol start="2" type="a">
+<li>El numerador no está contenido en el denominador.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>El numerador está contenido en el denominador.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Son correctas A y B.</li>
+</ol></li>
+</ul>
+<ol start="18" type="1">
+<li>Proporción de personas en una población inicialmente libre de la enfermedad, que desarrolla la misma dentro de un intervalo de tiempo específico:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Tasa de incidencia.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Incidencia acumulada.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Densidad de incidencia.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Odds de la enfermedad.</li>
+</ol></li>
+</ul>
+<ol start="19" type="1">
+<li>El test de la U de Mann-Whitney se utiliza para:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>muestras apareadas.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>muestras dependientes.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>muestras independientes (que pueden ser o no del mismo tamaño).</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>muestras relacionadas antes y después de una intervención.</li>
+</ol></li>
+</ul>
+<ol start="20" type="1">
+<li>En los estudios de investigación, ‘conjunto de individuos que presenta las características que se pretende estudiar’:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Población diana.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Muestra.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Variable de estudio.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Intervalo.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-3" class="slide level2">
+<h2>Supuesto práctico (3)</h2>
+<div class="smaller">
+<ol start="21" type="1">
+<li>Al realizar un estudio de cohortes para analizar la incidencia de accidentes coronarios sobre pacientes que presentan o no hipertensión arterial (HTA), se obtuvo que el Riesgo Relativo (RR) es igual a 1.44; con un intervalo de confianza (IC) 95% de 0.88-1.73. ¿Qué podemos afirmar acerca de la HTA con relación a los accidentes coronarios?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>La HTA es un factor de riesgo.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>La HTA es un factor protector.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>NO podemos determinar si la HTA es un factor protector o de riesgo.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Ninguna es correcta.</li>
+</ol></li>
+</ul>
+<ol start="22" type="1">
+<li>Estudio experimental en el que participan personas sanas o aparentemente sanas, expuestas a un factor de riesgo que provoca enfermedad se denomina:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Ensayo clínico</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Ensayo preventivo</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudio de casos</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Estudio de cohortes</li>
+</ol></li>
+</ul>
+<ol start="23" type="1">
+<li>En un grupo de 50 recién nacidos se ha obtenido un valor medio de pH fetal de 7.30, con una desviación típica de 0.10. ¿Cuántos de ellos tienen un pH inferior a 7.20, teniendo en cuenta que la distribución sigue la curva normal?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>8</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>12</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>18</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>25</li>
+</ol></li>
+</ul>
+<ol start="24" type="1">
+<li>Al realizar un estudio, para comprobar la eficacia de la visita preoperatoria de enfermería en la disminución de la ansiedad de los pacientes quirúrgicos, usted obtiene un valor de Chi-cuadrado estadísticamente no significativo, esto le indicará que en su estudio:</li>
+</ol>
+</div>
+</section>
+<section id="supuesto-4" class="slide level2">
+<h2>Supuesto práctico (4)</h2>
+<div class="smaller">
+<ul>
+<li><ol type="a">
+<li>La ansiedad no está relacionada con la visita preoperatoria de enfermería</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Los resultados obtenidos no se pueden atribuir al azar</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La visita preoperatoria de enfermería reduce la ansiedad del paciente quirúrgico</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>La prueba Chi-cuadrado no está indicada para estudiar la relación entre este tipo de variables</li>
+</ol></li>
+</ul>
+<ol start="25" type="1">
+<li>Para calcular el intervalo de confianza de la media poblacional, a partir de la media muestral obtenida en un grupo de 20 personas, usted tendrá en cuenta que su muestra se comporta como una distribución:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Chi-cuadrado</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>T de Student</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Normal o Gauss</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>F de Snedecor</li>
+</ol></li>
+</ul>
+<ol start="26" type="1">
+<li>Un riesgo relativo (RR) de 10 es el resultado de un estudio realizado en una población de 30 y más años para determinar la asociación entre la muerte por una enfermedad X y un factor de riesgo. Este dato indica:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Por encima de los 30 años hay 10 veces más posibilidad de morir por la enfermedad X en personas expuestas al factor de riesgo</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>El factor de riesgo no tiene implicación alguna en la mortalidad por la enfermedad X en personas de 30 y más años</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>El 10% de las muertes por la enfermedad X en personas de 30 y más años pueden evitarse si se elimina el factor de riesgo</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>La frecuencia de la mortalidad por la enfermedad X es más reducida hasta los 30 años de edad en ambos sexos</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-5" class="slide level2">
+<h2>Supuesto práctico (5)</h2>
+<div class="smaller">
+<ol start="27" type="1">
+<li>Una enfermera quiere realizar un estudio que relacione la frecuencia de un determinado problema de salud de una población entera con su exposición global a un factor de riesgo. Para ello utilizará un estudio de tipo:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Transversal</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Descriptivo</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Ecológico</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Longitudinal</li>
+</ol></li>
+</ul>
+<ol start="28" type="1">
+<li>En una investigación la variable ‘nivel socioeconómico’, especificada en los posibles valores como bajo, medio-bajo, medio-medio, medio-alto y alto, es un tipo de variable:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Cuantitativa</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Continua</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Diferencial</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Cualitativa</li>
+</ol></li>
+</ul>
+<ol start="29" type="1">
+<li>Son datos que orientan sobre los factores que condicionan la salud de una comunidad, la información sobre:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Mortalidad</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Morbilidad</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Demografía</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Incapacidad y dependencia</li>
+</ol></li>
+</ul>
+<ol start="30" type="1">
+<li>En qué distribución de probabilidades, la media coincide con la varianza:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>En la de Poisson</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>En la Binomial</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-6" class="slide level2">
+<h2>Supuesto práctico (6)</h2>
+<div class="smaller">
+<ul>
+<li><ol start="3" type="a">
+<li>En la Hipergeométrica</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>En la Muestral de Medias</li>
+</ol></li>
+</ul>
+<ol start="31" type="1">
+<li>Dado el valor V del error típico de un estadístico, empleando una muestra de 36 enfermos. El valor de la desviación típica poblacional, será:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>5.5V</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>6V</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>6V 2</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>5V 2</li>
+</ol></li>
+</ul>
+<ol start="32" type="1">
+<li>La probabilidad de ser hipertenso, es 1/2 y la de ser reumático, es 1/5. La probabilidad de que dos personas sean hipertensas o sean reumáticas, es:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>1/7</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>36%</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>30%</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>10%</li>
+</ol></li>
+</ul>
+<ol start="33" type="1">
+<li>El cuartil de tercer orden, deja a su derecha, en el histograma de frecuencias:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>La mitad de la distribución</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Las tres cuartas partes de la distribución</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La cuarta parte de la distribución</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Dos cuartas partes de la distribución</li>
+</ol></li>
+</ul>
+<ol start="34" type="1">
+<li>La prevalencia es una proporción que se define como:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Número de personas que tienen la enfermedad durante un periodo de tiempo determinado en relación con el número de personas de la población en ese momento</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-7" class="slide level2">
+<h2>Supuesto práctico (7)</h2>
+<div class="smaller">
+<ul>
+<li><ol start="2" type="a">
+<li>Número de personas que tienen la enfermedad en un momento dado partido por el número de personas de la población antes de aparecer la enfermedad</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Número de casos de enfermedad que aparecen en la población durante un periodo de tiempo determinado partido por el número de personas de la población antes de aparecer la enfermedad</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Número de personas que tienen la enfermedad en un momento dado partido por el número de personas de la población en ese momento</li>
+</ol></li>
+</ul>
+<ol start="35" type="1">
+<li>¿Cómo se calcula la tasa de natalidad?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Número de nacidos vivos en el periodo del un año, dividido por el número de mujeres entre 15 y 49 años y multiplicado el resultado por 1000</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Número de niñas nacidas en el periodo de un año, dividido por el número de mujeres entre 15 y 49 años y multiplicado el resultado por 1000</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Número de nacidos vivos en el periodo de un año menos el número de defunciones, dividido por el número de mujeres entre 15 y 49 años y multiplicado el resultado por 1000</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Número de nacidos vivos en el periodo de un año, dividido por la población a mitad del periodo considerado y multiplicado el resultado por 1000</li>
+</ol></li>
+</ul>
+<ol start="36" type="1">
+<li>El número de casos existentes de una enfermedad en una colectividad en un momento dado, se denomina:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Incidencia</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Prevalencia</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Incidencia acumulada</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Densidad de incidencia</li>
+</ol></li>
+</ul>
+<ol start="37" type="1">
+<li>Un estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Analítico</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-8" class="slide level2">
+<h2>Supuesto práctico (8)</h2>
+<div class="smaller">
+<ul>
+<li><ol start="2" type="a">
+<li>Transversal</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Ecológico</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Descriptivo</li>
+</ol></li>
+</ul>
+<ol start="38" type="1">
+<li>Una pirámide de población que presenta una forma triangular con la base amplia y el vértice superior marcado recibe el nombre de:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Bulbo</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Campana</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Piramidal</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Pagoda</li>
+</ol></li>
+</ul>
+<ol start="39" type="1">
+<li>La variable ‘Grupos Sanguíneos’ se clasifica dentro de las escalas de medición como:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Escala cuantitativa de intervalo</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Escala cualitativa ordinal</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Escala cuantitativa de relación</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Escala cualitativa nominal</li>
+</ol></li>
+</ul>
+<ol start="40" type="1">
+<li>Tres virus A, B, C pueden producir cierta enfermedad. En el laboratorio existen 2 tubos con el A, 5 con el B y 3 con el C. La probabilidad de producir la enfermedad de cada virus es: 30% el A, 40% el B y 50% el C. Se elige un tubo al azar y se inocula el virus a una cobaya. Determínese la probabilidad de que el animal contraiga la enfermedad:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>0.60</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>0.41</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>0.40</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>0.51</li>
+</ol></li>
+</ul>
+<ol start="41" type="1">
+<li>Los estudios epidemiológicos que tratan de investigar las causas de las enfermedades tienen un uso:</li>
+</ol>
+</div>
+</section>
+<section id="supuesto-9" class="slide level2">
+<h2>Supuesto práctico (9)</h2>
+<div class="smaller">
+<ul>
+<li><ol type="a">
+<li>Administrativo</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>De vigilancia epidemiológica</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Etiológico</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>De situación de salud</li>
+</ol></li>
+</ul>
+<ol start="42" type="1">
+<li>Cuando se analizan datos de la talla y el peso desde la perspectiva de la varianza, se trata de medidas de:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Dispersión</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Tendencia</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Intervalo</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>La afirmación b y la e son correctas</li>
+</ol></li>
+</ul>
+<ol start="43" type="1">
+<li>Al realizar un estudio descriptivo de una variable se ha obtenido una varianza con valor 0. Esto indica:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Que la variable está muy dispersa respecto de su media</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Que la variable toma un único valor que por tanto es su media</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Que la media vale lo mismo que la varianza</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Es una distribución asimétrica</li>
+</ol></li>
+</ul>
+<ol start="44" type="1">
+<li>Al tratar de estimar los valores de una variable en función de otra se ha decidido hacer una regresión lineal, de la que se ha obtenido un coeficiente de correlación lineal de Pearson con valor 0.95. Esto indica que:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>La relación lineal entre las variables es muy buena y conforme disminuyen los valores de una variable, aumentan los de la otra</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>El coeficiente de correlación de Pearson no puede ser negativo</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La relación lineal es muy buena y conforme aumentan los valores de una variable, disminuyen los de la otra</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-10" class="slide level2">
+<h2>Supuesto práctico (10)</h2>
+<div class="smaller">
+<ul>
+<li><ol start="4" type="a">
+<li>Las afirmaciones b y c son verdaderas</li>
+</ol></li>
+</ul>
+<ol start="45" type="1">
+<li>¿Cuál de las siguientes afirmaciones no es una propiedad de la distribución normal de probabilidad?</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>El área total bajo la curva es 10</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Es simétrica respecto a su media</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La moda, mediana y media coinciden</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>En el intervalo [µ − 3σ, µ + 3σ] se encuentra, aproximadamente, el 99, 74% de la distribución</li>
+</ol></li>
+</ul>
+<ol start="46" type="1">
+<li>Se toma una muestra de personas libres de cáncer y la seguimos durante los próximos 30 años observando después de este tiempo las tasas de incidencia de cáncer entre fumadores y no fumadores (Los individuos han elegido si van a fumar o no durante este periodo de forma voluntaria). Estamos realizando un estudio:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Prospectivo</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>De cohorte</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Ensayo clínico</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Los apartados a y b son ciertos</li>
+</ol></li>
+</ul>
+<p>Soluciones del supuesto práctico 1.c, 2.b, 3.a, 4.b, 5.b, 6.c, 7.b, 8.d, 9.a, 10.c, 11.d, 12.d, 13.b, 14.c, 15.a, 16.b, 17.d, 18.b, 19.c, 20.a, 21.c, 22.b, 23.a, 24.a, 25.b, 26.a, 27.c, 28.d, 29.c, 30.a, 31.b, 32.b, 33.c, 34.d, 35.d, 36.b, 37.d, 38.d, 39.d, 40.b, 41.c, 42.a, 43.b, 44.d, 45.a, 46.d</p>
+</div>
+</section>
+<section id="gracias-por-su-paciencia" class="slide level2">
+<h2>¡Gracias por su paciencia!</h2>
+<p><em>— Supuesto práctico —</em></p>
+</section>
+<section id="referencias" class="slide level2 smaller scrollable">
+<h2>Referencias</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-armitage2002" class="csl-entry" role="listitem">
+Armitage, Peter, Geoffrey Berry, y John N. S. Matthews. 2002. <em>Statistical Methods in Medical Research</em>. 4.ª ed. Blackwell Science.
+</div>
+<div id="ref-bradley1993" class="csl-entry" role="listitem">
+Bradley, Jana. 1993. <em>Methodological issues and practices in qualitative research</em>. En <em>Library Quarterly</em>. University of Chicago Press.
+</div>
+<div id="ref-cochrane1972" class="csl-entry" role="listitem">
+Cochrane, Archibald L. 1972. <em>Effectiveness and Efficiency: Random Reflections on Health Services</em>. Nuffield Provincial Hospitals Trust.
+</div>
+<div id="ref-cochrane2023" class="csl-entry" role="listitem">
+Cochrane Collaboration. 2023. <em>Cochrane Library</em>. <a href="https://www.cochranelibrary.com/">https://www.cochranelibrary.com/</a>.
+</div>
+<div id="ref-colton1974" class="csl-entry" role="listitem">
+Colton, Theodore. 1974. <em>Statistics in Medicine</em>. Little, Brown.
+</div>
+<div id="ref-creswell2018" class="csl-entry" role="listitem">
+Creswell, John W., y Cheryl N. Poth. 2018. <em>Qualitative Inquiry and Research Design: Choosing Among Five Approaches</em>. 4.ª ed. SAGE.
+</div>
+<div id="ref-dickersin1994" class="csl-entry" role="listitem">
+Dickersin, Kay, Roberta Scherer, y Carol Lefebvre. 1994. <em>Identifying relevant studies for systematic reviews</em>. En <em>BMJ</em>. BMJ.
+</div>
+<div id="ref-flick2018" class="csl-entry" role="listitem">
+Flick, Uwe. 2018. <em>An Introduction to Qualitative Research</em>. 6.ª ed. SAGE.
+</div>
+<div id="ref-glaser1967" class="csl-entry" role="listitem">
+Glaser, Barney G., y Anselm L. Strauss. 1967. <span>«The Discovery of Grounded Theory: Strategies for Qualitative Research»</span>. <em>Aldine Transaction</em>.
+</div>
+<div id="ref-oxman1993" class="csl-entry" role="listitem">
+Guyatt, Gordon H., David L. Sackett, y Deborah J. Cook. 1993. <span>«Users’ guides to the medical literature. <span>II</span>. How to use an article about therapy or prevention. <span>A</span>. Are the results of the study valid?»</span> <em>JAMA</em> 270: 2598-601.
+</div>
+<div id="ref-hanley1982" class="csl-entry" role="listitem">
+Hanley, James A., y Barbara J. McNeil. 1982. <span>«The meaning and use of the area under a receiver operating characteristic (<span>ROC</span>) curve»</span>. <em>Radiology</em> 143: 29-36.
+</div>
+<div id="ref-haynes2002" class="csl-entry" role="listitem">
+Haynes, R. Brian, David L. Sackett, Gordon H. Guyatt, y Peter Tugwell. 2002. <em>Clinical Epidemiology: How to Do Clinical Practice Research</em>. 3.ª ed. Lippincott Williams &amp; Wilkins.
+</div>
+<div id="ref-higgins2019" class="csl-entry" role="listitem">
+Higgins, Julian P. T., James Thomas, Jacqueline Chandler, et&nbsp;al. 2019. <em>Cochrane Handbook for Systematic Reviews of Interventions</em>. 2.ª ed. 2.ª ed.
+</div>
+<div id="ref-kirkwood2003" class="csl-entry" role="listitem">
+Kirkwood, Betty R., y Jonathan A. C. Sterne. 2003. <em>Essential Medical Statistics</em>. 2.ª ed. Blackwell Science.
+</div>
+<div id="ref-kleinbaum2010" class="csl-entry" role="listitem">
+Kleinbaum, David G., Lawrence L. Kupper, Azhar Nizam, y Eli S. Rosenberg. 2013. <em>Applied Regression Analysis and Other Multivariable Methods</em>. 5.ª ed. Cengage.
+</div>
+<div id="ref-knottnerus2002" class="csl-entry" role="listitem">
+Knottnerus, J. André, y Jean W. M. Muris. 2003. <span>«Assessment of the accuracy of diagnostic tests: the cross-sectional study»</span>. <em>Journal of Clinical Epidemiology</em> 56: 1118-28.
+</div>
+<div id="ref-pubmed2023" class="csl-entry" role="listitem">
+National Library of Medicine. 2023. <em>PubMed</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov/</a>.
+</div>
+<div id="ref-pedro2023" class="csl-entry" role="listitem">
+PEDro. 2023. <em>Physiotherapy Evidence Database</em>. <a href="https://pedro.org.au/">https://pedro.org.au/</a>.
+</div>
+<div id="ref-rosenthal2005" class="csl-entry" role="listitem">
+Rosenthal, Robert, y M. Robin DiMatteo. 2005. <em>The Oxford Handbook of Quantitative Methods</em>. Oxford University Press.
+</div>
+<div id="ref-rothman2008" class="csl-entry" role="listitem">
+Rothman, Kenneth J., Sander Greenland, y Timothy L. Lash. 2008. <em>Modern Epidemiology</em>. 3.ª ed. Lippincott Williams &amp; Wilkins.
+</div>
+<div id="ref-sackett1996" class="csl-entry" role="listitem">
+Sackett, David L., William M. C. Rosenberg, J. A. Muir Gray, R. Brian Haynes, y W. Scott Richardson. 1996. <span>«Evidence based medicine: what it is and what it isn’t»</span>. <em>BMJ</em> 312: 71-72.
+</div>
+<div id="ref-stahl2013" class="csl-entry" role="listitem">
+Stahl, Stephen M. 2013. <em>Stahl’s Essential Psychopharmacology: Neuroscientific Basis and Practical Applications</em>. 4.ª ed. Cambridge University Press.
+</div>
+<div id="ref-strauss1998" class="csl-entry" role="listitem">
+Strauss, Anselm, y Juliet Corbin. 1998. <em>Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory</em>. 2.ª ed. SAGE.
+</div>
+<div id="ref-taylor2015" class="csl-entry" role="listitem">
+Taylor, Steven J., Robert Bogdan, y Marjorie DeVault. 2015. <em>Introduction to Qualitative Research Methods</em>. 4.ª ed. Wiley.
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Cómo citar esta edición</strong></p>
+</div>
+<div class="callout-content">
+<blockquote>
+<p>Luque-Fernández, M. A. (2026). <em>Introducción a la Metodología Científica — Neurociencias (edición Quarto)</em>. Universidad de Granada.</p>
+</blockquote>
+<p>Bibliografía ampliada en <code>references.bib</code> — Flick (2018), Creswell &amp; Poth (2018), Sackett et al.&nbsp;(1996), Cochrane (1972), Rothman et al.&nbsp;(2008), entre otras.</p>
+</div>
+</div>
+</div>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Miguel Angel Luque-Fernández · Dpto. Estadística e I.O. · UGR · 2026</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiado");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiado");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/github\.com\/migariane\/neurociencias-metodologia");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

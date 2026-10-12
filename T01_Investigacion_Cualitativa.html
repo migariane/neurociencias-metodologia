@@ -1,0 +1,2312 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Miguel Angel Luque-Fernández">
+  <meta name="dcterms.date" content="2026-10-10">
+  <title>Neurociencias — Metodología Científica – Investigación Cualitativa</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-8a1cfd24ab1cd1e8e8cf80f1bbaff36b.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Investigación Cualitativa</h1>
+  <p class="subtitle">Introducción a la Metodología Científica — Máster Universitario en Neurociencias Básicas, Aplicadas y Dolor</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+<a href="https://migariane.github.io">Miguel Angel Luque-Fernández</a> 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:mluquefe@ugr.es">mluquefe@ugr.es</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Dpto. Estadística e Investigación Operativa, Universidad de Granada
+          </p>
+    </div>
+</div>
+
+  <p class="date">2026-10-10</p>
+</section>
+<section>
+<section id="investigación-cualitativa" class="title-slide slide level1 center">
+<h1>Investigación Cualitativa</h1>
+
+<img data-src="logo.png" width="90" class="r-stretch"><p><strong>Máster Universitario en Neurociencias Básicas, Aplicadas y Dolor</strong></p>
+<p>Introducción a la Metodología Científica</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Nota</strong></p>
+</div>
+<div class="callout-content">
+<p>Material docente de <strong>Miguel Angel Luque-Fernández</strong> (Dpto. Estadística e I.O., UGR · mluquefe@ugr.es · <a href="https://migariane.github.io">migariane.github.io</a> · <a href="https://maluque.netlify.app">maluque.netlify.app</a>). La estructura y el enfoque didáctico del curso toman como referencia la asignatura de Metodología Científica del Máster en Neurociencias Básicas, Aplicadas y Dolor (UGR), impartida originalmente por J. L. Romero-Béjar (2022).</p>
+</div>
+</div>
+</div>
+<p>Granada, 2026-10-10</p>
+</section>
+<section id="índice" class="slide level2">
+<h2>Índice</h2>
+<div class="smaller">
+<ul>
+<li><strong>1 Fundamentos de la investigación cualitativa</strong>
+<ul>
+<li>Preliminares</li>
+<li>Fases de la investigación cualitativa</li>
+<li>Métodos de investigación cualitativa</li>
+<li>Técnicas de investigación cualitativa</li>
+<li>Almacenamiento, análisis e interpretación de los datos</li>
+</ul></li>
+<li><strong>2 Validez de los métodos diagnósticos</strong>
+<ul>
+<li>Pruebas diagnósticas</li>
+<li>Validez y fiabilidad de una prueba diagnóstica</li>
+<li>Sensibilidad y especificidad</li>
+<li>Curvas ROC</li>
+<li>Índices de seguridad: VPP y VPN</li>
+</ul></li>
+<li><strong>3 Fundamentos de la práctica basada en la evidencia</strong>
+<ul>
+<li>Orígenes y definición</li>
+<li>Práctica basada en la evidencia</li>
+</ul></li>
+<li><strong>4 Bases de datos bibliográficas</strong>
+<ul>
+<li>Fuentes documentales de evidencia</li>
+<li>Revisión bibliográfica</li>
+<li>Instrumentos de la evidencia científica</li>
+<li>Elaboración de informes</li>
+<li>Integración de resultados a la práctica clínica</li>
+</ul></li>
+<li><strong>5 Supuesto práctico</strong></li>
+</ul>
+</div>
+</section>
+<section id="índice-fundamentos-de-la-investigación-cualitativa" class="slide level2">
+<h2>Índice — Fundamentos de la investigación cualitativa</h2>
+<div class="smaller">
+<ul>
+<li><strong>1 Fundamentos de la investigación cualitativa</strong>
+<ul>
+<li>Preliminares</li>
+<li>Fases de la investigación cualitativa</li>
+<li>Métodos de investigación cualitativa</li>
+<li>Técnicas de investigación cualitativa</li>
+<li>Almacenamiento, análisis e interpretación de los datos</li>
+</ul></li>
+<li><strong>2 Validez de los métodos diagnósticos</strong>
+<ul>
+<li>Pruebas diagnósticas</li>
+<li>Validez y fiabilidad de una prueba diagnóstica</li>
+<li>Sensibilidad y especificidad</li>
+<li>Curvas ROC</li>
+<li>Índices de seguridad: VPP y VPN</li>
+</ul></li>
+<li><strong>3 Fundamentos de la práctica basada en la evidencia</strong>
+<ul>
+<li>Orígenes y definición</li>
+<li>Práctica basada en la evidencia</li>
+</ul></li>
+<li><strong>4 Bases de datos bibliográficas</strong>
+<ul>
+<li>Fuentes documentales de evidencia</li>
+<li>Revisión bibliográfica</li>
+<li>Instrumentos de la evidencia científica</li>
+<li>Elaboración de informes</li>
+<li>Integración de resultados a la práctica clínica</li>
+</ul></li>
+<li><strong>5 Supuesto práctico</strong></li>
+</ul>
+</div>
+</section>
+<section id="paradigma" class="slide level2">
+<h2>Paradigma</h2>
+<p>Un paradigma es una visión del mundo, una forma de segmentar la complejidad del mundo.</p>
+<p>Se puede concebir como un cuerpo ideológico, filosófico y científico que se considera válido en una época o en un tiempo determinado según la comunidad científica.</p>
+<p>En la elaboración de un paradigma, se responden interrogantes filosóficos del tipo siguiente:</p>
+<ul>
+<li>Ontológico (naturaleza de la realidad).</li>
+<li>Epistemológico (relación entre el investigador y lo investigado).</li>
+<li>Axiológico (utilidad de los valores).</li>
+<li>Metodológico (forma de obtener el conocimiento).</li>
+</ul>
+</section>
+<section id="técnicas-de-investigación-en-ciencias-sociales" class="slide level2">
+<h2>Técnicas de investigación en Ciencias Sociales</h2>
+<div class="smaller">
+<p>Metodologías: - Empírico-analítica (cuantitativa). - Incluye los siguientes tipos de investigación: - Experimental. - Cuasi experimental. - Ex post facto. - Constructivista (cualitativa). - Incluye los siguientes tipos de investigación: - Fenomenológica. - Interaccionismo simbólico. - Etnografía. - Teoría fundamentada. - Etnometodología. - Fenomenografía. - Sociocrítica (cualitativa). - Incluye los siguientes tipos de investigación: - Investigación-acción. - Participativa. - Colaborativa. - Feminista.</p>
+</div>
+</section>
+<section id="investigación-cuantitativa-vs.-investigación-cualitativa" class="slide level2">
+<h2>Investigación cuantitativa vs.&nbsp;investigación cualitativa</h2>
+<div class="smaller">
+<p>La investigación cuantitativa describe, verifica relaciones entre variables y examina los cambios observados en la variable respuesta en función de la/s variable/s independiente/s. Su principal característica es la objetividad. La epidemiología aplica las premisas de la investigación cuantitativa.</p>
+<p>La investigación cualitativa, sin embargo, tiene por finalidad comprender un fenómeno desde el punto de vista de los sujetos: las observaciones se describen principalmente de manera narrativa. Está orientada al estudio de la realidad social, siempre compleja. Puede cometer el error de la subjetividad del investigador que analiza el discurso.</p>
+</div>
+</section>
+<section id="características-de-la-investigación-cuantitativa-y-cualitativa" class="slide level2">
+<h2>Características de la investigación cuantitativa y cualitativa</h2>
+<div class="smaller">
+<p><strong>Investigación cuantitativa</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Característica</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Objeto de estudio</td>
+<td>Cantidad (causalidad)</td>
+</tr>
+<tr class="even">
+<td>Origen filosófico</td>
+<td>Positivismo</td>
+</tr>
+<tr class="odd">
+<td>Conceptos asociados</td>
+<td>Experimento</td>
+</tr>
+<tr class="even">
+<td>Finalidad de la investigación</td>
+<td>Descripción, contraste de hipótesis, predicción, control</td>
+</tr>
+<tr class="odd">
+<td>Diseño</td>
+<td>Predeterminado. Lineal</td>
+</tr>
+<tr class="even">
+<td>Contexto</td>
+<td>Artificial. Laboratorio</td>
+</tr>
+<tr class="odd">
+<td>Muestra</td>
+<td>Aleatoria y representativa</td>
+</tr>
+<tr class="even">
+<td>Obtención de datos</td>
+<td>Estructurada y sistémica</td>
+</tr>
+<tr class="odd">
+<td>Análisis de datos</td>
+<td>Deductivo</td>
+</tr>
+<tr class="even">
+<td>Resultados</td>
+<td>Precisos. Limitados</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Investigación cualitativa</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Característica</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Objeto de estudio</td>
+<td>Cualidad (naturaleza, esencia)</td>
+</tr>
+<tr class="even">
+<td>Origen filosófico</td>
+<td>Fenomenología</td>
+</tr>
+<tr class="odd">
+<td>Conceptos asociados</td>
+<td>Trabajo de campo. Etnografía</td>
+</tr>
+<tr class="even">
+<td>Finalidad de la investigación</td>
+<td>Descripción, comprensión, generación de hipótesis</td>
+</tr>
+<tr class="odd">
+<td>Diseño</td>
+<td>Flexible. Circular</td>
+</tr>
+<tr class="even">
+<td>Contexto</td>
+<td>Natural</td>
+</tr>
+<tr class="odd">
+<td>Muestra</td>
+<td>No aleatoria</td>
+</tr>
+<tr class="even">
+<td>Obtención de datos</td>
+<td>Textos, entrevistas, observaciones, etc.</td>
+</tr>
+<tr class="odd">
+<td>Análisis de datos</td>
+<td>Inductivo</td>
+</tr>
+<tr class="even">
+<td>Resultados</td>
+<td>Holísticos. Expansivos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="proceso-y-fases-de-la-investigación-cualitativa" class="slide level2">
+<h2>Proceso y fases de la investigación cualitativa</h2>
+<ol type="1">
+<li>Preparatoria o reflexiva.</li>
+<li>Revisión de la literatura.</li>
+<li>Revisión y análisis de la documentación.</li>
+<li>Mapeo.</li>
+<li>Muestreo.</li>
+<li>Recogida de datos.</li>
+<li>Definición de las técnicas e instrumentos.</li>
+</ol>
+</section>
+<section id="fase-1-preparatoria-o-reflexiva" class="slide level2">
+<h2>Fase 1: preparatoria o reflexiva</h2>
+<div class="smaller">
+<p>Esta fase es el punto de partida en el que el investigador ha de identificar el problema de estudio. Entre otras tareas debe:</p>
+<ul>
+<li>Analizar la realidad social o cultural.</li>
+<li>No se trata de estudiar una enfermedad sino los casos particulares de las personas. Entender el mundo de estas personas.</li>
+<li>Esta forma de estudio sitúa al investigador ante la decisión del paradigma cuantitativo o cualitativo.</li>
+<li>Ha de definir la pregunta de investigación. En el caso cualitativo esta pregunta se inclinaría hacia lo subjetivo, lo social, etc.</li>
+<li>Según lo anterior es necesario el contacto directo con las personas. La entrevista, el diálogo, etc. ayudarán a definir y precisar el problema de investigación.</li>
+</ul>
+<h3 id="fase-2-revisión-de-la-literatura">Fase 2: revisión de la literatura</h3>
+<p>Esta fase es en la que se realiza una búsqueda bibliográfica del tema objeto de estudio.</p>
+<ul>
+<li>Esta fase es paralela a la recolección de datos y a los análisis preliminares.</li>
+<li>La revisión bibliográfica es un referente teórico acerca del problema de estudio.</li>
+<li>Ayuda a depurar las categorías de información que se van determinando en el transcurso de la investigación.</li>
+</ul>
+</div>
+</section>
+<section id="fase-3-revisión-y-análisis-de-la-documentación" class="slide level2">
+<h2>Fase 3: revisión y análisis de la documentación</h2>
+<div class="smaller">
+<p>En esta fase se recurre a informantes clave para familiarizarse con la realidad. Se interactúa de manera eficaz tanto con las personas como con las situaciones objeto de la investigación.</p>
+<p>Los documentos pueden ser de naturaleza muy diversa: personales, institucionales o grupales, formales o informales.</p>
+<p>El análisis documental se realiza en cinco etapas:</p>
+<ul>
+<li>Rastreo e inventario de los documentos disponibles.</li>
+<li>Clasificación de los documentos identificados.</li>
+<li>Selección de los documentos relevantes para nuestra investigación.</li>
+<li>Lectura en profundidad de los documentos.</li>
+<li>Lectura cruzada y comparativa de los documentos en base a los hallazgos previos.</li>
+</ul>
+<h3 id="fase-4-mapeo">Fase 4: mapeo</h3>
+<p>El mapeo complementa a la fase anterior. Ayuda a situarnos en el contexto donde se llevará a cabo la investigación, ya que nos permitirá conocer la realidad socio cultural, a los participantes, sus circunstancias, etc.</p>
+</div>
+</section>
+<section id="fase-5-muestreo" class="slide level2">
+<h2>Fase 5: muestreo</h2>
+<div class="smaller">
+<p>Esta fase es la de la selección de actores, eventos, lugares que se incluirán en la investigación.</p>
+<ul>
+<li>Debe ser pertinente: identificar a aquellos participantes que aporten mayor y mejor información.</li>
+<li>Debe ser adecuado: contar con suficientes datos para desarrollar una completa y rica descripción del fenómeno bajo análisis.</li>
+</ul>
+<p>Cuando se trate de lugares, eventos, situaciones para la observación, además de los anteriores, debe de ser:</p>
+<ul>
+<li>Conveniente: supone la elección del mejor lugar para la labor sin crear interferencias.</li>
+<li>Oportuno: se debe estar en el momento justo y adecuado.</li>
+<li>Disponible: el acceso a los lugares debe ser libre y permanente.</li>
+</ul>
+<h3 id="fase-6-recogida-de-datos">Fase 6: recogida de datos</h3>
+<p>En esta fase se especifica el tipo de datos a recoger, el lugar y la forma, etc.</p>
+<p>Puede responder a las siguientes cuestiones:</p>
+<ul>
+<li>¿Debe primar la calidad de los datos frente a la cantidad?</li>
+<li>¿Por dónde comenzar y por dónde terminar?</li>
+<li>¿A quién incluir y excluir del proceso de recolección de la información?</li>
+</ul>
+</div>
+</section>
+<section id="fase-7-definición-de-las-técnicas-e-instrumentos" class="slide level2">
+<h2>Fase 7: definición de las técnicas e instrumentos</h2>
+<p>Esta fase se definen las técnicas e instrumentos para la recogida de datos.</p>
+<p>Han de tenerse en cuenta los siguientes elementos:</p>
+<ul>
+<li>Enfoque desde el que se plantea la investigación.</li>
+<li>El tipo de información que se pretende conseguir.</li>
+<li>Las fuentes de información y sus características.</li>
+<li>El tiempo del que se dispone para todo el proceso.</li>
+</ul>
+</section>
+<section id="principales-diseños-y-métodos-de-investigación-cualitativa" class="slide level2">
+<h2>Principales diseños y métodos de investigación cualitativa</h2>
+<p>Los métodos son los caminos específicos que permiten acceder al análisis de los distintos objetivos que se pretenden investigar y abarcan todos los procedimientos y actividades necesarios para adquirir un determinado conocimiento.</p>
+<ul>
+<li>Métodos etnográficos o naturalistas.</li>
+<li>Método de la teoría fundamentada.</li>
+<li>Método del análisis del discurso.</li>
+<li>Método de la investigación-acción participante.</li>
+</ul>
+</section>
+<section id="métodos-etnográficos-o-naturalistas" class="slide level2">
+<h2>Métodos etnográficos o naturalistas</h2>
+<div class="smaller">
+<p>El investigador participa en la vida cotidiana de los investigados.</p>
+<ul>
+<li>Nace de la antropología natural y muchos la consideran como la forma básica de investigación cualitativa.</li>
+<li>El investigador observa, escucha, habla con los participantes y recopila la información.</li>
+<li>Las técnicas más utilizadas son la observación participante, la entrevista y las técnicas documentales.</li>
+</ul>
+<h3 id="método-de-la-teoría-fundamentada">Método de la teoría fundamentada</h3>
+<p>Elaboran una teoría del fenómeno estudiado de forma inductiva.</p>
+<ul>
+<li>Se elabora durante la recogida y análisis de los datos. Se interpretan y codifican.</li>
+<li>Asume que el investigador se introduce en el campo de acción para conocer cómo se desarrollan las cosas.</li>
+</ul>
+<h3 id="método-del-análisis-del-discurso">Método del análisis del discurso</h3>
+<p>Analizan el lenguaje de la comunicación entre los actores situados en un contexto social determinado.</p>
+<ul>
+<li>El discurso se considera como un conjunto de prácticas lingüísticas que mantiene y promueve las relaciones personales.</li>
+<li>El análisis del discurso utiliza la entrevista, las técnicas documentales y la observación de las interacciones sociales.</li>
+</ul>
+</div>
+</section>
+<section id="método-de-la-investigación-acción-participante" class="slide level2">
+<h2>Método de la investigación-acción participante</h2>
+<div class="smaller">
+<p>El investigador es un agente de cambio social que impulsa la conciencia social.</p>
+<p>Los supuestos prácticos de este método son:</p>
+<ul>
+<li>Las personas construyen la realidad en la que viven.</li>
+<li>Los grupos y comunidades tienen su propio ritmo histórico y cultural.</li>
+<li>La relación investigador-grupo ha de ser horizontal y dialógica.</li>
+<li>Toda comunidad cuenta con recursos necesarios para su transformación.</li>
+<li>La investigación es propiedad de las personas investigadas.</li>
+<li>La persona que investiga se inserta en la comunidad.</li>
+<li>El proceso de investigación debe romper la relación de dependencia intelectual para establecer un modelo de relación horizontal con las personas investigadas.</li>
+</ul>
+</div>
+</section>
+<section id="técnicas-de-investigación-cualitativa" class="slide level2">
+<h2>Técnicas de investigación cualitativa</h2>
+<p>Las técnicas más utilizadas en la investigación cualitativa se basan en la comprensión e interpretación de la información recogida.</p>
+<p>Las técnicas más utilizadas son:</p>
+<ul>
+<li>Técnicas conversacionales.</li>
+<li>Técnicas observacionales.</li>
+<li>Técnicas documentales.</li>
+</ul>
+</section>
+<section id="técnicas-conversacionales" class="slide level2">
+<h2>Técnicas conversacionales</h2>
+<div class="smaller">
+<p>El elemento básico es la entrevista. La entrevista se puede clasificar según diversos criterios:</p>
+<ul>
+<li>Estructuración: estructurada o no estructurada.</li>
+<li>Directividad: dirigida o no dirigida.</li>
+<li>Finalidad: de trabajo, clínica, de investigación.</li>
+<li>Según el número de participantes: individual o grupal.</li>
+</ul>
+<p>Los distintos tipos de técnicas conversacionales son:</p>
+<ul>
+<li>Encuesta etnográfica (análisis de la dimensiones culturales de las realidades humanas bajo investigación).</li>
+<li>Entrevistas individuales (recogen información subjetiva y personal del entrevistado). Pueden ser no estructuradas, semiestructuradas o estructuradas.</li>
+<li>Técnicas grupales (recogen la información de modo colectivo). Pueden desarrollarse en grupos de discusión (investigan lugares comunes de un grupo de personas) y/o grupos focales (se centran en un número reducido de tópicos o problemas).</li>
+<li>Técnicas biográficas.</li>
+</ul>
+</div>
+</section>
+<section id="técnicas-observacionales" class="slide level2">
+<h2>Técnicas observacionales</h2>
+<div class="smaller">
+<p>La observación científica se realiza de modo deliberado, sistemático y consciente. Los resultados obtenidos se ordenan, anotan y se interpretan según el significado de lo observado. La observación puede ser:</p>
+<ul>
+<li>Participante: se hace desde dentro de las realidades humanas que se pretenden estudiar. Todo lo acontecido durante la investigación se anota en el diario de campo.</li>
+<li>No participante: el investigador pretende ubicarse fuera de la realidad sociocultural que va a estudiar.</li>
+</ul>
+<h3 id="técnicas-documentales">Técnicas documentales</h3>
+<p>Las técnicas documentales analizan el discurso a través de documentos en archivos, cartas, etc.</p>
+</div>
+</section>
+<section id="almacenamiento-de-los-datos" class="slide level2">
+<h2>Almacenamiento de los datos</h2>
+<div class="smaller">
+<p>Consiste en la transcripción de los textos resultantes del estudio.</p>
+<ul>
+<li>Los datos de investigación cualitativa se presentan en forma de texto narrativo.</li>
+<li>Dependiendo del método utilizado puede implicar la posibilidad de registro, codificación y análisis de resultados.</li>
+</ul>
+<h3 id="análisis-e-interpretación-de-los-datos">Análisis e interpretación de los datos</h3>
+<p>En primer lugar se realiza una selección y ordenación de la información, que incluye:</p>
+<ul>
+<li>Segmentación: separación del conjunto en unidades. Es una fase descriptiva y clasificatoria.</li>
+<li>Categorización: situaciones, contextos, acontecimientos, comportamientos u opiniones sobre un problema. Estas categorías deben ser exhaustivas y excluyentes.</li>
+<li>Codificación: cada categoría tiene un código indicativo que identifica el fragmento de información así como la persona implicada. Se suele utilizar software como NVivo o Atlas Ti.</li>
+</ul>
+<h3 id="obtención-de-resultados-y-conclusiones">Obtención de resultados y conclusiones</h3>
+<p>Finalmente, mediante la realización de un informe provisional, se realizan un:</p>
+<ul>
+<li>Análisis del contenido: descripción de lo dicho y hecho por los actores. Asume la transparencia del lenguaje.</li>
+<li>Análisis del discurso: vincula el lenguaje a las relaciones sociales. Es más interpretativo.</li>
+</ul>
+</div>
+</section>
+<section id="elaboración-de-un-informe" class="slide level2">
+<h2>Elaboración de un informe</h2>
+<p>Llegado a este punto el objetivo final de toda investigación cualitativa es la elaboración y análisis crítico de un informe de investigación que comunica los principales resultados de la investigación en forma de artículo de investigación.</p>
+<h3 id="principios-bioéticos-de-investigación">Principios bioéticos de investigación</h3>
+<p>Toda investigación cualitativa debe de regirse por una serie de principios bioéticos relacionados con:</p>
+<ul>
+<li>Respeto: trato autónomo al paciente.</li>
+<li>Beneficencia: maximizar los beneficios posibles y reducir al mínimo el posible daño.</li>
+<li>Justicia: distribuir equitativamente los riesgos y beneficios.</li>
+</ul>
+</section>
+<section id="pruebas-diagnósticas" class="slide level2">
+<h2>Pruebas diagnósticas</h2>
+<p>Una prueba diagnóstica es cualquier procedimiento realizado para confirmar o descartar un diagnóstico o para incrementar o disminuir su verosimilitud.</p>
+<p>La utilidad de una prueba diagnóstica vendrá determinada por su validez y su fiabilidad así como por su rendimiento clínico y su coste.</p>
+</section>
+<section id="validez-o-exactitud-de-los-métodos-diagnósticos" class="slide level2">
+<h2>Validez (o exactitud) de los métodos diagnósticos</h2>
+<div class="smaller">
+<p>Característica de la <strong>calidad de la medida</strong>: ausencia de error sistemático; capacidad de clasificar correctamente enfermos/sanos. Se establece frente a <em>gold standard</em> (ej. mamografía vs.&nbsp;biopsia). <em>Validez = capacidad de medir lo que dice medir.</em></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Resultado de la prueba</th>
+<th>Verdadero enfermo</th>
+<th>Verdadero sano</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Positivo (enfermo)</strong></td>
+<td>Verdadero positivo (VP)</td>
+<td>Falso positivo (FP)</td>
+</tr>
+<tr class="even">
+<td><strong>Negativo (sano)</strong></td>
+<td>Falso negativo (FN)</td>
+<td>Verdadero negativo (VN)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Nota</strong></p>
+</div>
+<div class="callout-content">
+<p>La validez se analiza con la tabla <span class="math inline">\(2\times 2\)</span>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="fiabilidad" class="slide level2">
+<h2>Fiabilidad</h2>
+<div class="smaller">
+<p>Es una característica de la calidad de una medida que indica el grado con el que los resultados obtenidos en una medición pueden ser replicados, es decir, es como el nivel de estabilidad que muestran las medidas repetidas de un fenómeno relativamente estable cuando se realizan en las mismas condiciones.</p>
+<p>De hecho, la fiabilidad tiene que ver con la ausencia de error aleatorio en la medición.</p>
+<p>Existen dos tipos de fiabilidad:</p>
+<ul>
+<li>Intraobservador: consistencia que mantiene un observador al valorar la misma muestra. Por ejemplo, un profesor que revisa dos veces los mismos exámenes y obtiene las mismas calificaciones para sus alumnos.</li>
+<li>Entre observadores: consistencia entre dos o más observadores al valorar la misma muestra. Por ejemplo, dos profesores revisan los mismos exámenes y obtienen los mismos resultados para sus alumnos.</li>
+</ul>
+</div>
+</section>
+<section id="aumentar-validez-y-fiabilidad" class="slide level2">
+<h2>Aumentar validez y fiabilidad</h2>
+<div class="smaller">
+<p>Para mejorar la fiabilidad se pueden hacer mediciones repetidas de la misma muestra y quedarnos con el promedio. Esto se hace cuando se calcula la tensión arterial media de un paciente, por ejemplo.</p>
+<ul>
+<li>Para mejorar la validez es necesario calibrar los instrumentos de medida.</li>
+<li>Para mejorar ambas se puede:
+<ul>
+<li>Tratar de que todos los investigadores tengan los mismos criterios.</li>
+<li>Entrenar a los observadores sobre cómo recoger datos.</li>
+<li>Seleccionar los aparatos más fiables.</li>
+<li>Calibrar aparatos de medida.</li>
+<li>Si es posible, es preferible utilizar aparatos automáticos.</li>
+<li>Emplear técnicas de enmascaramiento o ciego.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="sensibilidad-y-especificidad" class="slide level2">
+<h2>Sensibilidad y especificidad</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Sensibilidad y especificidad — validez interna</strong></p>
+</div>
+<div class="callout-content">
+<p>Son parámetros de <strong>validez interna</strong> frente a <em>gold standard</em>.</p>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>Sensibilidad</strong> — detectar enfermos</p>
+<p><span class="math display">\[S = \frac{VP}{VP + FN}\]</span></p>
+<p>Probabilidad de <strong>positivo</strong> si está <strong>enfermo</strong>.</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>Especificidad</strong> — descartar sanos</p>
+<p><span class="math display">\[E = \frac{VN}{FP + VN}\]</span></p>
+<p>Probabilidad de <strong>negativo</strong> si está <strong>sano</strong>.</p>
+</div>
+</div></div>
+<div class="smaller">
+<ul>
+<li><span class="math inline">\(S\)</span> alta → útil para <strong>descartar</strong> (si sale negativo, casi seguro sano).</li>
+<li><span class="math inline">\(E\)</span> alta → útil para <strong>confirmar</strong> (si sale positivo, casi seguro enfermo).</li>
+</ul>
+</div>
+</section>
+<section id="relación-entre-sensibilidad-y-especificidad" class="slide level2">
+<h2>Relación entre sensibilidad y especificidad</h2>
+<div class="smaller">
+<p>Una prueba con una sensibilidad alta trata de detectar la enfermedad en el caso de positividad de la prueba. Si la prueba es negativa, una sensibilidad alta también es útil para descartar la enfermedad. Una especificidad alta evita los falsos positivos, por tanto es recomendable con enfermedades graves pero tratables en las que se debe de estar seguro del diagnóstico antes de comunicarlo al paciente.</p>
+<ul>
+<li>La sensibilidad depende de la prevalencia de la enfermedad. A mayor prevalencia mayor probabilidad de ser detectada y por tanto mayor sensibilidad.</li>
+<li>La falta de estandarización en las mediciones conduce a error en la sensibilidad.</li>
+<li>Para enfermedades con poca prevalencia es mejor elegir pruebas con una alta especificidad.</li>
+<li>Para enfermedades en las que es esencial un diagnóstico precoz es mejor pruebas con alta sensibilidad.</li>
+</ul>
+</div>
+</section>
+<section id="curvas-roc" class="slide level2">
+<h2>Curvas ROC</h2>
+<p>Las curvas ROC (ROC, del inglés) representan los distintos valores que pueden tomar la sensibilidad y especificidad en un sistema de coordenadas. En el eje de ordenadas se representan los valores de la sensibilidad (S) y en el eje de abcisas los complementarios de la especificidad (1-E).</p>
+<p>El área por debajo de la curva ROC es un buen reflejo de la exactitud, validez o capacidad discriminatoria de la prueba. A mayor área mejor es la prueba.</p>
+
+<img data-src="assets/roc-cuali.png" style="width:78.0%" class="r-stretch"><p><em>Curva ROC — sensibilidad vs.&nbsp;(1-especificidad)</em></p>
+</section>
+<section id="valor-predictivo-positivo-vpp-y-valor-predictivo-negativo-vpn" class="slide level2">
+<h2>Valor predictivo positivo (VPP) y valor predictivo negativo (VPN)</h2>
+<p>Son <strong>índices de seguridad</strong> — dependen de la prevalencia.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>VPP</strong> — estar enfermo si el test da <strong>positivo</strong></p>
+<p><span class="math display">\[VPP = \frac{VP}{VP + FP} = \frac{VP}{\text{Total positivos}}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>VPN</strong> — estar sano si el test da <strong>negativo</strong></p>
+<p><span class="math display">\[VPN = \frac{VN}{VN + FN} = \frac{VN}{\text{Total negativos}}\]</span></p>
+</div>
+</div></div>
+</section>
+<section id="relación-entre-los-valores-predictivos-y-la-prevalencia" class="slide level2">
+<h2>Relación entre los valores predictivos y la prevalencia</h2>
+<p>Conforme la prevalencia aumenta (manteniendo constantes la S y la E):</p>
+<ul>
+<li>Aumenta el VPP.</li>
+<li>Aumentan, en valor absoluto, los FN.</li>
+<li>Disminuyen, en valor absoluto, los FP.</li>
+<li>Disminuye el VPN.</li>
+</ul>
+<p>Atendiendo a estas particularidades hay que tener en cuenta que:</p>
+<ul>
+<li>Las pruebas no son exportables de una zona a otra si la prevalencia es distinta.</li>
+<li>Los médicos en niveles secundarios y terciarios aciertan más que los del nivel primario ya que actúan como filtro aumentando la prevalencia y por tanto los VPP.</li>
+</ul>
+</section>
+<section id="cálculo-práctico" class="slide level2">
+<h2>Cálculo práctico</h2>
+<p>Con una tabla <span class="math inline">\(2\times 2\)</span> todo es inmediato.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Enfermo</strong></th>
+<th><strong>Sano</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Test +</strong></td>
+<td><span class="math inline">\(a\)</span> (VP)</td>
+<td><span class="math inline">\(b\)</span> (FP)</td>
+<td><span class="math inline">\(a+b\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Test −</strong></td>
+<td><span class="math inline">\(c\)</span> (FN)</td>
+<td><span class="math inline">\(d\)</span> (VN)</td>
+<td><span class="math inline">\(c+d\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><span class="math inline">\(a+c\)</span></td>
+<td><span class="math inline">\(b+d\)</span></td>
+<td><span class="math inline">\(N\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="formula-box">
+<p><span class="math display">\[S = \frac{a}{a+c} \qquad E = \frac{d}{b+d}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="formula-box">
+<p><span class="math display">\[VPP = \frac{a}{a+b} \qquad VPN = \frac{d}{c+d}\]</span></p>
+</div>
+</div></div>
+</section>
+<section id="otros-índices" class="slide level2">
+<h2>Otros índices</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>Mala clasificación</strong> y <strong>Valor global</strong></p>
+<p><span class="math display">\[MC = \frac{FP+FN}{N} \qquad VG = \frac{VP+VN}{N}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="formula-box">
+<p><strong>Razones de verosimilitud</strong></p>
+<p><span class="math display">\[RVP = \frac{S}{1-E} \qquad RVN = \frac{1-S}{E}\]</span></p>
+</div>
+</div></div>
+<div class="smaller">
+<ul>
+<li><span class="math inline">\(RVP &gt; 10\)</span> gran aumento de probabilidad de enfermedad si test +.</li>
+<li><span class="math inline">\(RVN &lt; 0.1\)</span> gran descenso si test −.</li>
+</ul>
+</div>
+</section>
+<section id="fundamentos-de-la-práctica-basada-en-la-evidencia" class="slide level2">
+<h2>Fundamentos de la práctica basada en la evidencia</h2>
+<div class="smaller">
+<ol type="1">
+<li>Fundamentos de la investigación cualitativa</li>
+</ol>
+<ul>
+<li>Preliminares</li>
+<li>Fases de la investigación cualitativa</li>
+<li>Métodos de investigación cualitativa</li>
+<li>Técnicas de investigación cualitativa</li>
+<li>Almacenamiento, análisis e interpretación de los datos</li>
+</ul>
+<ol start="2" type="1">
+<li>Validez de los métodos diagnósticos</li>
+</ol>
+<ul>
+<li>Pruebas diagnósticas</li>
+<li>Validez y fiabilidad de una prueba diagnóstica</li>
+<li>Sensibilidad y especificidad</li>
+<li>Curvas ROC</li>
+<li>Índices de seguridad: VPP y VPN</li>
+</ul>
+<ol start="3" type="1">
+<li>Fundamentos de la práctica basada en la evidencia</li>
+</ol>
+<ul>
+<li>Orígenes y definición</li>
+<li>Práctica basada en la evidencia</li>
+</ul>
+<ol start="4" type="1">
+<li>Bases de datos bibliográficas</li>
+</ol>
+<ul>
+<li>Fuentes documentales de evidencia</li>
+<li>Revisión bibliográfica</li>
+<li>Instrumentos de la evidencia científica</li>
+<li>Elaboración de informes</li>
+<li>Integración de resultados a la práctica clínica</li>
+</ul>
+<ol start="5" type="1">
+<li>Supuesto práctico</li>
+</ol>
+</div>
+</section>
+<section id="orígenes-y-definición" class="slide level2">
+<h2>Orígenes y definición</h2>
+<div class="smaller">
+<ol type="1">
+<li>Fundamentos de la investigación cualitativa</li>
+</ol>
+<ul>
+<li>Preliminares</li>
+<li>Fases de la investigación cualitativa</li>
+<li>Métodos de investigación cualitativa</li>
+<li>Técnicas de investigación cualitativa</li>
+<li>Almacenamiento, análisis e interpretación de los datos</li>
+</ul>
+<ol start="2" type="1">
+<li>Validez de los métodos diagnósticos</li>
+</ol>
+<ul>
+<li>Pruebas diagnósticas</li>
+<li>Validez y fiabilidad de una prueba diagnóstica</li>
+<li>Sensibilidad y especificidad</li>
+<li>Curvas ROC</li>
+<li>Índices de seguridad: VPP y VPN</li>
+</ul>
+<ol start="3" type="1">
+<li>Fundamentos de la práctica basada en la evidencia</li>
+</ol>
+<ul>
+<li>Orígenes y definición</li>
+<li>Práctica basada en la evidencia</li>
+</ul>
+<ol start="4" type="1">
+<li>Bases de datos bibliográficas</li>
+</ol>
+<ul>
+<li>Fuentes documentales de evidencia</li>
+<li>Revisión bibliográfica</li>
+<li>Instrumentos de la evidencia científica</li>
+<li>Elaboración de informes</li>
+<li>Integración de resultados a la práctica clínica</li>
+</ul>
+<ol start="5" type="1">
+<li>Supuesto práctico</li>
+</ol>
+</div>
+</section>
+<section id="orígenes-de-la-práctica-basada-en-la-evidencia-pbe" class="slide level2">
+<h2>Orígenes de la práctica basada en la evidencia (PBE)</h2>
+<div class="smaller">
+<p>La práctica basada en la evidencia (PBE) tiene sus orígenes en la medicina basada en la evidencia (MBE) que es un movimiento que surge en el último tercio del S. XX en Reino Unido de manos de Archibald Cochrane.</p>
+<ul>
+<li>La práctica basada en la evidencia (PBE) es caracterizada por la utilización consciente, explícita y juiciosa de la mejor evidencia disponible para tomar decisiones sobre la atención individual de cada paciente.</li>
+<li>Actualmente se habla de PBE para todas las disciplinas relacionadas con la salud que han adaptado su práctica profesional a los conocimientos generados por la investigación científica de calidad.</li>
+<li>Entre todas las PBE destaca la Enfermería Basada en la Evidencia (EBE) que se define como la aplicación consciente, explícita y juiciosa de la mejor evidencia científica disponible relativa al conocimiento enfermero para tomar decisiones sobre el cuidado de enfermos, teniendo en cuenta sus preferencias y valores.</li>
+<li>De hecho la EBE, considera los datos de la verdad cuantitativa como una verdad probabilista pero permitiendo que un análisis interpretativo o cualitativo tenga espacio para explicar la realidad.</li>
+</ul>
+</div>
+</section>
+<section id="bases-conceptuales-de-la-mbe" class="slide level2">
+<h2>Bases conceptuales de la MBE</h2>
+<ol type="1">
+<li>Investigación. Otorga mucho valor a la investigación puramente experimental (ensayos clínicos y metaanálisis).</li>
+<li>Experiencia clínica. La experiencia aporta conocimiento y capacidad para tomar decisiones acertadas.</li>
+<li>Preferencias y valores de los usuarios. Tienen derecho a decidir. Influencia de la cultura y aquello que más se adapte a su forma de pensar. Llegado el caso, prevalece.</li>
+<li>Recursos disponibles. Los recursos del sistema sanitario no son ilimitados. Utilizarlos conscientemente y en base a términos de eficiencia o coste-efectividad.</li>
+</ol>
+</section>
+<section id="características-de-la-ebe" class="slide level2">
+<h2>Características de la EBE</h2>
+<div class="smaller">
+<p>La enfermería, como disciplina sociosanitaria, investiga desde dos vertientes:</p>
+<ul>
+<li>Busca causas de los fenómenos sin tener en cuenta el estado subjetivo del sujeto.</li>
+<li>Comprender fenómenos desde la perspectiva de los individuos.</li>
+</ul>
+<p>La EBE busca evidencias desde ambas perspectivas (cualitativa y cuantitativa) no centrándose sólo en la investigación puramente experimental que se hace desde la MBE.</p>
+<h3 id="ventajas-de-la-ebe">Ventajas de la EBE</h3>
+<ul>
+<li>Disminución en la variabilidad clínica.</li>
+<li>Ayuda a la sostenibilidad del Sistema Sanitario.</li>
+<li>‘Apoyo’ judicial.</li>
+<li>Integra en la práctica a los 4 elementos principales (profesional, paciente, recursos e investigación).</li>
+<li>Promueve el cambio frente al inmovilismo profesional.</li>
+<li>Dota de sentido a una ciencia aplicada como es la enfermería.</li>
+</ul>
+</div>
+</section>
+<section id="práctica-basada-en-la-evidencia" class="slide level2">
+<h2>Práctica basada en la evidencia</h2>
+<div class="smaller">
+<ol type="1">
+<li>Fundamentos de la investigación cualitativa</li>
+</ol>
+<ul>
+<li>Preliminares</li>
+<li>Fases de la investigación cualitativa</li>
+<li>Métodos de investigación cualitativa</li>
+<li>Técnicas de investigación cualitativa</li>
+<li>Almacenamiento, análisis e interpretación de los datos</li>
+</ul>
+<ol start="2" type="1">
+<li>Validez de los métodos diagnósticos</li>
+</ol>
+<ul>
+<li>Pruebas diagnósticas</li>
+<li>Validez y fiabilidad de una prueba diagnóstica</li>
+<li>Sensibilidad y especificidad</li>
+<li>Curvas ROC</li>
+<li>Índices de seguridad: VPP y VPN</li>
+</ul>
+<ol start="3" type="1">
+<li>Fundamentos de la práctica basada en la evidencia</li>
+</ol>
+<ul>
+<li>Orígenes y definición</li>
+<li>Práctica basada en la evidencia</li>
+</ul>
+<ol start="4" type="1">
+<li>Bases de datos bibliográficas</li>
+</ol>
+<ul>
+<li>Fuentes documentales de evidencia</li>
+<li>Revisión bibliográfica</li>
+<li>Instrumentos de la evidencia científica</li>
+<li>Elaboración de informes</li>
+<li>Integración de resultados a la práctica clínica</li>
+</ul>
+<ol start="5" type="1">
+<li>Supuesto práctico</li>
+</ol>
+</div>
+</section>
+<section id="fases-de-la-práctica-basada-en-la-evidencia" class="slide level2">
+<h2>Fases de la práctica basada en la evidencia</h2>
+<div class="smaller">
+<p>Fase 0. Espíritu de preguntamos por la práctica clínica y cómo hacemos las cosas.</p>
+<ul>
+<li>Fase 1. Formulación de pregunta clínica. Formular la pregunta de la manera más adecuada posible a partir del problema que se nos presenta. Habitualmente utilizamos el esquema PICO.</li>
+<li>Fase 2. Búsqueda de la evidencia, a través de las distintas fuentes documentales: bases de datos bibliográficas, revistas científicas, literatura secundaria o terciaria o guías de práctica clínica.</li>
+<li>Fase 3. Valoración crítica de la evidencia.</li>
+<li>Fase 4. Transferencia de la evidencia a la práctica clínica.</li>
+<li>Fase 5. Evaluación de los resultados de la utilización de la práctica basada en la evidencia.</li>
+</ul>
+</div>
+</section>
+<section id="investigación-secundaria" class="slide level2">
+<h2>Investigación secundaria</h2>
+<div class="smaller">
+<p>Es un proceso sistemático de revisión de la literatura científica basada en criterios metodológicos y experimentales que selecciona estudios cuantitativos y cualitativos, para dar respuesta a un problema, a modo de síntesis.</p>
+<p>Hay cuatro modelos básicos de revisión:</p>
+<ul>
+<li>Revisión sistemática: revisión académica que selecciona investigaciones experimentales que han pasado un análisis de validez interna y externa.</li>
+<li>Metanálisis: reanálisis o análisis secundario de los datos originales provenientes de distintas investigaciones primarias.</li>
+<li>Metasíntesis: investigación secundaria que sintetiza estudios cualitativos que cumplan criterios de fiabilidad, validez y pertinencia.</li>
+<li>Revisión crítica de un estudio: revisión analítica de cualquiera de las revisiones anteriores sobre un tema concreto.</li>
+</ul>
+<p>En las siguientes diapositivas se analizan con más detalle las distintas fases de la práctica basada en la evidencia.</p>
+</div>
+</section>
+<section id="fase-1.-formulación-de-preguntas-clínicas" class="slide level2">
+<h2>Fase 1. Formulación de preguntas clínicas</h2>
+<div class="smaller">
+<p>Son interrogantes, una duda, algo que produce movimiento e inquietud. Su naturaleza es práctica y surgen en el día a día, durante la práctica diaria. Se pregunta sobre cómo se actúa y si puede hacerse de otra manera.</p>
+<p>Las partes que componen una pregunta clínica son:</p>
+<ul>
+<li>Descripción del problema clínico (motivo y relevancia de su elección)</li>
+<li>Elaborar la pregunta: intervención a considerar, ¿comparación?</li>
+<li>Variables de resultado</li>
+</ul>
+<p>Formulación de preguntas clínicas: estrategia PICO</p>
+<ul>
+<li>Paciente y/o problema de interés.</li>
+<li>Intervención: tratamiento, factor pronóstico, prueba diagnóstica, exposición, etc.</li>
+<li>Comparación: este punto puede excluirse de acuerdo a las necesidades de la búsqueda.</li>
+<li>Outcome: niveles de importancia del desenlace crítico, importante, no importante.</li>
+</ul>
+</div>
+</section>
+<section id="formulación-de-preguntas-clínicas-ejemplo" class="slide level2">
+<h2>Formulación de preguntas clínicas: ejemplo</h2>
+<div class="smaller">
+<p>Durante la visita preoperatoria de enfermería se detectó que aquellas personas que esperaban para ser intervenidas quirúrgicamente estaban ansiosas o nerviosas ante la intervención. Ante la influencia negativa que esta tiene sobre diferentes aspectos de la cirugía se decidió que era importante conocer otros medios que de forma costo-efectiva disminuyesen la ansiedad preoperatoria.</p>
+<p>¿Es la musicoterapia más efectiva para la disminución de la ansiedad preoperatoria que la intervención habitual de la visita prequirúrgica de enfermería?</p>
+<p>Variables de evaluación: estado de ansiedad (STAI), FC, FR y TA.</p>
+<p>Estrategia PICO:</p>
+<ul>
+<li>P (Paciente): pacientes preoperatorios</li>
+<li>I (Intervención): dar información médica sobre la cirugía</li>
+<li>C (Comparación o control): musicoterapia</li>
+<li>O (Outcome): estado de ansiedad (STAI), FC, FR, TAS</li>
+</ul>
+</div>
+</section>
+<section id="fase-2.-búsqueda-de-la-evidencia-información" class="slide level2">
+<h2>Fase 2. Búsqueda de la evidencia (información)</h2>
+<div class="smaller">
+<p>Revisión de bibliografía: es el procedimiento estructurado cuyo objetivo es la localización y recuperación de información relevante para un usuario que quiere dar respuesta a cualquier duda relacionada con su práctica, ya sea ésta clínica, docente, investigadora o de gestión. Para los profesionales clínicos la revisión es una fuente de ayuda en la toma de decisiones actualizadas.</p>
+<p>Búsqueda de información piramidal (Haynes):</p>
+<ul>
+<li>Guías de práctica clínica (GuíaSalud, National Health Service (NHS), Registered Nurses’ Association of Ontario (RNAO))</li>
+<li>Revisiones sistemáticas, narrativas y metaanálisis (Cochrane, Bases de datos)</li>
+<li>Investigación primaria (CUIDEN, Pubmed, CINAHL, BIREME, etc.)</li>
+<li>Documentos actuales (últimos 5-10 años).</li>
+</ul>
+</div>
+</section>
+<section id="búsqueda-de-la-evidencia-pasos-para-la-búsqueda" class="slide level2">
+<h2>Búsqueda de la evidencia: pasos para la búsqueda</h2>
+<div class="smaller">
+<ol type="1">
+<li>Reducir la pregunta a términos</li>
+<li>Traducir los términos al lenguaje documental de las bases de datos (consultar tesauro)</li>
+<li>DeCS (Descriptores en Ciencias de la Salud), MeSH (Medical Subject Headings): ‘ansiedad’, ‘visita prequirúrgica’, ‘musicoterapia’, ‘enfermería’</li>
+<li>Elección de fuentes documentales y ejecución de la búsqueda: ‘Ansiedad AND cirugía AND musicoterapia, Ansiedad OR cirugía, Ansiedad AND cirugía not medication’</li>
+<li>Selección de documentos</li>
+<li>Recuperación de documentos (texto completo)</li>
+<li>Análisis y selección de documentos recuperados</li>
+<li>Búsqueda inversa (explorar las referencias bibliográficas de los artículos seleccionados en nuestra búsqueda)</li>
+</ol>
+</div>
+</section>
+<section id="fase-3.-lectura-crítica" class="slide level2">
+<h2>Fase 3. Lectura crítica</h2>
+<div class="smaller">
+<p>Es el proceso sistemático utilizado para evaluar el diseño y la metodología de un estudio, la calidad de los datos y analizar e interpretar los resultados. Permite establecer la validez y el significado de los resultados y su relevancia para nuestra práctica.</p>
+<p>No todo lo publicado es bueno.</p>
+<p>Las guías de lectura crítica son instrumentos para orientar el análisis de la fortaleza, debilidad y la utilidad de un estudio. Enfatiza la calidad de la investigación (¿son válidos los resultados del estudio?), los hallazgos (¿cuáles han sido?) y su utilidad.</p>
+<p>Ejemplos de guías de lectura crítica, según la metodología del estudio a evaluar, son: CASPe, STROBE, CONSORT, MAStARI.</p>
+<p>Los criterios de selección de documentos tienen que ver con la relevancia, interés para la disciplina y calidad.</p>
+<p>Partes de la lectura crítica:</p>
+<ul>
+<li>Resumen del documento</li>
+<li>Comentario crítico del revisor</li>
+</ul>
+</div>
+</section>
+<section id="fases-4.-y-5.-implementación-y-evaluación-de-evidencias" class="slide level2">
+<h2>Fases 4. y 5. Implementación y evaluación de evidencias</h2>
+<div class="smaller">
+<p>Es el proceso de modificación de la práctica teniendo en cuenta las mejores evidencias disponibles. Evaluar va unido a implementar, hay que ‘monitorizar’ el cambio. No se debe dar por supuesto que un cambio en la práctica mejora los resultados.</p>
+<p>Existen diferentes formatos para la difusión de evidencias:</p>
+<ol type="1">
+<li>Diferentes revistas de impacto nacional e internacional publican diferentes formatos de difusión de evidencias.</li>
+<li>Revisiones sistemáticas. ‘Una revisión sistemática tiene como objetivo reunir toda la evidencia empírica que cumple unos criterios de elegibilidad previamente establecidos, con el fin de responder una pregunta específica de investigación. Utiliza métodos sistemáticos y explícitos, que se eligen con el fin de minimizar sesgos, aportando así resultados más fiables a partir de los cuales se puedan extraer conclusiones y tomar decisiones’.</li>
+</ol>
+<ul>
+<li>Uso de criterios explícitos para valorar la calidad de los artículos revisados.</li>
+<li>Análisis de los resultados que obtienen los estudios seleccionados utilizando métodos validados.</li>
+<li>THE COCHRANE COLLABORATION</li>
+</ul>
+<ol start="3" type="1">
+<li>Revisiones críticas.</li>
+</ol>
+</div>
+</section>
+<section id="niveles-de-evidencia-y-grados-de-recomendación" class="slide level2">
+<h2>Niveles de evidencia y grados de recomendación</h2>
+<div class="smaller">
+<p>Cuando realizamos una búsqueda bibliográfica y queremos seleccionar los artículos más fiables por su calidad metodológica podemos seguir la siguiente clasificación:</p>
+<ul>
+<li>Nivel 1. Metaanálisis de múltiples estudios controlados.</li>
+<li>Nivel 2. Estudio individual con diseño experimental.</li>
+<li>Nivel 3. Estudio con diseño cuasi-experimental como estudios semi-randomizados con grupo único pre y post test, caso control.</li>
+<li>Nivel 4. Estudios con diseño no experimental como descriptivo correlacional y cualitativo con estudios de caso.</li>
+<li>Nivel 5. Relato de casos con datos obtenidos de forma sistemática, de calidad verificable o datos de evaluación de programas.</li>
+<li>Nivel 6. Opinión de autoridades basadas en su competencia clínica, opinión de comités de especialistas, incluyendo interpretaciones de informes no basados en investigaciones, opiniones reguladoras de leyes.</li>
+</ul>
+</div>
+</section>
+<section id="guía-práctica-clínica" class="slide level2">
+<h2>Guía práctica clínica</h2>
+<div class="smaller">
+<p>Las Guías de Práctica Clínica (GPC) son un ‘conjunto de recomendaciones basadas en una revisión sistemática de la evidencia y en la evaluación de los riesgos y beneficios de las diferentes alternativas, con el objetivo de optimizar la atención sanitaria a los pacientes’ (National Research Council).</p>
+<p>¿Qué contienen? Recomendaciones para los cuidados; Nivel de evidencia de las mismas; Integrantes de la realización de la GPC; Financiación; Fecha de elaboración y actualización.</p>
+<ul>
+<li>Mapas de cuidados:
+<ul>
+<li>Son planes asistenciales que se aplican a enfermos con una determinada patología y un curso clínico predecible con una atención coordinada.</li>
+</ul></li>
+<li>Vías clínicas:
+<ul>
+<li>También llamados mapas de asistencia, son instrumentos para planificar y coordinar la secuencia de procedimientos médicos, de enfermería y administrativos necesarios para conseguir la máxima eficiencia en el proceso asistencial.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="bases-de-datos-bibliográficas" class="slide level2">
+<h2>Bases de datos bibliográficas</h2>
+<div class="smaller">
+<p>Una base de datos bibliográfica es un archivo del ordenador que almacena las referencias de muchos documentos (artículos de revistas, capítulos de libros, resumen de comunicaciones en congresos o reuniones científicas…)</p>
+<p>Sirve para encontrar qué información se ha publicado sobre una materia, o qué escritos ha publicado un autor.</p>
+<ul>
+<li>Bases de datos relevantes en enfermería. Destacamos:
+<ul>
+<li>A nivel español: CUIDEN, CUIDEN Plus, IME (Instituto Médico Español) y ENFISPO</li>
+<li>A nivel internacional: MEDLINE/PUBMED, EMBASE y en CINAHL.</li>
+</ul></li>
+<li>Bases de datos de investigación secundaria en salud.
+<ul>
+<li>En ellas vamos a encontrar revisiones sistemáticas de la literatura científica, destaca la Cochrane Library es la base de datos donde podemos encontrar las revisiones realizadas por la Colaboración Cochrane (desde 1992) y la Cochrane Library Plus versionada en castellano.</li>
+<li>El Instituto Joanna Briggs (JB) es una organización internacional sin ánimo de lucro, de investigación y desarrollo de la Universidad de Adelaida, Australia. Colabora con 70 entidades internacionales para promover la práctica asistencial basada en la evidencia.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="fuentes-documentales-de-evidencia" class="slide level2">
+<h2>Fuentes documentales de evidencia</h2>
+<div class="smaller">
+<p>Fuentes primarias, que recogen la información original elaborada por sus autores.</p>
+<ul>
+<li>Libros: enciclopedias, manuales, monografías.</li>
+<li>Actas de congresos.</li>
+<li>Tesis doctorales.</li>
+<li>Patentes.</li>
+<li>Memorias.</li>
+<li>Informes y estudios de asociaciones, grupos e instituciones.</li>
+<li>Documentos de organismos internacionales, legislativos y gubernamentales (por ejemplo la Estrategia de Atención al Parto Normal publicado por el Ministerio de Sanidad y Consumo en 2008).</li>
+<li>Publicaciones periódicas: periódicos, boletines oficiales, revistas científicas.</li>
+</ul>
+<p>Fuentes secundarias, que elaboran, clasifican o resumen las fuentes primarias.</p>
+<ul>
+<li>Bases de datos.</li>
+<li>Diversos recursos en internet.</li>
+<li>Revisiones sistemáticas.</li>
+</ul>
+</div>
+</section>
+<section id="revisión-bibliográfica" class="slide level2">
+<h2>Revisión bibliográfica</h2>
+<div class="smaller">
+<p>La revisión bibliográfica es un procedimiento estructurado cuyo objetivo es la localización y recuperación de información relevante para un usuario que quiere dar respuesta a cualquier duda relacionada con su práctica, ya sea ésta clínica, docente, investigadora o de gestión.</p>
+<p>Etapas de la estrategia de búsqueda:</p>
+<ol type="1">
+<li>Definir la pregunta o la consulta para que sea breve, concreta y concisa.</li>
+<li>Traducción de la consulta: identificar un listado de descriptores o palabras claves de la pregunta de investigación y transcribirla a lenguaje documental.</li>
+<li>Seleccionar las fuentes de datos: bases de datos bibliográficas, plataformas, repositorios.</li>
+<li>Construcción y ejecución de la sentencia de búsqueda: operadores booleanos, límites, truncado, búsqueda por campos.</li>
+<li>Recuperación de la información: referencia bibliográfica, texto completo, gestores de referencias bibliográficas.</li>
+<li>Análisis de los resultados y selección de los documentos recuperados: sensibilidad, exhaustividad, relevancia y pertinencia.</li>
+<li>Síntesis de la búsqueda bibliográfica.</li>
+</ol>
+<p>A continuación abordamos cada una de las etapas con más detalle.</p>
+</div>
+</section>
+<section id="definición-de-la-consulta-o-tema" class="slide level2">
+<h2>1. Definición de la consulta o tema</h2>
+<div class="smaller">
+<p>Empezaremos definiendo la pregunta. Se recomienda escribir unas cuantas proposiciones cortas, ‘frases con pocas palabras’ que, en conjunto, contengan todas las categorías de nuestra duda.</p>
+<ul>
+<li>Posteriormente conviene reducir las preguntas a palabras, a fin de elaborar una lista de términos relevantes con los que interrogar a los sistemas de recuperación de información.</li>
+</ul>
+<h3 id="traducción-de-la-consulta">2. Traducción de la consulta</h3>
+<ul>
+<li>La traducción implica, a veces, buscar los mismos términos en el idioma de la base de datos que interrogamos; en otras ocasiones, se hace necesario el uso de diccionarios y vocabularios especializados como el «thesauro».</li>
+<li>Un tesauro es una herramienta que traduce el lenguaje normal a un lenguaje controlado que utilizan las bases de datos para ordenar y describir los documentos que incluyen. Los tesauros más utilizados en Ciencias de la Salud son el MeSH (Medical Subject Heading) empleado por la base de datos Pubmed; y su correspondiente traducción al español y castellano DeCS (Descriptores en Ciencias de la Salud), utilizados por las bases de datos.</li>
+</ul>
+</div>
+</section>
+<section id="selección-de-las-fuentes-de-datos" class="slide level2">
+<h2>3. Selección de las fuentes de datos</h2>
+<div class="smaller">
+<p>Para la selección de fuentes puede ayudar la siguiente secuencia:</p>
+<ol type="1">
+<li>Localizar documentos primarios (tratados, libros o revistas) consultando a colegas o la biblioteca del centro de trabajo. Esta etapa se puede complementar con el uso de buscadores generales de información de Internet (Google).</li>
+<li>Consultar las bases de datos en español y de enfermería así podemos ver cómo responden la enfermería iberoamericana al problema planteado. Dichas bases son CUIDEN, CUIDATGE, ENFISPO, BDIE y LILACS.</li>
+<li>Consultar las bases de datos del ámbito de la biomedicina en español y en el espacio iberoamericano. IME y LILACS.</li>
+<li>Consultar las bases de datos de ámbito internacional en el ámbito de la Enfermería. En este punto podemos tener problemas con el uso del idioma y con la recuperación de los documentos de interés encontrados (International Nursing Index) y CINAHL (Cumulativa Index to Nursing &amp; Allied Health).</li>
+<li>Consultar las bases de datos internacionales como son Medline, Scopus, Embase.</li>
+</ol>
+</div>
+</section>
+<section id="construcción-de-la-secuencia-de-búsqueda" class="slide level2">
+<h2>4. Construcción de la secuencia de búsqueda</h2>
+<div class="smaller">
+<p>Una vez que tenemos seleccionadas palabras claves o descriptores debemos relacionarlos entre sí para formar nuestra ecuación de búsqueda. Utilizamos operadores que nos permiten establecer dichas relaciones.</p>
+<p>Disponemos de los siguientes operadores:</p>
+<ul>
+<li>Operadores booleanos: AND, OR, NOT.</li>
+<li>Operadores relacionales: delimitan el rango de las búsquedas estableciendo relaciones de igualdad, desigualdad o rango.</li>
+<li>Operadores de proximidad: sirven para obtener resultados más precisos, ya que permiten especificar que las palabras que deseamos buscar se encuentren a una cierta proximidad, o bien que se encuentre dentro de una frase o dentro de un párrafo.</li>
+<li>IN: selecciona los documentos que contienen las palabras especificadas en una o más zonas determinadas del documento. Se consideran zonas del documento aquéllas que están delimitadas por ciertas etiquetas del documento html. Son zonas posibles: title, head, body, a, form, etc.</li>
+<li>SENTENCE: selecciona los documentos que contienen todas las palabras especificadas dentro de una misma frase.</li>
+<li>NEAR: selecciona los documentos que contienen las palabras especificadas y ordena los resultados según la proximidad entre estas palabras, de más cercanas (una al lado de la otra) a menos cercanas (con un máximo de mil palabras entre ellas).</li>
+</ul>
+</div>
+</section>
+<section id="recuperación-de-la-información" class="slide level2">
+<h2>5. Recuperación de la información</h2>
+<div class="smaller">
+<p>Una vez que se ha ejecutado la búsqueda podemos tener una cantidad ingente de información o referencias bibliográficas sobre la misma. Ahora necesitamos acceder a dichas fuentes primarias de información: obtener los artículos, libros, guías que considero importantes para el conocimiento del tema de investigación. Tenemos varias fuentes donde podemos encontrar los documentos.</p>
+<ul>
+<li>Directorios institucionales, universidades, centros de investigación, etc.</li>
+<li>Los propios autores del documento contactando con ellos si tenemos su dirección de correo electrónico.</li>
+<li>Bibliotecas y hemerotecas.</li>
+<li>Centros de documentación.</li>
+<li>Internet para revistas de acceso abierto (open access).</li>
+</ul>
+<p>La búsqueda bibliográfica termina cuando se cumple el principio de saturación, esto es que nuevos artículos encontrados no amplían los conocimientos ya obtenidos y/o se refieren a autores ya conocidos, o cuando simplemente se ha resuelto nuestra necesidad de información para la revisión.</p>
+</div>
+</section>
+<section id="análisis-de-los-resultados-y-selección-de-los-documentos-recuperados" class="slide level2">
+<h2>6. Análisis de los resultados y selección de los documentos recuperados</h2>
+<div class="smaller">
+<p>Una vez realizada la búsqueda vamos a obtener una cantidad de documentos en relación con los parámetros anteriormente explicados y esto hará que debamos seleccionar aquellos que nos van a ser de utilidad.</p>
+<ul>
+<li>Si el número de artículos encontrado es reducido deberemos utilizar unos descriptores más genéricos o de otros términos relacionados no incluidos. Optaremos por utilizar un lenguaje natural (sin tesauro) y eliminar algunas limitaciones.</li>
+<li>Si por el contrario el número de documentos es excesivo nos debemos plantear limitar más la búsqueda.</li>
+<li>Otro aspecto a tener en cuenta es la búsqueda inversa. Dicha búsqueda consiste en, una vez identificados aquellos artículos que tratan específicamente de nuestro tema, indagar en las referencias bibliográficas para ver la existencia de otros artículos pertinentes.</li>
+</ul>
+<h3 id="síntesis-de-la-búsqueda-bibliográfica">7. Síntesis de la búsqueda bibliográfica</h3>
+<p>Cuando ya tenemos en nuestro poder los resultados de la búsqueda realizada, procedemos a leer los documentos obtenidos para tener una visión rápida y esquematizada de la información más relevante que hemos obtenido.</p>
+<ul>
+<li>Es recomendable realizar fichas de cada artículo, libro, guía, etc. donde reflejemos aquello que aporta a nuestro estudio o que consideremos fundamental para el mismo.</li>
+<li>En dicha ficha, debemos incluir un breve resumen, el material y método y las conclusiones que consideremos más importantes.</li>
+</ul>
+</div>
+</section>
+<section id="instrumentos-de-la-evidencia-científica" class="slide level2">
+<h2>Instrumentos de la evidencia científica</h2>
+<div class="smaller">
+<p>Dentro del proceso de revisión sistemática, la Lectura Crítica de la evidencia nos permite analizar la calidad o validez de las pruebas científicas.</p>
+<ul>
+<li>En el proceso de Lectura Crítica nos guiamos por determinados criterios relativos a la forma en la que se han desarrollado las investigaciones, que les confiere de mayor o menor fortaleza para aportarnos pruebas sobre un tema del que queremos tener evidencias de buen hacer.</li>
+<li>Estos criterios establecen a priori una jerarquía de los artículos científicos según su calidad y han sido recogidos en diversas escalas. Existen varias propuestas de clasificación:
+<ul>
+<li>Una de las más conocidas y tal vez la más sencilla es la de United States Preventive Task Force (USPSTF), que clasifica las evidencias en 3 niveles.</li>
+<li>Otra clasificación es la del Centro de Medicina Basada en la Evidencia de Oxford (CEBM).</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="jerarquía-de-los-estudios-según-la-uspstf" class="slide level2">
+<h2>Jerarquía de los estudios según la USPSTF</h2>
+<div class="smaller">
+<ul>
+<li>Nivel de evidencia I: al menos un ensayo clínico controlado y aleatorizado diseñado en forma apropiada.</li>
+<li>Nivel de evidencia II-1: ensayos clínicos controlados bien diseñados, pero no aleatorizados.</li>
+<li>Nivel de evidencia II-2: estudios de cohorte o caso de control bien diseñados, preferentemente multicéntricos.</li>
+<li>Nivel de evidencia II-3: múltiples series comparadas en el tiempo con o sin intervención, y resultados sorprendentes en experiencias no controladas.</li>
+<li>Nivel de evidencia III: opiniones basadas en experiencias clínicas, estudios descriptivos, observaciones clínicas o informes de comités expertos.</li>
+</ul>
+</div>
+</section>
+<section id="niveles-de-evidencia-según-el-cebm" class="slide level2">
+<h2>Niveles de evidencia según el CEBM</h2>
+<div class="smaller">
+<ul>
+<li>Nivel de evidencia 1a: revisión sistemática de ensayos clínicos aleatorizados, con homogeneidad.</li>
+<li>Nivel de evidencia 1b: ensayo clínico aleatorizado con intervalo de confianza estrecho.</li>
+<li>Nivel de evidencia 1c: práctica clínica (todos o ninguno).</li>
+<li>Nivel de evidencia 2a: revisión sistemática de estudios de cohortes, con homogeneidad.</li>
+<li>Nivel de evidencia 2b: estudios de cohorte o ensayo clínico de baja calidad.</li>
+<li>Nivel de evidencia 2c: ‘outcomes research’, estudios ecológicos.</li>
+<li>Nivel de evidencia 3a: revisión sistemática de estudio caso control con homogeneidad.</li>
+<li>Nivel de evidencia 3b: estudio caso-control.</li>
+<li>Nivel de evidencia 4: serie de casos o estudios de cohortes y caso-control de baja calidad.</li>
+<li>Nivel de evidencia 5: opinión de expertos sin valoración crítica explícita, ‘bench research’ o ‘first principles’.</li>
+</ul>
+</div>
+</section>
+<section id="elaboración-de-informes-sobre-la-información-relevante-encontrada" class="slide level2">
+<h2>Elaboración de informes sobre la información relevante encontrada</h2>
+<div class="smaller">
+<p>La tarea central es organizar y resumir las referencias, de tal manera que revelen el estado actual del conocimiento sobre el tema elegido y, en el contexto de un nuevo estudio, establezcan una base sistemática para la investigación.</p>
+<ul>
+<li>La revisión debe señalar tanto los puntos congruentes como las contradicciones, así como explicar las incongruencias.</li>
+<li>La revisión será lo más objetiva posible, sin omitir los estudios que entren en conflicto con los valores personales del investigador.</li>
+<li>No debe ignorarse deliberadamente un estudio sólo porque sus hallazgos contradicen los de otros.</li>
+<li>La revisión bibliográfica concluye con la elaboración de un resumen general del estado del conocimiento respecto del problema que se analiza.</li>
+<li>Las revisiones bibliográficas guardan la misma estructura lógica que el resto de las publicaciones científicas.</li>
+<li>Deben respetar todos los aspectos técnicos y éticos planteados como estándares en la producción de conocimiento científico, no existiendo excepción alguna en relación a este punto.</li>
+</ul>
+</div>
+</section>
+<section id="un-posible-modelo-de-estructura" class="slide level2">
+<h2>Un posible modelo de estructura</h2>
+<div class="smaller">
+<ol type="1">
+<li>Introducción, que debe incluir:</li>
+</ol>
+<ul>
+<li>Presentación del tema.</li>
+<li>Antecedentes de la temática, en términos de revisiones ya existentes.</li>
+<li>Justificación de su relevancia.</li>
+</ul>
+<ol start="2" type="1">
+<li>Objetivo del trabajo.</li>
+<li>Método de localización, selección y evaluación de estudios primarios:</li>
+</ol>
+<ul>
+<li>Búsqueda bibliográfica.</li>
+<li>Criterios de selección.</li>
+<li>Recuperación de la información. Fuentes documentales.</li>
+<li>Evaluación de la calidad de los artículos seleccionados.</li>
+<li>Análisis de la variabilidad, fiabilidad y validez de los artículos.</li>
+</ul>
+<ol start="4" type="1">
+<li>Desarrollo y discusión del tema:</li>
+</ol>
+<ul>
+<li>Organización y estructuración de los datos.</li>
+<li>Combinación de los resultados de diferentes originales.</li>
+<li>Argumentación crítica de los resultados (diseños, sesgos, limitaciones, conclusiones extraídas).</li>
+</ul>
+<ol start="5" type="1">
+<li>Conclusiones. En algunas ocasiones es necesario que se agreguen ciertas secciones adicionales que facilitan la comprensión de un aspecto específico del problema planteado para el estudio. Algunas posibilidades son: historia - situación actual - métodos - estándares - preguntas para responder en futuros estudios.</li>
+</ol>
+</div>
+</section>
+<section id="la-transferencia-de-la-evidencia" class="slide level2">
+<h2>La transferencia de la evidencia</h2>
+<div class="smaller">
+<p>La transferencia de la evidencia a la práctica clínica consiste en la transmisión de los resultados de la investigación a las instituciones, profesionales sanitarios y pacientes con el objetivo de propiciar, si es preciso, cambios en la práctica clínica.</p>
+<h3 id="la-toma-de-decisiones">La toma de decisiones</h3>
+<p>La toma de decisiones clínicas basadas en la evidencia se ve afectada por la existencia de una serie de factores individuales y de la propia organización que pueden actuar como facilitadores o barreras de su puesta en marcha.</p>
+<ul>
+<li>Entre los primeros cabe señalar la formación de la que disponen los profesionales en metodología de la investigación, su capacidad para pensar críticamente sobre la práctica cotidiana, el tiempo disponible para implementar nuevas ideas, la habilidad para introducir cambios y la motivación hacia éstos.</li>
+<li>A nivel institucional, esta integración implica poner en marcha una Gestión Basada en la Evidencia, dirigida a identificar las estrategias de la organización, los elementos estructurales y prácticas de gestión que permiten o dificultan ésta.</li>
+</ul>
+<h3 id="las-guías-de-práctica-clínica-gpc">Las Guías de Práctica Clínica (GPC)</h3>
+<p>Las Guías de Práctica Clínica (GPC) son una de las herramientas más destacadas para facilitar el proceso de implementación de la PBE, ya que constituyen un puente de unión vital entre la práctica y la teoría.</p>
+<p>En ellas se establecen recomendaciones con diferentes grados de evidencia para ayudar a los profesionales y a los pacientes a decidir cuál es la intervención más adecuada en una situación clínica concreta.</p>
+</div>
+</section>
+<section id="búsqueda-bibliográfica" class="slide level2">
+<h2>Búsqueda bibliográfica</h2>
+<p><em>— Ejercicios —</em></p>
+<div class="smaller">
+<p>Investigadores del área de las Ciencias de la Salud tienen por objetivo analizar la prevalencia y los factores de riesgo para la infección respiratoria por el virus sincitial en niños menores de 5 años.</p>
+<p>En este sentido, con el objetivo subyacente de la gravedad de este tipo de infección se plantean realizar una revisión sistemática de la literatura y un metanálisis.</p>
+<ul>
+<li>¿Qué fuentes bibliográficas podrían aportar investigación previa de interés en este campo?</li>
+<li>Solución: PubMed (mesh), Medline, SciELO, CINAHL, etc.</li>
+<li>Realizar una búsqueda en una de las bases de datos anteriores con las siguientes ecuaciones de búsqueda anotando el número de resultados obtenidos:
+<ul>
+<li>Respiratory syncytial virus.</li>
+<li>Respiratory syncytial virus AND (newborn OR infant OR child).</li>
+<li>Respiratory syncytial virus AND (newborn OR infant OR child) AND (prevalence OR risk factors).</li>
+</ul></li>
+<li>Comente los resultados obtenidos y analice cada una de las ecuaciones de búsqueda.</li>
+</ul>
+</div>
+</section>
+<section id="validez-de-los-métodos-diagnósticos-ejercicio-resuelto" class="slide level2 smaller">
+<h2>Validez de los métodos diagnósticos — ejercicio resuelto</h2>
+<p><span class="badge badge-blue">Mamografía vs.&nbsp;biopsia</span> <span class="badge badge-amber">n = 350</span> <span class="badge badge-teal">Gold standard: biopsia</span></p>
+<p>En una región se realiza mamografía a <strong>350 personas</strong>; en paralelo biopsia a todas. <strong>225</strong> con cáncer confirmado. La mamografía da positivo en el <strong>80% de enfermos</strong> y también en el <strong>60% de sanos</strong>. Calcule <span class="math inline">\(S\)</span>, <span class="math inline">\(E\)</span>, <span class="math inline">\(VPP\)</span> y <span class="math inline">\(VPN\)</span>.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><strong>Enfermo</strong></th>
+<th style="text-align: center;"><strong>Sano</strong></th>
+<th style="text-align: center;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Test +</strong></td>
+<td style="text-align: center;"><span class="math inline">\(a=180\)</span> (VP)</td>
+<td style="text-align: center;"><span class="math inline">\(b=75\)</span> (FP)</td>
+<td style="text-align: center;"><span class="math inline">\(255\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Test −</strong></td>
+<td style="text-align: center;"><span class="math inline">\(c=45\)</span> (FN)</td>
+<td style="text-align: center;"><span class="math inline">\(d=50\)</span> (VN)</td>
+<td style="text-align: center;"><span class="math inline">\(95\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;"><span class="math inline">\(225\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(125\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(350\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="formula-box">
+<p><span class="math display">\[\begin{aligned}
+S &amp;= \tfrac{a}{a+c}=\tfrac{180}{225}=\mathbf{0.80}\\
+E &amp;= \tfrac{d}{b+d}=\tfrac{50}{125}=\mathbf{0.40}
+\end{aligned}\]</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="formula-box formula-box--amber">
+<p><span class="math display">\[\begin{aligned}
+VPP &amp;= \tfrac{a}{a+b}=\tfrac{180}{255}\approx\mathbf{0.71}\\
+VPN &amp;= \tfrac{d}{c+d}=\tfrac{50}{95}\approx\mathbf{0.53}
+\end{aligned}\]</span></p>
+</div>
+</div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Lectura</strong></p>
+</div>
+<div class="callout-content">
+<p>Prueba <strong>sensible</strong> (<span class="math inline">\(S=0.80\)</span>) pero <strong>poco específica</strong> (<span class="math inline">\(E=0.40\)</span>): detecta bien enfermos y mal a sanos. <span class="math inline">\(VPP=71\%\)</span> de los positivos son enfermos reales; <span class="math inline">\(VPN=53\%\)</span> de los negativos son sanos reales — limitada para descartar. Útil como <strong>cribado</strong>, no como confirmación.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sólo-una-de-las-opciones-es-correcta" class="slide level2">
+<h2>Sólo una de las opciones es correcta</h2>
+<p><em>— Supuesto práctico —</em></p>
+<div class="smaller">
+<ol type="1">
+<li>Señale la correcta:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Las investigaciones cualitativas están orientadas al resultado y las investigaciones cuantitativas están orientadas al proceso.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>La investigación cualitativa se caracteriza por ser exploratoria, inductiva y descriptiva.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Los estudios de casos clínicos son estudios descriptivos.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>El método etnográfico es un estudio cuantitativo, analítico y experimental.</li>
+</ol></li>
+</ul>
+<ol start="2" type="1">
+<li>Los operadores Booleanos son nexos lógicos que especifican cuál debe ser la relación entre los términos ingresados en una búsqueda y recuperación de información científica:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>OR: mostrará páginas o documentos en los que los términos se encuentren próximos entre sí.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>AND: limita el resultado de la búsqueda al aparecer todos los términos.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>NOT: excluye el primer término de la búsqueda.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>NEAR: sirve para encontrar sólo términos idénticos a de la consulta propuesta.</li>
+</ol></li>
+</ul>
+<ol start="3" type="1">
+<li>La especificidad de una prueba diagnóstica se define como:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Probabilidad de obtener un determinado resultado en un individuo que presenta una enfermedad con respecto a un sujeto sano.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Probabilidad de clasificar correctamente a un par de individuos, uno sano y uno enfermo, al aplicarles la prueba.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Probabilidad de que una persona que presenta una característica sea clasificada correctamente por la medida empleada.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Probabilidad de que una persona que no presenta una característica sea clasificada correctamente por la medida empleada.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-práctico" class="slide level2">
+<h2>Supuesto práctico</h2>
+<div class="smaller">
+<ol start="4" type="1">
+<li>Dentro del concepto de práctica clínica basada en la evidencia ¿cuál de estas fuentes de información recibe un mayor nivel de evidencia según la clasificación de Sackett?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Estudios casos-controles.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Opiniones de expertos.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudios de cohortes.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Meta-análisis.</li>
+</ol></li>
+</ul>
+<ol start="5" type="1">
+<li>Base documental gratuita con más de 31.000 estudios clínicos aleatorizados, revisiones sistemáticas y guías de práctica clínica de fisioterapia:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>PEDro.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>PubMed.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>MEDLINE.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>EMBASE.</li>
+</ol></li>
+</ul>
+<ol start="6" type="1">
+<li>Son principios de la Bioética:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Beneficencia y autonomía.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Justicia, autonomía, no maleficiencia.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La justicia es un principio del Derecho.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Justicia, beneficiencia, no maleficiencia, autonomía.</li>
+</ol></li>
+</ul>
+<ol start="7" type="1">
+<li>¿En qué tipo de estudios científicos un grupo de pacientes está expuesto a una intervención y otro grupo forma un grupo control?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Cohortes.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Estudios paralelos.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudios ecológicos.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Series de casos.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="en-cuanto-a-la-investigación-cualitativa-y-cuantitativa-es-falso" class="slide level2">
+<h2>En cuanto a la investigación cualitativa y cuantitativa es FALSO:</h2>
+<p><em>— Supuesto práctico —</em></p>
+<div class="smaller">
+<ol start="8" type="1">
+<li>En cuanto a la investigación cualitativa y cuantitativa es FALSO:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Un objetivo típico de la investigación cuantitativa es generalizar los resultados a poblaciones más grandes y lograr un alto grado de confiabilidad.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>En la investigación cuantitativa para minimizar el error de muestreo debe tener la misma probabilidad de ser seleccionado.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Al contrario de la investigación cuantitativa el propósito de la mayoría de los estudios cualitativos es producir datos ricos en información a partir de una muestra escogida por su capacidad de referirse al problema estudiado.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Las tres son correctas.</li>
+</ol></li>
+</ul>
+<ol start="9" type="1">
+<li>La Cochrane Library:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Es una iniciativa científica internacional destinada a producir, mantener y divulgar revisiones sistemáticas de las evidencias sobre la prevención, el tratamiento o el control de los problemas sanitarios.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Está accesible en español y de manera gratuita a través de la página del ministerio de Sanidad. Consta de cuatro bases de datos que ofrecen informaciones específicas.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Ambas son correctas.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Ninguna lo es.</li>
+</ol></li>
+</ul>
+<ol start="10" type="1">
+<li>Cuál de los siguientes tipos de estudios NO se corresponde con un estudio descriptivo:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Estudio de información individual.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Estudio de corte o transversal.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudio ecológico.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Estudio experimental o de intervención.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section id="supuesto-2" class="slide level2">
+<h2>Supuesto práctico (2)</h2>
+<div class="smaller">
+<ol start="11" type="1">
+<li>Señala la INCORRECTA: La entrevista clínica semiestructurada:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Es un proceso semidirigido de intercambio de información.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>El paciente puede introducir temas y no sólo actuar de modo reactivo.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Se compone de tres fases: anamnesis, exploración y resolución.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Todas son correctas.</li>
+</ol></li>
+</ul>
+<ol start="12" type="1">
+<li>Ante la lectura de un artículo científico que analiza la efectividad de una determinada intervención terapéutica, ¿qué tipo de diseño del estudio (definido en el apartado material y métodos) nos ofrece una mayor o mejor calidad del nivel de evidencia científica de la investigación realizada?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Ensayos controlados no aleatorizados.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Estudios observacionales: casos-controles y cohortes.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudios descriptivos.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Ensayos controlados aleatorizados.</li>
+</ol></li>
+</ul>
+<ol start="13" type="1">
+<li>Respecto a las curvas ROC:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>En el análisis se maneja un espacio que viene dado por la Especificidad y 1-Sensibilidad.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Presentan la sensibilidad de una prueba diagnóstica en función de los falsos positivos (complemento de la especificidad) para distintos puntos de corte.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>ROC es el acrónimo de Recognition Optical Character.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Las tres son ciertas.</li>
+</ol></li>
+</ul>
+<ol start="14" type="1">
+<li>¿Cuál de los siguientes aspectos NO pertenece al método cualitativo en investigación?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Observación naturalista.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Holista.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Orientado al resultado.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Realidad dinámica.</li>
+</ol></li>
+</ul>
+<ol start="15" type="1">
+<li>¿De cuál de los siguientes tipos de estudio obtendremos información clínica con mayor nivel de evidencia?:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Revisiones sistemáticas y Meta-análisis.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>ECAs (ensayos controlados aleatorizados).</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Estudios de casos y controles.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Guías de práctica clínica.</li>
+</ol></li>
+</ul>
+<ol start="16" type="1">
+<li>Los conflictos éticos en la asistencia sociosanitaria a las personas mayores están en relación con el principio de:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>justicia.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>no maleficiencia.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>autonomía.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>los tres.</li>
+</ol></li>
+</ul>
+<ol start="17" type="1">
+<li>En los estudios de investigación, los datos que hacen referencia a la exactitud de la medición se refieren al concepto de:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Validez</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Sensibilidad</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Tabulación</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Fiabilidad</li>
+</ol></li>
+</ul>
+<ol start="18" type="1">
+<li>Un estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Analítico</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Transversal</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Ecológico</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Descriptivo</li>
+</ol></li>
+</ul>
+<h3 id="soluciones-del-supuesto-práctico">Soluciones del supuesto práctico</h3>
+<p>1.c, 2.b, 3.d, 4.d, 5.a, 6.d, 7.b, 8.d, 9.c, 10.d, 11.c, 12.d, 13.b, 14.c, 15.d, 16.d, 17.a, 18.d</p>
+</div>
+</section>
+<section id="gracias-por-su-paciencia" class="slide level2">
+<h2>¡Gracias por su paciencia!</h2>
+<p><em>— Supuesto práctico —</em></p>
+</section>
+<section id="referencias" class="slide level2 smaller scrollable">
+<h2>Referencias</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-armitage2002" class="csl-entry" role="listitem">
+Armitage, Peter, Geoffrey Berry, y John N. S. Matthews. 2002. <em>Statistical Methods in Medical Research</em>. 4.ª ed. Blackwell Science.
+</div>
+<div id="ref-bradley1993" class="csl-entry" role="listitem">
+Bradley, Jana. 1993. <em>Methodological issues and practices in qualitative research</em>. En <em>Library Quarterly</em>. University of Chicago Press.
+</div>
+<div id="ref-cochrane1972" class="csl-entry" role="listitem">
+Cochrane, Archibald L. 1972. <em>Effectiveness and Efficiency: Random Reflections on Health Services</em>. Nuffield Provincial Hospitals Trust.
+</div>
+<div id="ref-cochrane2023" class="csl-entry" role="listitem">
+Cochrane Collaboration. 2023. <em>Cochrane Library</em>. <a href="https://www.cochranelibrary.com/">https://www.cochranelibrary.com/</a>.
+</div>
+<div id="ref-colton1974" class="csl-entry" role="listitem">
+Colton, Theodore. 1974. <em>Statistics in Medicine</em>. Little, Brown.
+</div>
+<div id="ref-creswell2018" class="csl-entry" role="listitem">
+Creswell, John W., y Cheryl N. Poth. 2018. <em>Qualitative Inquiry and Research Design: Choosing Among Five Approaches</em>. 4.ª ed. SAGE.
+</div>
+<div id="ref-dickersin1994" class="csl-entry" role="listitem">
+Dickersin, Kay, Roberta Scherer, y Carol Lefebvre. 1994. <em>Identifying relevant studies for systematic reviews</em>. En <em>BMJ</em>. BMJ.
+</div>
+<div id="ref-flick2018" class="csl-entry" role="listitem">
+Flick, Uwe. 2018. <em>An Introduction to Qualitative Research</em>. 6.ª ed. SAGE.
+</div>
+<div id="ref-glaser1967" class="csl-entry" role="listitem">
+Glaser, Barney G., y Anselm L. Strauss. 1967. <span>«The Discovery of Grounded Theory: Strategies for Qualitative Research»</span>. <em>Aldine Transaction</em>.
+</div>
+<div id="ref-oxman1993" class="csl-entry" role="listitem">
+Guyatt, Gordon H., David L. Sackett, y Deborah J. Cook. 1993. <span>«Users’ guides to the medical literature. <span>II</span>. How to use an article about therapy or prevention. <span>A</span>. Are the results of the study valid?»</span> <em>JAMA</em> 270: 2598-601.
+</div>
+<div id="ref-hanley1982" class="csl-entry" role="listitem">
+Hanley, James A., y Barbara J. McNeil. 1982. <span>«The meaning and use of the area under a receiver operating characteristic (<span>ROC</span>) curve»</span>. <em>Radiology</em> 143: 29-36.
+</div>
+<div id="ref-haynes2002" class="csl-entry" role="listitem">
+Haynes, R. Brian, David L. Sackett, Gordon H. Guyatt, y Peter Tugwell. 2002. <em>Clinical Epidemiology: How to Do Clinical Practice Research</em>. 3.ª ed. Lippincott Williams &amp; Wilkins.
+</div>
+<div id="ref-higgins2019" class="csl-entry" role="listitem">
+Higgins, Julian P. T., James Thomas, Jacqueline Chandler, et&nbsp;al. 2019. <em>Cochrane Handbook for Systematic Reviews of Interventions</em>. 2.ª ed. 2.ª ed.
+</div>
+<div id="ref-kirkwood2003" class="csl-entry" role="listitem">
+Kirkwood, Betty R., y Jonathan A. C. Sterne. 2003. <em>Essential Medical Statistics</em>. 2.ª ed. Blackwell Science.
+</div>
+<div id="ref-kleinbaum2010" class="csl-entry" role="listitem">
+Kleinbaum, David G., Lawrence L. Kupper, Azhar Nizam, y Eli S. Rosenberg. 2013. <em>Applied Regression Analysis and Other Multivariable Methods</em>. 5.ª ed. Cengage.
+</div>
+<div id="ref-knottnerus2002" class="csl-entry" role="listitem">
+Knottnerus, J. André, y Jean W. M. Muris. 2003. <span>«Assessment of the accuracy of diagnostic tests: the cross-sectional study»</span>. <em>Journal of Clinical Epidemiology</em> 56: 1118-28.
+</div>
+<div id="ref-pubmed2023" class="csl-entry" role="listitem">
+National Library of Medicine. 2023. <em>PubMed</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov/</a>.
+</div>
+<div id="ref-pedro2023" class="csl-entry" role="listitem">
+PEDro. 2023. <em>Physiotherapy Evidence Database</em>. <a href="https://pedro.org.au/">https://pedro.org.au/</a>.
+</div>
+<div id="ref-rosenthal2005" class="csl-entry" role="listitem">
+Rosenthal, Robert, y M. Robin DiMatteo. 2005. <em>The Oxford Handbook of Quantitative Methods</em>. Oxford University Press.
+</div>
+<div id="ref-rothman2008" class="csl-entry" role="listitem">
+Rothman, Kenneth J., Sander Greenland, y Timothy L. Lash. 2008. <em>Modern Epidemiology</em>. 3.ª ed. Lippincott Williams &amp; Wilkins.
+</div>
+<div id="ref-sackett1996" class="csl-entry" role="listitem">
+Sackett, David L., William M. C. Rosenberg, J. A. Muir Gray, R. Brian Haynes, y W. Scott Richardson. 1996. <span>«Evidence based medicine: what it is and what it isn’t»</span>. <em>BMJ</em> 312: 71-72.
+</div>
+<div id="ref-stahl2013" class="csl-entry" role="listitem">
+Stahl, Stephen M. 2013. <em>Stahl’s Essential Psychopharmacology: Neuroscientific Basis and Practical Applications</em>. 4.ª ed. Cambridge University Press.
+</div>
+<div id="ref-strauss1998" class="csl-entry" role="listitem">
+Strauss, Anselm, y Juliet Corbin. 1998. <em>Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory</em>. 2.ª ed. SAGE.
+</div>
+<div id="ref-taylor2015" class="csl-entry" role="listitem">
+Taylor, Steven J., Robert Bogdan, y Marjorie DeVault. 2015. <em>Introduction to Qualitative Research Methods</em>. 4.ª ed. Wiley.
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Cómo citar esta edición</strong></p>
+</div>
+<div class="callout-content">
+<blockquote>
+<p>Luque-Fernández, M. A. (2026). <em>Introducción a la Metodología Científica — Neurociencias (edición Quarto)</em>. Universidad de Granada.</p>
+</blockquote>
+<p>Bibliografía ampliada en <code>references.bib</code> — Flick (2018), Creswell &amp; Poth (2018), Sackett et al.&nbsp;(1996), Cochrane (1972), Rothman et al.&nbsp;(2008), entre otras.</p>
+</div>
+</div>
+</div>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Miguel Angel Luque-Fernández · Dpto. Estadística e I.O. · UGR · 2026</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiado");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiado");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/github\.com\/migariane\/neurociencias-metodologia");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

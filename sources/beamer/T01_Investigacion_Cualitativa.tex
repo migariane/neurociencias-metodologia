@@ -1,0 +1,890 @@
+% =============================================================================
+% T01 — Investigación Cualitativa
+% Beamer 16:9 — Madrid Professional palette (Preambles/header.tex)
+% Compile: TEXINPUTS=../../../Preambles:$TEXINPUTS xelatex T01_Investigacion_Cualitativa
+% =============================================================================
+\documentclass[aspectratio=169,8pt]{beamer}
+\input{header}
+
+% hyperref: `Bibliografía` frame title leaks a \translate token into the PDF
+% bookmark string; neutralize it instead of shipping the warning.
+\pdfstringdefDisableCommands{\def\translate#1{#1}}
+
+% ── Extra palette (v2 Madrid — matches madrid-theme.scss) ──
+\definecolor{m-dark}{HTML}{0A3D62}
+\definecolor{m-medium}{HTML}{1E6FA0}
+\definecolor{m-cyan}{HTML}{1597A5}
+\definecolor{m-amber}{HTML}{B7791F}
+\definecolor{m-amber-border}{HTML}{E8A838}
+\definecolor{m-amber-bg}{HTML}{FEF3D6}
+\definecolor{m-teal}{HTML}{13795B}
+\definecolor{m-teal-bg}{HTML}{D1F0E0}
+\definecolor{m-purple}{HTML}{6C3483}
+\definecolor{m-purple-bg}{HTML}{F0E6F6}
+\definecolor{m-rose}{HTML}{922B21}
+\definecolor{m-rose-bg}{HTML}{FDEDEC}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% ── tcolorbox styles ──
+\tcbset{
+  formulabox/.style={
+    colback=white, colframe=m-medium, coltitle=white,
+    fonttitle=\bfseries\small, sharp corners=south, rounded corners=north,
+    boxrule=1.1pt, titlerule=0pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+    enhanced, drop shadow
+  },
+  tealbox/.style={
+    colback=m-teal-bg, colframe=m-cyan, boxrule=1pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt, enhanced
+  },
+  amberbox/.style={
+    colback=m-amber-bg, colframe=m-amber-border, boxrule=1pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt, enhanced
+  },
+  purplebox/.style={
+    colback=m-purple-bg, colframe=m-purple, boxrule=1pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt, enhanced
+  },
+  infobox/.style={
+    colback=light-bg, colframe=m-dark, boxrule=0.9pt,
+    rounded corners, left=6pt, right=6pt, top=4pt, bottom=4pt
+  }
+}
+
+% ── Small helpers ──
+\newcommand{\badge}[2][m-medium]{%
+  \tikz[baseline=(X.base)]\node[fill=#1,text=white,rounded corners=2pt,
+    inner xsep=4pt,inner ysep=1.2pt,font=\tiny\bfseries] (X) {#2};}
+
+\newcommand{\tighttoc}{\tableofcontents[hideallsubsections]}
+
+% ── Title ──
+\title[Neuro — Cualitativa]{Investigaci\'on Cualitativa}
+\subtitle{Introducci\'on a la Metodolog\'ia Cient\'ifica\\M\'aster Univ.\ en Neurociencias B\'asicas, Aplicadas y Dolor}
+\author[M.A. Luque-Fdez.]{Miguel Angel Luque-Fern\'andez}
+\institute[Dpto. Estad\'istica e I.O. --- UGR]{Dpto.\ Estad\'istica e Investigaci\'on Operativa --- Universidad de Granada\\\small\href{mailto:mluquefe@ugr.es}{mluquefe@ugr.es} \;\; \href{https://migariane.github.io}{migariane.github.io}}
+\date{Granada, 10 de octubre de 2026}
+\titlegraphic{\includegraphics[height=1.05cm]{../assets/logo-ugr.png}}
+
+% ── Beamer tweaks ──
+\setbeamerfont{title}{size=\Large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
+\begin{document}
+
+% ── Title ──
+\begin{frame}[plain]
+  \titlepage
+  \vspace{-1.2em}
+  \begin{center}
+    {\footnotesize\color{neutral}Material docente de M.\,A.\ Luque-Fern\'andez --- Dpto.\ Estad\'istica e I.O., UGR}\\[2pt]
+    {\scriptsize\color{neutral}Paleta \emph{Madrid Professional} --- \texttt{Preambles/header.tex} $\leftrightarrow$ \texttt{madrid-theme.scss}}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Hoja de ruta}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      \tighttoc
+    \column{0.46\textwidth}
+      \begin{tcolorbox}[infobox]
+        \textbf{Qu\'e te llevar\'as}\\[2pt]
+        \begin{itemize}
+          \item Diferenciar investigaci\'on cuali/cuanti y elegir dise\~no.
+          \item Validez diagn\'ostica: $S/E$, VPP/VPN, ROC y tabla $2\times2$.
+          \item PBE: PICO, b\'usqueda, lectura cr\'itica y gu\'ias.
+          \item C\'omo hacer una revisi\'on bibliogr\'afica sin perderte.
+        \end{itemize}
+      \end{tcolorbox}
+      \vspace{0.4em}
+      {\scriptsize\color{neutral}Dos bloques te\'oricos + supuesto pr\'actico evaluable.}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Fundamentos de la investigaci\'on cualitativa}
+% ============================================================
+
+\begin{frame}{Paradigma}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.58\textwidth}
+      Un \textbf{paradigma} es una visi\'on del mundo: c\'omo segmentamos la complejidad y qu\'e consideramos conocimiento v\'alido en una \'epoca.
+      \vspace{0.5em}
+      \begin{tcolorbox}[infobox,title={\small Preguntas que fundan un paradigma}]
+        \small
+        \begin{description}[Ontolog\'ia]
+          \item[Ontolog\'ia] naturaleza de la realidad
+          \item[Epistemolog\'ia] relaci\'on investigador--objeto
+          \item[Axiolog\'ia] papel de los valores
+          \item[Metodolog\'ia] c\'omo se obtiene el conocimiento
+        \end{description}
+      \end{tcolorbox}
+    \column{0.40\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \small\textbf{Idea clave}\\ Cualitativo $\to$ comprender significados desde los sujetos; cuantitativo $\to$ explicar causalidad con objetividad. La neurociencia necesita ambos.
+      \end{tcolorbox}
+      \vspace{0.6em}
+      {\scriptsize\color{neutral}Flick (2018); Creswell \& Poth (2018).}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Tres tradiciones en Ciencias Sociales}
+  \footnotesize
+  \begin{columns}[T,onlytextwidth]
+    \column{0.33\textwidth}
+      \begin{tcolorbox}[formulabox,title=Emp\'irico-anal\'itica (cuantitativa)]
+        \begin{itemize}
+          \item Experimental
+          \item Cuasi-experimental
+          \item \emph{Ex post facto}
+        \end{itemize}
+      \end{tcolorbox}
+    \column{0.33\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \textbf{Constructivista (cualitativa)}
+        \begin{itemize}
+          \item Fenomenolog\'ia
+          \item Interaccionismo simb\'olico
+          \item Etnograf\'ia
+          \item Teor\'ia fundamentada
+          \item Etnometodolog\'ia
+          \item Fenomenograf\'ia
+        \end{itemize}
+      \end{tcolorbox}
+    \column{0.33\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \textbf{Sociocr\'itica (cualitativa)}
+        \begin{itemize}
+          \item Investigaci\'on-acci\'on
+          \item Participativa
+          \item Colaborativa
+          \item Feminista
+        \end{itemize}
+      \end{tcolorbox}
+  \end{columns}
+  \vspace{0.6em}
+  {\scriptsize\color{neutral}Taylor et al.\ (2015); Strauss \& Corbin (1998).}
+\end{frame}
+
+\begin{frame}{Cuantitativa vs.\ cualitativa}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Cuantitativa]
+        \footnotesize
+        Describe, verifica relaciones entre variables y examina cambios en $Y$ seg\'un $X$. \textbf{Objetividad}.\\[2pt]
+        \emph{Epidemiolog\'ia} es su aplicaci\'on paradigm\'atica.
+      \end{tcolorbox}
+      \vspace{0.3em}
+      {\scriptsize
+      \begin{tabular}{@{}ll@{}}
+        \toprule
+        Objeto & cantidad (causalidad)\\
+        Origen & positivismo\\
+        Dise\~no & predeterminado, lineal\\
+        Contexto & artificial\\
+        Muestra & aleatoria, representativa\\
+        Datos & estructurados\\
+        An\'alisis & deductivo\\
+        Resultado & preciso, limitado\\
+        \bottomrule
+      \end{tabular}}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Cualitativa} --- comprender un fen\'omeno \emph{desde los sujetos}; descripci\'on narrativa de una realidad social compleja. Riesgo: subjetividad del analista.
+      \end{tcolorbox}
+      \vspace{0.3em}
+      {\scriptsize
+      \begin{tabular}{@{}ll@{}}
+        \toprule
+        Objeto & cualidad (esencia)\\
+        Origen & fenomenolog\'ia\\
+        Dise\~no & flexible, circular\\
+        Contexto & natural\\
+        Muestra & no aleatoria\\
+        Datos & textos, entrevistas\\
+        An\'alisis & inductivo\\
+        Resultado & hol\'istico, expansivo\\
+        \bottomrule
+      \end{tabular}}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Proceso y fases de la investigaci\'on cualitativa}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.58\textwidth}
+      \begin{enumerate}
+        \item \textbf{Preparatoria / reflexiva} --- identifica el problema; decide paradigma; pregunta cualitativa (subjetiva, social).
+        \item \textbf{Revisi\'on de la literatura} --- paralela a recogida y an\'alisis preliminar; referente te\'orico que depura categor\'ias.
+        \item \textbf{Revisi\'on y an\'alisis documental} --- rastreo $\to$ clasificaci\'on $\to$ selecci\'on $\to$ lectura profunda $\to$ lectura cruzada.
+        \item \textbf{Mapeo} --- contextualiza: realidad sociocultural, participantes, circunstancias.
+        \item \textbf{Muestreo} --- actores/eventos/lugares \emph{pertinentes} y \emph{adecuados}.
+        \item \textbf{Recogida de datos} --- qu\'e, d\'onde, c\'omo; prima calidad sobre cantidad.
+        \item \textbf{T\'ecnicas e instrumentos} --- enfoque, tipo de informaci\'on, fuentes, tiempo.
+      \end{enumerate}
+    \column{0.40\textwidth}
+      \begin{tcolorbox}[infobox,title=Criterios del muestreo cualitativo]
+        \footnotesize
+        \begin{itemize}
+          \item \textbf{Pertinente}: informantes ricos
+          \item \textbf{Adecuado}: saturaci\'on descriptiva
+          \item \textbf{Conveniente}: sin interferencias
+          \item \textbf{Oportuno}: momento justo
+          \item \textbf{Disponible}: acceso libre
+        \end{itemize}
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Principales m\'etodos cualitativos}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Etnogr\'afico / naturalista]
+        \footnotesize Participa en la vida cotidiana; observa, escucha, conversa. T\'ecnicas: observaci\'on participante, entrevista, documentos.
+      \end{tcolorbox}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Teor\'ia fundamentada} --- teor\'ia inductiva que emerge durante recogida+codificaci\'on; el investigador entra al campo para ver \emph{c\'omo ocurren las cosas} (Glaser \& Strauss 1967).
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \footnotesize\textbf{An\'alisis del discurso} --- lenguaje como pr\'actica social que sostiene relaciones; entrevista + documentos + observaci\'on de interacciones.
+      \end{tcolorbox}
+      \begin{tcolorbox}[purplebox]
+        \footnotesize\textbf{Investigaci\'on-acci\'on participante} --- el investigador como agente de cambio; relaci\'on horizontal/dial\'ogica; la comunidad posee los recursos para transformarse y la investigaci\'on le pertenece.
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{T\'ecnicas cualitativas}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.38\textwidth}
+      \textbf{Conversacionales} (eje: entrevista)
+      \begin{itemize}
+        \item Estructuraci\'on / directividad / finalidad / n.\ participantes
+        \item Encuesta etnogr\'afica
+        \item Entrevistas individuales (no/semi/estructuradas)
+        \item Grupales: discusi\'on vs.\ focal
+        \item Biogr\'aficas
+      \end{itemize}
+    \column{0.30\textwidth}
+      \textbf{Observacionales}
+      \begin{itemize}
+        \item Participante (diario de campo)
+        \item No participante (exterioridad)
+      \end{itemize}
+      \vspace{0.6em}
+      \textbf{Documentales}
+      \begin{itemize}
+        \item Archivos, cartas, actas
+        \item An\'alisis del discurso en texto
+      \end{itemize}
+    \column{0.30\textwidth}
+      \begin{tcolorbox}[infobox]
+        \footnotesize\textbf{Criterio pr\'actico}\\ Elige t\'ecnica seg\'un \emph{pregunta} + \emph{acceso} + \emph{\'etica}. Triangula (p.\,ej.\ entrevista + observaci\'on + documento) para ganar credibilidad.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Del dato al informe}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{Almacenamiento} --- transcripci\'on narrativa; codificaci\'on (NVivo/Atlas.ti).\\[4pt]
+      \textbf{An\'alisis}
+      \begin{itemize}
+        \item \emph{Segmentaci\'on} (unidades descriptivas)
+        \item \emph{Categorizaci\'on} (exhaustiva, excluyente)
+        \item \emph{Codificaci\'on} (etiqueta + informante)
+      \end{itemize}
+      \textbf{Resultados}
+      \begin{itemize}
+        \item An\'alisis de \emph{contenido} (transparencia del lenguaje)
+        \item An\'alisis de \emph{discurso} (lenguaje $\leftrightarrow$ relaciones sociales)
+      \end{itemize}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Informe + \'etica]
+        \footnotesize
+        El fin es un \textbf{informe cr\'itico} comunicable (art\'iculo).\\[2pt]
+        Principios bio\'eticos:
+        \begin{itemize}
+          \item \textbf{Respeto}: autonom\'ia
+          \item \textbf{Beneficencia}: maximizar beneficio, minimizar da\~no
+          \item \textbf{Justicia}: distribuci\'on equitativa de riesgos/beneficios
+        \end{itemize}
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Validez de los m\'etodos diagn\'osticos}
+% ============================================================
+
+\begin{frame}{Pruebas diagn\'osticas: validez y fiabilidad}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \small Una \textbf{prueba diagn\'ostica} confirma/descarta o modula la verosimilitud de un diagn\'ostico. Su utilidad depende de \textbf{validez}, \textbf{fiabilidad}, rendimiento cl\'inico y coste.\\[4pt]
+      \begin{tcolorbox}[infobox]
+        \footnotesize
+        \textbf{Validez (exactitud)} --- ausencia de error sistem\'atico; clasifica bien enfermos/sanos frente a \emph{gold standard} (p.\,ej.\ mamograf\'ia vs.\ biopsia).\\[2pt]
+        \textbf{Fiabilidad} --- ausencia de error aleatorio; replicabilidad.
+        \begin{itemize}
+          \item Intraobservador (mismo evaluador)
+          \item Entre observadores (concordancia)
+        \end{itemize}
+      \end{tcolorbox}
+    \column{0.43\textwidth}
+      \begin{tcolorbox}[formulabox,title=Tabla $2\times2$]
+        \centering\small
+        \begin{tabular}{lcc}
+          \toprule
+          & \textbf{Enfermo} & \textbf{Sano}\\
+          \midrule
+          \textbf{Test +} & VP & FP\\
+          \textbf{Test $-$} & FN & VN\\
+          \bottomrule
+        \end{tabular}\\[4pt]
+        {\scriptsize Validez = $\tfrac{VP+VN}{N}$;\quad Mala clasificaci\'on = $\tfrac{FP+FN}{N}$}
+      \end{tcolorbox}
+      \begin{tcolorbox}[amberbox]
+        \scriptsize\raggedright\textbf{C\'omo mejorar ambas:} mediciones repetidas (promedio), calibrar instrumentos, criterios comunes, entrenar observadores, enmascaramiento/ciego, automatizar cuando sea posible.\par
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Sensibilidad y especificidad}
+  \begin{tcolorbox}[infobox]
+    \small\badge[m-teal]{Validez interna}\quad Par\'ametros frente a \emph{gold standard}. No dependen (te\'oricamente) de la prevalencia.
+  \end{tcolorbox}
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Sensibilidad --- detectar enfermos]
+        \centering
+        {\Large $S = \dfrac{VP}{VP+FN}$}\\[3pt]
+        \footnotesize $P(\text{positivo}\mid\text{enfermo})$\vspace{2pt}\\
+        {\scriptsize Alta $S$ $\to$ \'util para \textbf{descartar} (negativo $\approx$ sano).}
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Especificidad --- descartar sanos]
+        \centering
+        {\Large $E = \dfrac{VN}{FP+VN}$}\\[3pt]
+        \footnotesize $P(\text{negativo}\mid\text{sano})$\vspace{2pt}\\
+        {\scriptsize Alta $E$ $\to$ \'util para \textbf{confirmar} (positivo $\approx$ enfermo).}
+      \end{tcolorbox}
+  \end{columns}
+  \vspace{0.4em}
+  {\scriptsize\color{neutral}Regla mnemot\'ecnica: \textbf{SnNout} (alta $S$, negativo descarta), \textbf{SpPin} (alta $E$, positivo confirma).}
+\end{frame}
+
+\begin{frame}{Sensibilidad vs.\ especificidad}
+  \small
+  \begin{itemize}
+    \item Alta $S$ capta enfermedad si el test es positivo; si es negativo, tambi\'en ayuda a \textbf{descartar}.
+    \item Alta $E$ evita falsos positivos; crucial en enfermedades graves pero tratables.
+    \item A mayor prevalencia, m\'as f\'acil detectar $\to$ $S$ efectiva sube; sin estandarizaci\'on, $S$ se degrada.
+    \item Baja prevalencia $\to$ prioriza $E$; cribado precoz $\to$ prioriza $S$.
+  \end{itemize}
+  \vspace{0.3em}
+  \begin{tcolorbox}[purplebox]
+    \footnotesize\textbf{Trade-off}: mover el umbral sube una a costa de la otra. La curva ROC visualiza ese compromiso.
+  \end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Curvas ROC}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \small
+      Representan pares $(1-E,\,S)$ al variar el umbral. Eje $y$: $S$; eje $x$: $1-E$.
+      \begin{itemize}
+        \item \textbf{AUC} = \'area bajo la curva: capacidad discriminatoria.
+        \item AUC $=0.5$ azar; $=1$ perfecta.
+        \item Permite elegir umbral seg\'un coste de FP vs.\ FN.
+      \end{itemize}
+      \vspace{0.4em}
+      {\scriptsize Hanley \& McNeil (1982); Knottnerus \& Muris (2003).}
+    \column{0.43\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{../assets/roc-cuali.png}\\
+      {\scriptsize\color{neutral}ROC: $S$ vs.\ $1-E$}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{VPP y VPN --- \'indices de seguridad}
+  \begin{tcolorbox}[infobox]
+    \small\badge[m-amber]{Dependen de prevalencia}\quad No son validez interna: cambian con el contexto cl\'inico.
+  \end{tcolorbox}
+  \vspace{0.2em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=VPP]
+        \centering {\large $VPP = \dfrac{VP}{VP+FP} = \dfrac{a}{a+b}$}\\[2pt]
+        {\footnotesize $P(\text{enfermo}\mid\text{test +})$}
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=VPN]
+        \centering {\large $VPN = \dfrac{VN}{VN+FN} = \dfrac{d}{c+d}$}\\[2pt]
+        {\footnotesize $P(\text{sano}\mid\text{test $-$})$}
+      \end{tcolorbox}
+  \end{columns}
+  \vspace{0.4em}
+  \small
+  \textbf{Efecto prevalencia} (con $S,E$ fijas): prevalencia $\uparrow$ $\Rightarrow$ VPP $\uparrow$, FN $\uparrow$, FP $\downarrow$, VPN $\downarrow$. Por eso los niveles secundario/terciario ``aciertan m\'as'' (filtran y elevan prevalencia).
+\end{frame}
+
+\begin{frame}{C\'alculo pr\'actico $2\times2$}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.46\textwidth}
+      \centering
+      \begin{tabular}{lccc}
+        \toprule
+        & \textbf{Enfermo} & \textbf{Sano} & \textbf{Total}\\
+        \midrule
+        \textbf{Test +} & $a$ (VP) & $b$ (FP) & $a+b$\\
+        \textbf{Test $-$} & $c$ (FN) & $d$ (VN) & $c+d$\\
+        \midrule
+        \textbf{Total} & $a+c$ & $b+d$ & $N$\\
+        \bottomrule
+      \end{tabular}
+      \vspace{0.5em}
+
+      \begin{tcolorbox}[tealbox]
+        \footnotesize
+        $S=\dfrac{a}{a+c}$ \quad $E=\dfrac{d}{b+d}$\\[2pt]
+        $VPP=\dfrac{a}{a+b}$ \quad $VPN=\dfrac{d}{c+d}$
+      \end{tcolorbox}
+    \column{0.52\textwidth}
+      \begin{tcolorbox}[formulabox,title=Otros \'indices]
+        \small
+        \begin{align*}
+          MC &= \frac{FP+FN}{N} & VG &= \frac{VP+VN}{N}\\[2pt]
+          RVP &= \frac{S}{1-E} & RVN &= \frac{1-S}{E}
+        \end{align*}
+        \vspace{-0.6em}
+        {\scriptsize $RVP>10$ gran aumento de $P$ si +;\quad $RVN<0.1$ gran descenso si $-$.}
+      \end{tcolorbox}
+      \begin{tcolorbox}[amberbox]
+        \scriptsize\textbf{Ejercicio mamograf\'ia (ampliado en supuesto pr\'actico)} --- con la tabla todo es inmediato; no memorices f\'ormulas, construye la $2\times2$.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Pr\'actica basada en la evidencia (PBE)}
+% ============================================================
+
+\begin{frame}{De MBE a PBE y EBE}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \textbf{Origen}: MBE, Reino Unido, \'ultimo tercio s.\,XX (Archibald Cochrane).\\[3pt]
+      \textbf{PBE}: uso consciente, expl\'icito y juicioso de la \emph{mejor evidencia} para decidir sobre cada paciente (Sackett et al.\ 1996).\\[3pt]
+      \textbf{EBE}: adapta la PBE a enfermer\'ia --- integra evidencia + preferencias/valores del paciente.
+      \vspace{0.4em}
+      \begin{tcolorbox}[infobox,title=Bases conceptuales de la MBE]
+        \footnotesize
+        1.\ Investigaci\'on (ECA, metaan\'alisis) \quad
+        2.\ Experiencia cl\'inica \quad
+        3.\ Preferencias/valores \quad
+        4.\ Recursos (eficiencia, coste-efectividad)
+      \end{tcolorbox}
+    \column{0.43\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Ventajas de la EBE}
+        \begin{itemize}
+          \item Menor variabilidad cl\'inica
+          \item Sostenibilidad del sistema
+          \item Respaldo judicial
+          \item Integra profesional--paciente--recursos--evidencia
+          \item Rompe inmovilismo; dota de sentido a ciencia aplicada
+        \end{itemize}
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Fases de la PBE}
+  \small
+  \begin{enumerate}
+    \item[\textbf{0.}] \textbf{Esp\'iritu} de preguntarnos c\'omo hacemos las cosas.
+    \item[\textbf{1.}] \textbf{Formulaci\'on} de la pregunta cl\'inica (PICO).
+    \item[\textbf{2.}] \textbf{B\'usqueda} de evidencia (pir\'amide de Haynes).
+    \item[\textbf{3.}] \textbf{Valoraci\'on cr\'itica} (CASPe, STROBE, CONSORT, MAStARI; gu\'ias seg\'un metodolog\'ia).
+    \item[\textbf{4.}] \textbf{Transferencia} a la pr\'actica cl\'inica.
+    \item[\textbf{5.}] \textbf{Evaluaci\'on} de resultados (monitorizar el cambio; no asumir mejora).
+  \end{enumerate}
+  \vspace{0.3em}
+  \begin{tcolorbox}[amberbox]
+    \footnotesize\textbf{Investigaci\'on secundaria} (s\'intesis): revisi\'on sistem\'atica, metaan\'alisis (rean\'alisis de datos primarios), metas\'intesis (s\'intesis de cualitativos), revisi\'on cr\'itica de una revisi\'on.
+  \end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Fase 1: pregunta cl\'inica y PICO}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+      Preguntas pr\'acticas que nacen del d\'ia a d\'ia. Componentes:
+      \begin{itemize}
+        \item Descripci\'on del problema (motivo, relevancia)
+        \item Intervenci\'on / comparaci\'on
+        \item Variables de resultado
+      \end{itemize}
+      \begin{tcolorbox}[formulabox,title=PICO]
+        \footnotesize
+        \textbf{P} paciente/problema\;
+        \textbf{I} intervenci\'on\;
+        \textbf{C} comparaci\'on (opcional)\;
+        \textbf{O} \emph{outcome} (cr\'itico / importante / no importante)
+      \end{tcolorbox}
+    \column{0.46\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Ejemplo} --- ansiedad preoperatoria:\\
+        \emph{¿Es la musicoterapia m\'as efectiva que la visita prequir\'urgica habitual para disminuir la ansiedad preoperatoria?}\\[3pt]
+        P: preoperatorios; I: informaci\'on m\'edica; C: musicoterapia; O: STAI, FC, FR, TAS.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Fase 2: b\'usqueda de evidencia}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \textbf{Revisi\'on bibliogr\'afica}: localizaci\'on y recuperaci\'on estructurada.\\[3pt]
+      \textbf{Pir\'amide de Haynes} (de m\'as a menos sintetizado):
+      \begin{enumerate}
+        \item Gu\'ias de pr\'actica cl\'inica (Gu\'iaSalud, NHS, RNAO)
+        \item Revisiones sistem\'aticas / metaan\'alisis (Cochrane)
+        \item Investigaci\'on primaria (CUIDEN, PubMed, CINAHL, BIREME)
+        \item Documentos recientes (5--10 a\~nos)
+      \end{enumerate}
+    \column{0.43\textwidth}
+      \begin{tcolorbox}[infobox,title=Pasos de b\'usqueda]
+        \scriptsize
+        1.\ Reducir pregunta a t\'erminos $\to$ 2.\ Traducir a lenguaje documental (DeCS/MeSH: \emph{ansiedad}, \emph{visita prequir\'urgica}, \emph{musicoterapia}) $\to$ 3.\ Elegir fuentes $\to$ 4.\ Ecuaci\'on booleana (\texttt{AND/OR/NOT}) $\to$ 5.\ Seleccionar $\to$ 6.\ Recuperar texto completo $\to$ 7.\ Analizar $\to$ 8.\ B\'usqueda inversa (citas de los seleccionados).
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Fase 3: lectura cr\'itica}
+  \small
+  Proceso sistem\'atico que eval\'ua dise\~no, metodolog\'ia, calidad de datos e interpretaci\'on: ¿son v\'alidos?, ¿cu\'ales son los hallazgos?, ¿son \'utiles?
+  \vspace{0.4em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Gu\'ias seg\'un metodolog\'ia]
+        \footnotesize CASPe, STROBE, CONSORT, MAStARI, etc.
+      \end{tcolorbox}
+      \textbf{Partes}:
+      \begin{itemize}
+        \item Resumen del documento
+        \item Comentario cr\'itico del revisor
+      \end{itemize}
+      {\scriptsize Criterios de selecci\'on: relevancia, inter\'es disciplinar, calidad.}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \footnotesize\textbf{No todo lo publicado es bueno}. La fortaleza de la evidencia depende del dise\~no y su ejecuci\'on; la jerarqu\'ia (USPSTF, CEBM) orienta pero no sustituye la lectura cr\'itica.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Fases 4 y 5 + niveles de evidencia}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{Implementaci\'on y evaluaci\'on}: modificar la pr\'actica con la mejor evidencia y \emph{monitorizar} si realmente mejora resultados. V\'ias de difusi\'on: revistas, revisiones sistem\'aticas Cochrane, revisiones cr\'iticas.\\[4pt]
+      \textbf{GPC}: conjunto de recomendaciones basadas en revisi\'on sistem\'atica + balance riesgos/beneficios para optimizar la atenci\'on (National Research Council). Incluyen niveles de evidencia, autores, financiaci\'on, vigencia.
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Niveles (resumen)]
+        \scriptsize
+        \textbf{USPSTF}: I (ECA) $>$ II-1 (EC no aleatorizado) $>$ II-2 (cohortes/casos-controles) $>$ II-3 (series temporales) $>$ III (opini\'on/descriptivos).\\[3pt]
+        \textbf{CEBM}: 1a (RS de ECA homog\'enea) $\to$ 1b (ECA IC estrecho) $\to$ 1c (todo o nada) $\to$ 2a (RS cohortes) $\to$ 2b (cohorte/EC baja calidad) $\to$ 2c (ecol\'ogico) $\to$ 3a/3b (casos-controles) $\to$ 4 (series) $\to$ 5 (opini\'on).
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Bases de datos y revisi\'on bibliogr\'afica}
+% ============================================================
+
+\begin{frame}{Bases de datos bibliogr\'aficas}
+  \small
+  Archivo que almacena referencias de art\'iculos, cap\'itulos, actas, tesis\ldots{} Sirve para saber qu\'e se ha publicado sobre un tema o autor.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=Enfermer\'ia]
+        \footnotesize
+        \textbf{Espa\~na}: CUIDEN, CUIDEN Plus, IME, ENFISPO\\
+        \textbf{Internacional}: MEDLINE/PubMed, EMBASE, CINAHL
+      \end{tcolorbox}
+      \begin{tcolorbox}[tealbox]
+        \footnotesize\textbf{Secundarias (revisiones)}: Cochrane Library (desde 1992; versi\'on castellana: Cochrane Library Plus), Joanna Briggs Institute (Adelaida; 70 entidades colaboradoras).
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[infobox,title=Fuentes documentales]
+        \scriptsize
+        \textbf{Primarias}: libros, actas, tesis, patentes, informes institucionales, documentos oficiales (p.\,ej.\ Estrategia de Atenci\'on al Parto Normal, MSC 2008), revistas.\\[2pt]
+        \textbf{Secundarias}: bases de datos, recursos web, revisiones sistem\'aticas.
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Revisi\'on bibliogr\'afica: etapas}
+  \small
+  Procedimiento estructurado para dar respuesta a una duda cl\'inica/docente/investigadora.
+  \begin{enumerate}
+    \item Definir la pregunta (proposiciones cortas $\to$ lista de t\'erminos).
+    \item Traducci\'on: tesauro (MeSH / DeCS).
+    \item Seleccionar fuentes (primarios $\to$ CUIDEN/CUIDATGE/ENFISPO/BDIE/LILACS $\to$ IME/LILACS $\to$ CINAHL $\to$ Medline/Scopus/Embase).
+    \item Construir y ejecutar la sentencia (booleanos, l\'imites, truncado, campos).
+    \item Recuperar (referencia, texto completo, gestor).
+    \item Analizar y seleccionar (sensibilidad/exhaustividad, relevancia/pertinencia; b\'usqueda inversa).
+    \item S\'intesis (fichas: resumen, m\'etodo, conclusiones).
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Construcci\'on de la sentencia de b\'usqueda}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{Operadores}
+      \begin{itemize}
+        \item \textbf{Booleanos}: \texttt{AND}, \texttt{OR}, \texttt{NOT}
+        \item \textbf{Relacionales}: igualdad, desigualdad, rango
+        \item \textbf{Proximidad}: proximidad, frase, p\'arrafo
+        \item \texttt{IN}: zona del documento (\texttt{title}, \texttt{head}, \texttt{body}, \texttt{a}\ldots)
+        \item \texttt{SENTENCE} / \texttt{NEAR} (ordenado por proximidad, hasta 1000 palabras)
+      \end{itemize}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[amberbox]
+        \footnotesize\textbf{Ejemplos}\\
+        \texttt{Ansiedad AND cirug\'ia AND musicoterapia}\\
+        \texttt{Ansiedad OR cirug\'ia}\\
+        \texttt{Ansiedad AND cirug\'ia NOT medication}
+      \end{tcolorbox}
+      \begin{tcolorbox}[infobox]
+        \scriptsize\textbf{Consejo}: combina MeSH/DeCS con texto libre y truncado; guarda la estrategia para reproducibilidad (PRISMA-S).
+      \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Recuperaci\'on y selecci\'on}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \textbf{D\'onde recuperar}: directorios institucionales, contacto con autores, bibliotecas/hemerotecas, centros de documentaci\'on, revistas \emph{open access}.\\[4pt]
+      La b\'usqueda termina por \textbf{saturaci\'on} (nada nuevo) o porque la necesidad informativa est\'a cubierta.
+    \column{0.50\textwidth}
+      \textbf{Selecci\'on}
+      \begin{itemize}
+        \item Pocos resultados $\to$ t\'erminos m\'as gen\'ericos, lenguaje natural, quitar l\'imites.
+        \item Demasiados $\to$ limitar m\'as.
+        \item \textbf{B\'usqueda inversa}: rastrear referencias de los seleccionados.
+      \end{itemize}
+      \textbf{S\'intesis}: fichas por documento (resumen + m\'etodo + conclusiones).
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Instrumentos y jerarqu\'ias}
+  \small
+  La \textbf{lectura cr\'itica} jerarquiza la evidencia seg\'un calidad metodol\'ogica.
+  \vspace{0.3em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[formulabox,title=USPSTF (resumen)]
+        \scriptsize
+        I: ECA bien dise\~nado; II-1: EC no aleatorizado; II-2: cohortes/casos-controles multic\'entricos; II-3: series temporales / experiencias no controladas con efecto sorprendente; III: opini\'on/descriptivos/informes de comit\'es.
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize
+        \textbf{CEBM (Oxford)}: 1a RS ECA homog\'enea; 1b ECA IC estrecho; 1c todo/nada; 2a RS cohortes; 2b cohorte/EC baja calidad; 2c \emph{outcomes research}/ecol\'ogicos; 3a RS casos-controles; 3b casos-controles; 4 series; 5 opini\'on sin valoraci\'on cr\'itica.
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Elaboraci\'on de informes}
+  \small
+  Organizar y resumir el estado del conocimiento: congruencias, contradicciones y explicaci\'on de incongruencias, con m\'axima objetividad (no omitir lo que contradice tus valores).
+  \vspace{0.3em}
+  \begin{tcolorbox}[infobox,title=Estructura recomendada]
+    \scriptsize
+    1.\ Introducci\'on (tema, antecedentes, relevancia) \;
+    2.\ Objetivo \;
+    3.\ M\'etodo (b\'usqueda, criterios, recuperaci\'on, calidad, variabilidad/fiabilidad/validez) \;
+    4.\ Desarrollo y discusi\'on (organizaci\'on de datos, combinaci\'on de resultados) \;
+    5.\ Conclusiones + implicaciones cl\'inicas.
+  \end{tcolorbox}
+  \vspace{0.3em}
+  {\scriptsize La revisi\'on guarda la estructura l\'ogica de cualquier publicaci\'on cient\'ifica y respeta est\'andares \'eticos/t\'ecnicos sin excepci\'on.}
+\end{frame}
+
+% ============================================================
+\section{Supuesto pr\'actico}
+% ============================================================
+
+\begin{frame}{Supuesto pr\'actico --- instrucciones}
+  \small
+  \begin{tcolorbox}[amberbox]
+    \textbf{Solo una opci\'on es correcta}. El cuestionario completo (18 preguntas) se reproduce \'integramente a continuaci\'on, id\'entico a la edici\'on Quarto. Las \textbf{siglas se desglosan} la primera vez que aparecen (ver glosario).
+  \end{tcolorbox}
+  \vspace{0.3em}
+  {\scriptsize\color{neutral}Erratas de la edici\'on original corregidas: \emph{metodolog\'ia}, \emph{bibliogr\'afica}, \emph{seleccionados}, \emph{sistem\'atica}, \emph{analice}. Soluciones al final.}
+\end{frame}
+
+\begin{frame}{Glosario de siglas (T01)}
+  \scriptsize
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[infobox,title=Siglas cl\'inicas y metodol\'ogicas]
+        \scriptsize
+        \textbf{VPP} Valor Predictivo Positivo (\emph{PPV}) --- $P(\text{enfermo}\mid+)$\\
+        \textbf{VPN} Valor Predictivo Negativo (\emph{NPV}) --- $P(\text{sano}\mid-)$\\
+        \textbf{S} Sensibilidad --- $P(+\mid\text{enfermo})$\\
+        \textbf{E} Especificidad --- $P(-\mid\text{sano})$\\
+        \textbf{ROC} \emph{Receiver Operating Characteristic} (Caracter\'istica Operativa del Receptor)\\
+        \textbf{ECA} Ensayo Controlado Aleatorizado (\emph{RCT})\\
+        \textbf{RS} Revisi\'on Sistem\'atica; \textbf{MA} Meta-an\'alisis
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize
+        \textbf{PEDro} \emph{Physiotherapy Evidence Database} (31\,000+ ECA, RS y gu\'ias de fisioterapia)\\
+        \textbf{MeSH} \emph{Medical Subject Headings} (NLM); \textbf{DeCS} Descriptores en Ciencias de la Salud (Bireme)\\
+        \textbf{PRISMA} \emph{Preferred Reporting Items for Systematic Reviews and Meta-Analyses} (PRISMA-S: b\'usquedas)\\
+        \textbf{USPSTF} \emph{U.S. Preventive Services Task Force}; \textbf{CEBM} \emph{Centre for Evidence-Based Medicine} (Oxford)
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (1/5) --- Q1--Q4}
+  \scriptsize
+  \textbf{1. Se\~nale la correcta:}\\
+  a) Cualitativas orientadas al resultado y cuantitativas al proceso.\\
+  b) La investigaci\'on cualitativa es exploratoria, inductiva y descriptiva.\\
+  c) Los estudios de casos cl\'inicos son estudios descriptivos.\\
+  d) El m\'etodo etnogr\'afico es cuantitativo, anal\'itico y experimental.\\[4pt]
+  \textbf{2. Operadores Booleanos} (nexos l\'ogicos entre t\'erminos de b\'usqueda):\\
+  a) \texttt{OR}: t\'erminos pr\'oximos.\;
+  b) \texttt{AND}: deben aparecer todos los t\'erminos.\;
+  c) \texttt{NOT}: excluye el primer t\'ermino.\;
+  d) \texttt{NEAR}: solo t\'erminos id\'enticos.\\[4pt]
+  \textbf{3. La especificidad (E) de una prueba diagn\'ostica} --- $P(-\mid\text{sano})$ --- \textbf{se define como}:\\
+  a) $P(\text{resultado en enfermo})/P(\text{resultado en sano})$. \;
+  b) $P(\text{clasificar correctamente un par sano--enfermo})$.\\
+  c) $P(\text{clasificado correctamente}\mid\text{tiene la caracter\'istica})$. \;
+  d) $P(\text{clasificado correctamente}\mid\text{\emph{no} tiene la caracter\'istica})$.\\[4pt]
+  \textbf{4. En pr\'actica cl\'inica basada en la evidencia (Sackett), \textquestiondown{}qu\'e fuente tiene mayor nivel de evidencia?}\\
+  a) Casos-controles. \; b) Opiniones de expertos. \; c) Cohortes. \; d) Meta-an\'alisis (MA).
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (2/5) --- Q5--Q8}
+  \scriptsize
+  \textbf{5. Base documental gratuita con $>$31\,000 ECA, RS y gu\'ias de pr\'actica cl\'inica de \emph{fisioterapia}:}\\
+  a) PEDro (\emph{Physiotherapy Evidence Database}). \; b) PubMed. \; c) MEDLINE. \; d) EMBASE.\\[4pt]
+  \textbf{6. Son principios de la Bio\'etica:}\\
+  a) Beneficencia y autonom\'ia. \;
+  b) Justicia, autonom\'ia, no maleficencia.\\
+  c) La justicia es principio del Derecho (no de la Bio\'etica). \;
+  d) Justicia, beneficencia, no maleficencia, autonom\'ia.\\[4pt]
+  \textbf{7. \textquestiondown{}En qu\'e tipo de estudios un grupo est\'a expuesto a una intervenci\'on y otro forma un grupo control?}\\
+  a) Cohortes. \; b) Estudios paralelos (ensayo con brazo control). \; c) Ecol\'ogicos. \; d) Series de casos.\\[4pt]
+  \textbf{8. En cuanto a investigaci\'on cualitativa y cuantitativa es FALSO:}\\
+  a) Cuantitativa: generalizar a poblaciones grandes con alta confiabilidad.\\
+  b) Cuantitativa: cada individuo debe tener la misma $P$ de ser seleccionado (muestreo probabil\'istico).\\
+  c) Cualitativa: producir datos ricos desde muestra elegida por su capacidad de informar sobre el problema.\\
+  d) Las tres son correctas.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (3/5) --- Q9--Q12}
+  \scriptsize
+  \textbf{9. La \emph{Cochrane Library} (colecci\'on de RS de la Colaboraci\'on Cochrane):}\\
+  a) Iniciativa internacional que produce/mantiene/divulga RS sobre prevenci\'on, tratamiento y control de problemas sanitarios.\\
+  b) Accesible en espa\~nol y gratuita v\'ia Ministerio de Sanidad; consta de cuatro bases de datos espec\'ificas.\\
+  c) Ambas son correctas. \; d) Ninguna lo es.\\[4pt]
+  \textbf{10. \textquestiondown{}Cu\'al NO se corresponde con un estudio descriptivo?}\\
+  a) Estudio de informaci\'on individual. \; b) Transversal (\emph{cross-sectional}). \; c) Ecol\'ogico. \; d) Experimental o de intervenci\'on.\\[4pt]
+  \textbf{11. Se\~nala la INCORRECTA: La entrevista cl\'inica semiestructurada:}\\
+  a) Es un proceso semidirigido de intercambio de informaci\'on.\\
+  b) El paciente puede introducir temas y no solo actuar de modo reactivo.\\
+  c) Se compone de tres fases: anamnesis, exploraci\'on y resoluci\'on.\\
+  d) Todas son correctas.\\[4pt]
+  \textbf{12. Ante un art\'iculo que analiza la efectividad de una intervenci\'on, \textquestiondown{}qu\'e dise\~no (apartado Material y M\'etodos) ofrece mayor nivel de evidencia?}\\
+  a) Ensayos controlados no aleatorizados. \; b) Observacionales (casos-controles/cohortes). \; c) Descriptivos. \; d) ECA (Ensayo Controlado Aleatorizado).
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (4/5) --- Q13--Q16}
+  \scriptsize
+  \textbf{13. Respecto a las curvas ROC} (\emph{Receiver Operating Characteristic}) \textbf{:}\\
+  a) El espacio viene dado por Especificidad y $1-$Sensibilidad.\\
+  b) Presentan la sensibilidad en funci\'on de los falsos positivos ($1-$Especificidad) para distintos puntos de corte.\\
+  c) ROC es acr\'onimo de \emph{Recognition Optical Character}.\\
+  d) Las tres son ciertas.\\[4pt]
+  \textbf{14. \textquestiondown{}Cu\'al NO pertenece al m\'etodo cualitativo?}\\
+  a) Observaci\'on naturalista. \; b) Holista. \; c) Orientado al resultado. \; d) Realidad din\'amica.\\[4pt]
+  \textbf{15. \textquestiondown{}De qu\'e tipo de estudio obtendremos informaci\'on con mayor nivel de evidencia?}\\
+  a) RS y MA (Revisiones Sistem\'aticas y Meta-an\'alisis). \; b) ECA. \; c) Casos y controles. \; d) Gu\'ias de pr\'actica cl\'inica.\\[4pt]
+  \textbf{16. Los conflictos \'eticos en la asistencia sociosanitaria a personas mayores est\'an en relaci\'on con el principio de:}\\
+  a) Justicia. \; b) No maleficencia. \; c) Autonom\'ia. \; d) Los tres.
+\end{frame}
+
+\begin{frame}{Supuesto pr\'actico (5/5) --- Q17--Q18}
+  \scriptsize
+  \textbf{17. En investigaci\'on, los datos que hacen referencia a la \emph{exactitud} de la medici\'on se refieren al concepto de:}\\
+  a) Validez. \; b) Sensibilidad. \; c) Tabulaci\'on. \; d) Fiabilidad (precisi\'on/reproducibilidad).\\[4pt]
+  \textbf{18. Un estudio epidemiol\'ogico que busca comprender la magnitud de un problema, su naturaleza y entre qui\'enes/d\'onde se produce, responde a caracter\'isticas de tipo:}\\
+  a) Anal\'itico. \; b) Transversal. \; c) Ecol\'ogico. \; d) Descriptivo.\\[6pt]
+  \begin{tcolorbox}[amberbox]
+    \scriptsize\textbf{Nota}: Validez = el instrumento mide lo que dice medir (exactitud); Fiabilidad = consistencia/precisi\'on al repetir la medida.
+  \end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Soluciones --- T01 (18 \'items)}
+  \scriptsize
+  \begin{tcolorbox}[formulabox,title=Clave de respuestas]
+    \footnotesize
+    \textbf{1.c}\; 2.b\; 3.d\; 4.d\; 5.a\; 6.d\; 7.b\; 8.d\; 9.c\; 10.d\; 11.c\; 12.d\; 13.b\; 14.c\; 15.d\; 16.d\; 17.a\; 18.d
+  \end{tcolorbox}
+  \vspace{0.4em}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[tealbox]
+        \scriptsize
+        \textbf{Pistas}: Q1 b (cualitativa = exploratoria/inductiva/descriptiva; etnograf\'ia es cualitativa); Q3 d ($E=P(-\mid\text{sano})$); Q4 d (MA en la c\'uspide de Sackett); Q8 d (a--c son verdaderas, luego d es la falsa buscada seg\'un enunciado).
+      \end{tcolorbox}
+    \column{0.50\textwidth}
+      \begin{tcolorbox}[infobox]
+        \scriptsize
+        Q11 c (la semiestructurada no son tres fases fijas); Q13 b (ROC: $S$ vs $1-E$); Q14 c (orientado al resultado = cuantitativo); Q15 d/a seg\'un jerarqu\'ia local --- en clave oficial \textbf{15.d} (GPC basadas en RS/MA).
+      \end{tcolorbox}
+  \end{columns}
+\end{frame}
+
+% ── Cierre ──
+\begin{frame}[plain]
+  \centering
+  \vfill
+  {\Large\color{m-dark}\textbf{Gracias}}\\[6pt]
+  {\color{neutral}Preguntas y discusi\'on}\\[12pt]
+  \includegraphics[height=1.1cm]{../assets/logo-ugr.png}\\[8pt]
+  {\scriptsize\color{neutral}M.\,A.\ Luque-Fern\'andez \enspace|\enspace Dpto.\ Estad\'istica e I.O. \enspace|\enspace \href{mailto:mluquefe@ugr.es}{mluquefe@ugr.es} \enspace|\enspace \href{https://migariane.github.io}{migariane.github.io}}\\
+  \vfill
+\end{frame}
+
+\appendix
+
+\begin{frame}[allowframebreaks]{Bibliograf\'ia}
+  \tiny
+  \bibliographystyle{apalike}
+  \nocite{*}
+  \bibliography{../slides/references}
+\end{frame}
+
+\end{document}

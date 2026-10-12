@@ -1,0 +1,46 @@
+project:
+  type: website
+  render:
+    - T01_Investigacion_Cualitativa.qmd
+    - T02_Investigacion_Cuantitativa.qmd
+    - index.qmd
+
+website:
+  title: "Neurociencias — Metodología Científica"
+  site-url: https://github.com/migariane/neurociencias-metodologia
+  repo-url: https://github.com/migariane/neurociencias-metodologia
+  search: true
+  page-navigation: true
+  navbar:
+    title: "Neurociencias — Metodología"
+    logo: logo.png
+    logo-alt: "UGR"
+    left:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Cualitativa"
+        href: T01_Investigacion_Cualitativa.qmd
+      - text: "Cuantitativa"
+        href: T02_Investigacion_Cuantitativa.qmd
+
+format:
+  revealjs:
+    theme: [default, ../madrid-theme.scss]
+    slide-number: c/t
+    code-fold: true
+    code-summary: "Mostrar código R"
+    code-copy: true
+    code-overflow: wrap
+    fig-align: center
+    fig-width: 9
+    fig-height: 5.2
+    lang: es
+    transition: fade
+    chalkboard: false
+
+execute:
+  warning: false
+  message: false
+  echo: true
+  eval: true
+  cache: false

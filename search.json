@@ -1,0 +1,989 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Neurociencias — Introducción a la Metodología Científica",
+    "section": "",
+    "text": "Miguel Angel Luque-Fernández — Dpto. Estadística e Investigación Operativa · Universidad de Granada https://migariane.github.io · https://maluque.netlify.app · mluquefe@ugr.es"
+  },
+  {
+    "objectID": "index.html#contenidos",
+    "href": "index.html#contenidos",
+    "title": "Neurociencias — Introducción a la Metodología Científica",
+    "section": "Contenidos",
+    "text": "Contenidos\n\nInvestigación Cualitativa — Fundamentos, validez diagnóstica, práctica basada en la evidencia, bases de datos y revisión bibliográfica (87 diapositivas originales).\nInvestigación Cuantitativa — Demografía sanitaria, fundamentos cuantitativos, epidemiología y supuesto práctico (82 diapositivas originales).\n\n\nCada deck es auto-contenido, navegable y exportable a PDF. Los dos comparten paleta Madrid Professional y bibliografía común (references.bib).\n\n\nCómo citar\n\nLuque-Fernández, M. A. (2026). Neurociencias — Introducción a la Metodología Científica. Universidad de Granada."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#índice",
+    "href": "T01_Investigacion_Cualitativa.html#índice",
+    "title": "Investigación Cualitativa",
+    "section": "Índice",
+    "text": "Índice\n\n\n1 Fundamentos de la investigación cualitativa\n\nPreliminares\nFases de la investigación cualitativa\nMétodos de investigación cualitativa\nTécnicas de investigación cualitativa\nAlmacenamiento, análisis e interpretación de los datos\n\n2 Validez de los métodos diagnósticos\n\nPruebas diagnósticas\nValidez y fiabilidad de una prueba diagnóstica\nSensibilidad y especificidad\nCurvas ROC\nÍndices de seguridad: VPP y VPN\n\n3 Fundamentos de la práctica basada en la evidencia\n\nOrígenes y definición\nPráctica basada en la evidencia\n\n4 Bases de datos bibliográficas\n\nFuentes documentales de evidencia\nRevisión bibliográfica\nInstrumentos de la evidencia científica\nElaboración de informes\nIntegración de resultados a la práctica clínica\n\n5 Supuesto práctico"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#índice-fundamentos-de-la-investigación-cualitativa",
+    "href": "T01_Investigacion_Cualitativa.html#índice-fundamentos-de-la-investigación-cualitativa",
+    "title": "Investigación Cualitativa",
+    "section": "Índice — Fundamentos de la investigación cualitativa",
+    "text": "Índice — Fundamentos de la investigación cualitativa\n\n\n1 Fundamentos de la investigación cualitativa\n\nPreliminares\nFases de la investigación cualitativa\nMétodos de investigación cualitativa\nTécnicas de investigación cualitativa\nAlmacenamiento, análisis e interpretación de los datos\n\n2 Validez de los métodos diagnósticos\n\nPruebas diagnósticas\nValidez y fiabilidad de una prueba diagnóstica\nSensibilidad y especificidad\nCurvas ROC\nÍndices de seguridad: VPP y VPN\n\n3 Fundamentos de la práctica basada en la evidencia\n\nOrígenes y definición\nPráctica basada en la evidencia\n\n4 Bases de datos bibliográficas\n\nFuentes documentales de evidencia\nRevisión bibliográfica\nInstrumentos de la evidencia científica\nElaboración de informes\nIntegración de resultados a la práctica clínica\n\n5 Supuesto práctico"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#paradigma",
+    "href": "T01_Investigacion_Cualitativa.html#paradigma",
+    "title": "Investigación Cualitativa",
+    "section": "Paradigma",
+    "text": "Paradigma\nUn paradigma es una visión del mundo, una forma de segmentar la complejidad del mundo.\nSe puede concebir como un cuerpo ideológico, filosófico y científico que se considera válido en una época o en un tiempo determinado según la comunidad científica.\nEn la elaboración de un paradigma, se responden interrogantes filosóficos del tipo siguiente:\n\nOntológico (naturaleza de la realidad).\nEpistemológico (relación entre el investigador y lo investigado).\nAxiológico (utilidad de los valores).\nMetodológico (forma de obtener el conocimiento)."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#técnicas-de-investigación-en-ciencias-sociales",
+    "href": "T01_Investigacion_Cualitativa.html#técnicas-de-investigación-en-ciencias-sociales",
+    "title": "Investigación Cualitativa",
+    "section": "Técnicas de investigación en Ciencias Sociales",
+    "text": "Técnicas de investigación en Ciencias Sociales\n\nMetodologías: - Empírico-analítica (cuantitativa). - Incluye los siguientes tipos de investigación: - Experimental. - Cuasi experimental. - Ex post facto. - Constructivista (cualitativa). - Incluye los siguientes tipos de investigación: - Fenomenológica. - Interaccionismo simbólico. - Etnografía. - Teoría fundamentada. - Etnometodología. - Fenomenografía. - Sociocrítica (cualitativa). - Incluye los siguientes tipos de investigación: - Investigación-acción. - Participativa. - Colaborativa. - Feminista."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#investigación-cuantitativa-vs.-investigación-cualitativa",
+    "href": "T01_Investigacion_Cualitativa.html#investigación-cuantitativa-vs.-investigación-cualitativa",
+    "title": "Investigación Cualitativa",
+    "section": "Investigación cuantitativa vs. investigación cualitativa",
+    "text": "Investigación cuantitativa vs. investigación cualitativa\n\nLa investigación cuantitativa describe, verifica relaciones entre variables y examina los cambios observados en la variable respuesta en función de la/s variable/s independiente/s. Su principal característica es la objetividad. La epidemiología aplica las premisas de la investigación cuantitativa.\nLa investigación cualitativa, sin embargo, tiene por finalidad comprender un fenómeno desde el punto de vista de los sujetos: las observaciones se describen principalmente de manera narrativa. Está orientada al estudio de la realidad social, siempre compleja. Puede cometer el error de la subjetividad del investigador que analiza el discurso."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#características-de-la-investigación-cuantitativa-y-cualitativa",
+    "href": "T01_Investigacion_Cualitativa.html#características-de-la-investigación-cuantitativa-y-cualitativa",
+    "title": "Investigación Cualitativa",
+    "section": "Características de la investigación cuantitativa y cualitativa",
+    "text": "Características de la investigación cuantitativa y cualitativa\n\nInvestigación cuantitativa\n\n\n\n\n\n\n\nCaracterística\nDescripción\n\n\n\n\nObjeto de estudio\nCantidad (causalidad)\n\n\nOrigen filosófico\nPositivismo\n\n\nConceptos asociados\nExperimento\n\n\nFinalidad de la investigación\nDescripción, contraste de hipótesis, predicción, control\n\n\nDiseño\nPredeterminado. Lineal\n\n\nContexto\nArtificial. Laboratorio\n\n\nMuestra\nAleatoria y representativa\n\n\nObtención de datos\nEstructurada y sistémica\n\n\nAnálisis de datos\nDeductivo\n\n\nResultados\nPrecisos. Limitados\n\n\n\nInvestigación cualitativa\n\n\n\n\n\n\n\nCaracterística\nDescripción\n\n\n\n\nObjeto de estudio\nCualidad (naturaleza, esencia)\n\n\nOrigen filosófico\nFenomenología\n\n\nConceptos asociados\nTrabajo de campo. Etnografía\n\n\nFinalidad de la investigación\nDescripción, comprensión, generación de hipótesis\n\n\nDiseño\nFlexible. Circular\n\n\nContexto\nNatural\n\n\nMuestra\nNo aleatoria\n\n\nObtención de datos\nTextos, entrevistas, observaciones, etc.\n\n\nAnálisis de datos\nInductivo\n\n\nResultados\nHolísticos. Expansivos"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#proceso-y-fases-de-la-investigación-cualitativa",
+    "href": "T01_Investigacion_Cualitativa.html#proceso-y-fases-de-la-investigación-cualitativa",
+    "title": "Investigación Cualitativa",
+    "section": "Proceso y fases de la investigación cualitativa",
+    "text": "Proceso y fases de la investigación cualitativa\n\nPreparatoria o reflexiva.\nRevisión de la literatura.\nRevisión y análisis de la documentación.\nMapeo.\nMuestreo.\nRecogida de datos.\nDefinición de las técnicas e instrumentos."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fase-1-preparatoria-o-reflexiva",
+    "href": "T01_Investigacion_Cualitativa.html#fase-1-preparatoria-o-reflexiva",
+    "title": "Investigación Cualitativa",
+    "section": "Fase 1: preparatoria o reflexiva",
+    "text": "Fase 1: preparatoria o reflexiva\n\nEsta fase es el punto de partida en el que el investigador ha de identificar el problema de estudio. Entre otras tareas debe:\n\nAnalizar la realidad social o cultural.\nNo se trata de estudiar una enfermedad sino los casos particulares de las personas. Entender el mundo de estas personas.\nEsta forma de estudio sitúa al investigador ante la decisión del paradigma cuantitativo o cualitativo.\nHa de definir la pregunta de investigación. En el caso cualitativo esta pregunta se inclinaría hacia lo subjetivo, lo social, etc.\nSegún lo anterior es necesario el contacto directo con las personas. La entrevista, el diálogo, etc. ayudarán a definir y precisar el problema de investigación.\n\nFase 2: revisión de la literatura\nEsta fase es en la que se realiza una búsqueda bibliográfica del tema objeto de estudio.\n\nEsta fase es paralela a la recolección de datos y a los análisis preliminares.\nLa revisión bibliográfica es un referente teórico acerca del problema de estudio.\nAyuda a depurar las categorías de información que se van determinando en el transcurso de la investigación."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fase-3-revisión-y-análisis-de-la-documentación",
+    "href": "T01_Investigacion_Cualitativa.html#fase-3-revisión-y-análisis-de-la-documentación",
+    "title": "Investigación Cualitativa",
+    "section": "Fase 3: revisión y análisis de la documentación",
+    "text": "Fase 3: revisión y análisis de la documentación\n\nEn esta fase se recurre a informantes clave para familiarizarse con la realidad. Se interactúa de manera eficaz tanto con las personas como con las situaciones objeto de la investigación.\nLos documentos pueden ser de naturaleza muy diversa: personales, institucionales o grupales, formales o informales.\nEl análisis documental se realiza en cinco etapas:\n\nRastreo e inventario de los documentos disponibles.\nClasificación de los documentos identificados.\nSelección de los documentos relevantes para nuestra investigación.\nLectura en profundidad de los documentos.\nLectura cruzada y comparativa de los documentos en base a los hallazgos previos.\n\nFase 4: mapeo\nEl mapeo complementa a la fase anterior. Ayuda a situarnos en el contexto donde se llevará a cabo la investigación, ya que nos permitirá conocer la realidad socio cultural, a los participantes, sus circunstancias, etc."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fase-5-muestreo",
+    "href": "T01_Investigacion_Cualitativa.html#fase-5-muestreo",
+    "title": "Investigación Cualitativa",
+    "section": "Fase 5: muestreo",
+    "text": "Fase 5: muestreo\n\nEsta fase es la de la selección de actores, eventos, lugares que se incluirán en la investigación.\n\nDebe ser pertinente: identificar a aquellos participantes que aporten mayor y mejor información.\nDebe ser adecuado: contar con suficientes datos para desarrollar una completa y rica descripción del fenómeno bajo análisis.\n\nCuando se trate de lugares, eventos, situaciones para la observación, además de los anteriores, debe de ser:\n\nConveniente: supone la elección del mejor lugar para la labor sin crear interferencias.\nOportuno: se debe estar en el momento justo y adecuado.\nDisponible: el acceso a los lugares debe ser libre y permanente.\n\nFase 6: recogida de datos\nEn esta fase se especifica el tipo de datos a recoger, el lugar y la forma, etc.\nPuede responder a las siguientes cuestiones:\n\n¿Debe primar la calidad de los datos frente a la cantidad?\n¿Por dónde comenzar y por dónde terminar?\n¿A quién incluir y excluir del proceso de recolección de la información?"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fase-7-definición-de-las-técnicas-e-instrumentos",
+    "href": "T01_Investigacion_Cualitativa.html#fase-7-definición-de-las-técnicas-e-instrumentos",
+    "title": "Investigación Cualitativa",
+    "section": "Fase 7: definición de las técnicas e instrumentos",
+    "text": "Fase 7: definición de las técnicas e instrumentos\nEsta fase se definen las técnicas e instrumentos para la recogida de datos.\nHan de tenerse en cuenta los siguientes elementos:\n\nEnfoque desde el que se plantea la investigación.\nEl tipo de información que se pretende conseguir.\nLas fuentes de información y sus características.\nEl tiempo del que se dispone para todo el proceso."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#principales-diseños-y-métodos-de-investigación-cualitativa",
+    "href": "T01_Investigacion_Cualitativa.html#principales-diseños-y-métodos-de-investigación-cualitativa",
+    "title": "Investigación Cualitativa",
+    "section": "Principales diseños y métodos de investigación cualitativa",
+    "text": "Principales diseños y métodos de investigación cualitativa\nLos métodos son los caminos específicos que permiten acceder al análisis de los distintos objetivos que se pretenden investigar y abarcan todos los procedimientos y actividades necesarios para adquirir un determinado conocimiento.\n\nMétodos etnográficos o naturalistas.\nMétodo de la teoría fundamentada.\nMétodo del análisis del discurso.\nMétodo de la investigación-acción participante."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#métodos-etnográficos-o-naturalistas",
+    "href": "T01_Investigacion_Cualitativa.html#métodos-etnográficos-o-naturalistas",
+    "title": "Investigación Cualitativa",
+    "section": "Métodos etnográficos o naturalistas",
+    "text": "Métodos etnográficos o naturalistas\n\nEl investigador participa en la vida cotidiana de los investigados.\n\nNace de la antropología natural y muchos la consideran como la forma básica de investigación cualitativa.\nEl investigador observa, escucha, habla con los participantes y recopila la información.\nLas técnicas más utilizadas son la observación participante, la entrevista y las técnicas documentales.\n\nMétodo de la teoría fundamentada\nElaboran una teoría del fenómeno estudiado de forma inductiva.\n\nSe elabora durante la recogida y análisis de los datos. Se interpretan y codifican.\nAsume que el investigador se introduce en el campo de acción para conocer cómo se desarrollan las cosas.\n\nMétodo del análisis del discurso\nAnalizan el lenguaje de la comunicación entre los actores situados en un contexto social determinado.\n\nEl discurso se considera como un conjunto de prácticas lingüísticas que mantiene y promueve las relaciones personales.\nEl análisis del discurso utiliza la entrevista, las técnicas documentales y la observación de las interacciones sociales."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#método-de-la-investigación-acción-participante",
+    "href": "T01_Investigacion_Cualitativa.html#método-de-la-investigación-acción-participante",
+    "title": "Investigación Cualitativa",
+    "section": "Método de la investigación-acción participante",
+    "text": "Método de la investigación-acción participante\n\nEl investigador es un agente de cambio social que impulsa la conciencia social.\nLos supuestos prácticos de este método son:\n\nLas personas construyen la realidad en la que viven.\nLos grupos y comunidades tienen su propio ritmo histórico y cultural.\nLa relación investigador-grupo ha de ser horizontal y dialógica.\nToda comunidad cuenta con recursos necesarios para su transformación.\nLa investigación es propiedad de las personas investigadas.\nLa persona que investiga se inserta en la comunidad.\nEl proceso de investigación debe romper la relación de dependencia intelectual para establecer un modelo de relación horizontal con las personas investigadas."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#técnicas-de-investigación-cualitativa",
+    "href": "T01_Investigacion_Cualitativa.html#técnicas-de-investigación-cualitativa",
+    "title": "Investigación Cualitativa",
+    "section": "Técnicas de investigación cualitativa",
+    "text": "Técnicas de investigación cualitativa\nLas técnicas más utilizadas en la investigación cualitativa se basan en la comprensión e interpretación de la información recogida.\nLas técnicas más utilizadas son:\n\nTécnicas conversacionales.\nTécnicas observacionales.\nTécnicas documentales."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#técnicas-conversacionales",
+    "href": "T01_Investigacion_Cualitativa.html#técnicas-conversacionales",
+    "title": "Investigación Cualitativa",
+    "section": "Técnicas conversacionales",
+    "text": "Técnicas conversacionales\n\nEl elemento básico es la entrevista. La entrevista se puede clasificar según diversos criterios:\n\nEstructuración: estructurada o no estructurada.\nDirectividad: dirigida o no dirigida.\nFinalidad: de trabajo, clínica, de investigación.\nSegún el número de participantes: individual o grupal.\n\nLos distintos tipos de técnicas conversacionales son:\n\nEncuesta etnográfica (análisis de la dimensiones culturales de las realidades humanas bajo investigación).\nEntrevistas individuales (recogen información subjetiva y personal del entrevistado). Pueden ser no estructuradas, semiestructuradas o estructuradas.\nTécnicas grupales (recogen la información de modo colectivo). Pueden desarrollarse en grupos de discusión (investigan lugares comunes de un grupo de personas) y/o grupos focales (se centran en un número reducido de tópicos o problemas).\nTécnicas biográficas."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#técnicas-observacionales",
+    "href": "T01_Investigacion_Cualitativa.html#técnicas-observacionales",
+    "title": "Investigación Cualitativa",
+    "section": "Técnicas observacionales",
+    "text": "Técnicas observacionales\n\nLa observación científica se realiza de modo deliberado, sistemático y consciente. Los resultados obtenidos se ordenan, anotan y se interpretan según el significado de lo observado. La observación puede ser:\n\nParticipante: se hace desde dentro de las realidades humanas que se pretenden estudiar. Todo lo acontecido durante la investigación se anota en el diario de campo.\nNo participante: el investigador pretende ubicarse fuera de la realidad sociocultural que va a estudiar.\n\nTécnicas documentales\nLas técnicas documentales analizan el discurso a través de documentos en archivos, cartas, etc."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#almacenamiento-de-los-datos",
+    "href": "T01_Investigacion_Cualitativa.html#almacenamiento-de-los-datos",
+    "title": "Investigación Cualitativa",
+    "section": "Almacenamiento de los datos",
+    "text": "Almacenamiento de los datos\n\nConsiste en la transcripción de los textos resultantes del estudio.\n\nLos datos de investigación cualitativa se presentan en forma de texto narrativo.\nDependiendo del método utilizado puede implicar la posibilidad de registro, codificación y análisis de resultados.\n\nAnálisis e interpretación de los datos\nEn primer lugar se realiza una selección y ordenación de la información, que incluye:\n\nSegmentación: separación del conjunto en unidades. Es una fase descriptiva y clasificatoria.\nCategorización: situaciones, contextos, acontecimientos, comportamientos u opiniones sobre un problema. Estas categorías deben ser exhaustivas y excluyentes.\nCodificación: cada categoría tiene un código indicativo que identifica el fragmento de información así como la persona implicada. Se suele utilizar software como NVivo o Atlas Ti.\n\nObtención de resultados y conclusiones\nFinalmente, mediante la realización de un informe provisional, se realizan un:\n\nAnálisis del contenido: descripción de lo dicho y hecho por los actores. Asume la transparencia del lenguaje.\nAnálisis del discurso: vincula el lenguaje a las relaciones sociales. Es más interpretativo."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#elaboración-de-un-informe",
+    "href": "T01_Investigacion_Cualitativa.html#elaboración-de-un-informe",
+    "title": "Investigación Cualitativa",
+    "section": "Elaboración de un informe",
+    "text": "Elaboración de un informe\nLlegado a este punto el objetivo final de toda investigación cualitativa es la elaboración y análisis crítico de un informe de investigación que comunica los principales resultados de la investigación en forma de artículo de investigación.\nPrincipios bioéticos de investigación\nToda investigación cualitativa debe de regirse por una serie de principios bioéticos relacionados con:\n\nRespeto: trato autónomo al paciente.\nBeneficencia: maximizar los beneficios posibles y reducir al mínimo el posible daño.\nJusticia: distribuir equitativamente los riesgos y beneficios."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#pruebas-diagnósticas",
+    "href": "T01_Investigacion_Cualitativa.html#pruebas-diagnósticas",
+    "title": "Investigación Cualitativa",
+    "section": "Pruebas diagnósticas",
+    "text": "Pruebas diagnósticas\nUna prueba diagnóstica es cualquier procedimiento realizado para confirmar o descartar un diagnóstico o para incrementar o disminuir su verosimilitud.\nLa utilidad de una prueba diagnóstica vendrá determinada por su validez y su fiabilidad así como por su rendimiento clínico y su coste."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#validez-o-exactitud-de-los-métodos-diagnósticos",
+    "href": "T01_Investigacion_Cualitativa.html#validez-o-exactitud-de-los-métodos-diagnósticos",
+    "title": "Investigación Cualitativa",
+    "section": "Validez (o exactitud) de los métodos diagnósticos",
+    "text": "Validez (o exactitud) de los métodos diagnósticos\n\nCaracterística de la calidad de la medida: ausencia de error sistemático; capacidad de clasificar correctamente enfermos/sanos. Se establece frente a gold standard (ej. mamografía vs. biopsia). Validez = capacidad de medir lo que dice medir.\n\n\n\n\n\n\n\n\nResultado de la prueba\nVerdadero enfermo\nVerdadero sano\n\n\n\n\nPositivo (enfermo)\nVerdadero positivo (VP)\nFalso positivo (FP)\n\n\nNegativo (sano)\nFalso negativo (FN)\nVerdadero negativo (VN)\n\n\n\n\n\n\n\n\n\n\nNota\n\n\nLa validez se analiza con la tabla \\(2\\times 2\\)."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fiabilidad",
+    "href": "T01_Investigacion_Cualitativa.html#fiabilidad",
+    "title": "Investigación Cualitativa",
+    "section": "Fiabilidad",
+    "text": "Fiabilidad\n\nEs una característica de la calidad de una medida que indica el grado con el que los resultados obtenidos en una medición pueden ser replicados, es decir, es como el nivel de estabilidad que muestran las medidas repetidas de un fenómeno relativamente estable cuando se realizan en las mismas condiciones.\nDe hecho, la fiabilidad tiene que ver con la ausencia de error aleatorio en la medición.\nExisten dos tipos de fiabilidad:\n\nIntraobservador: consistencia que mantiene un observador al valorar la misma muestra. Por ejemplo, un profesor que revisa dos veces los mismos exámenes y obtiene las mismas calificaciones para sus alumnos.\nEntre observadores: consistencia entre dos o más observadores al valorar la misma muestra. Por ejemplo, dos profesores revisan los mismos exámenes y obtienen los mismos resultados para sus alumnos."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#aumentar-validez-y-fiabilidad",
+    "href": "T01_Investigacion_Cualitativa.html#aumentar-validez-y-fiabilidad",
+    "title": "Investigación Cualitativa",
+    "section": "Aumentar validez y fiabilidad",
+    "text": "Aumentar validez y fiabilidad\n\nPara mejorar la fiabilidad se pueden hacer mediciones repetidas de la misma muestra y quedarnos con el promedio. Esto se hace cuando se calcula la tensión arterial media de un paciente, por ejemplo.\n\nPara mejorar la validez es necesario calibrar los instrumentos de medida.\nPara mejorar ambas se puede:\n\nTratar de que todos los investigadores tengan los mismos criterios.\nEntrenar a los observadores sobre cómo recoger datos.\nSeleccionar los aparatos más fiables.\nCalibrar aparatos de medida.\nSi es posible, es preferible utilizar aparatos automáticos.\nEmplear técnicas de enmascaramiento o ciego."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#sensibilidad-y-especificidad",
+    "href": "T01_Investigacion_Cualitativa.html#sensibilidad-y-especificidad",
+    "title": "Investigación Cualitativa",
+    "section": "Sensibilidad y especificidad",
+    "text": "Sensibilidad y especificidad\n\n\n\n\n\n\nSensibilidad y especificidad — validez interna\n\n\nSon parámetros de validez interna frente a gold standard.\n\n\n\n\n\n\nSensibilidad — detectar enfermos\n\\[S = \\frac{VP}{VP + FN}\\]\nProbabilidad de positivo si está enfermo.\n\n\n\nEspecificidad — descartar sanos\n\\[E = \\frac{VN}{FP + VN}\\]\nProbabilidad de negativo si está sano.\n\n\n\n\n\\(S\\) alta → útil para descartar (si sale negativo, casi seguro sano).\n\\(E\\) alta → útil para confirmar (si sale positivo, casi seguro enfermo)."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#relación-entre-sensibilidad-y-especificidad",
+    "href": "T01_Investigacion_Cualitativa.html#relación-entre-sensibilidad-y-especificidad",
+    "title": "Investigación Cualitativa",
+    "section": "Relación entre sensibilidad y especificidad",
+    "text": "Relación entre sensibilidad y especificidad\n\nUna prueba con una sensibilidad alta trata de detectar la enfermedad en el caso de positividad de la prueba. Si la prueba es negativa, una sensibilidad alta también es útil para descartar la enfermedad. Una especificidad alta evita los falsos positivos, por tanto es recomendable con enfermedades graves pero tratables en las que se debe de estar seguro del diagnóstico antes de comunicarlo al paciente.\n\nLa sensibilidad depende de la prevalencia de la enfermedad. A mayor prevalencia mayor probabilidad de ser detectada y por tanto mayor sensibilidad.\nLa falta de estandarización en las mediciones conduce a error en la sensibilidad.\nPara enfermedades con poca prevalencia es mejor elegir pruebas con una alta especificidad.\nPara enfermedades en las que es esencial un diagnóstico precoz es mejor pruebas con alta sensibilidad."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#curvas-roc",
+    "href": "T01_Investigacion_Cualitativa.html#curvas-roc",
+    "title": "Investigación Cualitativa",
+    "section": "Curvas ROC",
+    "text": "Curvas ROC\nLas curvas ROC (ROC, del inglés) representan los distintos valores que pueden tomar la sensibilidad y especificidad en un sistema de coordenadas. En el eje de ordenadas se representan los valores de la sensibilidad (S) y en el eje de abcisas los complementarios de la especificidad (1-E).\nEl área por debajo de la curva ROC es un buen reflejo de la exactitud, validez o capacidad discriminatoria de la prueba. A mayor área mejor es la prueba.\n\nCurva ROC — sensibilidad vs. (1-especificidad)"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#valor-predictivo-positivo-vpp-y-valor-predictivo-negativo-vpn",
+    "href": "T01_Investigacion_Cualitativa.html#valor-predictivo-positivo-vpp-y-valor-predictivo-negativo-vpn",
+    "title": "Investigación Cualitativa",
+    "section": "Valor predictivo positivo (VPP) y valor predictivo negativo (VPN)",
+    "text": "Valor predictivo positivo (VPP) y valor predictivo negativo (VPN)\nSon índices de seguridad — dependen de la prevalencia.\n\n\n\nVPP — estar enfermo si el test da positivo\n\\[VPP = \\frac{VP}{VP + FP} = \\frac{VP}{\\text{Total positivos}}\\]\n\n\n\nVPN — estar sano si el test da negativo\n\\[VPN = \\frac{VN}{VN + FN} = \\frac{VN}{\\text{Total negativos}}\\]"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#relación-entre-los-valores-predictivos-y-la-prevalencia",
+    "href": "T01_Investigacion_Cualitativa.html#relación-entre-los-valores-predictivos-y-la-prevalencia",
+    "title": "Investigación Cualitativa",
+    "section": "Relación entre los valores predictivos y la prevalencia",
+    "text": "Relación entre los valores predictivos y la prevalencia\nConforme la prevalencia aumenta (manteniendo constantes la S y la E):\n\nAumenta el VPP.\nAumentan, en valor absoluto, los FN.\nDisminuyen, en valor absoluto, los FP.\nDisminuye el VPN.\n\nAtendiendo a estas particularidades hay que tener en cuenta que:\n\nLas pruebas no son exportables de una zona a otra si la prevalencia es distinta.\nLos médicos en niveles secundarios y terciarios aciertan más que los del nivel primario ya que actúan como filtro aumentando la prevalencia y por tanto los VPP."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#cálculo-práctico",
+    "href": "T01_Investigacion_Cualitativa.html#cálculo-práctico",
+    "title": "Investigación Cualitativa",
+    "section": "Cálculo práctico",
+    "text": "Cálculo práctico\nCon una tabla \\(2\\times 2\\) todo es inmediato.\n\n\n\n\nEnfermo\nSano\nTotal\n\n\n\n\nTest +\n\\(a\\) (VP)\n\\(b\\) (FP)\n\\(a+b\\)\n\n\nTest −\n\\(c\\) (FN)\n\\(d\\) (VN)\n\\(c+d\\)\n\n\nTotal\n\\(a+c\\)\n\\(b+d\\)\n\\(N\\)\n\n\n\n\n\n\n\\[S = \\frac{a}{a+c} \\qquad E = \\frac{d}{b+d}\\]\n\n\n\n\\[VPP = \\frac{a}{a+b} \\qquad VPN = \\frac{d}{c+d}\\]"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#otros-índices",
+    "href": "T01_Investigacion_Cualitativa.html#otros-índices",
+    "title": "Investigación Cualitativa",
+    "section": "Otros índices",
+    "text": "Otros índices\n\n\n\nMala clasificación y Valor global\n\\[MC = \\frac{FP+FN}{N} \\qquad VG = \\frac{VP+VN}{N}\\]\n\n\n\nRazones de verosimilitud\n\\[RVP = \\frac{S}{1-E} \\qquad RVN = \\frac{1-S}{E}\\]\n\n\n\n\n\\(RVP &gt; 10\\) gran aumento de probabilidad de enfermedad si test +.\n\\(RVN &lt; 0.1\\) gran descenso si test −."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fundamentos-de-la-práctica-basada-en-la-evidencia",
+    "href": "T01_Investigacion_Cualitativa.html#fundamentos-de-la-práctica-basada-en-la-evidencia",
+    "title": "Investigación Cualitativa",
+    "section": "Fundamentos de la práctica basada en la evidencia",
+    "text": "Fundamentos de la práctica basada en la evidencia\n\n\nFundamentos de la investigación cualitativa\n\n\nPreliminares\nFases de la investigación cualitativa\nMétodos de investigación cualitativa\nTécnicas de investigación cualitativa\nAlmacenamiento, análisis e interpretación de los datos\n\n\nValidez de los métodos diagnósticos\n\n\nPruebas diagnósticas\nValidez y fiabilidad de una prueba diagnóstica\nSensibilidad y especificidad\nCurvas ROC\nÍndices de seguridad: VPP y VPN\n\n\nFundamentos de la práctica basada en la evidencia\n\n\nOrígenes y definición\nPráctica basada en la evidencia\n\n\nBases de datos bibliográficas\n\n\nFuentes documentales de evidencia\nRevisión bibliográfica\nInstrumentos de la evidencia científica\nElaboración de informes\nIntegración de resultados a la práctica clínica\n\n\nSupuesto práctico"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#orígenes-y-definición",
+    "href": "T01_Investigacion_Cualitativa.html#orígenes-y-definición",
+    "title": "Investigación Cualitativa",
+    "section": "Orígenes y definición",
+    "text": "Orígenes y definición\n\n\nFundamentos de la investigación cualitativa\n\n\nPreliminares\nFases de la investigación cualitativa\nMétodos de investigación cualitativa\nTécnicas de investigación cualitativa\nAlmacenamiento, análisis e interpretación de los datos\n\n\nValidez de los métodos diagnósticos\n\n\nPruebas diagnósticas\nValidez y fiabilidad de una prueba diagnóstica\nSensibilidad y especificidad\nCurvas ROC\nÍndices de seguridad: VPP y VPN\n\n\nFundamentos de la práctica basada en la evidencia\n\n\nOrígenes y definición\nPráctica basada en la evidencia\n\n\nBases de datos bibliográficas\n\n\nFuentes documentales de evidencia\nRevisión bibliográfica\nInstrumentos de la evidencia científica\nElaboración de informes\nIntegración de resultados a la práctica clínica\n\n\nSupuesto práctico"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#orígenes-de-la-práctica-basada-en-la-evidencia-pbe",
+    "href": "T01_Investigacion_Cualitativa.html#orígenes-de-la-práctica-basada-en-la-evidencia-pbe",
+    "title": "Investigación Cualitativa",
+    "section": "Orígenes de la práctica basada en la evidencia (PBE)",
+    "text": "Orígenes de la práctica basada en la evidencia (PBE)\n\nLa práctica basada en la evidencia (PBE) tiene sus orígenes en la medicina basada en la evidencia (MBE) que es un movimiento que surge en el último tercio del S. XX en Reino Unido de manos de Archibald Cochrane.\n\nLa práctica basada en la evidencia (PBE) es caracterizada por la utilización consciente, explícita y juiciosa de la mejor evidencia disponible para tomar decisiones sobre la atención individual de cada paciente.\nActualmente se habla de PBE para todas las disciplinas relacionadas con la salud que han adaptado su práctica profesional a los conocimientos generados por la investigación científica de calidad.\nEntre todas las PBE destaca la Enfermería Basada en la Evidencia (EBE) que se define como la aplicación consciente, explícita y juiciosa de la mejor evidencia científica disponible relativa al conocimiento enfermero para tomar decisiones sobre el cuidado de enfermos, teniendo en cuenta sus preferencias y valores.\nDe hecho la EBE, considera los datos de la verdad cuantitativa como una verdad probabilista pero permitiendo que un análisis interpretativo o cualitativo tenga espacio para explicar la realidad."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#bases-conceptuales-de-la-mbe",
+    "href": "T01_Investigacion_Cualitativa.html#bases-conceptuales-de-la-mbe",
+    "title": "Investigación Cualitativa",
+    "section": "Bases conceptuales de la MBE",
+    "text": "Bases conceptuales de la MBE\n\nInvestigación. Otorga mucho valor a la investigación puramente experimental (ensayos clínicos y metaanálisis).\nExperiencia clínica. La experiencia aporta conocimiento y capacidad para tomar decisiones acertadas.\nPreferencias y valores de los usuarios. Tienen derecho a decidir. Influencia de la cultura y aquello que más se adapte a su forma de pensar. Llegado el caso, prevalece.\nRecursos disponibles. Los recursos del sistema sanitario no son ilimitados. Utilizarlos conscientemente y en base a términos de eficiencia o coste-efectividad."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#características-de-la-ebe",
+    "href": "T01_Investigacion_Cualitativa.html#características-de-la-ebe",
+    "title": "Investigación Cualitativa",
+    "section": "Características de la EBE",
+    "text": "Características de la EBE\n\nLa enfermería, como disciplina sociosanitaria, investiga desde dos vertientes:\n\nBusca causas de los fenómenos sin tener en cuenta el estado subjetivo del sujeto.\nComprender fenómenos desde la perspectiva de los individuos.\n\nLa EBE busca evidencias desde ambas perspectivas (cualitativa y cuantitativa) no centrándose sólo en la investigación puramente experimental que se hace desde la MBE.\nVentajas de la EBE\n\nDisminución en la variabilidad clínica.\nAyuda a la sostenibilidad del Sistema Sanitario.\n‘Apoyo’ judicial.\nIntegra en la práctica a los 4 elementos principales (profesional, paciente, recursos e investigación).\nPromueve el cambio frente al inmovilismo profesional.\nDota de sentido a una ciencia aplicada como es la enfermería."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#práctica-basada-en-la-evidencia",
+    "href": "T01_Investigacion_Cualitativa.html#práctica-basada-en-la-evidencia",
+    "title": "Investigación Cualitativa",
+    "section": "Práctica basada en la evidencia",
+    "text": "Práctica basada en la evidencia\n\n\nFundamentos de la investigación cualitativa\n\n\nPreliminares\nFases de la investigación cualitativa\nMétodos de investigación cualitativa\nTécnicas de investigación cualitativa\nAlmacenamiento, análisis e interpretación de los datos\n\n\nValidez de los métodos diagnósticos\n\n\nPruebas diagnósticas\nValidez y fiabilidad de una prueba diagnóstica\nSensibilidad y especificidad\nCurvas ROC\nÍndices de seguridad: VPP y VPN\n\n\nFundamentos de la práctica basada en la evidencia\n\n\nOrígenes y definición\nPráctica basada en la evidencia\n\n\nBases de datos bibliográficas\n\n\nFuentes documentales de evidencia\nRevisión bibliográfica\nInstrumentos de la evidencia científica\nElaboración de informes\nIntegración de resultados a la práctica clínica\n\n\nSupuesto práctico"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fases-de-la-práctica-basada-en-la-evidencia",
+    "href": "T01_Investigacion_Cualitativa.html#fases-de-la-práctica-basada-en-la-evidencia",
+    "title": "Investigación Cualitativa",
+    "section": "Fases de la práctica basada en la evidencia",
+    "text": "Fases de la práctica basada en la evidencia\n\nFase 0. Espíritu de preguntamos por la práctica clínica y cómo hacemos las cosas.\n\nFase 1. Formulación de pregunta clínica. Formular la pregunta de la manera más adecuada posible a partir del problema que se nos presenta. Habitualmente utilizamos el esquema PICO.\nFase 2. Búsqueda de la evidencia, a través de las distintas fuentes documentales: bases de datos bibliográficas, revistas científicas, literatura secundaria o terciaria o guías de práctica clínica.\nFase 3. Valoración crítica de la evidencia.\nFase 4. Transferencia de la evidencia a la práctica clínica.\nFase 5. Evaluación de los resultados de la utilización de la práctica basada en la evidencia."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#investigación-secundaria",
+    "href": "T01_Investigacion_Cualitativa.html#investigación-secundaria",
+    "title": "Investigación Cualitativa",
+    "section": "Investigación secundaria",
+    "text": "Investigación secundaria\n\nEs un proceso sistemático de revisión de la literatura científica basada en criterios metodológicos y experimentales que selecciona estudios cuantitativos y cualitativos, para dar respuesta a un problema, a modo de síntesis.\nHay cuatro modelos básicos de revisión:\n\nRevisión sistemática: revisión académica que selecciona investigaciones experimentales que han pasado un análisis de validez interna y externa.\nMetanálisis: reanálisis o análisis secundario de los datos originales provenientes de distintas investigaciones primarias.\nMetasíntesis: investigación secundaria que sintetiza estudios cualitativos que cumplan criterios de fiabilidad, validez y pertinencia.\nRevisión crítica de un estudio: revisión analítica de cualquiera de las revisiones anteriores sobre un tema concreto.\n\nEn las siguientes diapositivas se analizan con más detalle las distintas fases de la práctica basada en la evidencia."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fase-1.-formulación-de-preguntas-clínicas",
+    "href": "T01_Investigacion_Cualitativa.html#fase-1.-formulación-de-preguntas-clínicas",
+    "title": "Investigación Cualitativa",
+    "section": "Fase 1. Formulación de preguntas clínicas",
+    "text": "Fase 1. Formulación de preguntas clínicas\n\nSon interrogantes, una duda, algo que produce movimiento e inquietud. Su naturaleza es práctica y surgen en el día a día, durante la práctica diaria. Se pregunta sobre cómo se actúa y si puede hacerse de otra manera.\nLas partes que componen una pregunta clínica son:\n\nDescripción del problema clínico (motivo y relevancia de su elección)\nElaborar la pregunta: intervención a considerar, ¿comparación?\nVariables de resultado\n\nFormulación de preguntas clínicas: estrategia PICO\n\nPaciente y/o problema de interés.\nIntervención: tratamiento, factor pronóstico, prueba diagnóstica, exposición, etc.\nComparación: este punto puede excluirse de acuerdo a las necesidades de la búsqueda.\nOutcome: niveles de importancia del desenlace crítico, importante, no importante."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#formulación-de-preguntas-clínicas-ejemplo",
+    "href": "T01_Investigacion_Cualitativa.html#formulación-de-preguntas-clínicas-ejemplo",
+    "title": "Investigación Cualitativa",
+    "section": "Formulación de preguntas clínicas: ejemplo",
+    "text": "Formulación de preguntas clínicas: ejemplo\n\nDurante la visita preoperatoria de enfermería se detectó que aquellas personas que esperaban para ser intervenidas quirúrgicamente estaban ansiosas o nerviosas ante la intervención. Ante la influencia negativa que esta tiene sobre diferentes aspectos de la cirugía se decidió que era importante conocer otros medios que de forma costo-efectiva disminuyesen la ansiedad preoperatoria.\n¿Es la musicoterapia más efectiva para la disminución de la ansiedad preoperatoria que la intervención habitual de la visita prequirúrgica de enfermería?\nVariables de evaluación: estado de ansiedad (STAI), FC, FR y TA.\nEstrategia PICO:\n\nP (Paciente): pacientes preoperatorios\nI (Intervención): dar información médica sobre la cirugía\nC (Comparación o control): musicoterapia\nO (Outcome): estado de ansiedad (STAI), FC, FR, TAS"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fase-2.-búsqueda-de-la-evidencia-información",
+    "href": "T01_Investigacion_Cualitativa.html#fase-2.-búsqueda-de-la-evidencia-información",
+    "title": "Investigación Cualitativa",
+    "section": "Fase 2. Búsqueda de la evidencia (información)",
+    "text": "Fase 2. Búsqueda de la evidencia (información)\n\nRevisión de bibliografía: es el procedimiento estructurado cuyo objetivo es la localización y recuperación de información relevante para un usuario que quiere dar respuesta a cualquier duda relacionada con su práctica, ya sea ésta clínica, docente, investigadora o de gestión. Para los profesionales clínicos la revisión es una fuente de ayuda en la toma de decisiones actualizadas.\nBúsqueda de información piramidal (Haynes):\n\nGuías de práctica clínica (GuíaSalud, National Health Service (NHS), Registered Nurses’ Association of Ontario (RNAO))\nRevisiones sistemáticas, narrativas y metaanálisis (Cochrane, Bases de datos)\nInvestigación primaria (CUIDEN, Pubmed, CINAHL, BIREME, etc.)\nDocumentos actuales (últimos 5-10 años)."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#búsqueda-de-la-evidencia-pasos-para-la-búsqueda",
+    "href": "T01_Investigacion_Cualitativa.html#búsqueda-de-la-evidencia-pasos-para-la-búsqueda",
+    "title": "Investigación Cualitativa",
+    "section": "Búsqueda de la evidencia: pasos para la búsqueda",
+    "text": "Búsqueda de la evidencia: pasos para la búsqueda\n\n\nReducir la pregunta a términos\nTraducir los términos al lenguaje documental de las bases de datos (consultar tesauro)\nDeCS (Descriptores en Ciencias de la Salud), MeSH (Medical Subject Headings): ‘ansiedad’, ‘visita prequirúrgica’, ‘musicoterapia’, ‘enfermería’\nElección de fuentes documentales y ejecución de la búsqueda: ‘Ansiedad AND cirugía AND musicoterapia, Ansiedad OR cirugía, Ansiedad AND cirugía not medication’\nSelección de documentos\nRecuperación de documentos (texto completo)\nAnálisis y selección de documentos recuperados\nBúsqueda inversa (explorar las referencias bibliográficas de los artículos seleccionados en nuestra búsqueda)"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fase-3.-lectura-crítica",
+    "href": "T01_Investigacion_Cualitativa.html#fase-3.-lectura-crítica",
+    "title": "Investigación Cualitativa",
+    "section": "Fase 3. Lectura crítica",
+    "text": "Fase 3. Lectura crítica\n\nEs el proceso sistemático utilizado para evaluar el diseño y la metodología de un estudio, la calidad de los datos y analizar e interpretar los resultados. Permite establecer la validez y el significado de los resultados y su relevancia para nuestra práctica.\nNo todo lo publicado es bueno.\nLas guías de lectura crítica son instrumentos para orientar el análisis de la fortaleza, debilidad y la utilidad de un estudio. Enfatiza la calidad de la investigación (¿son válidos los resultados del estudio?), los hallazgos (¿cuáles han sido?) y su utilidad.\nEjemplos de guías de lectura crítica, según la metodología del estudio a evaluar, son: CASPe, STROBE, CONSORT, MAStARI.\nLos criterios de selección de documentos tienen que ver con la relevancia, interés para la disciplina y calidad.\nPartes de la lectura crítica:\n\nResumen del documento\nComentario crítico del revisor"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fases-4.-y-5.-implementación-y-evaluación-de-evidencias",
+    "href": "T01_Investigacion_Cualitativa.html#fases-4.-y-5.-implementación-y-evaluación-de-evidencias",
+    "title": "Investigación Cualitativa",
+    "section": "Fases 4. y 5. Implementación y evaluación de evidencias",
+    "text": "Fases 4. y 5. Implementación y evaluación de evidencias\n\nEs el proceso de modificación de la práctica teniendo en cuenta las mejores evidencias disponibles. Evaluar va unido a implementar, hay que ‘monitorizar’ el cambio. No se debe dar por supuesto que un cambio en la práctica mejora los resultados.\nExisten diferentes formatos para la difusión de evidencias:\n\nDiferentes revistas de impacto nacional e internacional publican diferentes formatos de difusión de evidencias.\nRevisiones sistemáticas. ‘Una revisión sistemática tiene como objetivo reunir toda la evidencia empírica que cumple unos criterios de elegibilidad previamente establecidos, con el fin de responder una pregunta específica de investigación. Utiliza métodos sistemáticos y explícitos, que se eligen con el fin de minimizar sesgos, aportando así resultados más fiables a partir de los cuales se puedan extraer conclusiones y tomar decisiones’.\n\n\nUso de criterios explícitos para valorar la calidad de los artículos revisados.\nAnálisis de los resultados que obtienen los estudios seleccionados utilizando métodos validados.\nTHE COCHRANE COLLABORATION\n\n\nRevisiones críticas."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#niveles-de-evidencia-y-grados-de-recomendación",
+    "href": "T01_Investigacion_Cualitativa.html#niveles-de-evidencia-y-grados-de-recomendación",
+    "title": "Investigación Cualitativa",
+    "section": "Niveles de evidencia y grados de recomendación",
+    "text": "Niveles de evidencia y grados de recomendación\n\nCuando realizamos una búsqueda bibliográfica y queremos seleccionar los artículos más fiables por su calidad metodológica podemos seguir la siguiente clasificación:\n\nNivel 1. Metaanálisis de múltiples estudios controlados.\nNivel 2. Estudio individual con diseño experimental.\nNivel 3. Estudio con diseño cuasi-experimental como estudios semi-randomizados con grupo único pre y post test, caso control.\nNivel 4. Estudios con diseño no experimental como descriptivo correlacional y cualitativo con estudios de caso.\nNivel 5. Relato de casos con datos obtenidos de forma sistemática, de calidad verificable o datos de evaluación de programas.\nNivel 6. Opinión de autoridades basadas en su competencia clínica, opinión de comités de especialistas, incluyendo interpretaciones de informes no basados en investigaciones, opiniones reguladoras de leyes."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#guía-práctica-clínica",
+    "href": "T01_Investigacion_Cualitativa.html#guía-práctica-clínica",
+    "title": "Investigación Cualitativa",
+    "section": "Guía práctica clínica",
+    "text": "Guía práctica clínica\n\nLas Guías de Práctica Clínica (GPC) son un ‘conjunto de recomendaciones basadas en una revisión sistemática de la evidencia y en la evaluación de los riesgos y beneficios de las diferentes alternativas, con el objetivo de optimizar la atención sanitaria a los pacientes’ (National Research Council).\n¿Qué contienen? Recomendaciones para los cuidados; Nivel de evidencia de las mismas; Integrantes de la realización de la GPC; Financiación; Fecha de elaboración y actualización.\n\nMapas de cuidados:\n\nSon planes asistenciales que se aplican a enfermos con una determinada patología y un curso clínico predecible con una atención coordinada.\n\nVías clínicas:\n\nTambién llamados mapas de asistencia, son instrumentos para planificar y coordinar la secuencia de procedimientos médicos, de enfermería y administrativos necesarios para conseguir la máxima eficiencia en el proceso asistencial."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#bases-de-datos-bibliográficas",
+    "href": "T01_Investigacion_Cualitativa.html#bases-de-datos-bibliográficas",
+    "title": "Investigación Cualitativa",
+    "section": "Bases de datos bibliográficas",
+    "text": "Bases de datos bibliográficas\n\nUna base de datos bibliográfica es un archivo del ordenador que almacena las referencias de muchos documentos (artículos de revistas, capítulos de libros, resumen de comunicaciones en congresos o reuniones científicas…)\nSirve para encontrar qué información se ha publicado sobre una materia, o qué escritos ha publicado un autor.\n\nBases de datos relevantes en enfermería. Destacamos:\n\nA nivel español: CUIDEN, CUIDEN Plus, IME (Instituto Médico Español) y ENFISPO\nA nivel internacional: MEDLINE/PUBMED, EMBASE y en CINAHL.\n\nBases de datos de investigación secundaria en salud.\n\nEn ellas vamos a encontrar revisiones sistemáticas de la literatura científica, destaca la Cochrane Library es la base de datos donde podemos encontrar las revisiones realizadas por la Colaboración Cochrane (desde 1992) y la Cochrane Library Plus versionada en castellano.\nEl Instituto Joanna Briggs (JB) es una organización internacional sin ánimo de lucro, de investigación y desarrollo de la Universidad de Adelaida, Australia. Colabora con 70 entidades internacionales para promover la práctica asistencial basada en la evidencia."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#fuentes-documentales-de-evidencia",
+    "href": "T01_Investigacion_Cualitativa.html#fuentes-documentales-de-evidencia",
+    "title": "Investigación Cualitativa",
+    "section": "Fuentes documentales de evidencia",
+    "text": "Fuentes documentales de evidencia\n\nFuentes primarias, que recogen la información original elaborada por sus autores.\n\nLibros: enciclopedias, manuales, monografías.\nActas de congresos.\nTesis doctorales.\nPatentes.\nMemorias.\nInformes y estudios de asociaciones, grupos e instituciones.\nDocumentos de organismos internacionales, legislativos y gubernamentales (por ejemplo la Estrategia de Atención al Parto Normal publicado por el Ministerio de Sanidad y Consumo en 2008).\nPublicaciones periódicas: periódicos, boletines oficiales, revistas científicas.\n\nFuentes secundarias, que elaboran, clasifican o resumen las fuentes primarias.\n\nBases de datos.\nDiversos recursos en internet.\nRevisiones sistemáticas."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#revisión-bibliográfica",
+    "href": "T01_Investigacion_Cualitativa.html#revisión-bibliográfica",
+    "title": "Investigación Cualitativa",
+    "section": "Revisión bibliográfica",
+    "text": "Revisión bibliográfica\n\nLa revisión bibliográfica es un procedimiento estructurado cuyo objetivo es la localización y recuperación de información relevante para un usuario que quiere dar respuesta a cualquier duda relacionada con su práctica, ya sea ésta clínica, docente, investigadora o de gestión.\nEtapas de la estrategia de búsqueda:\n\nDefinir la pregunta o la consulta para que sea breve, concreta y concisa.\nTraducción de la consulta: identificar un listado de descriptores o palabras claves de la pregunta de investigación y transcribirla a lenguaje documental.\nSeleccionar las fuentes de datos: bases de datos bibliográficas, plataformas, repositorios.\nConstrucción y ejecución de la sentencia de búsqueda: operadores booleanos, límites, truncado, búsqueda por campos.\nRecuperación de la información: referencia bibliográfica, texto completo, gestores de referencias bibliográficas.\nAnálisis de los resultados y selección de los documentos recuperados: sensibilidad, exhaustividad, relevancia y pertinencia.\nSíntesis de la búsqueda bibliográfica.\n\nA continuación abordamos cada una de las etapas con más detalle."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#definición-de-la-consulta-o-tema",
+    "href": "T01_Investigacion_Cualitativa.html#definición-de-la-consulta-o-tema",
+    "title": "Investigación Cualitativa",
+    "section": "1. Definición de la consulta o tema",
+    "text": "1. Definición de la consulta o tema\n\nEmpezaremos definiendo la pregunta. Se recomienda escribir unas cuantas proposiciones cortas, ‘frases con pocas palabras’ que, en conjunto, contengan todas las categorías de nuestra duda.\n\nPosteriormente conviene reducir las preguntas a palabras, a fin de elaborar una lista de términos relevantes con los que interrogar a los sistemas de recuperación de información.\n\n2. Traducción de la consulta\n\nLa traducción implica, a veces, buscar los mismos términos en el idioma de la base de datos que interrogamos; en otras ocasiones, se hace necesario el uso de diccionarios y vocabularios especializados como el «thesauro».\nUn tesauro es una herramienta que traduce el lenguaje normal a un lenguaje controlado que utilizan las bases de datos para ordenar y describir los documentos que incluyen. Los tesauros más utilizados en Ciencias de la Salud son el MeSH (Medical Subject Heading) empleado por la base de datos Pubmed; y su correspondiente traducción al español y castellano DeCS (Descriptores en Ciencias de la Salud), utilizados por las bases de datos."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#selección-de-las-fuentes-de-datos",
+    "href": "T01_Investigacion_Cualitativa.html#selección-de-las-fuentes-de-datos",
+    "title": "Investigación Cualitativa",
+    "section": "3. Selección de las fuentes de datos",
+    "text": "3. Selección de las fuentes de datos\n\nPara la selección de fuentes puede ayudar la siguiente secuencia:\n\nLocalizar documentos primarios (tratados, libros o revistas) consultando a colegas o la biblioteca del centro de trabajo. Esta etapa se puede complementar con el uso de buscadores generales de información de Internet (Google).\nConsultar las bases de datos en español y de enfermería así podemos ver cómo responden la enfermería iberoamericana al problema planteado. Dichas bases son CUIDEN, CUIDATGE, ENFISPO, BDIE y LILACS.\nConsultar las bases de datos del ámbito de la biomedicina en español y en el espacio iberoamericano. IME y LILACS.\nConsultar las bases de datos de ámbito internacional en el ámbito de la Enfermería. En este punto podemos tener problemas con el uso del idioma y con la recuperación de los documentos de interés encontrados (International Nursing Index) y CINAHL (Cumulativa Index to Nursing & Allied Health).\nConsultar las bases de datos internacionales como son Medline, Scopus, Embase."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#construcción-de-la-secuencia-de-búsqueda",
+    "href": "T01_Investigacion_Cualitativa.html#construcción-de-la-secuencia-de-búsqueda",
+    "title": "Investigación Cualitativa",
+    "section": "4. Construcción de la secuencia de búsqueda",
+    "text": "4. Construcción de la secuencia de búsqueda\n\nUna vez que tenemos seleccionadas palabras claves o descriptores debemos relacionarlos entre sí para formar nuestra ecuación de búsqueda. Utilizamos operadores que nos permiten establecer dichas relaciones.\nDisponemos de los siguientes operadores:\n\nOperadores booleanos: AND, OR, NOT.\nOperadores relacionales: delimitan el rango de las búsquedas estableciendo relaciones de igualdad, desigualdad o rango.\nOperadores de proximidad: sirven para obtener resultados más precisos, ya que permiten especificar que las palabras que deseamos buscar se encuentren a una cierta proximidad, o bien que se encuentre dentro de una frase o dentro de un párrafo.\nIN: selecciona los documentos que contienen las palabras especificadas en una o más zonas determinadas del documento. Se consideran zonas del documento aquéllas que están delimitadas por ciertas etiquetas del documento html. Son zonas posibles: title, head, body, a, form, etc.\nSENTENCE: selecciona los documentos que contienen todas las palabras especificadas dentro de una misma frase.\nNEAR: selecciona los documentos que contienen las palabras especificadas y ordena los resultados según la proximidad entre estas palabras, de más cercanas (una al lado de la otra) a menos cercanas (con un máximo de mil palabras entre ellas)."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#recuperación-de-la-información",
+    "href": "T01_Investigacion_Cualitativa.html#recuperación-de-la-información",
+    "title": "Investigación Cualitativa",
+    "section": "5. Recuperación de la información",
+    "text": "5. Recuperación de la información\n\nUna vez que se ha ejecutado la búsqueda podemos tener una cantidad ingente de información o referencias bibliográficas sobre la misma. Ahora necesitamos acceder a dichas fuentes primarias de información: obtener los artículos, libros, guías que considero importantes para el conocimiento del tema de investigación. Tenemos varias fuentes donde podemos encontrar los documentos.\n\nDirectorios institucionales, universidades, centros de investigación, etc.\nLos propios autores del documento contactando con ellos si tenemos su dirección de correo electrónico.\nBibliotecas y hemerotecas.\nCentros de documentación.\nInternet para revistas de acceso abierto (open access).\n\nLa búsqueda bibliográfica termina cuando se cumple el principio de saturación, esto es que nuevos artículos encontrados no amplían los conocimientos ya obtenidos y/o se refieren a autores ya conocidos, o cuando simplemente se ha resuelto nuestra necesidad de información para la revisión."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#análisis-de-los-resultados-y-selección-de-los-documentos-recuperados",
+    "href": "T01_Investigacion_Cualitativa.html#análisis-de-los-resultados-y-selección-de-los-documentos-recuperados",
+    "title": "Investigación Cualitativa",
+    "section": "6. Análisis de los resultados y selección de los documentos recuperados",
+    "text": "6. Análisis de los resultados y selección de los documentos recuperados\n\nUna vez realizada la búsqueda vamos a obtener una cantidad de documentos en relación con los parámetros anteriormente explicados y esto hará que debamos seleccionar aquellos que nos van a ser de utilidad.\n\nSi el número de artículos encontrado es reducido deberemos utilizar unos descriptores más genéricos o de otros términos relacionados no incluidos. Optaremos por utilizar un lenguaje natural (sin tesauro) y eliminar algunas limitaciones.\nSi por el contrario el número de documentos es excesivo nos debemos plantear limitar más la búsqueda.\nOtro aspecto a tener en cuenta es la búsqueda inversa. Dicha búsqueda consiste en, una vez identificados aquellos artículos que tratan específicamente de nuestro tema, indagar en las referencias bibliográficas para ver la existencia de otros artículos pertinentes.\n\n7. Síntesis de la búsqueda bibliográfica\nCuando ya tenemos en nuestro poder los resultados de la búsqueda realizada, procedemos a leer los documentos obtenidos para tener una visión rápida y esquematizada de la información más relevante que hemos obtenido.\n\nEs recomendable realizar fichas de cada artículo, libro, guía, etc. donde reflejemos aquello que aporta a nuestro estudio o que consideremos fundamental para el mismo.\nEn dicha ficha, debemos incluir un breve resumen, el material y método y las conclusiones que consideremos más importantes."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#instrumentos-de-la-evidencia-científica",
+    "href": "T01_Investigacion_Cualitativa.html#instrumentos-de-la-evidencia-científica",
+    "title": "Investigación Cualitativa",
+    "section": "Instrumentos de la evidencia científica",
+    "text": "Instrumentos de la evidencia científica\n\nDentro del proceso de revisión sistemática, la Lectura Crítica de la evidencia nos permite analizar la calidad o validez de las pruebas científicas.\n\nEn el proceso de Lectura Crítica nos guiamos por determinados criterios relativos a la forma en la que se han desarrollado las investigaciones, que les confiere de mayor o menor fortaleza para aportarnos pruebas sobre un tema del que queremos tener evidencias de buen hacer.\nEstos criterios establecen a priori una jerarquía de los artículos científicos según su calidad y han sido recogidos en diversas escalas. Existen varias propuestas de clasificación:\n\nUna de las más conocidas y tal vez la más sencilla es la de United States Preventive Task Force (USPSTF), que clasifica las evidencias en 3 niveles.\nOtra clasificación es la del Centro de Medicina Basada en la Evidencia de Oxford (CEBM)."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#jerarquía-de-los-estudios-según-la-uspstf",
+    "href": "T01_Investigacion_Cualitativa.html#jerarquía-de-los-estudios-según-la-uspstf",
+    "title": "Investigación Cualitativa",
+    "section": "Jerarquía de los estudios según la USPSTF",
+    "text": "Jerarquía de los estudios según la USPSTF\n\n\nNivel de evidencia I: al menos un ensayo clínico controlado y aleatorizado diseñado en forma apropiada.\nNivel de evidencia II-1: ensayos clínicos controlados bien diseñados, pero no aleatorizados.\nNivel de evidencia II-2: estudios de cohorte o caso de control bien diseñados, preferentemente multicéntricos.\nNivel de evidencia II-3: múltiples series comparadas en el tiempo con o sin intervención, y resultados sorprendentes en experiencias no controladas.\nNivel de evidencia III: opiniones basadas en experiencias clínicas, estudios descriptivos, observaciones clínicas o informes de comités expertos."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#niveles-de-evidencia-según-el-cebm",
+    "href": "T01_Investigacion_Cualitativa.html#niveles-de-evidencia-según-el-cebm",
+    "title": "Investigación Cualitativa",
+    "section": "Niveles de evidencia según el CEBM",
+    "text": "Niveles de evidencia según el CEBM\n\n\nNivel de evidencia 1a: revisión sistemática de ensayos clínicos aleatorizados, con homogeneidad.\nNivel de evidencia 1b: ensayo clínico aleatorizado con intervalo de confianza estrecho.\nNivel de evidencia 1c: práctica clínica (todos o ninguno).\nNivel de evidencia 2a: revisión sistemática de estudios de cohortes, con homogeneidad.\nNivel de evidencia 2b: estudios de cohorte o ensayo clínico de baja calidad.\nNivel de evidencia 2c: ‘outcomes research’, estudios ecológicos.\nNivel de evidencia 3a: revisión sistemática de estudio caso control con homogeneidad.\nNivel de evidencia 3b: estudio caso-control.\nNivel de evidencia 4: serie de casos o estudios de cohortes y caso-control de baja calidad.\nNivel de evidencia 5: opinión de expertos sin valoración crítica explícita, ‘bench research’ o ‘first principles’."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#elaboración-de-informes-sobre-la-información-relevante-encontrada",
+    "href": "T01_Investigacion_Cualitativa.html#elaboración-de-informes-sobre-la-información-relevante-encontrada",
+    "title": "Investigación Cualitativa",
+    "section": "Elaboración de informes sobre la información relevante encontrada",
+    "text": "Elaboración de informes sobre la información relevante encontrada\n\nLa tarea central es organizar y resumir las referencias, de tal manera que revelen el estado actual del conocimiento sobre el tema elegido y, en el contexto de un nuevo estudio, establezcan una base sistemática para la investigación.\n\nLa revisión debe señalar tanto los puntos congruentes como las contradicciones, así como explicar las incongruencias.\nLa revisión será lo más objetiva posible, sin omitir los estudios que entren en conflicto con los valores personales del investigador.\nNo debe ignorarse deliberadamente un estudio sólo porque sus hallazgos contradicen los de otros.\nLa revisión bibliográfica concluye con la elaboración de un resumen general del estado del conocimiento respecto del problema que se analiza.\nLas revisiones bibliográficas guardan la misma estructura lógica que el resto de las publicaciones científicas.\nDeben respetar todos los aspectos técnicos y éticos planteados como estándares en la producción de conocimiento científico, no existiendo excepción alguna en relación a este punto."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#un-posible-modelo-de-estructura",
+    "href": "T01_Investigacion_Cualitativa.html#un-posible-modelo-de-estructura",
+    "title": "Investigación Cualitativa",
+    "section": "Un posible modelo de estructura",
+    "text": "Un posible modelo de estructura\n\n\nIntroducción, que debe incluir:\n\n\nPresentación del tema.\nAntecedentes de la temática, en términos de revisiones ya existentes.\nJustificación de su relevancia.\n\n\nObjetivo del trabajo.\nMétodo de localización, selección y evaluación de estudios primarios:\n\n\nBúsqueda bibliográfica.\nCriterios de selección.\nRecuperación de la información. Fuentes documentales.\nEvaluación de la calidad de los artículos seleccionados.\nAnálisis de la variabilidad, fiabilidad y validez de los artículos.\n\n\nDesarrollo y discusión del tema:\n\n\nOrganización y estructuración de los datos.\nCombinación de los resultados de diferentes originales.\nArgumentación crítica de los resultados (diseños, sesgos, limitaciones, conclusiones extraídas).\n\n\nConclusiones. En algunas ocasiones es necesario que se agreguen ciertas secciones adicionales que facilitan la comprensión de un aspecto específico del problema planteado para el estudio. Algunas posibilidades son: historia - situación actual - métodos - estándares - preguntas para responder en futuros estudios."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#la-transferencia-de-la-evidencia",
+    "href": "T01_Investigacion_Cualitativa.html#la-transferencia-de-la-evidencia",
+    "title": "Investigación Cualitativa",
+    "section": "La transferencia de la evidencia",
+    "text": "La transferencia de la evidencia\n\nLa transferencia de la evidencia a la práctica clínica consiste en la transmisión de los resultados de la investigación a las instituciones, profesionales sanitarios y pacientes con el objetivo de propiciar, si es preciso, cambios en la práctica clínica.\nLa toma de decisiones\nLa toma de decisiones clínicas basadas en la evidencia se ve afectada por la existencia de una serie de factores individuales y de la propia organización que pueden actuar como facilitadores o barreras de su puesta en marcha.\n\nEntre los primeros cabe señalar la formación de la que disponen los profesionales en metodología de la investigación, su capacidad para pensar críticamente sobre la práctica cotidiana, el tiempo disponible para implementar nuevas ideas, la habilidad para introducir cambios y la motivación hacia éstos.\nA nivel institucional, esta integración implica poner en marcha una Gestión Basada en la Evidencia, dirigida a identificar las estrategias de la organización, los elementos estructurales y prácticas de gestión que permiten o dificultan ésta.\n\nLas Guías de Práctica Clínica (GPC)\nLas Guías de Práctica Clínica (GPC) son una de las herramientas más destacadas para facilitar el proceso de implementación de la PBE, ya que constituyen un puente de unión vital entre la práctica y la teoría.\nEn ellas se establecen recomendaciones con diferentes grados de evidencia para ayudar a los profesionales y a los pacientes a decidir cuál es la intervención más adecuada en una situación clínica concreta."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#búsqueda-bibliográfica",
+    "href": "T01_Investigacion_Cualitativa.html#búsqueda-bibliográfica",
+    "title": "Investigación Cualitativa",
+    "section": "Búsqueda bibliográfica",
+    "text": "Búsqueda bibliográfica\n— Ejercicios —\n\nInvestigadores del área de las Ciencias de la Salud tienen por objetivo analizar la prevalencia y los factores de riesgo para la infección respiratoria por el virus sincitial en niños menores de 5 años.\nEn este sentido, con el objetivo subyacente de la gravedad de este tipo de infección se plantean realizar una revisión sistemática de la literatura y un metanálisis.\n\n¿Qué fuentes bibliográficas podrían aportar investigación previa de interés en este campo?\nSolución: PubMed (mesh), Medline, SciELO, CINAHL, etc.\nRealizar una búsqueda en una de las bases de datos anteriores con las siguientes ecuaciones de búsqueda anotando el número de resultados obtenidos:\n\nRespiratory syncytial virus.\nRespiratory syncytial virus AND (newborn OR infant OR child).\nRespiratory syncytial virus AND (newborn OR infant OR child) AND (prevalence OR risk factors).\n\nComente los resultados obtenidos y analice cada una de las ecuaciones de búsqueda."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#validez-de-los-métodos-diagnósticos-ejercicio-resuelto",
+    "href": "T01_Investigacion_Cualitativa.html#validez-de-los-métodos-diagnósticos-ejercicio-resuelto",
+    "title": "Investigación Cualitativa",
+    "section": "Validez de los métodos diagnósticos — ejercicio resuelto",
+    "text": "Validez de los métodos diagnósticos — ejercicio resuelto\nMamografía vs. biopsia n = 350 Gold standard: biopsia\nEn una región se realiza mamografía a 350 personas; en paralelo biopsia a todas. 225 con cáncer confirmado. La mamografía da positivo en el 80% de enfermos y también en el 60% de sanos. Calcule \\(S\\), \\(E\\), \\(VPP\\) y \\(VPN\\).\n\n\n\n\nEnfermo\nSano\nTotal\n\n\n\n\nTest +\n\\(a=180\\) (VP)\n\\(b=75\\) (FP)\n\\(255\\)\n\n\nTest −\n\\(c=45\\) (FN)\n\\(d=50\\) (VN)\n\\(95\\)\n\n\nTotal\n\\(225\\)\n\\(125\\)\n\\(350\\)\n\n\n\n\n\n\n\\[\\begin{aligned}\nS &= \\tfrac{a}{a+c}=\\tfrac{180}{225}=\\mathbf{0.80}\\\\\nE &= \\tfrac{d}{b+d}=\\tfrac{50}{125}=\\mathbf{0.40}\n\\end{aligned}\\]\n\n\n\n\\[\\begin{aligned}\nVPP &= \\tfrac{a}{a+b}=\\tfrac{180}{255}\\approx\\mathbf{0.71}\\\\\nVPN &= \\tfrac{d}{c+d}=\\tfrac{50}{95}\\approx\\mathbf{0.53}\n\\end{aligned}\\]\n\n\n\n\n\n\n\n\nLectura\n\n\nPrueba sensible (\\(S=0.80\\)) pero poco específica (\\(E=0.40\\)): detecta bien enfermos y mal a sanos. \\(VPP=71\\%\\) de los positivos son enfermos reales; \\(VPN=53\\%\\) de los negativos son sanos reales — limitada para descartar. Útil como cribado, no como confirmación."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#sólo-una-de-las-opciones-es-correcta",
+    "href": "T01_Investigacion_Cualitativa.html#sólo-una-de-las-opciones-es-correcta",
+    "title": "Investigación Cualitativa",
+    "section": "Sólo una de las opciones es correcta",
+    "text": "Sólo una de las opciones es correcta\n— Supuesto práctico —\n\n\nSeñale la correcta:\n\n\n\nLas investigaciones cualitativas están orientadas al resultado y las investigaciones cuantitativas están orientadas al proceso.\n\n\nLa investigación cualitativa se caracteriza por ser exploratoria, inductiva y descriptiva.\n\n\nLos estudios de casos clínicos son estudios descriptivos.\n\n\nEl método etnográfico es un estudio cuantitativo, analítico y experimental.\n\n\n\nLos operadores Booleanos son nexos lógicos que especifican cuál debe ser la relación entre los términos ingresados en una búsqueda y recuperación de información científica:\n\n\n\nOR: mostrará páginas o documentos en los que los términos se encuentren próximos entre sí.\n\n\nAND: limita el resultado de la búsqueda al aparecer todos los términos.\n\n\nNOT: excluye el primer término de la búsqueda.\n\n\nNEAR: sirve para encontrar sólo términos idénticos a de la consulta propuesta.\n\n\n\nLa especificidad de una prueba diagnóstica se define como:\n\n\n\nProbabilidad de obtener un determinado resultado en un individuo que presenta una enfermedad con respecto a un sujeto sano.\n\n\nProbabilidad de clasificar correctamente a un par de individuos, uno sano y uno enfermo, al aplicarles la prueba.\n\n\nProbabilidad de que una persona que presenta una característica sea clasificada correctamente por la medida empleada.\n\n\nProbabilidad de que una persona que no presenta una característica sea clasificada correctamente por la medida empleada."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#supuesto-práctico",
+    "href": "T01_Investigacion_Cualitativa.html#supuesto-práctico",
+    "title": "Investigación Cualitativa",
+    "section": "Supuesto práctico",
+    "text": "Supuesto práctico\n\n\nDentro del concepto de práctica clínica basada en la evidencia ¿cuál de estas fuentes de información recibe un mayor nivel de evidencia según la clasificación de Sackett?:\n\n\n\nEstudios casos-controles.\n\n\nOpiniones de expertos.\n\n\nEstudios de cohortes.\n\n\nMeta-análisis.\n\n\n\nBase documental gratuita con más de 31.000 estudios clínicos aleatorizados, revisiones sistemáticas y guías de práctica clínica de fisioterapia:\n\n\n\nPEDro.\n\n\nPubMed.\n\n\nMEDLINE.\n\n\nEMBASE.\n\n\n\nSon principios de la Bioética:\n\n\n\nBeneficencia y autonomía.\n\n\nJusticia, autonomía, no maleficiencia.\n\n\nLa justicia es un principio del Derecho.\n\n\nJusticia, beneficiencia, no maleficiencia, autonomía.\n\n\n\n¿En qué tipo de estudios científicos un grupo de pacientes está expuesto a una intervención y otro grupo forma un grupo control?:\n\n\n\nCohortes.\n\n\nEstudios paralelos.\n\n\nEstudios ecológicos.\n\n\nSeries de casos."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#en-cuanto-a-la-investigación-cualitativa-y-cuantitativa-es-falso",
+    "href": "T01_Investigacion_Cualitativa.html#en-cuanto-a-la-investigación-cualitativa-y-cuantitativa-es-falso",
+    "title": "Investigación Cualitativa",
+    "section": "En cuanto a la investigación cualitativa y cuantitativa es FALSO:",
+    "text": "En cuanto a la investigación cualitativa y cuantitativa es FALSO:\n— Supuesto práctico —\n\n\nEn cuanto a la investigación cualitativa y cuantitativa es FALSO:\n\n\n\nUn objetivo típico de la investigación cuantitativa es generalizar los resultados a poblaciones más grandes y lograr un alto grado de confiabilidad.\n\n\nEn la investigación cuantitativa para minimizar el error de muestreo debe tener la misma probabilidad de ser seleccionado.\n\n\nAl contrario de la investigación cuantitativa el propósito de la mayoría de los estudios cualitativos es producir datos ricos en información a partir de una muestra escogida por su capacidad de referirse al problema estudiado.\n\n\nLas tres son correctas.\n\n\n\nLa Cochrane Library:\n\n\n\nEs una iniciativa científica internacional destinada a producir, mantener y divulgar revisiones sistemáticas de las evidencias sobre la prevención, el tratamiento o el control de los problemas sanitarios.\n\n\nEstá accesible en español y de manera gratuita a través de la página del ministerio de Sanidad. Consta de cuatro bases de datos que ofrecen informaciones específicas.\n\n\nAmbas son correctas.\n\n\nNinguna lo es.\n\n\n\nCuál de los siguientes tipos de estudios NO se corresponde con un estudio descriptivo:\n\n\n\nEstudio de información individual.\n\n\nEstudio de corte o transversal.\n\n\nEstudio ecológico.\n\n\nEstudio experimental o de intervención."
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#supuesto-2",
+    "href": "T01_Investigacion_Cualitativa.html#supuesto-2",
+    "title": "Investigación Cualitativa",
+    "section": "Supuesto práctico (2)",
+    "text": "Supuesto práctico (2)\n\n\nSeñala la INCORRECTA: La entrevista clínica semiestructurada:\n\n\n\nEs un proceso semidirigido de intercambio de información.\n\n\nEl paciente puede introducir temas y no sólo actuar de modo reactivo.\n\n\nSe compone de tres fases: anamnesis, exploración y resolución.\n\n\nTodas son correctas.\n\n\n\nAnte la lectura de un artículo científico que analiza la efectividad de una determinada intervención terapéutica, ¿qué tipo de diseño del estudio (definido en el apartado material y métodos) nos ofrece una mayor o mejor calidad del nivel de evidencia científica de la investigación realizada?:\n\n\n\nEnsayos controlados no aleatorizados.\n\n\nEstudios observacionales: casos-controles y cohortes.\n\n\nEstudios descriptivos.\n\n\nEnsayos controlados aleatorizados.\n\n\n\nRespecto a las curvas ROC:\n\n\n\nEn el análisis se maneja un espacio que viene dado por la Especificidad y 1-Sensibilidad.\n\n\nPresentan la sensibilidad de una prueba diagnóstica en función de los falsos positivos (complemento de la especificidad) para distintos puntos de corte.\n\n\nROC es el acrónimo de Recognition Optical Character.\n\n\nLas tres son ciertas.\n\n\n\n¿Cuál de los siguientes aspectos NO pertenece al método cualitativo en investigación?:\n\n\n\nObservación naturalista.\n\n\nHolista.\n\n\nOrientado al resultado.\n\n\nRealidad dinámica.\n\n\n\n¿De cuál de los siguientes tipos de estudio obtendremos información clínica con mayor nivel de evidencia?:\n\n\n\nRevisiones sistemáticas y Meta-análisis.\n\n\nECAs (ensayos controlados aleatorizados).\n\n\nEstudios de casos y controles.\n\n\nGuías de práctica clínica.\n\n\n\nLos conflictos éticos en la asistencia sociosanitaria a las personas mayores están en relación con el principio de:\n\n\n\njusticia.\n\n\nno maleficiencia.\n\n\nautonomía.\n\n\nlos tres.\n\n\n\nEn los estudios de investigación, los datos que hacen referencia a la exactitud de la medición se refieren al concepto de:\n\n\n\nValidez\n\n\nSensibilidad\n\n\nTabulación\n\n\nFiabilidad\n\n\n\nUn estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:\n\n\n\nAnalítico\n\n\nTransversal\n\n\nEcológico\n\n\nDescriptivo\n\n\nSoluciones del supuesto práctico\n1.c, 2.b, 3.d, 4.d, 5.a, 6.d, 7.b, 8.d, 9.c, 10.d, 11.c, 12.d, 13.b, 14.c, 15.d, 16.d, 17.a, 18.d"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#gracias-por-su-paciencia",
+    "href": "T01_Investigacion_Cualitativa.html#gracias-por-su-paciencia",
+    "title": "Investigación Cualitativa",
+    "section": "¡Gracias por su paciencia!",
+    "text": "¡Gracias por su paciencia!\n— Supuesto práctico —"
+  },
+  {
+    "objectID": "T01_Investigacion_Cualitativa.html#referencias",
+    "href": "T01_Investigacion_Cualitativa.html#referencias",
+    "title": "Investigación Cualitativa",
+    "section": "Referencias",
+    "text": "Referencias\n\n\nArmitage, Peter, Geoffrey Berry, y John N. S. Matthews. 2002. Statistical Methods in Medical Research. 4.ª ed. Blackwell Science.\n\n\nBradley, Jana. 1993. Methodological issues and practices in qualitative research. En Library Quarterly. University of Chicago Press.\n\n\nCochrane, Archibald L. 1972. Effectiveness and Efficiency: Random Reflections on Health Services. Nuffield Provincial Hospitals Trust.\n\n\nCochrane Collaboration. 2023. Cochrane Library. https://www.cochranelibrary.com/.\n\n\nColton, Theodore. 1974. Statistics in Medicine. Little, Brown.\n\n\nCreswell, John W., y Cheryl N. Poth. 2018. Qualitative Inquiry and Research Design: Choosing Among Five Approaches. 4.ª ed. SAGE.\n\n\nDickersin, Kay, Roberta Scherer, y Carol Lefebvre. 1994. Identifying relevant studies for systematic reviews. En BMJ. BMJ.\n\n\nFlick, Uwe. 2018. An Introduction to Qualitative Research. 6.ª ed. SAGE.\n\n\nGlaser, Barney G., y Anselm L. Strauss. 1967. «The Discovery of Grounded Theory: Strategies for Qualitative Research». Aldine Transaction.\n\n\nGuyatt, Gordon H., David L. Sackett, y Deborah J. Cook. 1993. «Users’ guides to the medical literature. II. How to use an article about therapy or prevention. A. Are the results of the study valid?» JAMA 270: 2598-601.\n\n\nHanley, James A., y Barbara J. McNeil. 1982. «The meaning and use of the area under a receiver operating characteristic (ROC) curve». Radiology 143: 29-36.\n\n\nHaynes, R. Brian, David L. Sackett, Gordon H. Guyatt, y Peter Tugwell. 2002. Clinical Epidemiology: How to Do Clinical Practice Research. 3.ª ed. Lippincott Williams & Wilkins.\n\n\nHiggins, Julian P. T., James Thomas, Jacqueline Chandler, et al. 2019. Cochrane Handbook for Systematic Reviews of Interventions. 2.ª ed. 2.ª ed.\n\n\nKirkwood, Betty R., y Jonathan A. C. Sterne. 2003. Essential Medical Statistics. 2.ª ed. Blackwell Science.\n\n\nKleinbaum, David G., Lawrence L. Kupper, Azhar Nizam, y Eli S. Rosenberg. 2013. Applied Regression Analysis and Other Multivariable Methods. 5.ª ed. Cengage.\n\n\nKnottnerus, J. André, y Jean W. M. Muris. 2003. «Assessment of the accuracy of diagnostic tests: the cross-sectional study». Journal of Clinical Epidemiology 56: 1118-28.\n\n\nNational Library of Medicine. 2023. PubMed. https://pubmed.ncbi.nlm.nih.gov/.\n\n\nPEDro. 2023. Physiotherapy Evidence Database. https://pedro.org.au/.\n\n\nRosenthal, Robert, y M. Robin DiMatteo. 2005. The Oxford Handbook of Quantitative Methods. Oxford University Press.\n\n\nRothman, Kenneth J., Sander Greenland, y Timothy L. Lash. 2008. Modern Epidemiology. 3.ª ed. Lippincott Williams & Wilkins.\n\n\nSackett, David L., William M. C. Rosenberg, J. A. Muir Gray, R. Brian Haynes, y W. Scott Richardson. 1996. «Evidence based medicine: what it is and what it isn’t». BMJ 312: 71-72.\n\n\nStahl, Stephen M. 2013. Stahl’s Essential Psychopharmacology: Neuroscientific Basis and Practical Applications. 4.ª ed. Cambridge University Press.\n\n\nStrauss, Anselm, y Juliet Corbin. 1998. Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory. 2.ª ed. SAGE.\n\n\nTaylor, Steven J., Robert Bogdan, y Marjorie DeVault. 2015. Introduction to Qualitative Research Methods. 4.ª ed. Wiley.\n\n\n\n\n\n\n\n\nCómo citar esta edición\n\n\n\nLuque-Fernández, M. A. (2026). Introducción a la Metodología Científica — Neurociencias (edición Quarto). Universidad de Granada.\n\nBibliografía ampliada en references.bib — Flick (2018), Creswell & Poth (2018), Sackett et al. (1996), Cochrane (1972), Rothman et al. (2008), entre otras."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#índice",
+    "href": "T02_Investigacion_Cuantitativa.html#índice",
+    "title": "Investigación Cuantitativa",
+    "section": "Índice",
+    "text": "Índice\n\n\n1 Demografía sanitaria\n\nAspectos conceptuales\nIndicadores demográficos y de salud\nCalidad de vida relacionada con la salud (CVRS)\n\n2 Fundamentos de la investigación cuantitativa\n\nPreliminares\nEstadística descriptiva\nMuestreo\nProbabilidad\nEstadística inferencial\n\n3 Epidemiología\n\nPreliminares\nTipos de estudios epidemiológicos\n\n4 Supuesto práctico"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#índice-demografía-sanitaria",
+    "href": "T02_Investigacion_Cuantitativa.html#índice-demografía-sanitaria",
+    "title": "Investigación Cuantitativa",
+    "section": "Índice — Demografía sanitaria",
+    "text": "Índice — Demografía sanitaria\n\n\n1 Demografía sanitaria\n\nAspectos conceptuales\nIndicadores demográficos y de salud\nCalidad de vida relacionada con la salud (CVRS)\n\n2 Fundamentos de la investigación cuantitativa\n\nPreliminares\nEstadística descriptiva\nMuestreo\nProbabilidad\nEstadística inferencial\n\n3 Epidemiología\n\nPreliminares\nTipos de estudios epidemiológicos\n\n4 Supuesto práctico"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#demografía",
+    "href": "T02_Investigacion_Cuantitativa.html#demografía",
+    "title": "Investigación Cuantitativa",
+    "section": "Demografía",
+    "text": "Demografía\n\nEstudio estadístico de las poblaciones humanas según su estado y distribución en un momento determinado o según su evolución histórica.\nFuentes demográficas\nLas fuentes demográficas son aquellos documentos que nos proporcionan información sobre la población. Acudimos a unas u otras dependiendo del tipo de demografía que vamos a estudiar.\nTipos de demografía\n\nEstática: estudia la población en un momento determinado. Fuentes demográficas estáticas son el Censo (nacional cada 10 años) y el Padrón (municipal cada 5 años). Es la base para la elaboración de pirámides poblacionales.\nDinámica: estudia los cambios que ocurren en una población a lo largo del tiempo y las causas que los provocan (movimientos migratorios, natalidad-mortalidad, etc.). Fuentes demográficas dinámicas son el Registro Civil o encuestas que se realizan a la población para obtener información sobre datos específicos como por ejemplo las encuestas de población activa."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#índices-demográficos",
+    "href": "T02_Investigacion_Cuantitativa.html#índices-demográficos",
+    "title": "Investigación Cuantitativa",
+    "section": "Índices demográficos",
+    "text": "Índices demográficos\nResumen las características de la población con respecto a determinadas variables.\n\nÍndice de composición por edad: se divide a la población en subgrupos de edad y se compara el volumen incluido en cada uno.\nÍndice de composición por sexo: se analiza la razón de varones frente a mujeres (varones/mujeres).\nÍndice de actividad económica: analiza la tasa de paro en la población &gt;16 años."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#pirámide-poblacional",
+    "href": "T02_Investigacion_Cuantitativa.html#pirámide-poblacional",
+    "title": "Investigación Cuantitativa",
+    "section": "Pirámide poblacional",
+    "text": "Pirámide poblacional\nEs usual representar los distintos índices demográficos en una gráfica en forma de pirámide.\n\nPirámide poblacional"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#indicadores-demográficos-y-de-salud",
+    "href": "T02_Investigacion_Cuantitativa.html#indicadores-demográficos-y-de-salud",
+    "title": "Investigación Cuantitativa",
+    "section": "Indicadores demográficos y de salud",
+    "text": "Indicadores demográficos y de salud\nSegún el INE, los indicadores demográficos básicos son natalidad, fecundidad, mortalidad, crecimiento y estructura, nupcialidad y migraciones.\nIndicadores de natalidad\n\nTasa de natalidad (TN): \\[TN = \\frac{\\text{Nacidos vivos en 1 año}}{\\text{Población total media}} \\times 1000\\]\nTasa de fecundidad general (TGF): \\[TGF = \\frac{\\text{Nacidos vivos en 1 año}}{\\text{Población femenina fértil (15--49)}} \\times 1000\\]\nÍndice sintético de fecundidad: promedio de hijos por mujer al cumplir 50 años. Recambio generacional \\(\\approx 2.1\\)."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#indicadores-de-mortalidad",
+    "href": "T02_Investigacion_Cuantitativa.html#indicadores-de-mortalidad",
+    "title": "Investigación Cuantitativa",
+    "section": "Indicadores de mortalidad",
+    "text": "Indicadores de mortalidad\n\nTasa bruta de mortalidad (TBM) — no comparable entre poblaciones: \\[TBM = \\frac{\\text{Total de muertes en 1 año}}{\\text{Población total media}} \\times 1000\\]\nÍndice de Swaroop-Uemura (IS) — sí comparable; \\(100\\%\\) = máxima calidad de vida: \\[IS = \\frac{\\text{Muertes en }&gt;50\\text{ años}}{\\text{Muertes totales}} \\times 100\\]\nEsperanza de vida: promedio de años por vivir (difícil de medir).\nMortalidad infantil (OMS — mejor indicador sanitario): \\[TM_{inf} = \\frac{\\text{Muertes en }&lt;1\\text{ año}}{\\text{Nacidos vivos}} \\times 1000\\]\nCrecimiento natural (vegetativo): nacimientos \\(-\\) defunciones."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#indicadores-de-salud",
+    "href": "T02_Investigacion_Cuantitativa.html#indicadores-de-salud",
+    "title": "Investigación Cuantitativa",
+    "section": "Indicadores de salud",
+    "text": "Indicadores de salud\n\nSon variables que reflejan el estado de salud de una comunidad y que pueden ser medidos directamente. Son sensibles a más de una situación o fenómeno. Por ejemplo la tasa de mortalidad infantil describe el estado de salud de la población infantil así como el bienestar global de una población.\nAlgunos indicadores de salud son: 1. Esperanza de vida 2. Mortalidad 3. Morbilidad 4. Limitación de actividad y salud subjetiva 5. Salud materno infantil 6. Hábitos y estilo de vida relacionados con la salud"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#indicadores-de-morbilidad",
+    "href": "T02_Investigacion_Cuantitativa.html#indicadores-de-morbilidad",
+    "title": "Investigación Cuantitativa",
+    "section": "Indicadores de morbilidad",
+    "text": "Indicadores de morbilidad\nIndicadores de morbilidad — individuos enfermos en un periodo y espacio concretos.\n\nÍndice epidémico (declaración obligatoria): casos semanales / casos esperados. \\(&gt;1.25\\) \\(\\rightarrow\\) altamente infecciosa.\nRegistros de cáncer\nEncuestas de morbilidad hospitalaria\nEncuestas de salud\nTasa de letalidad (virulencia): \\[TL = \\frac{\\text{Fallecidos por la enfermedad en 1 año}}{\\text{Nº casos en el mismo año}} \\times 1000\\]"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#prevalencia-e-incidencia",
+    "href": "T02_Investigacion_Cuantitativa.html#prevalencia-e-incidencia",
+    "title": "Investigación Cuantitativa",
+    "section": "Prevalencia e incidencia",
+    "text": "Prevalencia e incidencia\nPrevalencia — casos existentes en un momento concreto: \\[\\text{Prevalencia} = \\frac{\\text{nº casos existentes}}{\\text{población total}} \\in [0,1]\\]\nProbabilidad de estar enfermo en ese momento.\nIncidencia acumulada — casos nuevos en un periodo y lugar: \\[\\text{Incidencia acumulada} = \\frac{\\text{nº casos nuevos}}{\\text{población total}} \\in [0,1]\\]\nRelación: \\[\\text{Prevalencia} \\approx \\text{Tasa de incidencia} \\times \\text{duración}\\]\nTasa de incidencia: tiene en cuenta el tiempo de permanencia en el estudio."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#definición",
+    "href": "T02_Investigacion_Cuantitativa.html#definición",
+    "title": "Investigación Cuantitativa",
+    "section": "Definición",
+    "text": "Definición\nLa OMS define la calidad de vida como la percepción del individuo de su posición en la vida en el contexto de la cultura y sistema de valores en los que vive y en relación a sus objetivos, expectativas, estándares y preocupaciones (1994).\n\nLa importancia de Calidad de Vida Relacionada con la Salud (CVRS) es que supone situar al paciente en el centro del sistema al tener en cuenta su percepción en relación al proceso de enfermedad, etc.\nNo hay una medida objetiva de la CVRS pues depende de la visión subjetiva del individuo considerada de forma aislada."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#análisis-de-datos",
+    "href": "T02_Investigacion_Cuantitativa.html#análisis-de-datos",
+    "title": "Investigación Cuantitativa",
+    "section": "Análisis de datos",
+    "text": "Análisis de datos\n\nLa demografía utiliza el método científico para elaborar hipótesis, establece unos comportamientos poblacionales y en base a ellos elabora políticas de actuación.\nPartiendo del análisis estadístico de los datos obtenidos por medio de las distintas fuentes demográficas se pueden:\n\nElaborar tablas y otros indicadores sanitarios\nRealizar estudios epidemiológicos\nPlanificar y programar en salud pública\n\nLas relaciones estadísticas más utilizadas son:\n\nProporciones y porcentajes\nTasas (son proporciones que además incluyen el factor tiempo)\nRazón (cociente de dos frecuencias absolutas)\nÍndice (cociente entre individuos portadores de una variable entre los individuos restantes)"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#fuentes-del-conocimiento",
+    "href": "T02_Investigacion_Cuantitativa.html#fuentes-del-conocimiento",
+    "title": "Investigación Cuantitativa",
+    "section": "Fuentes del conocimiento",
+    "text": "Fuentes del conocimiento\n\nMétodo científico. Es el método más avanzado para la adquisición de conocimientos. Se apoya en la evidencia empírica, la inducción y la deducción.\nEtapas del método científico:\n\nObservación\nFormulación de preguntas y elaboración de hipótesis\nContraste de las hipótesis (diseño del estudio y obtención de datos)\nAnálisis de los datos\nConclusiones\n\nOtras fuentes del conocimiento. Son la tradición, el razonamiento lógico, la experiencia personal, el saber de expertos en un tema, el proceso ensayo-error, etc. Son fuentes no metódicas ni sistemáticas, al contrario de lo que le ocurre al método científico."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#el-paradigma-cuantitativo-en-investigación-en-ciencias-de-la-salud",
+    "href": "T02_Investigacion_Cuantitativa.html#el-paradigma-cuantitativo-en-investigación-en-ciencias-de-la-salud",
+    "title": "Investigación Cuantitativa",
+    "section": "El paradigma cuantitativo en investigación en Ciencias de la Salud",
+    "text": "El paradigma cuantitativo en investigación en Ciencias de la Salud\nLa investigación cuantitativa describe, verifica relaciones entre variables y examina los cambios observados en la variable respuesta en función de la/s variable/s independiente/s.\n\nSu principal característica es la objetividad.\nLa epidemiología, por ejemplo, aplica las premisas de la investigación cuantitativa."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#estadística-descriptiva-e-inferencial",
+    "href": "T02_Investigacion_Cuantitativa.html#estadística-descriptiva-e-inferencial",
+    "title": "Investigación Cuantitativa",
+    "section": "Estadística descriptiva e inferencial",
+    "text": "Estadística descriptiva e inferencial\n\nLa estadística es la parte de las Matemáticas que se encarga del estudio de una determinada característica en una población, recogiendo los datos, organizándolos en tablas, representándolos gráficamente y analizándolos para sacar conclusiones de dicha población.\n\nEstadística descriptiva (o deductiva). Se encarga de la síntesis de la información obtenida por el investigador, mediante medidas obtenidas a partir de los datos observados (media, mediana, cuartiles, varianza, etc.), y de la representación gráfica de los mismos (histogramas, pictogramas, diagramas circulares, etc.).\nEstadística inferencial (o inferencia estadística). Trata de extrapolar los resultados obtenidos en un grupo al total de la población. Por ejemplo, si en Granada la proporción de rubios con ojos azules es del 20 %, ¿podré decir lo mismo de toda la población de España?, ¿qué podré decir de esta proporción a nivel global?"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#conceptos-básicos",
+    "href": "T02_Investigacion_Cuantitativa.html#conceptos-básicos",
+    "title": "Investigación Cuantitativa",
+    "section": "Conceptos básicos",
+    "text": "Conceptos básicos\n\nPoblación. Es el conjunto total de individuos, generalmente inaccesibles en su totalidad, sobre los que nos interesa dar las conclusiones de nuestro estudio.\nMuestra. Es una extracción reducida de individuos de la población, totalmente accesibles, sobre el que haremos el estudio y a partir de cuyas conclusiones trataremos de concluir sobre el total de la población.\nVariables. Es cada uno de los caracteres o aspectos que estudiaremos en los individuos de una muestra.\nParámetro. Son valores que resumen una determinada información de la población, nunca se podrán calcular de forma exacta, se estimarán a partir de muestras. (Ejm.: µ = media de la población).\nEstadístico. Son los valores que resumen una determinada información de la muestra, siempre se podrán calcular de forma exacta y nos ayudarán a estimar el mismo valor en la población. (Ejm.: X̄ = media de la muestra)."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#variables-estadísticas",
+    "href": "T02_Investigacion_Cuantitativa.html#variables-estadísticas",
+    "title": "Investigación Cuantitativa",
+    "section": "Variables estadísticas",
+    "text": "Variables estadísticas\n\nSon los diferentes valores que puede tomar la característica que queremos medir en una muestra. Pueden ser aleatorias y pueden tomar valores dentro de un rango de medida y escala mediante una función. (Ejm.: El resultado del lanzamiento de un dado es una variable aleatoria que toma valores del 1 al 6).\n\nVariables cuantitativas. Miden cantidades. Se dividen en continuas, cuando entre dos valores consecutivos podemos encontrar infinitos nuevos valores (talla, peso, etc.) o discretas, cuando solo toma valores enteros (nº de hijos, nº de mascotas, edad en años, etc.).\nVariables cualitativas. Miden una cualidad o atributo no cuantificable. Si solo toman dos valores se denominan dicotómicas (Ejemplo: el sexo categorizado en hombre o mujer). Este tipo de variables son las variables de respuesta habituales en estudios clínicos o epidemiológicos (Diagnóstico enfermo o sano)."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#tipos-de-escala",
+    "href": "T02_Investigacion_Cuantitativa.html#tipos-de-escala",
+    "title": "Investigación Cuantitativa",
+    "section": "Tipos de escala",
+    "text": "Tipos de escala\n\nSegún la escala de medida utilizada para agrupar las categorías o valores de una variable distinguimos entre escalas cualitativas (ordinal y nominal) y escalas cuantitativas (razón e intervalo).\n\nEscala nominal. Las categorías o grupos de la variable son excluyentes entre sí. (Sexo: la escala es hombre o mujer).\nEscala ordinal. Las categorías o grupos de la variable siguen un orden creciente o decreciente. (Gravedad de una lesión: la escala podría ser leve-moderada-severa).\nEscala de intervalo. Existe un orden numérico y la diferencia entre dos valores es siempre la misma. Esta escala no se inicia en el 0 absoluto. (Temperatura: toma valores numéricos ordenados).\nEscala de razón o proporción. Tiene las mismas características que la escala de intervalo, pero se inicia en cero, significando en tal caso ausencia de la característica que se mide. (Peso o Talla). Establece cuántas veces es mayor una modalidad con respecto a otra."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#estadística-descriptiva-en-variables-cuantitativas",
+    "href": "T02_Investigacion_Cuantitativa.html#estadística-descriptiva-en-variables-cuantitativas",
+    "title": "Investigación Cuantitativa",
+    "section": "Estadística descriptiva en variables cuantitativas",
+    "text": "Estadística descriptiva en variables cuantitativas\n\nLa descripción de resultados de una variable cuantitativa se realiza con medidas de tendencia central, de dispersión, de posición y/o de forma.\n\nTendencia central\n\nMedia aritmética\nMedia geométrica\nMediana\nModa\n\nDispersión\n\nAmplitud o rango\nVarianza y desviación típica o estándar\nCociente de variación\n\nPosición\n\nPercentiles, deciles, cuartiles, quintiles, …\n\nForma\n\nSimetría-Asimetría\nApuntamiento"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#medidas-de-tendencia-central",
+    "href": "T02_Investigacion_Cuantitativa.html#medidas-de-tendencia-central",
+    "title": "Investigación Cuantitativa",
+    "section": "Medidas de tendencia central",
+    "text": "Medidas de tendencia central\n\nDefinen los valores de la variable en torno a los cuales tienden a concentrarse las observaciones.\nMedia\n\nEs la medida de centralización más conocida y utilizada. Se calcula sumando todos los valores observados y dividiendo por el número de observaciones de la muestra. Se denota como X̄ .\nSu principal ventaja es su fácil manejo matemático y estadístico.\nTiene la desventaja de ser muy sensible a valores extremos en una muestra que no tenga una distribución normal.\nEjemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días de estancia.\nSolución: La estancia media de los pacientes es de 7 días. Pero si en lugar de 12 días el último paciente permanece ingresado 89, la nueva media sería 18 días, muy alejada de la anterior. Esto se debe a que un valor extremo, 89, muy distante del resto, influye negativamente en la media."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#media-geométrica",
+    "href": "T02_Investigacion_Cuantitativa.html#media-geométrica",
+    "title": "Investigación Cuantitativa",
+    "section": "Media geométrica",
+    "text": "Media geométrica\n\nSe utiliza para datos exponenciales o del tipo de crecimiento de poblaciones. Se calcula multiplicando los datos entre sí y aplicando después la raíz de orden n. Se utiliza con mucha menor frecuencia que la media aritmética, aunque es muy utilizada en microbiología y serología.\n\nEjemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, y tenemos: 3, 3, 4, 7, 9, 11, 12 días de estancia.\n\n\n\\[\\bar{G} = \\sqrt[7]{3\\times3\\times4\\times7\\times9\\times11\\times12} \\approx 6.06\\]"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#mediana",
+    "href": "T02_Investigacion_Cuantitativa.html#mediana",
+    "title": "Investigación Cuantitativa",
+    "section": "Mediana",
+    "text": "Mediana\n\n\nLa mediana es el valor que, una vez ordenados los datos, divide la distribución en dos partes iguales. Es útil en variables cualitativas ordinales, en las que es imposible calcular la media aritmética.\n¿Cómo se calcula? Si n es par, la mediana es la media de los dos valores centrales. Si n es impar, la mediana es el valor central.\nEjemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días de estancia.\nSolución: Hay un número impar de datos por lo que la mediana es el valor central, en este caso 7. Si cambiamos el último dato por 89, la mediana sigue siendo el valor 7, de modo que, la mediana es mucho menos sensible a los valores extremos que la media."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#moda",
+    "href": "T02_Investigacion_Cuantitativa.html#moda",
+    "title": "Investigación Cuantitativa",
+    "section": "Moda",
+    "text": "Moda\n\nLa moda es el valor que se observa con más frecuencia, el más repetido. Si no se repite ningún valor, la muestra no tiene moda, es amodal. Si se repiten varios valores diferentes, puede ser bimodal, trimodal o multimodal.\n\nEjemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días. El valor más repetido es el 3 que aparece dos veces, así que la moda es 3. Esto indica, en este caso, que lo más habitual es que los pacientes pasen 3 días de estancia hospitalaria tras el trasplante.\n\nComparación de las medidas de centralización\n\nLa media utiliza todos los datos y por tanto es preferible si la muestra es homogénea o simétrica, pero es muy sensible a valores extremos.\nLa mediana utiliza menos información que la media ya que tan sólo tiene en cuenta el orden de los datos, pero como ventaja no es sensible a valores extremos, por lo que es muy útil en distribuciones asimétricas."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#medidas-de-dispersión",
+    "href": "T02_Investigacion_Cuantitativa.html#medidas-de-dispersión",
+    "title": "Investigación Cuantitativa",
+    "section": "Medidas de dispersión",
+    "text": "Medidas de dispersión\n\nNos informan sobre la variabilidad de la muestra, normalmente respecto a su media.\nRecorrido o rango\n\nEs la diferencia entre el valor máximo y mínimo de la variable.\nSu principal ventaja es que se calcula con gran facilidad.\nPero su principal desventaja es que dado que no tiene en cuenta los valores intermedios, su utilidad es muy limitada.\nEs útil como media de dispersión en las variables cualitativas ordinales, o para indicar si nuestros datos tienen algunos valores extraordinarios.\nEjemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales en nuestro Servicio, obteniendo: 3, 3, 4, 7, 9, 11, 12 días de estancia. El rango es 12 − 3 = 9."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#varianza-y-desviación-típica",
+    "href": "T02_Investigacion_Cuantitativa.html#varianza-y-desviación-típica",
+    "title": "Investigación Cuantitativa",
+    "section": "Varianza y desviación típica",
+    "text": "Varianza y desviación típica\n\n\n\\[S^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar X)^2 \\qquad S = \\sqrt{S^2}\\] Varianza grande → dispersión alta; pequeña → concentración. \\(S\\) devuelve las unidades originales.\n\n\nEjemplo: estancias 3, 3, 4, 7, 9, 11, 12 días, \\(\\bar X=7\\).\n\n\n\\[\\sum (x_i-\\bar X)^2 = 16+16+9+0+4+16+25=86 \\;\\Rightarrow\\; S^2=\\frac{86}{6}=14.33,\\; S=3.79\\]"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#coeficiente-de-variación",
+    "href": "T02_Investigacion_Cuantitativa.html#coeficiente-de-variación",
+    "title": "Investigación Cuantitativa",
+    "section": "Coeficiente de variación",
+    "text": "Coeficiente de variación\n\nCompara la variabilidad relativa de diferentes muestras.\n\nSe usa con frecuencia para comparar métodos de medida. Es un valor adimensional. Se calcula dividiendo la desviación estándar entre la media, multiplicando después por 100. Se denota por Cv. Si comparamos dos variables, estará más agrupada, menos dispersa, aquella que tenga coeficiente de variación menor.\nEjemplo: Analizamos los días de estancia hospitalaria de los 7 últimos trasplantados renales: 3, 3, 4, 7, 9, 11, 12 días. Media \\(\\bar X=7\\), \\(S=3.79\\).\n\n\n\\[C_v = \\frac{S}{\\bar X}\\times 100 = \\frac{3.79}{7}\\times 100 = 54.1\\%\\] La variabilidad relativa respecto a la media es del 54%."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#medidas-de-posición",
+    "href": "T02_Investigacion_Cuantitativa.html#medidas-de-posición",
+    "title": "Investigación Cuantitativa",
+    "section": "Medidas de posición",
+    "text": "Medidas de posición\n\nPercentiles. Son 99 valores que dividen la variable en 100 partes iguales, cada una conteniendo el 1% de los datos.\n\nEl percentil 10, deja debajo de sí el 10% de los datos y por encima el 90%\nEl percentil 33, deja debajo de sí el 33% de los datos y por encima el 67%\nEl percentil 50 es la mediana\n\nDeciles. Son 9 valores que dividen la variable en 10 partes iguales, cada una conteniendo el 10% de los datos.\nCuartiles. Son 3 valores que dividen la variable en 4 partes iguales, cada una conteniendo el 25% de los datos.\nQuintiles. Son 4 valores que dividen la variable en 5 partes iguales, cada una conteniendo el 20% de los datos."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#medidas-de-forma",
+    "href": "T02_Investigacion_Cuantitativa.html#medidas-de-forma",
+    "title": "Investigación Cuantitativa",
+    "section": "Medidas de forma",
+    "text": "Medidas de forma\n\nSon medidas que nos dan una idea de la forma en la que se agrupan los valores de la variable.\n\nSimetría y asimetría.\n\nUna distribución es simétrica cuando coinciden la moda, la mediana y la media en el mismo punto, el sesgo es 0. Si esto no pasa se habla de asimetría o sesgo no cero. Si los valores se agrupan más a la izquierda hablamos de asimetría positiva, si lo hacen a la derecha hablamos de asimetría negativa.\nLa medida utilizada habitualmente es el coeficiente de asimetría, As, que se calcula como el triple de la diferencia entre la media y la mediana, dividido por la desviación estándar.\n\nAs = 0, variable simétrica.\nAs &gt; 0, variable asimétrica positiva.\nAs &lt; 0, variable asimétrica negativa.\n\n\nApuntamiento. Hace referencia a si la distribución es ancha y plana (platicúrtica), puntiaguda y estrecha (leptocúrtica) o similar a la normal (mesiocúrtica), siempre comparando con la distribución normal que después estudiaremos.\n\n\n\nSimetría y asimetría"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#tablas-de-frecuencias",
+    "href": "T02_Investigacion_Cuantitativa.html#tablas-de-frecuencias",
+    "title": "Investigación Cuantitativa",
+    "section": "Tablas de frecuencias",
+    "text": "Tablas de frecuencias\n\nFrecuencias absolutas. Contabilizan el número de individuos de cada modalidad.\n\nFrecuencias relativas. Proporción de individuos de cada modalidad. Es la frecuencia absoluta dividida por el total de individuos.\nFrecuencias acumuladas. Sólo tienen sentido para variables ordinales y numéricas.\n\nMedidas de frecuencia\n\nRazón. Es todo índice obtenido al dividir dos cantidades.\nProporción. Toda razón cuyo numerador esté incluido en el denominador.\nODDS. Cociente entre la proporción o probabilidad de ocurrencia de un evento y la proporción o probabilidad de no ocurrencia.\nTasa. Razón de cambio de dos magnitudes."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#tipos-de-muestreo",
+    "href": "T02_Investigacion_Cuantitativa.html#tipos-de-muestreo",
+    "title": "Investigación Cuantitativa",
+    "section": "Tipos de muestreo",
+    "text": "Tipos de muestreo\n\nMuestreo no aleatorio\n\nElección interesada, sin azar.\n\nMuestreo aleatorio\n\nIncorpora el azar como recurso.\n\nMuestreo probabilístico\n\nEs un muestreo aleatorio en el que todo elemento de la población tiene alguna oportunidad de ser escogido en la muestra.\n\n¿Cómo se puede hacer muestreo probabilístico?\n\nSin reposición de los elementos\nCon reposición de los elementos\nCon reposición múltiple\n\nEn poblaciones muy grandes, la probabilidad de repetir una extracción es tan pequeña que el muestreo puede considerarse con reposición."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#tipos-de-muestreo-probabilístico",
+    "href": "T02_Investigacion_Cuantitativa.html#tipos-de-muestreo-probabilístico",
+    "title": "Investigación Cuantitativa",
+    "section": "Tipos de muestreo probabilístico",
+    "text": "Tipos de muestreo probabilístico\n\nMuestreo aleatorio simple\n\nTodos los elementos tienen la misma probabilidad de ser elegidos.\n\nMuestreo sistemático\n\nLos elementos de la muestra se seleccionan siguiendo algún tipo de regla o proceso periódico.\n\nMuestreo estratificado\n\nSe divide la población según ciertas características o estratos (hombres - mujeres), y hacemos muestreo aleatorio simple en cada estrato.\n\nMuestreo por conglomerados\n\nSe obtiene a partir de una muestra aleatoria simple a partir de agrupaciones naturales: colegios, hospitales, etc.; luego se extrae una muestra de los individuos de dichas agrupaciones. Es un muestreo útil en poblaciones muy dispersas y por tanto es necesario un mayor tamaño muestral.\n\nTipos de muestreo no probabilístico\n\nMuestreo consecutivo\n\nEs el muestreo no probabilístico más usado y consiste, por ejemplo, en ir reclutando a todos los individuos que van llegando a una consulta durante un periodo.\n\nMuestreo de conveniencia\n\nEl investigador selecciona a aquellos individuos de más fácil acceso para él.\n\nMuestreo a criterio\n\nEl investigador selecciona a los individuos que cree más apropiados para el estudio."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#obtención-de-muestras-representativas",
+    "href": "T02_Investigacion_Cuantitativa.html#obtención-de-muestras-representativas",
+    "title": "Investigación Cuantitativa",
+    "section": "Obtención de muestras representativas",
+    "text": "Obtención de muestras representativas\nSegún parámetro (proporción \\(p\\) o media \\(\\mu\\)) se calcula el tamaño muestral mínimo para un error/precisión prefijado.\n\nProporción \\(p\\): \\[n \\ge \\frac{z_{1-\\alpha/2}^{2}\\, \\bar p (1-\\bar p)}{e^{2}}\\]\nMedia \\(\\mu\\): \\[n \\ge \\left(\\frac{z_{1-\\alpha/2}\\, \\sigma}{e}\\right)^{2}\\]\n\n\\(z_{1-\\alpha/2}\\) cuantil normal, \\(\\bar p\\) estimación de la proporción, \\(\\sigma\\) DT, \\(e\\) precisión."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#definiciones-básicas",
+    "href": "T02_Investigacion_Cuantitativa.html#definiciones-básicas",
+    "title": "Investigación Cuantitativa",
+    "section": "Definiciones básicas",
+    "text": "Definiciones básicas\n\nExperimento aleatorio. Es un experimento que al repetirlo en análogas condiciones, no se puede predecir el resultado.\nEspacio muestral de un experimento aleatorio. Es el conjunto de los resultados posibles del experimento. Lo denotaremos por la letra E.\nSuceso aleatorio. Es cada uno de los subconjuntos del espacio muestral.\nExperimentos compuestos. Son experimentos formados por varios experimentos simples.\nTipos de sucesos\n\nElementales: están formados por un solo elemento del espacio muestral.\nCompuestos: están formados por 2 o más elementos del espacio muestral.\nCierto o seguro: es el suceso que siempre se realiza.\nImposible (∅): es el suceso que no se realiza nunca.\nContrario: el suceso contrario de un suceso A, es un suceso que se realiza cuando no se realiza A."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#operaciones-con-sucesos",
+    "href": "T02_Investigacion_Cuantitativa.html#operaciones-con-sucesos",
+    "title": "Investigación Cuantitativa",
+    "section": "Operaciones con sucesos",
+    "text": "Operaciones con sucesos\n\nUnión. Dados dos sucesos A y B de un mismo experimento aleatorio, llamamos suceso unión de A y B al suceso que se realiza cuando se realiza A o B. Se denota A ∪ B.\nIntersección. En las condiciones de la unión, llamaremos suceso intersección de A y B al suceso que se realiza cuando se realizan simultáneamente los sucesos A y B. Se denota A ∩ B.\nSucesos incompatibles o mutuamente excluyentes\nDos sucesos A y B, son incompatibles cuando el suceso A ∩ B es el suceso imposible, es decir:\n\nSi A ∩ B = ∅ ⇒ A y B son incompatibles\nSi A ∩ B ≠ ∅ ⇒ A y B son compatibles\n\nDefinición clásica de probabilidad (Pierre Simon Laplace, S. XVIII)\nLa probabilidad de un suceso A, es el cociente entre el número de casos favorables al suceso y el número de casos posibles del mismo.\nEs evidente que los sucesos elementales son equiprobables, todos tienen la misma probabilidad.\nEjemplo. Si consideramos el experimento aleatorio de lanzamiento de un dado, los sucesos elementales son sacar 1, 2, 3, 4, 5 ó 6, con probabilidad 1/6."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#definición-axiomática-kolmogorov-s.-xx",
+    "href": "T02_Investigacion_Cuantitativa.html#definición-axiomática-kolmogorov-s.-xx",
+    "title": "Investigación Cuantitativa",
+    "section": "Definición axiomática (Kolmogorov S. XX)",
+    "text": "Definición axiomática (Kolmogorov S. XX)\n\nProbabilidad es una ley que asocia a cada suceso A del espacio de sucesos un número real que representaremos por P (A) y cumple los siguientes axiomas: 1. La probabilidad de un suceso cualquiera es positiva o nula. 2. La probabilidad del suceso cierto es uno. 3. La probabilidad de la unión de dos sucesos incompatibles es: - P (A ∪ B ) = P (A) + P (B ) si A ∩ B = ∅\nConsecuencias de los axiomas 1. Suceso contrario. P (Ā) = 1 − P (A) 2. Suceso imposible. P (∅) = 0 3. Probabilidad de la unión de sucesos. - Incompatibles: P (A ∪ B ) = P (A) + P (B ) - Compatibles: P (A ∪ B ) = P (A) + P (B ) − P (A ∩ B )\nProbabilidad condicionada — probabilidad de \\(A\\) sabiendo que ocurrió \\(B\\):\n\n\\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} \\qquad P(B)&gt;0\\]"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#probabilidad-de-la-intersección-y-sucesos-independientes",
+    "href": "T02_Investigacion_Cuantitativa.html#probabilidad-de-la-intersección-y-sucesos-independientes",
+    "title": "Investigación Cuantitativa",
+    "section": "Probabilidad de la intersección y sucesos independientes",
+    "text": "Probabilidad de la intersección y sucesos independientes\n\n\\[P(A \\cap B) = P(A \\mid B)\\, P(B) \\qquad \\text{si } A,B \\text{ independientes: } P(A \\cap B)=P(A)P(B)\\]\n\n\n\n\n\n\n\nIndependencia\n\n\n\\(A\\) y \\(B\\) son independientes \\(\\iff\\) \\(P(A \\mid B)=P(A)\\) — la ocurrencia de uno no modifica la del otro.\n\n\n\nTablas de contingencia Es una forma muy intuitiva de calcular probabilidades de intersecciones, uniones y condicionadas sin tener que recordar fórmulas ni teorema de Bayes, mediante la construcción de tablas 2x2. Se entiende mejor con el siguiente ejemplo. ## Ejemplo con tablas de contingencia. Enunciado:\n\nEl 20% de la población de Nueva Guinea tiene la enfermedad de Kuru. Para su diagnóstico se utiliza un test de aglutinación que da falsos positivos en el 10% de los casos.\n\n¿Qué probabilidad hay de que un paciente de Nueva Guinea esté enfermo y tenga un resultado positivo en el test? (Intersección)\n¿Qué probabilidad hay de que la prueba resulte positiva si se padece la enfermedad? (Condicionada)\n¿Qué probabilidad hay de que la prueba resulte negativa si no se tiene la enfermedad? (Condicionada)\n¿Qué probabilidad hay de estar enfermo si la prueba ha salido positiva? (Bayes)\n¿Qué probabilidad hay de estar sano si la prueba ha sido negativa? (Bayes)"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#solución-construimos-la-tabla-de-contingencia",
+    "href": "T02_Investigacion_Cuantitativa.html#solución-construimos-la-tabla-de-contingencia",
+    "title": "Investigación Cuantitativa",
+    "section": "Solución: construimos la tabla de contingencia",
+    "text": "Solución: construimos la tabla de contingencia\n\nNo se dice el tamaño de la muestra, elegimos una de n=100 habitantes.\n\nSucesos: A = Estar enfermo y B = Test positivo (suceso contrario de A es estar sano y el suceso contrario de B es test negativo).\nSe sabe que 20 de cada 100 están enfermos y que el 10% de las pruebas del test dan falsos positivos, es decir se concluye enfermo o sano, siendo lo contrario.\nTenemos 20 enfermos de los que el 10% dan negativo (Está enfermo y da sano) y el 90% positivo (Está enfermo y da enfermo).\nTenemos 80 sanos de los que el 10% dan positivo (Está sano y da enfermo) y el 90% dan negativo (Está sano y da sano)."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#respuestas",
+    "href": "T02_Investigacion_Cuantitativa.html#respuestas",
+    "title": "Investigación Cuantitativa",
+    "section": "Respuestas:",
+    "text": "Respuestas:\n\nCon la tabla las respuestas son triviales.\n\nA (Enfermos) Ā (Sanos) Totales\nB (Test +) 18 8 26\nB̄ (Test -) 2 72 74\nTotales 20 80 n = 100\n\n\n\n\n\\(P(\\text{Enfermo} \\cap \\text{Test}+)=18/100=0.18\\)\n\\(P(\\text{Test}+ \\mid \\text{Enfermo})=18/20=0.90\\) → Sensibilidad\n\\(P(\\text{Test}- \\mid \\text{Sano})=72/80=0.90\\) → Especificidad\n\n\n\n\\(P(\\text{Enfermo} \\mid \\text{Test}+)=18/26\\approx 0.69\\) → VPP\n\\(P(\\text{Sano} \\mid \\text{Test}-)=72/74\\approx 0.97\\) → VPN"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#distribuciones-de-probabilidad",
+    "href": "T02_Investigacion_Cuantitativa.html#distribuciones-de-probabilidad",
+    "title": "Investigación Cuantitativa",
+    "section": "Distribuciones de probabilidad",
+    "text": "Distribuciones de probabilidad\nUna vez seleccionada la muestra y recogidos los datos, el siguiente paso es inferir las propiedades al total de la población.\n\nEl instrumento utilizado es una representación simbólica de su comportamiento que denominamos distribución de probabilidad de la población.\nLa mayoría de los fenómenos biológicos son regidos por uno de los tres modelos siguientes: distribución Normal o de Gauss, distribución de Poisson y distribución Binomial.\nLa primera para variables continuas y las dos últimas para variables discretas.\n\n\nDistribución normal"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#distribución-normal-de-media-µ-y-desviación-estándar-σ",
+    "href": "T02_Investigacion_Cuantitativa.html#distribución-normal-de-media-µ-y-desviación-estándar-σ",
+    "title": "Investigación Cuantitativa",
+    "section": "Distribución normal de media µ y desviación estándar σ",
+    "text": "Distribución normal de media µ y desviación estándar σ\n\nEs simétrica respecto de su media µ.\n\nLa moda y la mediana son ambas iguales a la media.\n\nDistribución de probabilidad en un entorno de la media: 1. En el intervalo [ µ − σ, µ + σ ] se encuentra comprendida, aproximadamente, el 68.26% de la distribución. 2. En el intervalo [µ − 2σ, µ + 2σ] se encuentra, aproximadamente, el 95.44% de la distribución. 3. En el intervalo [µ − 3σ, µ + 3σ] se encuentra, aproximadamente, el 99.74% de la distribución.\nDistribución normal de media µ y desviación estándar σ\n\nEl área total bajo la curva es 1.\nTiene forma de campana.\nToma valores en toda la recta real.\nLa probabilidad de un valor concreto es 0.\n\n\n\nTipificación \\(Z=(X-\\mu)/\\sigma\\) — \\(N(0,1)\\) tabulada"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#tipificación-en-la-distribución-normal",
+    "href": "T02_Investigacion_Cuantitativa.html#tipificación-en-la-distribución-normal",
+    "title": "Investigación Cuantitativa",
+    "section": "Tipificación en la distribución normal",
+    "text": "Tipificación en la distribución normal\n\nTipificación \\(Z=(X-\\mu)/\\sigma\\) — \\(N(0,1)\\) tabulada\n\nEn la práctica las distribuciones normales que nos encontramos no son de media 0 y desviación estándar 1, con el hándicap de que sólo está tabulada la \\(N(0,1)\\).\n\n¿Cómo hallamos probabilidades de variables con media y desviación estándar diferentes a la \\(N(0,1)\\)? Tipificando la variable: restar su media y dividir por su desviación estándar.\n\n\nSi \\(X \\sim N(\\mu,\\sigma)\\), entonces \\(Z=\\dfrac{X-\\mu}{\\sigma} \\sim N(0,1)\\) — única tabulada."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#distribución-binomial",
+    "href": "T02_Investigacion_Cuantitativa.html#distribución-binomial",
+    "title": "Investigación Cuantitativa",
+    "section": "Distribución Binomial",
+    "text": "Distribución Binomial\n\nAparece siempre que se conozca de entrada la probabilidad de aparición de un fenómeno biológico. El resultado es dicotómico, éxito o fracaso, y mide el número de éxitos en n pruebas realizadas de forma independiente. Esta ley modela la hipertensión, daltonismo, etc.\n\nSe denota por \\(B(n,p)\\) donde \\(n\\) es el tamaño de muestra y \\(p\\) la probabilidad de éxito."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#distribución-de-poisson",
+    "href": "T02_Investigacion_Cuantitativa.html#distribución-de-poisson",
+    "title": "Investigación Cuantitativa",
+    "section": "Distribución de Poisson",
+    "text": "Distribución de Poisson\n\nEs un caso particular de la ley Binomial cuando la probabilidad de aparición del suceso es muy pequeña, próxima a 0 (si \\(p &lt; 0{,}01\\) hablamos de enfermedades raras).\nPropiedades:\n\nEstá definida por un único parámetro.\nLa media y varianza poblacional coinciden.\nEs asimétrica, pero conforme aumenta su media tiende a la normal."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#inferencia-estadística",
+    "href": "T02_Investigacion_Cuantitativa.html#inferencia-estadística",
+    "title": "Investigación Cuantitativa",
+    "section": "Inferencia estadística",
+    "text": "Inferencia estadística\nLa estadística inferencial se encarga de establecer conclusiones en la población a partir de los datos de las muestras.\n\nSe ocupa de estimar parámetros.\n\n¿Cuál es la proporción de mujeres que fuman?\n\nDe realizar contraste de hipótesis.\n\n¿Fuman más las mujeres que los hombres?"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#estimación-de-parámetros",
+    "href": "T02_Investigacion_Cuantitativa.html#estimación-de-parámetros",
+    "title": "Investigación Cuantitativa",
+    "section": "Estimación de parámetros",
+    "text": "Estimación de parámetros\n\nEstimación puntual\n\nEstima el parámetro de la población por un valor puntual de la muestra, por ejemplo, afirmo que la media de la población coincide con la media de la muestra estudiada. Son estimaciones generalmente poco precisas pero en muchas ocasiones más que convenientes.\nEstimación por intervalos de confianza. Localiza el parámetro en un intervalo con una cierta confianza (habitualmente 95% en ciencias de la salud). Los intervalos más usuales son para la media y para la proporción.\n\n\n\n\n\nMedia \\(\\mu\\) al 95%:\n\\[\\mu \\in \\left[ \\bar X - 1.96\\frac{S}{\\sqrt{n}},\\; \\bar X + 1.96\\frac{S}{\\sqrt{n}} \\right]\\]\n\n\n\nProporción \\(p\\) al 95%:\n\\[p \\in \\left[ \\bar p \\pm 1.96\\sqrt{\\frac{\\bar p(1-\\bar p)}{n}} \\right]\\]"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#contraste-de-hipótesis.-conceptos",
+    "href": "T02_Investigacion_Cuantitativa.html#contraste-de-hipótesis.-conceptos",
+    "title": "Investigación Cuantitativa",
+    "section": "Contraste de hipótesis. Conceptos",
+    "text": "Contraste de hipótesis. Conceptos\n\nHipótesis\n\nEn un contraste de hipótesis se formulan dos hipótesis, la hipótesis nula H0 usualmente de igualdad (en contrastes paramétricos) y la hipótesis alternativa H1 que es la que quiere concluir el investigador.\n\nValor P\n\nAntes de contrastar una hipótesis se fija el valor máximo de probabilidad que estamos dispuestos a asumir para que nuestro test sea significativo, es decir se rechace la hipótesis nula. Ese valor máximo se denomina nivel de significación o valor P.\nEn ciencias de la salud se considera significativo todo valor de P &lt; 0.05, es decir:\n\nSi P &lt; 0.05, se rechaza la hipótesis nula y se acepta la alternativa. (Esto es lo deseable ya que hace al test significativo).\nSi P &gt; 0.05, se rechaza la hipótesis alternativa y se acepta la hipótesis nula.\n\n\nContraste de hipótesis: errores\nErrores\n\nError Tipo I o error α\n\nSe comete si rechazamos la hipótesis nula siendo cierta.\n\nError Tipo II o error β\n\nSe comete si aceptamos la hipótesis nula siendo falsa.\n\nPotencia de un test\n\nPOTENCIA = 1 − β\nA mayor potencia de un test más fiable es en sus conclusiones."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#resumen-de-errores",
+    "href": "T02_Investigacion_Cuantitativa.html#resumen-de-errores",
+    "title": "Investigación Cuantitativa",
+    "section": "Resumen de errores",
+    "text": "Resumen de errores\n\n\n\n\n\n\n\n\n\n\\(H_0\\) cierta\n\\(H_1\\) cierta\n\n\n\n\nNo rechazo \\(H_0\\)\n✅ Acierto\n❌ Error Tipo II (\\(\\beta\\))\n\n\nRechazo \\(H_0\\)\n❌ Error Tipo I (\\(\\alpha\\))\n✅ Acierto (Potencia \\(1-\\beta\\))\n\n\n\nContraste de hipótesis: tipos\nSe clasifican en función del problema que planteen.\n\nPruebas de conformidad\n\nSe determina si los resultados están, o no, de acuerdo con una teoría enunciada previamente.\n\nPruebas de homogeneidad\n\nSe estudian dos o más muestras y se deduce si proceden de la misma población.\n\nPruebas de relación o independencia\n\nSe estudian dos o más variables en un mismo individuo y se desea saber si estas variables están relacionadas entre sí."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#contrastes-más-usuales-en-ciencias-de-la-salud",
+    "href": "T02_Investigacion_Cuantitativa.html#contrastes-más-usuales-en-ciencias-de-la-salud",
+    "title": "Investigación Cuantitativa",
+    "section": "Contrastes más usuales en ciencias de la salud",
+    "text": "Contrastes más usuales en ciencias de la salud\n\nComparación de dos proporciones. Prueba Chi-cuadrado\n\nEn este test se estudia la relación de dos variables cualitativas o categóricas. Es válido si las frecuencias esperadas son ⩾ 5.\nEjemplo: ¿Los hombres beben más (beber si/no) que las mujeres?\nSexo es variable cualitativa con dos categorías.\nBeber es variable cualitativa con dos categorías.\n\nComparación de dos medias. Prueba t-Student\n\nSuelen estudiar la relación entre una variable categórica y una continua. Son válidos cuando la muestra es grande, n &gt; 30.\nEjemplo: ¿Los hombres son más altos que las mujeres?\nSexo es variable cualitativa con dos categorías.\nAltura es variable cuantitativa continua."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#regresión-lineal",
+    "href": "T02_Investigacion_Cuantitativa.html#regresión-lineal",
+    "title": "Investigación Cuantitativa",
+    "section": "Regresión lineal",
+    "text": "Regresión lineal\n\nCon la regresión lineal se estudia la asociación lineal entre dos variables cuantitativas. En cuyo caso ajustaremos la ecuación de una recta que estimará/predecirá valores de una variable Y (variable dependiente) a partir del conocimiento de los de la otra X (variable independiente).\n¿Cómo se realiza este ajuste? De la forma y = a + bx, con a, b coeficientes obtenidos por el método de mínimos cuadrados.\n¿Cómo de bien ajusta el modelo lineal? Esto se deduce del cálculo de la covarianza, que mide la variabilidad que existe entre dos conjuntos de puntuaciones, toma valores positivos y negativos y conforme más me acerco a 0, peor se ajusta el modelo de regresión lineal.\nCorrelación lineal Con la correlación lineal pretendemos ver si entre dos variables cuantitativas existe algún tipo de relación lineal. Ambas variables juegan un papel simétrico por lo que no se puede diferenciar entre variable independiente y dependiente.\n¿Cómo de bueno es este ajuste? Esto nos lo dice el coeficiente de correlación de Pearson r , que es un número comprendido entre −1 y 1, que conforme más se acerca a 1 o −1, más correladas linealmente están y cuanto más próximo a 0, peor correladas linealmente."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#prevalencia-e-incidencia-epidemiología",
+    "href": "T02_Investigacion_Cuantitativa.html#prevalencia-e-incidencia-epidemiología",
+    "title": "Investigación Cuantitativa",
+    "section": "Prevalencia e incidencia (epidemiología)",
+    "text": "Prevalencia e incidencia (epidemiología)\nLa prevalencia es el número de casos totales de una enfermedad. En estudios de epidemiología se suele referir a ella como la probabilidad de padecer la enfermedad.\n\nEs utilizada en estudios transversales para la planificación de los recursos sanitarios.\nLa incidencia es el número de casos nuevos de una enfermedad. Es utilizada en estudios de causalidad (casos-controles), y experimentales (evaluación de medidas preventivas).\n\nRelación Prevalencia - Incidencia\n\nPrevalencia = tasa de incidencia x duración media de la enfermedad"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#epidemiología",
+    "href": "T02_Investigacion_Cuantitativa.html#epidemiología",
+    "title": "Investigación Cuantitativa",
+    "section": "Epidemiología",
+    "text": "Epidemiología\nSe puede definir como la ciencia que estudia la frecuencia y distribución en el tiempo y en el espacio de los problemas de salud de las poblaciones, así como el papel de los factores que los determinan.\nEnfoques ante un problema de salud\n\nClínico. Estudian enfermos\nEpidemiológico. Estudian enfermos y sanos\n\nAplicaciones de la epidemiología\n\nVigilar el diagnóstico de la salud comunitaria\nEstudiar causas de enfermedades\nPredecir el curso de las enfermedades\nEvaluar las actividades sanitarias"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#fases-del-método-epidemiológico.",
+    "href": "T02_Investigacion_Cuantitativa.html#fases-del-método-epidemiológico.",
+    "title": "Investigación Cuantitativa",
+    "section": "Fases del método epidemiológico.",
+    "text": "Fases del método epidemiológico.\nObservación y descripción del fenómeno a estudiar\n\nTabulación y comparación de los datos observados\nElaboración de hipótesis\nVerificación de la hipótesis. Epidemiología experimental\nValidez de la información\nReproducción del estudio\nExactitud o precisión del estudio\nEmisión de informe o ley"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#según-la-manipulación-estudios-de-observación",
+    "href": "T02_Investigacion_Cuantitativa.html#según-la-manipulación-estudios-de-observación",
+    "title": "Investigación Cuantitativa",
+    "section": "Según la manipulación: estudios de observación",
+    "text": "Según la manipulación: estudios de observación\n\n\nEstudios de observación\n\n\nDescriptivos (Casos clínicos, estudios transversales). No existe hipótesis de trabajo y su objetivo es puramente descriptivo.\n\nEjm.: Estudio para conocer la prevalencia del cáncer de mama.\n\nAnalíticos. Buscan relaciones causa-efecto entre las variables. Se plantean por tanto hipótesis que contrastar.\n\n\nCasos-controles. Hay dos grupos, el 1º tiene la enfermedad (casos) y el 2º está libre de la enfermedad (controles). Están indicados para investigar enfermedades raras, crónicas o transmisibles. Van del efecto (enfermedad) a la causa (factor de riesgo).\n\n\nEstudios de cohortes. Hay dos grupos, el 1º expuesto al factor de riesgo y el 2º no expuesto. Pueden ser dinámicos o fijos (incorporar o no más individuos). Según la valoración del efecto (con o sin medidas repetidas) pueden ser longitudinales o según en el momento que ocurre pueden ser prospectivos o retrospectivos. Van del factor de riesgo (causa) a la enfermedad (efecto).\n\n\nEjm.: Estudio para conocer la relación entre el hábito de fumar y la aparición del cáncer de pulmón."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#según-la-manipulación-estudios-de-intervención",
+    "href": "T02_Investigacion_Cuantitativa.html#según-la-manipulación-estudios-de-intervención",
+    "title": "Investigación Cuantitativa",
+    "section": "Según la manipulación: estudios de intervención",
+    "text": "Según la manipulación: estudios de intervención\n\n\nEstudios de intervención o experimentales. El investigador introduce el elemento de estudio.\n\n\nEnsayos clínicos no controlados. Son estudios cuasi-experimentales no aleatorios.\nEnsayos clínicos aleatorios y controlados. Son estudios experimentales puros (existe grupo de control).\n\n\nEnsayo clínico aleatorio (ético). Un grupo se expone a la intervención y el otro no de forma aleatoria.\n\n\nEnsayo clínico cruzado. Cada sujeto recibe las dos intervenciones.\n\n\nEnsayo de campo. Evalúa la eficacia de una medida preventiva sobre individuos sanos conociendo las dosis.\n\n\nEjm.: Efecto de un nuevo fármaco en un grupo de fumadores para la deshabituación al tabaco.\n\n\n\nFases de un ensayo clínico\n1.ª Estudio de fármacos 2.ª Conocer la eficacia del producto 3.ª Valorar la eficacia y la seguridad del producto 4.ª Estudio para valorar la aplicación a otra causa o enfermedad"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#según-la-existencia-de-seguimiento",
+    "href": "T02_Investigacion_Cuantitativa.html#según-la-existencia-de-seguimiento",
+    "title": "Investigación Cuantitativa",
+    "section": "Según la existencia de seguimiento",
+    "text": "Según la existencia de seguimiento\n\nTransversales (sin seguimiento)\n\nUna muestra aleatoria de individuos se clasifica simultáneamente según el factor de riesgo al que pertenece y su respuesta actual a la enfermedad. Ejm.: en el estudio del efecto de fumar sobre el desarrollo de cáncer de pulmón se trataría de tomar una muestra aleatoria de individuos para los que se observa su condición de fumador y si padecen actualmente la enfermedad.\n\nLongitudinales o prospectivos (con seguimiento)\n\nUn estudio longitudinal es un tipo de estudio observacional que investiga al mismo grupo de gente de manera repetida a lo largo de un período de años, en ocasiones décadas o incluso siglos, en investigaciones científicas que requieren el manejo de datos estadísticos sobre varias generaciones consecutivas de progenitores y descendientes.\n\nSegún la ocurrencia de la información en relación al inicio del estudio\n\nProspectivos o concurrentes (El efecto aún no ha sucedido y exponemos al individuo o no). Se selecciona una muestra aleatoria de individuos que, después de ser observada durante cierto tiempo, se clasifica según los niveles de la variable respuesta (Enfermedad) observados a partir de la variable explicativa (Factor de riesgo).\nRetrospectivos (El efecto ya ha sucedido y por tanto la exposición). Se toma una muestra de individuos entre los que están y no están enfermos para los que se investiga retrospectivamente la influencia del factor de riesgo.\nAmbispectivos. Es una mezcla de los dos anteriores, aunque no es un concepto muy utilizado."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#según-el-sentido-de-la-relación-causa-efecto",
+    "href": "T02_Investigacion_Cuantitativa.html#según-el-sentido-de-la-relación-causa-efecto",
+    "title": "Investigación Cuantitativa",
+    "section": "Según el sentido de la relación causa-efecto",
+    "text": "Según el sentido de la relación causa-efecto\nHacia adelante o ‘De la causa al efecto’. Primero me expongo a la causa y después recojo información sobre el efecto.\n\nSentido hacia atrás o ‘Del efecto a la causa’. Primero se recoge el efecto y a continuación se estudia la posible causa.\nAusencia de sentido. No se puede diferenciar qué es la causa y qué es el efecto."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#sólo-una-de-las-opciones-es-correcta",
+    "href": "T02_Investigacion_Cuantitativa.html#sólo-una-de-las-opciones-es-correcta",
+    "title": "Investigación Cuantitativa",
+    "section": "Sólo una de las opciones es correcta",
+    "text": "Sólo una de las opciones es correcta\n— Supuesto práctico —\n\n\nLos estudios ‘Transversales’:\n\n\n\nNos permiten conocer la incidencia de la enfermedad.\n\n\nSon un tipo de estudio analítico.\n\n\nSon útiles para caracterizar el estado de salud de la población en un punto en el tiempo.\n\n\nNo son susceptibles de sesgos de selección.\n\n\n\nSobre la hipótesis nula:\n\n\n\nSi usted rechaza la hipótesis nula, entonces tiene pruebas de que la hipótesis alternativa no es correcta.\n\n\nLa hipótesis nula siempre se refiere a la población.\n\n\nLa hipótesis nula siempre se refiere a la muestra.\n\n\nLa hipótesis nula siempre expresa una desigualdad.\n\n\n\nEntre estas pirámides de población cuál es progresiva:\n\n\n\nPagoda.\n\n\nBulbo o en ‘hucha’.\n\n\nCampana.\n\n\nBarril.\n\n\n\nProporción de personas que fallecen respecto del total de la población, en un periodo de tiempo:\n\n\n\nMorbilidad.\n\n\nMortalidad.\n\n\nLetalidad.\n\n\nEsperanza de vida."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-práctico",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-práctico",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico",
+    "text": "Supuesto práctico\n\n\n¿En qué tipo de estudios científicos un grupo de pacientes está expuesto a una intervención y otro grupo forma un grupo control?:\n\n\n\nCohortes.\n\n\nEstudios paralelos.\n\n\nEstudios ecológicos.\n\n\nSeries de casos.\n\n\n\nRespecto a las variables cuantitativas o numéricas es FALSO:\n\n\n\nMiden numéricamente el carácter respecto a una unidad de referencia.\n\n\nSon ejemplos de variables cuantitativas: la edad medida en años, la concentración de colesterol medida en mg/mm, o la temperatura medida en grados Celsius, la estatura medida en cm, etc.\n\n\nSon ejemplos también de esta variable el sexo si distinguimos hombre-mujer y el grupo sanguíneo.\n\n\nSon correctas A y B.\n\n\n\nLos indicadores de salud: señale la FALSA:\n\n\n\nLa OMS los define como variables que sirven para medir los cambios.\n\n\nSon variables que intentan medir u objetivar de forma cuantitativa y no cualitativa, sucesos individuales que permiten evaluar dimensiones del estado de salud de la población.\n\n\nUn indicador requiere siempre del uso de fuentes fiables de información.\n\n\nUn indicador requiere rigurosidad técnica en su construcción e interpretación.\n\n\n\nSegún Almaráz Gómez y colaboradores, el principal indicador sanitario es:\n\n\n\nLa tasa bruta de mortalidad.\n\n\nLa tasa de mortalidad específica por edad.\n\n\nLa tasa de mortalidad infantil.\n\n\nNinguna de las tres."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#con-respecto-a-los-estudios-de-cohortes-es-falso",
+    "href": "T02_Investigacion_Cuantitativa.html#con-respecto-a-los-estudios-de-cohortes-es-falso",
+    "title": "Investigación Cuantitativa",
+    "section": "Con respecto a los estudios de Cohortes es FALSO:",
+    "text": "Con respecto a los estudios de Cohortes es FALSO:\n— Supuesto práctico —\n\n\nCon respecto a los estudios de Cohortes es FALSO:\n\n\n\nLos estudios de cohortes son sólo prospectivos.\n\n\nLa población de estudio puede ser fija o dinámica.\n\n\nSon diseños de observación que se caracterizan por su sentido hacia adelante.\n\n\nSe utilizan para indagar en la etiología de un efecto.\n\n\n\nLa incidencia acumulada es:\n\n\n\nEl número de nuevos casos de una enfermedad que se desarrolla en una población durante un periodo de tiempo concreto.\n\n\nLa proporción de individuos de una población que tienen una enfermedad en un momento dado.\n\n\nLa proporción de personas en riesgo de enfermar que desarrollan la enfermedad en un periodo de tiempo concreto.\n\n\nNinguna es correcta.\n\n\n\nEn relación a la prevalencia es FALSO:\n\n\n\nMide la proporción de individuos de una población que tienen la enfermedad en un momento dado.\n\n\nIndica la probabilidad de estar afectado o expuesto en un momento determinado.\n\n\nA mayor tasa de incidencia, mayor debería ser la prevalencia.\n\n\nMide el número de casos nuevos de enfermedad que se desarrolla en una población en riesgo de enfermar, durante un periodo de tiempo concreto.\n\n\n\nCuál de los siguientes tipos de estudios NO se corresponde con un estudio descriptivo:\n\n\n\nEstudio de información individual.\n\n\nEstudio de corte o transversal.\n\n\nEstudio ecológico.\n\n\nEstudio experimental o de intervención."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#una-característica-de-estudios-de-cohorte-es-que",
+    "href": "T02_Investigacion_Cuantitativa.html#una-característica-de-estudios-de-cohorte-es-que",
+    "title": "Investigación Cuantitativa",
+    "section": "Una característica de estudios de cohorte es que:",
+    "text": "Una característica de estudios de cohorte es que:\n— Supuesto práctico —\n\n\nUna característica de estudios de cohorte es que:\n\n\n\nMiden la prevalencia de la enfermedad.\n\n\nMiden la incidencia de la enfermedad.\n\n\nSon menos costosos que los estudios analíticos.\n\n\nSon útiles para medir los efectos de exposiciones frecuentes en la población.\n\n\n\nDentro de las medidas de localización el dato que más se repite es:\n\n\n\nla media.\n\n\nla mediana.\n\n\nla moda.\n\n\nla percentil.\n\n\n\nEstudios más adecuados para evaluar la eficacia de las intervenciones terapéuticas o preventivas:\n\n\n\nexperimentales.\n\n\nobservacionales.\n\n\ntransversales.\n\n\nprospectivos.\n\n\n\nLa varianza es una medida de:\n\n\n\nTendencia central.\n\n\nDispersión.\n\n\nDistribución central.\n\n\nNinguna es correcta.\n\n\n\nCon respecto a la razón:\n\n\n\nEs una medida de frecuencia demográfica."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-2",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-2",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (2)",
+    "text": "Supuesto práctico (2)\n\n\n\nEl numerador no está contenido en el denominador.\n\n\nEl numerador está contenido en el denominador.\n\n\nSon correctas A y B.\n\n\n\nProporción de personas en una población inicialmente libre de la enfermedad, que desarrolla la misma dentro de un intervalo de tiempo específico:\n\n\n\nTasa de incidencia.\n\n\nIncidencia acumulada.\n\n\nDensidad de incidencia.\n\n\nOdds de la enfermedad.\n\n\n\nEl test de la U de Mann-Whitney se utiliza para:\n\n\n\nmuestras apareadas.\n\n\nmuestras dependientes.\n\n\nmuestras independientes (que pueden ser o no del mismo tamaño).\n\n\nmuestras relacionadas antes y después de una intervención.\n\n\n\nEn los estudios de investigación, ‘conjunto de individuos que presenta las características que se pretende estudiar’:\n\n\n\nPoblación diana.\n\n\nMuestra.\n\n\nVariable de estudio.\n\n\nIntervalo."
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-3",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-3",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (3)",
+    "text": "Supuesto práctico (3)\n\n\nAl realizar un estudio de cohortes para analizar la incidencia de accidentes coronarios sobre pacientes que presentan o no hipertensión arterial (HTA), se obtuvo que el Riesgo Relativo (RR) es igual a 1.44; con un intervalo de confianza (IC) 95% de 0.88-1.73. ¿Qué podemos afirmar acerca de la HTA con relación a los accidentes coronarios?:\n\n\n\nLa HTA es un factor de riesgo.\n\n\nLa HTA es un factor protector.\n\n\nNO podemos determinar si la HTA es un factor protector o de riesgo.\n\n\nNinguna es correcta.\n\n\n\nEstudio experimental en el que participan personas sanas o aparentemente sanas, expuestas a un factor de riesgo que provoca enfermedad se denomina:\n\n\n\nEnsayo clínico\n\n\nEnsayo preventivo\n\n\nEstudio de casos\n\n\nEstudio de cohortes\n\n\n\nEn un grupo de 50 recién nacidos se ha obtenido un valor medio de pH fetal de 7.30, con una desviación típica de 0.10. ¿Cuántos de ellos tienen un pH inferior a 7.20, teniendo en cuenta que la distribución sigue la curva normal?:\n\n\n\n8\n\n\n12\n\n\n18\n\n\n25\n\n\n\nAl realizar un estudio, para comprobar la eficacia de la visita preoperatoria de enfermería en la disminución de la ansiedad de los pacientes quirúrgicos, usted obtiene un valor de Chi-cuadrado estadísticamente no significativo, esto le indicará que en su estudio:"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-4",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-4",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (4)",
+    "text": "Supuesto práctico (4)\n\n\n\nLa ansiedad no está relacionada con la visita preoperatoria de enfermería\n\n\nLos resultados obtenidos no se pueden atribuir al azar\n\n\nLa visita preoperatoria de enfermería reduce la ansiedad del paciente quirúrgico\n\n\nLa prueba Chi-cuadrado no está indicada para estudiar la relación entre este tipo de variables\n\n\n\nPara calcular el intervalo de confianza de la media poblacional, a partir de la media muestral obtenida en un grupo de 20 personas, usted tendrá en cuenta que su muestra se comporta como una distribución:\n\n\n\nChi-cuadrado\n\n\nT de Student\n\n\nNormal o Gauss\n\n\nF de Snedecor\n\n\n\nUn riesgo relativo (RR) de 10 es el resultado de un estudio realizado en una población de 30 y más años para determinar la asociación entre la muerte por una enfermedad X y un factor de riesgo. Este dato indica:\n\n\n\nPor encima de los 30 años hay 10 veces más posibilidad de morir por la enfermedad X en personas expuestas al factor de riesgo\n\n\nEl factor de riesgo no tiene implicación alguna en la mortalidad por la enfermedad X en personas de 30 y más años\n\n\nEl 10% de las muertes por la enfermedad X en personas de 30 y más años pueden evitarse si se elimina el factor de riesgo\n\n\nLa frecuencia de la mortalidad por la enfermedad X es más reducida hasta los 30 años de edad en ambos sexos"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-5",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-5",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (5)",
+    "text": "Supuesto práctico (5)\n\n\nUna enfermera quiere realizar un estudio que relacione la frecuencia de un determinado problema de salud de una población entera con su exposición global a un factor de riesgo. Para ello utilizará un estudio de tipo:\n\n\n\nTransversal\n\n\nDescriptivo\n\n\nEcológico\n\n\nLongitudinal\n\n\n\nEn una investigación la variable ‘nivel socioeconómico’, especificada en los posibles valores como bajo, medio-bajo, medio-medio, medio-alto y alto, es un tipo de variable:\n\n\n\nCuantitativa\n\n\nContinua\n\n\nDiferencial\n\n\nCualitativa\n\n\n\nSon datos que orientan sobre los factores que condicionan la salud de una comunidad, la información sobre:\n\n\n\nMortalidad\n\n\nMorbilidad\n\n\nDemografía\n\n\nIncapacidad y dependencia\n\n\n\nEn qué distribución de probabilidades, la media coincide con la varianza:\n\n\n\nEn la de Poisson\n\n\nEn la Binomial"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-6",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-6",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (6)",
+    "text": "Supuesto práctico (6)\n\n\n\nEn la Hipergeométrica\n\n\nEn la Muestral de Medias\n\n\n\nDado el valor V del error típico de un estadístico, empleando una muestra de 36 enfermos. El valor de la desviación típica poblacional, será:\n\n\n\n5.5V\n\n\n6V\n\n\n6V 2\n\n\n5V 2\n\n\n\nLa probabilidad de ser hipertenso, es 1/2 y la de ser reumático, es 1/5. La probabilidad de que dos personas sean hipertensas o sean reumáticas, es:\n\n\n\n1/7\n\n\n36%\n\n\n30%\n\n\n10%\n\n\n\nEl cuartil de tercer orden, deja a su derecha, en el histograma de frecuencias:\n\n\n\nLa mitad de la distribución\n\n\nLas tres cuartas partes de la distribución\n\n\nLa cuarta parte de la distribución\n\n\nDos cuartas partes de la distribución\n\n\n\nLa prevalencia es una proporción que se define como:\n\n\n\nNúmero de personas que tienen la enfermedad durante un periodo de tiempo determinado en relación con el número de personas de la población en ese momento"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-7",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-7",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (7)",
+    "text": "Supuesto práctico (7)\n\n\n\nNúmero de personas que tienen la enfermedad en un momento dado partido por el número de personas de la población antes de aparecer la enfermedad\n\n\nNúmero de casos de enfermedad que aparecen en la población durante un periodo de tiempo determinado partido por el número de personas de la población antes de aparecer la enfermedad\n\n\nNúmero de personas que tienen la enfermedad en un momento dado partido por el número de personas de la población en ese momento\n\n\n\n¿Cómo se calcula la tasa de natalidad?:\n\n\n\nNúmero de nacidos vivos en el periodo del un año, dividido por el número de mujeres entre 15 y 49 años y multiplicado el resultado por 1000\n\n\nNúmero de niñas nacidas en el periodo de un año, dividido por el número de mujeres entre 15 y 49 años y multiplicado el resultado por 1000\n\n\nNúmero de nacidos vivos en el periodo de un año menos el número de defunciones, dividido por el número de mujeres entre 15 y 49 años y multiplicado el resultado por 1000\n\n\nNúmero de nacidos vivos en el periodo de un año, dividido por la población a mitad del periodo considerado y multiplicado el resultado por 1000\n\n\n\nEl número de casos existentes de una enfermedad en una colectividad en un momento dado, se denomina:\n\n\n\nIncidencia\n\n\nPrevalencia\n\n\nIncidencia acumulada\n\n\nDensidad de incidencia\n\n\n\nUn estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:\n\n\n\nAnalítico"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-8",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-8",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (8)",
+    "text": "Supuesto práctico (8)\n\n\n\nTransversal\n\n\nEcológico\n\n\nDescriptivo\n\n\n\nUna pirámide de población que presenta una forma triangular con la base amplia y el vértice superior marcado recibe el nombre de:\n\n\n\nBulbo\n\n\nCampana\n\n\nPiramidal\n\n\nPagoda\n\n\n\nLa variable ‘Grupos Sanguíneos’ se clasifica dentro de las escalas de medición como:\n\n\n\nEscala cuantitativa de intervalo\n\n\nEscala cualitativa ordinal\n\n\nEscala cuantitativa de relación\n\n\nEscala cualitativa nominal\n\n\n\nTres virus A, B, C pueden producir cierta enfermedad. En el laboratorio existen 2 tubos con el A, 5 con el B y 3 con el C. La probabilidad de producir la enfermedad de cada virus es: 30% el A, 40% el B y 50% el C. Se elige un tubo al azar y se inocula el virus a una cobaya. Determínese la probabilidad de que el animal contraiga la enfermedad:\n\n\n\n0.60\n\n\n0.41\n\n\n0.40\n\n\n0.51\n\n\n\nLos estudios epidemiológicos que tratan de investigar las causas de las enfermedades tienen un uso:"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-9",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-9",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (9)",
+    "text": "Supuesto práctico (9)\n\n\n\nAdministrativo\n\n\nDe vigilancia epidemiológica\n\n\nEtiológico\n\n\nDe situación de salud\n\n\n\nCuando se analizan datos de la talla y el peso desde la perspectiva de la varianza, se trata de medidas de:\n\n\n\nDispersión\n\n\nTendencia\n\n\nIntervalo\n\n\nLa afirmación b y la e son correctas\n\n\n\nAl realizar un estudio descriptivo de una variable se ha obtenido una varianza con valor 0. Esto indica:\n\n\n\nQue la variable está muy dispersa respecto de su media\n\n\nQue la variable toma un único valor que por tanto es su media\n\n\nQue la media vale lo mismo que la varianza\n\n\nEs una distribución asimétrica\n\n\n\nAl tratar de estimar los valores de una variable en función de otra se ha decidido hacer una regresión lineal, de la que se ha obtenido un coeficiente de correlación lineal de Pearson con valor 0.95. Esto indica que:\n\n\n\nLa relación lineal entre las variables es muy buena y conforme disminuyen los valores de una variable, aumentan los de la otra\n\n\nEl coeficiente de correlación de Pearson no puede ser negativo\n\n\nLa relación lineal es muy buena y conforme aumentan los valores de una variable, disminuyen los de la otra"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#supuesto-10",
+    "href": "T02_Investigacion_Cuantitativa.html#supuesto-10",
+    "title": "Investigación Cuantitativa",
+    "section": "Supuesto práctico (10)",
+    "text": "Supuesto práctico (10)\n\n\n\nLas afirmaciones b y c son verdaderas\n\n\n\n¿Cuál de las siguientes afirmaciones no es una propiedad de la distribución normal de probabilidad?\n\n\n\nEl área total bajo la curva es 10\n\n\nEs simétrica respecto a su media\n\n\nLa moda, mediana y media coinciden\n\n\nEn el intervalo [µ − 3σ, µ + 3σ] se encuentra, aproximadamente, el 99, 74% de la distribución\n\n\n\nSe toma una muestra de personas libres de cáncer y la seguimos durante los próximos 30 años observando después de este tiempo las tasas de incidencia de cáncer entre fumadores y no fumadores (Los individuos han elegido si van a fumar o no durante este periodo de forma voluntaria). Estamos realizando un estudio:\n\n\n\nProspectivo\n\n\nDe cohorte\n\n\nEnsayo clínico\n\n\nLos apartados a y b son ciertos\n\n\nSoluciones del supuesto práctico 1.c, 2.b, 3.a, 4.b, 5.b, 6.c, 7.b, 8.d, 9.a, 10.c, 11.d, 12.d, 13.b, 14.c, 15.a, 16.b, 17.d, 18.b, 19.c, 20.a, 21.c, 22.b, 23.a, 24.a, 25.b, 26.a, 27.c, 28.d, 29.c, 30.a, 31.b, 32.b, 33.c, 34.d, 35.d, 36.b, 37.d, 38.d, 39.d, 40.b, 41.c, 42.a, 43.b, 44.d, 45.a, 46.d"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#gracias-por-su-paciencia",
+    "href": "T02_Investigacion_Cuantitativa.html#gracias-por-su-paciencia",
+    "title": "Investigación Cuantitativa",
+    "section": "¡Gracias por su paciencia!",
+    "text": "¡Gracias por su paciencia!\n— Supuesto práctico —"
+  },
+  {
+    "objectID": "T02_Investigacion_Cuantitativa.html#referencias",
+    "href": "T02_Investigacion_Cuantitativa.html#referencias",
+    "title": "Investigación Cuantitativa",
+    "section": "Referencias",
+    "text": "Referencias\n\n\nArmitage, Peter, Geoffrey Berry, y John N. S. Matthews. 2002. Statistical Methods in Medical Research. 4.ª ed. Blackwell Science.\n\n\nBradley, Jana. 1993. Methodological issues and practices in qualitative research. En Library Quarterly. University of Chicago Press.\n\n\nCochrane, Archibald L. 1972. Effectiveness and Efficiency: Random Reflections on Health Services. Nuffield Provincial Hospitals Trust.\n\n\nCochrane Collaboration. 2023. Cochrane Library. https://www.cochranelibrary.com/.\n\n\nColton, Theodore. 1974. Statistics in Medicine. Little, Brown.\n\n\nCreswell, John W., y Cheryl N. Poth. 2018. Qualitative Inquiry and Research Design: Choosing Among Five Approaches. 4.ª ed. SAGE.\n\n\nDickersin, Kay, Roberta Scherer, y Carol Lefebvre. 1994. Identifying relevant studies for systematic reviews. En BMJ. BMJ.\n\n\nFlick, Uwe. 2018. An Introduction to Qualitative Research. 6.ª ed. SAGE.\n\n\nGlaser, Barney G., y Anselm L. Strauss. 1967. «The Discovery of Grounded Theory: Strategies for Qualitative Research». Aldine Transaction.\n\n\nGuyatt, Gordon H., David L. Sackett, y Deborah J. Cook. 1993. «Users’ guides to the medical literature. II. How to use an article about therapy or prevention. A. Are the results of the study valid?» JAMA 270: 2598-601.\n\n\nHanley, James A., y Barbara J. McNeil. 1982. «The meaning and use of the area under a receiver operating characteristic (ROC) curve». Radiology 143: 29-36.\n\n\nHaynes, R. Brian, David L. Sackett, Gordon H. Guyatt, y Peter Tugwell. 2002. Clinical Epidemiology: How to Do Clinical Practice Research. 3.ª ed. Lippincott Williams & Wilkins.\n\n\nHiggins, Julian P. T., James Thomas, Jacqueline Chandler, et al. 2019. Cochrane Handbook for Systematic Reviews of Interventions. 2.ª ed. 2.ª ed.\n\n\nKirkwood, Betty R., y Jonathan A. C. Sterne. 2003. Essential Medical Statistics. 2.ª ed. Blackwell Science.\n\n\nKleinbaum, David G., Lawrence L. Kupper, Azhar Nizam, y Eli S. Rosenberg. 2013. Applied Regression Analysis and Other Multivariable Methods. 5.ª ed. Cengage.\n\n\nKnottnerus, J. André, y Jean W. M. Muris. 2003. «Assessment of the accuracy of diagnostic tests: the cross-sectional study». Journal of Clinical Epidemiology 56: 1118-28.\n\n\nNational Library of Medicine. 2023. PubMed. https://pubmed.ncbi.nlm.nih.gov/.\n\n\nPEDro. 2023. Physiotherapy Evidence Database. https://pedro.org.au/.\n\n\nRosenthal, Robert, y M. Robin DiMatteo. 2005. The Oxford Handbook of Quantitative Methods. Oxford University Press.\n\n\nRothman, Kenneth J., Sander Greenland, y Timothy L. Lash. 2008. Modern Epidemiology. 3.ª ed. Lippincott Williams & Wilkins.\n\n\nSackett, David L., William M. C. Rosenberg, J. A. Muir Gray, R. Brian Haynes, y W. Scott Richardson. 1996. «Evidence based medicine: what it is and what it isn’t». BMJ 312: 71-72.\n\n\nStahl, Stephen M. 2013. Stahl’s Essential Psychopharmacology: Neuroscientific Basis and Practical Applications. 4.ª ed. Cambridge University Press.\n\n\nStrauss, Anselm, y Juliet Corbin. 1998. Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory. 2.ª ed. SAGE.\n\n\nTaylor, Steven J., Robert Bogdan, y Marjorie DeVault. 2015. Introduction to Qualitative Research Methods. 4.ª ed. Wiley.\n\n\n\n\n\n\n\n\nCómo citar esta edición\n\n\n\nLuque-Fernández, M. A. (2026). Introducción a la Metodología Científica — Neurociencias (edición Quarto). Universidad de Granada.\n\nBibliografía ampliada en references.bib — Flick (2018), Creswell & Poth (2018), Sackett et al. (1996), Cochrane (1972), Rothman et al. (2008), entre otras."
+  }
+]
