@@ -1423,15 +1423,15 @@ grupo forma un grupo control?:
 - c. Distribución central.
 - d. Ninguna es correcta.
 
-17. Con respecto a la razón:
-
-- a. Es una medida de frecuencia demográfica.
 :::
 
 
 ## Supuesto práctico (2) {#supuesto-2}
 
 ::: {.smaller}
+17. Con respecto a la razón:
+
+- a. Es una medida de frecuencia demográfica.
 - b. El numerador no está contenido en el denominador.
 - c. El numerador está contenido en el denominador.
 - d. Son correctas A y B.
@@ -1491,14 +1491,14 @@ sigue la curva normal?:
 - c. 18
 - d. 25
 
-24. Al realizar un estudio, para comprobar la eficacia de la visita preoperatoria de enfermería en la disminución de la ansiedad de los pacientes quirúrgicos, usted obtiene un valor de Chi-cuadrado estadísticamente
-no significativo, esto le indicará que en su estudio:
 :::
 
 
 ## Supuesto práctico (4) {#supuesto-4}
 
 ::: {.smaller}
+24. Al realizar un estudio, para comprobar la eficacia de la visita preoperatoria de enfermería en la disminución de la ansiedad de los pacientes quirúrgicos, usted obtiene un valor de Chi-cuadrado estadísticamente
+no significativo, esto le indicará que en su estudio:
 - a. La ansiedad no está relacionada con la visita preoperatoria de enfermería
 - b. Los resultados obtenidos no se pueden atribuir al azar
 - c. La visita preoperatoria de enfermería reduce la ansiedad del paciente quirúrgico
@@ -1559,14 +1559,14 @@ sobre:
 
 - a. En la de Poisson
 - b. En la Binomial
+- c. En la Hipergeométrica
+- d. En la Muestral de Medias
 :::
 
 
 ## Supuesto práctico (6) {#supuesto-6}
 
 ::: {.smaller}
-- c. En la Hipergeométrica
-- d. En la Muestral de Medias
 
 31. Dado el valor V del error típico de un estadístico, empleando una muestra de 36 enfermos. El valor
 de la desviación típica poblacional, será:
@@ -1595,19 +1595,18 @@ personas sean hipertensas o sean reumáticas, es:
 
 - a. Número de personas que tienen la enfermedad durante un periodo de tiempo determinado en
   relación con el número de personas de la población en ese momento
-:::
-
-
-## Supuesto práctico (7) {#supuesto-7}
-
-::: {.smaller}
 - b. Número de personas que tienen la enfermedad en un momento dado partido por el número de
   personas de la población antes de aparecer la enfermedad
 - c. Número de casos de enfermedad que aparecen en la población durante un periodo de tiempo
   determinado partido por el número de personas de la población antes de aparecer la enfermedad
 - d. Número de personas que tienen la enfermedad en un momento dado partido por el número de
   personas de la población en ese momento
+:::
 
+
+## Supuesto práctico (7) {#supuesto-7}
+
+::: {.smaller}
 35. ¿Cómo se calcula la tasa de natalidad?:
 
 - a. Número de nacidos vivos en el periodo del un año, dividido por el número de mujeres entre 15
@@ -1627,15 +1626,15 @@ denomina:
 - c. Incidencia acumulada
 - d. Densidad de incidencia
 
-37. Un estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:
-
-- a. Analítico
 :::
 
 
 ## Supuesto práctico (8) {#supuesto-8}
 
 ::: {.smaller}
+37. Un estudio epidemiológico que tiene por finalidad comprender la magnitud de un problema, su naturaleza y entre quiénes y dónde se produce, responde a las características de tipo:
+
+- a. Analítico
 - b. Transversal
 - c. Ecológico
 - d. Descriptivo
@@ -1665,13 +1664,13 @@ de que el animal contraiga la enfermedad:
 - c. 0.40
 - d. 0.51
 
-41. Los estudios epidemiológicos que tratan de investigar las causas de las enfermedades tienen un uso:
 :::
 
 
 ## Supuesto práctico (9) {#supuesto-9}
 
 ::: {.smaller}
+41. Los estudios epidemiológicos que tratan de investigar las causas de las enfermedades tienen un uso:
 - a. Administrativo
 - b. De vigilancia epidemiológica
 - c. Etiológico
@@ -1701,13 +1700,13 @@ indica que:
 - b. El coeficiente de correlación de Pearson no puede ser negativo
 - c. La relación lineal es muy buena y conforme aumentan los valores de una variable, disminuyen los
   de la otra
+- d. Las afirmaciones b y c son verdaderas
 :::
 
 
 ## Supuesto práctico (10) {#supuesto-10}
 
 ::: {.smaller}
-- d. Las afirmaciones b y c son verdaderas
 
 45. ¿Cuál de las siguientes afirmaciones no es una propiedad de la distribución normal de probabilidad?
 
