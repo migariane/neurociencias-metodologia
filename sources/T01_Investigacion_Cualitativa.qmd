@@ -61,34 +61,6 @@ Granada, 2026-10-10
 :::
 
 
-## Índice — Fundamentos de la investigación cualitativa
-
-::: {.smaller}
-- **1    Fundamentos de la investigación cualitativa**
-  - Preliminares
-  - Fases de la investigación cualitativa
-  - Métodos de investigación cualitativa
-  - Técnicas de investigación cualitativa
-  - Almacenamiento, análisis e interpretación de los datos
-- **2    Validez de los métodos diagnósticos**
-  - Pruebas diagnósticas
-  - Validez y fiabilidad de una prueba diagnóstica
-  - Sensibilidad y especificidad
-  - Curvas ROC
-  - Índices de seguridad: VPP y VPN
-- **3    Fundamentos de la práctica basada en la evidencia**
-  - Orígenes y definición
-  - Práctica basada en la evidencia
-- **4    Bases de datos bibliográficas**
-  - Fuentes documentales de evidencia
-  - Revisión bibliográfica
-  - Instrumentos de la evidencia científica
-  - Elaboración de informes
-  - Integración de resultados a la práctica clínica
-- **5    Supuesto práctico**
-:::
-
-
 ## Paradigma
 
 
@@ -109,31 +81,29 @@ En la elaboración de un paradigma, se responden interrogantes filosóficos del 
 
 ## Técnicas de investigación en Ciencias Sociales
 
-
-
-
 ::: {.smaller}
-Metodologías:
-- Empírico-analítica (cuantitativa).
-  - Incluye los siguientes tipos de investigación:
-    - Experimental.
-    - Cuasi experimental.
-    - Ex post facto.
-- Constructivista (cualitativa).
-  - Incluye los siguientes tipos de investigación:
-    - Fenomenológica.
-    - Interaccionismo simbólico.
-    - Etnografía.
-    - Teoría fundamentada.
-    - Etnometodología.
-    - Fenomenografía.
-- Sociocrítica (cualitativa).
-  - Incluye los siguientes tipos de investigación:
-    - Investigación-acción.
-    - Participativa.
-    - Colaborativa.
-    - Feminista.
+**Metodologías (enfoques):**
+
+### 1) Empírico-analítica (cuantitativa)
+- Experimental
+- Cuasi experimental
+- Ex post facto
+
+### 2) Constructivista (cualitativa)
+- **Fenomenológica:** estudia la experiencia vivida tal y como es percibida por los sujetos.
+- **Interaccionismo simbólico:** analiza cómo las personas construyen significado a través de la interacción social.
+- **Etnografía:** describe y comprende prácticas culturales mediante observación prolongada en contextos naturales.
+- **Teoría fundamentada:** genera teoría a partir de los datos mediante comparación constante (codificación progresiva).
+- **Etnometodología:** estudia los métodos cotidianos con los que las personas producen el orden social.
+- **Fenomenografía:** examina las distintas formas en que los sujetos experimentan/perciben un fenómeno.
+
+### 3) Sociocrítica (cualitativa)
+- **Investigación-acción:** combina investigación y práctica para mejorar una realidad, mediante ciclos de diagnóstico, planificación, acción y evaluación con participación de los implicados.
+- Participativa
+- Colaborativa
+- Feminista
 :::
+
 
 
 ## Investigación cuantitativa vs. investigación cualitativa
