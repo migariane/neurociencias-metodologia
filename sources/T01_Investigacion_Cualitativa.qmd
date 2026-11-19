@@ -1369,7 +1369,7 @@ d. Series de casos.
 
 
 ::: {.smaller}
-8. En cuanto a la investigación cualitativa y cuantitativa es FALSO:
+8. En cuanto a la investigación cualitativa y cuantitativa:
 
 a. Un objetivo típico de la investigación cuantitativa es generalizar los resultados a poblaciones más grandes y lograr un alto grado de confiabilidad.
 b. En la investigación cuantitativa para minimizar el error de muestreo debe tener la misma probabilidad de ser seleccionado.
